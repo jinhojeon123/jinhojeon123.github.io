@@ -5,40 +5,89 @@ title: Start Here
 ---
 
 # Contents
-
 - [Numerical Analysis](#numerical-analysis)
-  - [Floating-point & Stability](#floating-point--stability)
-  - [Iterative Methods & Linear Algebra](#iterative-methods--linear-algebra)
-  - [FEM / PDE](#fem--pde)
 - [Operating Systems](#operating-systems)
-  - [Processes / Threads](#processes--threads)
-  - [Memory / Virtual Memory](#memory--virtual-memory)
-  - [IO / File Systems](#io--file-systems)
 
 ---
 
 ## Numerical Analysis
 
 ### Floating-point & Stability
-- [IEEE 754, Errors, and Algorithms](/posts/ieee754-errors-and-algorithms/)
+{% raw %}
+{% assign posts_fp = site.posts | where_exp: "p", "p.categories contains 'Numerical Analysis'" | where_exp: "p", "p.tags contains 'floating-point'" %}
+{% if posts_fp.size > 0 %}
+<ul>
+{% for post in posts_fp %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+- (추가 예정)
+{% endif %}
+{% endraw %}
+
+---
 
 ### Iterative Methods & Linear Algebra
-- (추가 예정) CG / PCG / Preconditioning 정리
-- (추가 예정) Sparse storage: CSR/CSC, bandwidth
+{% raw %}
+{% assign posts_iter = site.posts | where_exp: "p", "p.categories contains 'Numerical Analysis'" | where_exp: "p", "p.tags contains 'iterative-methods'" %}
+{% if posts_iter.size > 0 %}
+<ul>
+{% for post in posts_iter %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+- (추가 예정)
+{% endif %}
+{% endraw %}
+
+---
 
 ### FEM / PDE
-- (추가 예정) Poisson 2D: weak form → assembly → solve
-- (추가 예정) Newton–Raphson + Jacobian + sparse solve
+{% raw %}
+{% assign posts_fem = site.posts | where_exp: "p", "p.categories contains 'Numerical Analysis'" | where_exp: "p", "p.tags contains 'fem'" %}
+{% if posts_fem.size > 0 %}
+<ul>
+{% for post in posts_fem %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+- (추가 예정)
+{% endif %}
+{% endraw %}
 
 ---
 
 ## Operating Systems
 
 ### Processes / Threads
-- (추가 예정) context switch / scheduler / concurrency hazards
+{% raw %}
+{% assign posts_proc = site.posts | where_exp: "p", "p.categories contains 'Operating Systems'" | where_exp: "p", "p.tags contains 'process'" %}
+{% if posts_proc.size > 0 %}
+<ul>
+{% for post in posts_proc %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+- (추가 예정)
+{% endif %}
+{% endraw %}
+
+---
 
 ### Memory / Virtual Memory
-- (추가 예정) paging / TLB / page fault / locality
-
-### IO / File Systems
-- (추가 예정) file descriptor / buffering / mmap / journaling
+{% raw %}
+{% assign posts_mem = site.posts | where_exp: "p", "p.categories contains 'Operating Systems'" | where_exp: "p", "p.tags contains 'virtual-memory'" %}
+{% if posts_mem.size > 0 %}
+<ul>
+{% for post in posts_mem %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+- (추가 예정)
+{% endif %}
+{% endraw %}
