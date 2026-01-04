@@ -3,6 +3,7 @@ icon: fas fa-map-signs
 order: 2
 title: Start Here
 ---
+Liquid test: {{ 1 | plus: 1 }}
 
 # Contents
 - [Numerical Analysis](#numerical-analysis)
