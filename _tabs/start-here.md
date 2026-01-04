@@ -13,9 +13,7 @@ title: Start Here
 ## Numerical Analysis
 
 ### Floating-point & Stability
-{% assign posts_fp = site.posts
-  | where_exp: "p", "p.categories contains 'Numerical Analysis'"
-  | where_exp: "p", "p.tags contains 'floating-point'" %}
+{% assign posts_fp = site.posts | where_exp: "p", "p.categories contains 'Numerical Analysis'" | where_exp: "p", "p.tags contains 'floating-point'" %}
 {% if posts_fp.size > 0 %}
 <ul>
 {% for post in posts_fp %}
@@ -29,9 +27,7 @@ title: Start Here
 ---
 
 ### Iterative Methods & Linear Algebra
-{% assign posts_iter = site.posts
-  | where_exp: "p", "p.categories contains 'Numerical Analysis'"
-  | where_exp: "p", "p.tags contains 'iterative-methods'" %}
+{% assign posts_iter = site.posts | where_exp: "p", "p.categories contains 'Numerical Analysis'" | where_exp: "p", "p.tags contains 'iterative-methods'" %}
 {% if posts_iter.size > 0 %}
 <ul>
 {% for post in posts_iter %}
@@ -45,9 +41,7 @@ title: Start Here
 ---
 
 ### FEM / PDE
-{% assign posts_fem = site.posts
-  | where_exp: "p", "p.categories contains 'Numerical Analysis'"
-  | where_exp: "p", "p.tags contains 'fem'" %}
+{% assign posts_fem = site.posts | where_exp: "p", "p.categories contains 'Numerical Analysis'" | where_exp: "p", "p.tags contains 'fem'" %}
 {% if posts_fem.size > 0 %}
 <ul>
 {% for post in posts_fem %}
@@ -63,9 +57,7 @@ title: Start Here
 ## Operating Systems
 
 ### Processes / Threads
-{% assign posts_proc = site.posts
-  | where_exp: "p", "p.categories contains 'Operating Systems'"
-  | where_exp: "p", "p.tags contains 'process'" %}
+{% assign posts_proc = site.posts | where_exp: "p", "p.categories contains 'Operating Systems'" | where_exp: "p", "p.tags contains 'process'" %}
 {% if posts_proc.size > 0 %}
 <ul>
 {% for post in posts_proc %}
@@ -79,9 +71,7 @@ title: Start Here
 ---
 
 ### Memory / Virtual Memory
-{% assign posts_mem = site.posts
-  | where_exp: "p", "p.categories contains 'Operating Systems'"
-  | where_exp: "p", "p.tags contains 'virtual-memory'" %}
+{% assign posts_mem = site.posts | where_exp: "p", "p.categories contains 'Operating Systems'" | where_exp: "p", "p.tags contains 'virtual-memory'" %}
 {% if posts_mem.size > 0 %}
 <ul>
 {% for post in posts_mem %}
