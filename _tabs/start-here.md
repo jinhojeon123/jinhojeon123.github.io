@@ -12,7 +12,7 @@ permalink: /start-here/
 {% assign posts_fp = site.posts
   | where_exp: "p", "p.categories contains 'Numerical Analysis'"
   | where_exp: "p", "p.tags contains 'floating-point'"
-%}
+%} 
 
 {% if posts_fp.size > 0 %}
 <ul>
