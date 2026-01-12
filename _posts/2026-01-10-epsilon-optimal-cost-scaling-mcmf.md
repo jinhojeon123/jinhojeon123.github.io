@@ -43,7 +43,7 @@ $$
    Initially, the scaling parameter $\varepsilon$ is depedent on its maximum cost: 
 
    $$
-    \varepsilon = 2^m \ge \max_{e \in E} |c_e| where c_e = cost of arc.
+    \varepsilon ps = 2^m \ge \max_{e \in E}  |c_e| \text{ where $c_e$ = cost of arc.}
    $$
 
 ## 3. 
