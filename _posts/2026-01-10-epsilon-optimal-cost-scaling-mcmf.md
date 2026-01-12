@@ -26,7 +26,7 @@ description: "Implementation and analysis of a cost-scaling epsilon-optimal push
 author: "JIN HO JEON"
 ---
 
-## 1. Problem Definition : 
+## 1. Problem Definition.
 
   Given a directed graph $G = (V,E)$ with capacities $c_e$ and costs $w_e$, the min-cost max-flow problem is to find a flow $f$ that maximizes:
 
@@ -37,8 +37,15 @@ $$
 with 
 $$
    min \sum_{e\in E} w_e f_e.
-$$ 
-## 2. 
+$$
+
+## 2. Epsilon-Optimality and Cost Scaling.
+    
+   Initially, the scaling parameter $\varepsilon$ is depedent on its maximum cost: 
+
+   $$
+    \varepsilon = 2^m \ge \max_{e \in E} |c_e| where c_e = cost of arc.
+   $$
 
 ## 3. 
 
