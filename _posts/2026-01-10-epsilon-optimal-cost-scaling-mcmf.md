@@ -31,12 +31,12 @@ author: "JIN HO JEON"
   Given a directed graph $G = (V,E)$ with capacities $c_e$ and costs $w_e$, the min-cost max-flow problem is to find a flow $f$ that maximizes:
 
 $$
-   max  \sum_{(s,v)\in E} f_{sv}
+   max  \sum_{(u,v)\in E} f_{uv}
 $$ 
        
 with 
 $$
-    \sum_{e\in E} w_e f_e.
+   min \sum_{e\in E} w_e f_e.
 $$ 
 ## 2. 
 
