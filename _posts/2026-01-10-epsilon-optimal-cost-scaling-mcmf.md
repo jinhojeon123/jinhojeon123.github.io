@@ -50,7 +50,7 @@ $$
 
 ### 2.2. Cost-Scaling.
 
-   Define $c(u,v)$ = $p[u]$ - $e.cost$ - $p[v]$ >= $-\verepsilon ps$ 
+   Define $c(u,v)$ = $p[u]$ - $e.cost$ - $p[v]$ >= $\verepsilon$ $\italic{ps}$ 
 
 ## 3. Push-Relabel Algorithm.
 
