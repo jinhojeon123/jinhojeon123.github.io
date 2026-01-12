@@ -50,9 +50,12 @@ $$
 
 ### 2.2. Cost-Scaling.
 
-   Define $c(u,v)$ = $p[u]$ - $e.cost$ - $p[v]$ >= $\verepsilon$ $\italic{ps}$ 
+   Define $\hat{c}(u,v)$ = $p[u]$ - $e.cost$ - $p[v]$ >= - $\varepsilon ps$ 
 
 ## 3. Push-Relabel Algorithm.
+    
+   Push all edges. 
+   Discharge and Relabel until excess becomes 0.
 
 
 ## 4. Pseudo Code and Implementation Tips
