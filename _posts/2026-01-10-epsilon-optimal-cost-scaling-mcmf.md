@@ -36,10 +36,11 @@ $$
    \min \quad & \sum_{(u,v)\in E} f_{uv} * w_{ev} 
 \end{aligned}
 $$ 
-       
+
 
 ## 2. Epsilon-Optimality and Cost Scaling.
     
+### 2.1. Epsilon-Optimality 
    Initially, the scaling parameter $\varepsilon$ is depedent on its maximum cost: 
 
    $$
@@ -47,6 +48,18 @@ $$
    $$
    where $c_e$ denotes the cost associated with arc $e$.
 
-## 3. 
+### 2.2. Cost-Scaling.
 
-## 4. 
+   Define $c(u,v)$ = $p[u]$ - $e.cost$ - $p[v]$ >= $-\verepsilon ps$ 
+
+## 3. Push-Relabel Algorithm.
+
+
+## 4. Pseudo Code and Implementation Tips
+
+
+## 5. Time Complexity and Limitation  
+
+
+## 6. Applications and  Future.
+
