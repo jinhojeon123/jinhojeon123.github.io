@@ -25,3 +25,21 @@ sitemap:
 description: "Implementation and analysis of a cost-scaling epsilon-optimal push-relabel algorithm for the min-cost max-flow problem."
 author: "JIN HO JEON"
 ---
+
+## 1. Problem Definition : 
+
+  Given a directed graph $G = (V,E)$ with capacities $c_e$ and costs $w_e$, the min-cost max-flow problem is to find a flow $f$ that maximizes:
+
+$$
+   max  \sum_{(s,v)\in E} f_{sv}
+$$ 
+       
+with 
+$$
+    \sum_{e\in E} w_e f_e.
+$$ 
+## 2. 
+
+## 3. 
+
+## 4. 
