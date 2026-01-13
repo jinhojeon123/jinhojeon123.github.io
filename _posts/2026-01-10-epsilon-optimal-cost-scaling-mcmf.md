@@ -60,22 +60,37 @@ $$
 
 ## 4. Pseudo Code and Implementation Tips
     
-   ```cpp
-      
-      while(eps>=1){
+```cpp
+
+solve(int n, int s, int t){
+ 
+    G <- addEdge(t,s, 1e9, 1e16); 
+
+    while(eps>=1){
         
-          for each admissible edge (u,v):
-              push(u,v)
+    for each admissible edge (u,v):
+        push(u,v)
 
-          for each active vertex u:
-              discharge(u)
+    for each active vertex u:
+        discharge(u)
 
-          eps = (eps+1)/2 
-      }
-   ```
+        eps = (eps+1)/2 
+    }
+
+    for each edge (u, v, cap, cost):
+        findMaxFlow
+
+    for each edge (u, v, cap, cost):
+        if (cap == 0 and u<v):
+            collectAllCost
+}
+```
 
 ## 5. Time Complexity and Limitation  
 
+   Since 
 
 ## 6. Applications and  Future.
 
+
+## 7. Reference.
