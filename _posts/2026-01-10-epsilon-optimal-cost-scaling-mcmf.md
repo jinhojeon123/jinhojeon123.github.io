@@ -71,7 +71,7 @@ $$
 
    $$
    \begin{aligned}
-    p(u) \ = \ \max \{ p(v) - e.cost - eps \ | e_{uv} \in E\}  
+    p(u) \ = \ \max \{ \ p(v) - e.cost - eps \ | \ e_{uv} \in E \ and \  e.cap >0 \}  
    \end{aligned}
    $$ 
 ### 3.3 With 
