@@ -43,6 +43,7 @@ $$
 
 
 ## 2. Epsilon-Optimality and Cost Scaling.
+
     
 ### 2.1. Epsilon-Optimality 
    Initially, the scaling parameter $\varepsilon$ is depedent on its maximum cost: 
@@ -57,7 +58,12 @@ $$
    Define $\hat{c}(u,v)$ = $p[u]$ - $e.cost$ - $p[v]$ >= - $\varepsilon ps$ 
 
 ## 3. Push-Relabel Algorithm.
-    
+
+   This is an heuristic algorithm to find out max-flow for given directed weight graph G = (V, E).
+   From this concept, we add one more property "cost." 
+
+
+
 ### 3.1. Push all edges. 
     
    "Push"
@@ -74,7 +80,10 @@ $$
     p(u) \ = \ \max \{ \ p(v) - e.cost - eps \ | \ e_{uv} \in E \ and \  e.cap >0 \}  
    \end{aligned}
    $$ 
-### 3.3 With 
+
+### 3.3  How could it obtain the exact solution with heuristic algorithm using eps?
+
+
 
 ## 4. Pseudo Code and Implementation Tips
     
@@ -109,6 +118,14 @@ solve(int n, int s, int t){
    Since 
 
 ## 6. Applications and  Future.
-
+  
+   1. Bipartite Matching 
+    Model design : 
+      - S(super source) -> worker (cap=1, cost=0)
+      - worker -> job (cap=1, cost)
+      - job -> T(super sink) (cap=1, cost=0)
+      - (T,S) (cap=max flow upper bound, cost = lower than min-cost) if you used the algorithm to solve this.
+   
+   2.  
 
 ## 7. Reference.
