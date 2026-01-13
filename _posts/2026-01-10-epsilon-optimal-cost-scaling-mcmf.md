@@ -26,6 +26,10 @@ description: "Implementation and analysis of a cost-scaling epsilon-optimal push
 author: "JIN HO JEON"
 ---
 
+## 0. Caution.
+
+a. This is continuously updated. 
+
 ## 1. Problem Definition.
 
   Given a directed graph $G = (V,E)$ with capacities $c_e$ and costs $w_e$, the min-cost max-flow problem is to find a flow $f$ that maximizes:
@@ -54,9 +58,21 @@ $$
 
 ## 3. Push-Relabel Algorithm.
     
-   Push all edges. 
-   Discharge and Relabel until excess becomes 0.
+### 3.1. Push all edges. 
+    
+   "Push"
 
+### 3.2. Discharge and Relabel until excess becomes 0.
+    
+   Now after pushing the capacity of edges, we need to do "Discharge" and "Relabel".
+
+   This is simply for setting new admissible arc following the condition of epsilon. (2.1.)
+   In this reason, while doing relabelling, we set the value of potential of u as below:
+
+   $$
+    p(u) \ = \ \max \{ p\[v\] - e.cost - eps | e=(u,v) \in E\}  
+   $$ 
+### 3.3 With 
 
 ## 4. Pseudo Code and Implementation Tips
     
