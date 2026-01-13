@@ -70,7 +70,9 @@ $$
    In this reason, while doing relabelling, we set the value of potential of u as below:
 
    $$
-    p(u) \ = \ \max \{ p\[v\] - e.cost - eps | e=(u,v) \in E\}  
+   \begin{aligned}
+    p(u) \ = \ \max \{ p(v) - e.cost - eps \ | e_{uv} \in E\}  
+   \end{aligned}
    $$ 
 ### 3.3 With 
 
