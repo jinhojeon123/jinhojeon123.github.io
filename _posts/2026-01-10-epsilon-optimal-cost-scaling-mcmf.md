@@ -59,7 +59,20 @@ $$
 
 
 ## 4. Pseudo Code and Implementation Tips
+    
+   ```cpp
+      
+      while(eps>=1){
+        
+          for each admissible edge (u,v):
+              push(u,v)
 
+          for each active vertex u:
+              discharge(u)
+
+          eps = (eps+1)/2 
+      }
+   ```
 
 ## 5. Time Complexity and Limitation  
 
