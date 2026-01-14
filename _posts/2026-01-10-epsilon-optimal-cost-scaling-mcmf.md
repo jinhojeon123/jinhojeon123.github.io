@@ -129,3 +129,12 @@ solve(int n, int s, int t){
    2.  
 
 ## 7. Reference.
+
+    1. Ford, L. R., Jr., and Fulkerson, D. R., Flows in Networks, Princeton Univ. Press, 1962.
+
+    2. Jack Edmonds, Richard M. Karp, Theoretical Improvements in Algorithmic Efficiency for Network Flow Problems, J. ACM., Vol. 19, No. 2, pp. 248–264, 1972.
+
+    3. E. A. Dinic, Algorithm for Solution of a Problem of Maximum Flow in a Network with Power Estimation,
+Doklady Akademii Nauk SSSR, Vol. 194, No. 4, pp. 754–757, 1970. 
+
+    4. Goldberg, A. V., and Tarjan, R. E., A New Approach to the Maximum-Flow Problem, J. ACM., 35(4):921–940, 1988.
