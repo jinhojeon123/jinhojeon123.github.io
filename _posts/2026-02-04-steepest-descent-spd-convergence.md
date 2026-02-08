@@ -196,27 +196,25 @@ Since $A$ is invertible, $x^{\star}=A^{-1}b$. (uniqueness)
 
 
 
-### converge
+### Converge
 
-### a. Constant step size with $0<\alpha<\frac{2}{\lambda_{\max}}$
 Let  $f = \frac{1}{2} x^TAx -b^Tx + c $, a quadratic form of A, where x is a column vector, size n. 
 
-and let $\alpha$ be a fixed step size with $0<\alpha< \frac{2}{\lambda_{\max}} $
+### a. Constant step size with $0<\alpha<\frac{2}{\lambda_{\max}}$
 
-$\nabla f = Ax-b $ ( $\because$ $A$ SPD, $f$ is differentiable)
+Since $A$ is **Symmetric Positive Definite (SPD)**, the quadratic form $f$ is differentiable and its gradient is given by:
+$$\nabla f(x) = Ax - b$$
 
-$x_k = x_k - \alpha \nabla f(x_k)$ 
+The update rule at step $k$ is:
+$$x_{k+1} = x_k - \alpha \nabla f(x_k)$$
 
-let $r_k = -\nabla f(x_k) = b-Ax_k$  
+Let $r_k = -\nabla f(x_k) = b - Ax_k$ be the residual vector. Then:
+$$x_{k+1} = x_k + \alpha r_k$$
 
-$x_{k+1} = x_{k} + \alpha {r_k} $
- 
- 
-$x_{k+1} - x^{\star} = x_{k} - x^{\star} + \alpha r_k$
-
-Let $e_k = x_k - x^{\star}$  
-
-$e_{k+1} = e_{k} + \alpha r_k = e_{k} + \alpha (A x^{\star} -Ax_k) = e_k - \alpha A e_k = (I-\alpha A)e_k$ 
+To analyze convergence, we define the error vector $e_k = x_k - x^*$. Subtracting $x^*$ from both sides:
+$$x_{k+1} - x^* = x_k - x^* + \alpha r_k$$
+$$e_{k+1} = e_k + \alpha (Ax^* - Ax_k) \quad (\because Ax^* = b)$$
+$$e_{k+1} = e_k - \alpha A e_k = (I - \alpha A) e_k$$
 
 Since $I = QQ^{T} $, and $A = Q \Lambda Q^T$, 
 
