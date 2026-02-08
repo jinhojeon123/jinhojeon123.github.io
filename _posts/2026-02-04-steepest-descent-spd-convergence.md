@@ -271,13 +271,10 @@ $$
 
 
 $\lVert e_{k+1}\rVert_{A}^2
-= e_{k+1}^\top A e_{k+1}
-= (e_k+\alpha_k r_k)^\top A (e_k+\alpha_k r_k)
-= (e_k^\top+\alpha_k r_k^\top)(A e_k+\alpha_k A r_k)
-= e_k^\top A e_k+\alpha_k r_k^\top A e_k+\alpha_k e_k^\top A r_k+\alpha_k^2 r_k^\top A r_k$
-
-
-$= \| e_k\|^2_A + 2 \alpha_k r^{\top}_k A e_k + \alpha^2_k r^{\top}_k Ar_k $
+= e_{k+1}^\top A e_{k+1} = (e_k+\alpha_k r_k)^\top A (e_k+\alpha_k r_k) \\    
+= (e_k^\top+\alpha_k r_k^\top)(A e_k+\alpha_k A r_k) = e_k^\top A e_k+\alpha_k r_k^\top A e_k+\alpha_k e_k^\top A r_k+\alpha_k^2  r_k^\top A r_k \\ 
+\\ 
+= \| e_k\|^2_A + 2 \alpha_k r^{\top}_k A e_k + \alpha^2_k r^{\top}_k Ar_k $
 
 use $r_k = -Ae_k$,  
 
