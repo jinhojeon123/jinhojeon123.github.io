@@ -10,15 +10,16 @@ math: true
 ## 1. Motivation 
 
 ## 2. Prerequisite 
-- eigenvalue:  
+- **Eigenvalue and Eigenvector**:  
   Def : An eigenvalue $\lambda$ of $A$ is a scalar satisfying 
 
  $$ 
 \quad \quad    Ax = \lambda x, \ \text{with} \ x\not=0 
  $$ 
- where $\lambda$ is a solution of $det(\lambda I - A)=0$.
 
-- Symmetric Matrix :  
+ where $\lambda$ is a solution of $\det(\lambda I - A)=0$, x $\not=0$ is called **eigen-vector**.
+
+- **Symmetric Matrix :  
   def : a Matrix A is symmetric matrix if $A^T = A$.
 
 - Positive definite :   
