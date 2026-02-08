@@ -19,21 +19,19 @@ math: true
 
  where $\lambda$ is a solution of $\det(\lambda I - A)=0$, x $\not=0$ is called **eigen-vector**.
 
-- **Symmetric Matrix :  
-  def : a Matrix A is symmetric matrix if $A^T = A$.
+- **Symmetric Matrix**:  
+  def : a square matrix $A$ is symmetric matrix if $A^T = A$.
 
-- Positive definite :   
-  def : a Matrix A is positive definite if for any vector x, $x^T A x >0$.
+- **Positive definite**:   
+  def : a matrix $A$ is positive definite if for any vector $x$, $x^T A x >0$.
 
-- SPD :   
-  def : We say that A is SPD(symmetric, positive-definite) if A is symmetric, and positive definite.  
+- **SPD**:   
+  def : We say that $A$ is **SPD**(symmetric, positive-definite) if $A$ is symmetric, and positive definite.  
 
-- normal matrix :  
-  def : a complex square matrix A is normal if ${A^*}A = A{A^*}$. If $A$ is a real-matrix, then $A^*$ = $A^T$. the operation $*$ denotes "conjugate and transpose".    
+- **normal matrix**:  
+  def : a complex square matrix A is normal if ${A^*}A = A{A^*}$. If $A$ is a real-matrix, then $A^*$ = $A^T$. the operation $*$ denotes "conjugate and transpose" in $\mathbb{C}^{n \times n}$.    
 
-- Spectral Theorem : Let 
-𝐴 be a normal operator on a finite-dimensional inner product space 𝑉.
-Then there exists an orthonormal basis of 𝑉 consisting of eigenvectors of 𝐴.  
+- **Spectral Theorem** : Let $𝐴$ be a normal operator on a finite-dimensional inner product space $𝑉$. Then there exists an orthonormal basis of $𝑉$ consisting of eigenvectors of $𝐴$.  
 
     i.e. by Spectral theorem, if A is normal matrix, there exists an orthogonal basis $\beta$ of eigenvectors A. by basis change from $\alpha$ to $\beta$, we can define the change of basis matrix 
 
@@ -47,7 +45,7 @@ Then there exists an orthonormal basis of 𝑉 consisting of eigenvectors of �
     $$ 
 
 
-since $Q^T = \begin{pmatrix}
+Since $Q^T = \begin{pmatrix}
 q_1^T \\
 q_2^T \\
 \vdots \\
@@ -55,13 +53,17 @@ q_n^T
 \end{pmatrix}
 $ maps $x \in V$ to its projection coefficients onto each basis direction, 
 
-     we have $Q^T = Q^{-1}$. i.e., $A = Q^T \Lambda Q $ if A is normal by spectral theorem.
+  we have $Q^T = Q^{-1}$. i.e., $A = Q^T \Lambda Q $ if A is normal by spectral theorem.
 
  
-- Rayleigh Quotient :   
+- **Rayleigh Quotient**:   
   def : Ray(A) = $\frac{ x^T A x}{x^Tx}$  
 
-- Iterative update rule :  
+- **Quadratic form**:  
+  def : For a symmetric matrix $A \in \mathbb{R}^{n \times n}$, a **quadratic form** of $A$ is the function $f(x) = x^T A x$.   
+
+
+- **Iterative update rule**:  
   def : 
 
   $$
@@ -72,7 +74,7 @@ where $r_k$ is **descent direction**, $\alpha_k$ is step-size.
 
 Intuitively, from $x_k$, move $\alpha_k$ units along $r_k$. 
 
-- Line search:  
+- **Line search**:  
   To say whether it is a exact or inexact line search, the standard to distinguish is as below:
 
   $$
@@ -89,21 +91,21 @@ Intuitively, from $x_k$, move $\alpha_k$ units along $r_k$.
 $$
     f(\alpha x + (1-\alpha) y ) \le \alpha f(x) + (1-\alpha) f(y) - \frac{m}{2} \alpha (1-\alpha )  \| x-y \|^2 \quad \forall x,y\in \mathbb{R}^n, \ \forall \alpha\in[0,1].
 $$ -->
-- strictly convex function:  
+- **strictly convex function**:  
   def : A differentiable function $f:\mathbb{R}^n \to \mathbb{R} $ is called **strictly convex** if 
 
   $$
     f(y)>f(x) + \nabla f(x)^T (y-x) \quad \forall x\neq y. 
   $$
 
-- Lipschitz continuous :  
-def : $f$ is called $\text{\it{Lipschitz continuous}}$ satisfying as below:  
+- **Lipschitz continuous**:  
+def : $f$ is called **Lipschitz continuous** satisfying as below:  
 
 $$
   \| \nabla f(x) - \nabla f(y) \| \le M \| x-y \|.
 $$
  
-- Condition Number : 
+- **Condition Number**: 
    def : denote $\kappa(A) = \frac{ \sigma_{max} }{\sigma_{min} }$. In SPD, $\kappa(A) = \frac{ \lambda_{max}}{ \lambda_{min}}$ by spectral theorem.
 
  
