@@ -8,6 +8,7 @@ math: true
 
 
 ## 1. Motivation 
+  This is a first step to navigate into the world of Sparse Linear Algebra(spLA) and Optimization. I chose to master this, **Steep-descent(SD)** algorithm first, as it provides the essential intuition for more advanced methods like **CG**, **Preconditioned CG**. A key question we will address is: how could iterative methods find the solution to $Ax=b$ faster than **QR**, **LU decomposition** etcs?
 
 ## 2. Prerequisite 
 - **Eigenvalue and Eigenvector**:  
@@ -409,7 +410,7 @@ function x = steep_descent_eA2(A,b) % A must be SPD
 
     xstar = A \ b;    % For validation purpose only
     e = x - xstar; 
-    eA2 = e' * A * e; % ||e_0||_A  
+    eA2 = e' * A * e; % ||e_0||^2_A  
     eA2_0 = eA2; 
 
     i = 0;
