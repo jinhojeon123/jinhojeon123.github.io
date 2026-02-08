@@ -92,12 +92,7 @@ Intuitively, from $x_k$, move $\alpha_k$ units along $r_k$.
   - But In inexact line search problem, we don't need to calculate exhaustive solution of the arg-min optmization problem. 
 
   - why $\arg\min$? Because we want to find out the minimum optimizer of the next step. 
-  <!-- 왜 argmin -->
-<!-- - m-strongly convex:  
-    def : Let $m>0$. we say that $f$ is $\text{\it{m-strongly convex}}$ if   
-$$
-    f(\alpha x + (1-\alpha) y ) \le \alpha f(x) + (1-\alpha) f(y) - \frac{m}{2} \alpha (1-\alpha )  \| x-y \|^2 \quad \forall x,y\in \mathbb{R}^n, \ \forall \alpha\in[0,1].
-$$ -->
+ 
 - **strictly convex function**:  
   def : A differentiable function $f:\mathbb{R}^n \to \mathbb{R} $ is called **strictly convex** if 
 
