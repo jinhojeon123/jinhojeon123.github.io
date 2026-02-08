@@ -254,7 +254,7 @@ $$
 
 with $\alpha_k = \frac{1}{Ray(A)} = \frac{r^{\top}_k r_k}{r_k^{\top} A r_k} $
 
-Since we set $\alpha_k$ = $\frac{1}{Ray(A)} = \frac{r_{k}^{\top} r_{k}}{r_{k}^{\top} A r_k}$, which is the optimum minimizer of $\phi(\tau) = f(x_k + \alpha r_k)$.    
+Since we set $\alpha_k$ = $\frac{1}{Ray(A)} = \frac{r_{k}^{\top} r_{k}}{r_{k}^{\top} A r_k}$, which is the optimum minimizer of $\phi(\tau) = f(x_k + \alpha_k r_k)$.    
 
  
 when $A$ is SPD, Rayleigh quotient of A is in $\left[\lambda_{\min},\lambda_{\max}\right]$. Return to the definition of Rayleigh quotient of $A$ with SPD.  
