@@ -21,16 +21,16 @@ math: true
  where $\lambda$ is a solution of $\det(\lambda I - A)=0$, x $\not=0$ is called **eigen-vector**.
 
 - **Symmetric Matrix**:  
-  def : a square matrix $A$ is symmetric matrix if $A^T = A$.
+  def : a square matrix $A$ is symmetric matrix if $A^{\top} = A$.
 
 - **Positive definite**:   
-  def : a matrix $A$ is positive definite if for any vector $x$, $x^T A x >0$.
+  def : a matrix $A$ is positive definite if for any vector $x$, $x^{\top} A x >0$.
 
 - **SPD**:   
   def : We say that $A$ is **SPD**(symmetric, positive-definite) if $A$ is symmetric, and positive definite.  
 
 - **normal matrix**:  
-  def : A complex square matrix $A$ is **normal** if $A^{\star} A = A A^{\star}$. If $A$ is a **real-matrix**, then $A^{\star} = A^T$. The operation $\star$ denotes **conjugate and transpose** in $\mathbb{C}^{n \times n}$.  
+  def : A complex square matrix $A$ is **normal** if $A^{\star} A = A A^{\star}$. If $A$ is a **real-matrix**, then $A^{\star} = A^{\top}$. The operation $\star$ denotes **conjugate and transpose** in $\mathbb{C}^{n \times n}$.  
 
 - **Spectral Theorem** : Let $𝐴$ be a normal operator on a finite-dimensional inner product space $𝑉$. Then there exists an orthonormal basis of $𝑉$ consisting of eigenvectors of $𝐴$.  
 
@@ -60,14 +60,14 @@ $$
 
 maps $x \in V$ to its projection coefficients onto each basis direction, 
 
-  we have $Q^T = Q^{-1}$. i.e., $A = Q^T \Lambda Q $ if A is normal by spectral theorem.
+  we have $Q^{\top} = Q^{-1}$. i.e., $A = Q^{\top} \Lambda Q $ if A is normal by spectral theorem.
 
  
 - **Rayleigh Quotient**:   
-  def : Ray(A) = $\frac{ x^T A x}{x^Tx}$  
+  def : Ray(A) = $\frac{ x^{\top} A x}{x^{\top}x}$  
 
 - **Quadratic form**:  
-  def : For a symmetric matrix $A \in \mathbb{R}^{n \times n}$, a **quadratic form** of $A$ is the function $f(x) = x^T A x$.   
+  def : For a symmetric matrix $A \in \mathbb{R}^{n \times n}$, a **quadratic form** of $A$ is the function $f(x) = x^{\top} A x$.   
 
 
 - **Iterative update rule**:  
@@ -97,7 +97,7 @@ Intuitively, from $x_k$, move $\alpha_k$ units along $r_k$.
   def : A differentiable function $f:\mathbb{R}^n \to \mathbb{R} $ is called **strictly convex** if 
 
   $$
-    f(y)>f(x) + \nabla f(x)^T (y-x) \quad \forall x\neq y. 
+    f(y)>f(x) + \nabla f(x)^{\top} (y-x) \quad \forall x\neq y. 
   $$
 
 - **Lipschitz continuous**:  
@@ -160,7 +160,7 @@ In practice, since the exact error $e_k$ is unknown, we use the relative residua
 Consider the quadratic function
 
 $$
-  f(x) = \frac{1}{2} x^{T}A x - b^{T}x + c, 
+  f(x) = \frac{1}{2} x^{\top}A x - b^{\top}x + c, 
 $$
 
 where $A \in \mathbb{R}^{n\times n}$ is symmetric positive definite. 
@@ -179,7 +179,7 @@ Hence, $f$ is strictly convex.
 Moreover, by the spectral theorem,
 
 $$
-  x^T Ax \ge \lambda_{\min}(A) \|x\|^2 
+  x^{\top} Ax \ge \lambda_{\min}(A) \|x\|^2 
 $$
 
 which implies that $f$ is coercive and 
@@ -244,7 +244,7 @@ However, sadly, if $\alpha \ge \frac{2}{\lambda_{\max}}$, then it might not conv
 
 ### b. Exact line search (adaptive $\alpha_k$)  
 
-Before diving into calculation, define $\| v \|^{2}_{A} = v^T A v \ \ \forall v\in \mathbb{R}^n$ (easily can check that is is a norm, **energy norm**).
+Before diving into calculation, define $\| v \|^{2}_{A} = v^{\top} A v \ \ \forall v\in \mathbb{R}^n$ (easily can check that is is a norm, **energy norm**).
 
 Our goal : 
 
@@ -252,15 +252,15 @@ $$
     \| e_{k+1} \|_A  \le \ ? \ \| e_{k} \|_A  
 $$
 
-with $\alpha_k = \frac{1}{Ray(A)} = \frac{r^T_k r_k}{r_k^T A r_k} $
+with $\alpha_k = \frac{1}{Ray(A)} = \frac{r^{\top}_k r_k}{r_k^{\top} A r_k} $
 
-Since we set $\alpha_k$ = $\frac{1}{Ray(A)} = \frac{r_{k}^T r_{k}}{r_{k}^T A r_k}$, which is the optimum minimizer of $\phi(\tau) = f(x_k + \alpha r_k)$.    
+Since we set $\alpha_k$ = $\frac{1}{Ray(A)} = \frac{r_{k}^{\top} r_{k}}{r_{k}^{\top} A r_k}$, which is the optimum minimizer of $\phi(\tau) = f(x_k + \alpha r_k)$.    
 
  
 when $A$ is SPD, Rayleigh quotient of A is in $\left[\lambda_{\min},\lambda_{\max}\right]$. Return to the definition of Rayleigh quotient of $A$ with SPD.  
 
 $$
-     Ray(A) = \frac{x^T A x}{x^T x} = \frac{\sum_{i=1}^{n} \lambda_i \| x_i\|^2}{\sum_{i=1}^{n} \| x_i \|^2 }
+     Ray(A) = \frac{x^{\top} A x}{x^{\top} x} = \frac{\sum_{i=1}^{n} \lambda_i \| x_i\|^2}{\sum_{i=1}^{n} \| x_i \|^2 }
 $$
 
 in terms of linear combination of eigenvalues(see **Support**), 
@@ -270,33 +270,37 @@ $$
 $$
 
 
-$\lVert e_{k+1} \rVert^2_A $ $= e_{k+1}^T A e_{k+1} = $ ${(e_k + \alpha_{k} r_{k})}^T A (e_k + \alpha_{k} r_k) = (e_k^T + \alpha_{k} r_k^T) A (e_k + \alpha_{k} r_k)$
+$\lVert e_{k+1}\rVert_{A}^2
+= e_{k+1}^\top A e_{k+1}
+= (e_k+\alpha_k r_k)^\top A (e_k+\alpha_k r_k)
+= (e_k^\top+\alpha_k r_k^\top)(A e_k+\alpha_k A r_k)
+= e_k^\top A e_k+\alpha_k r_k^\top A e_k+\alpha_k e_k^\top A r_k+\alpha_k^2 r_k^\top A r_k$
 
-$= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_{k} A r_k) $ $= e_k^T A e_k + \alpha_k r^{T}_{k} A e_{k} + \alpha_k e^{T}_{k} A r_k + \alpha^2_{k} r^{T}_k A {r}_k $  
 
-$= \| e_k\|^2_A + 2 \alpha_k r^T_k A e_k + \alpha^2_k r^T_k Ar_k $
+$= \| e_k\|^2_A + 2 \alpha_k r^{\top}_k A e_k + \alpha^2_k r^{\top}_k Ar_k $
 
 use $r_k = -Ae_k$,  
 
-$\lVert e_{k+1} \rVert^2_A = $ $\lVert e_k \rVert^2_{A} - 2 \frac{r^T_k r_k}{r^T_k A r_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k A r_k)^2} (r^T_k A r_k)$
+$\lVert e_{k+1}\rVert_A^2=\lVert e_k\rVert_A^2-2\,\frac{r_k^\top r_k}{r_k^\top A r_k}\,(r_k^\top r_k)+\frac{(r_k^\top r_k)^2}{(r_k^\top A r_k)^2}\,(r_k^\top A r_k)$
 
-$\iff  \frac{\| e_{k+1}\|^2_A}{\|e_k\|^2_A}= 1 - \frac{(r^T_kr_k)^2}{r^T_k Ar_k} \frac{1}{\| e_k \|^2_A} \quad \quad (2)$
+$\iff  \frac{\| e_{k+1}\|^2_A}{\|e_k\|^2_A}= 1 - \frac{(r^{\top}_kr_k)^2}{r^{\top}_k Ar_k} \frac{1}{\| e_k \|^2_A} \quad \quad (2)$
 
-Let $y = Q^T e_k$ where $Q$ is from $A = Q\Lambda Q^T$. 
+Let $y = Q^{\top} e_k$ where $Q$ is from $A = Q\Lambda Q^{\top}$. 
 
 and  $p_i := \frac{y_i^2}{\sum_j y_j^2} \quad  \text{with} \ \  p_i \ge 0, \ \sum_i p_i = 1$,
 
 and $\beta = \sum_{i}  y_i^2$, $\beta p_i = y_{i}^2$, $i.e.$  
 
-$M_1 = r_k^T r_k = (-Ae_k)^T (-Ae_k) = e^T_k A^TAe_k = e^T_k A^2 e_k = e_k^TQ\Lambda^2 Q^Te_k = y^T_k \Lambda^2 y_k$  
+$M_1 = r_k^{\top} r_k = (-Ae_k)^{\top} (-Ae_k) = e^{\top}_k A^{\top}Ae_k = e^{\top}_k A^2 e_k = e_k^{\top}Q\Lambda^2 Q^{\top}e_k = y^{\top}_k \Lambda^2 y_k$  
 
 $= \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
 
-$M_1^2 = (r_k^T r_k)^2 = (e^T_k A^2 e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_k \Lambda^2 y_k)^2 = \beta^2 \left(\sum_{i} \lambda_{i}^2 p_i \right)^2$
+$M_1^2 = (r_k^{\top} r_k)^2 = (e^T_k A^2 e_k)^2 = (e^{\top}_k Q\Lambda^2 Q^{\top}e_k)^2 = (y^{\top}_k \Lambda^2 y_k)^2 = \beta^2 \left(\sum_{i} \lambda_{i}^2 p_i \right)^2$
 
-$M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
+$M_2 = r^{\top}_k A r_k = (-Ae_k)^{\top} A (-Ae_k) = e^{\top}_k A^3 e_k = e^{\top}_k Q \Lambda^3 Q^{\top} e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
 
-$M_3 = $ $\lVert e_{k} \rVert^2_{A} = $ ${e}^{T}_{k} A e_{k} = e^{T}_{k} Q \Lambda {Q^{T}} e_{k} = {y_k}^{T} \Lambda y_{k} = \sum_{i} \lambda_i y_{i}^2 = \beta \sum_{i} \lambda_i p_{i}$
+$M_3=\lVert e_k\rVert_A^2=e_k^\top A e_k=e_k^\top Q\Lambda Q^\top e_k=y_k^\top\Lambda y_k=\sum_i\lambda_i y_{k,i}^2=\beta\sum_i\lambda_i p_i$
+
 
 
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
