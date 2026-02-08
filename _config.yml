@@ -3,7 +3,9 @@
 # Import the theme
 # markdown : kramdown 
 # theme : chirpy
-theme: jekyll-theme-chirpy
+# theme: jekyll-theme-chirpy
+
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -181,6 +183,7 @@ collections:
     sort_by: order
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-seo-tag
   # - jekyll-feed
