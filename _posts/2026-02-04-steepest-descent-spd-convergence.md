@@ -445,8 +445,8 @@ end
  
 - ill-condition : As we said in the section "speed of convergence", due to its condition number, its convergence speed is very slow. when $\kappa$ is high, (e.g., 5000), the error reduction per iteration is $1-\frac{\kappa-1}{\kappa+1} = \frac{2}{\kappa+1} \approx 0$ for $\kappa \gg 1$. This implies that the number of iterations required for convergence $O(\kappa)$, leading to a slow linear convergence rate, rather than $O(\sqrt{\kappa})$.
 
-- the time complexity of **SD** is $O(n^2 * | loop| ) = O(n^2 \frac{\log(1/\varepsilon)}{\log{(d)}}) = O(\kappa n^2 \log(1/\varepsilon)) \\ 
- \text{where} \ d = \frac{\kappa+1}{\kappa-1}, \log(\frac{\kappa+1}{\kappa-1})= \log(1+\frac{2}{\kappa-1})\approx \frac{2}{\kappa}$.
+- the time complexity of **SD** is $O(n^2 * | loop| ) = O(n^2 \frac{\log(1/\varepsilon)}{\log{(d)}}) = O(\kappa n^2 \log(1/\varepsilon))$   
+ $\text{where} \ d = \frac{\kappa+1}{\kappa-1}, \log(\frac{\kappa+1}{\kappa-1})= \log(1+\frac{2}{\kappa-1})\approx \frac{2}{\kappa}$.
 
 - Zig-zag : 
 We have discussed about this problem in terms of numerical words. I want to say this in terms of linear algebraic point of view, so-called "zig-zag". People normally focus on this expression: 
