@@ -229,7 +229,7 @@ $$
     \|e_{k+1} \| = \| I - \alpha A \|  \| e_k\| \le \max\limits_{i} |1-\alpha \lambda_i| \ \|e_k\| 
 $$
 
-Therefore, to check whether it is convergent or not, we need to verify $\max\limits_{i} |1-\alpha \lambda_i|<1$. 
+Therefore, to check whether it is convergent or not, we need to verify $\max_{i} |1-\alpha \lambda_i|<1$.
 
 $$
   \begin{aligned}
