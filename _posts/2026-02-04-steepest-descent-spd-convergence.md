@@ -296,7 +296,7 @@ $M_1^2 = (r_k^T r_k)^2 = (e^T_k A^2 e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_
 
 $M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
 
-$M_3 = {\lVert e_{k} \rVert}^2_{A} = {e}^{T}_{k} A e_{k} = e^{T}_{k} Q \Lambda {Q^{T}} e_{k} = {y_k}^{T} \Lambda y_{k} = \sum_{i} \lambda_i y_{i}^2 = \beta \sum_{i} \lambda_i p_{i}$
+$M_3 = $ $\lVert e_{k} \rVert^2_{A} = $ ${e}^{T}_{k} A e_{k} = e^{T}_{k} Q \Lambda {Q^{T}} e_{k} = {y_k}^{T} \Lambda y_{k} = \sum_{i} \lambda_i y_{i}^2 = \beta \sum_{i} \lambda_i p_{i}$
 
 
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
