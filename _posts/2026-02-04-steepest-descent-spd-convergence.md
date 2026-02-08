@@ -199,11 +199,11 @@ Since $A$ is invertible, $x^{\star}=A^{-1}b$. (uniqueness)
 ### converge
 
 ### a. Constant step size with $0<\alpha<\frac{2}{\lambda_{\max}}$
-Let  $f = \frac{1}{2} x^TAx -b^Tx + c $ where x is a column vector, size n. 
+Let  $f = \frac{1}{2} x^TAx -b^Tx + c $, a quadratic form of A, where x is a column vector, size n. 
 
 and let $\alpha$ be a fixed step size with $0<\alpha< \frac{2}{\lambda_{\max}} $
 
-$\nabla f = Ax-b $ ( $\because$ $A$ SPD)
+$\nabla f = Ax-b $ ( $\because$ $A$ SPD, $f$ is differentiable)
 
 $x_k = x_k - \alpha \nabla f(x_k)$ 
 
@@ -304,10 +304,10 @@ $M_3 = \Vert e_k \Vert^2_A = e^T_k A e_k = e^T_k Q \Lambda Q^T e_k = y_k^T \Lamb
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
 
 $$
-  \frac{\| e_{k+1} \|_A} {\| e_{k} \|_A} = 1 - \frac{M^2_{1}}{M_2 M_3} $$
+  \frac{\| e_{k+1} \|_A} {\| e_{k} \|_A} = 1 - \frac{M^2_{1}}{M_2 M_3} 
+$$
 
-
-Let $a_i := \sqrt{\lambda_i} |y_i|, \quad b_i := \lambda_i^{\frac{3}{2}} |y_i|$
+Let $a_i := \sqrt{\lambda_i} \lvert y_i \rvert, \quad b_i := \lambda_i^{\frac{3}{2}} \lvert y_i \rvert$
 
 Therefore, $\frac{b_i}{a_i} = \lambda_i \in [m=\lambda_{\min}, M=\lambda_{\max}]$  
 
