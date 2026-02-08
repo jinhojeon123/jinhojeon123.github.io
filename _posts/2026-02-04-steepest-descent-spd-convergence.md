@@ -272,13 +272,13 @@ $$
 
 $\lVert e_{k+1} \rVert^2_A $ $= e_{k+1}^T A e_{k+1} = $ ${(e_k + \alpha_{k} r_{k})}^T A (e_k + \alpha_{k} r_k) = (e_k^T + \alpha_{k} r_k^T) A (e_k + \alpha_{k} r_k)$
 
-$= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_{k} A r_k) = e_k^T A e_k + \alpha_k r^{T}_{k} A e_{k} + \alpha_k e^{T}_{k} A r_k + \alpha^2_{k} r^{T}_k A {r}_k $  
+$= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_{k} A r_k) $ $= e_k^T A e_k + \alpha_k r^{T}_{k} A e_{k} + \alpha_k e^{T}_{k} A r_k + \alpha^2_{k} r^{T}_k A {r}_k $  
 
 $= \| e_k\|^2_A + 2 \alpha_k r^T_k A e_k + \alpha^2_k r^T_k Ar_k $
 
 use $r_k = -Ae_k$,  
 
-$\lVert e_{k+1} \rVert^2_A = \Vert e_k \Vert^2_{A} - 2 \frac{r^T_k r_k}{r^T_k A r_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k A r_k)^2} (r^T_k A r_k)$
+$\lVert e_{k+1} \rVert^2_A = $ $\lVert e_k \rVert^2_{A} - 2 \frac{r^T_k r_k}{r^T_k A r_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k A r_k)^2} (r^T_k A r_k)$
 
 $\iff  \frac{\| e_{k+1}\|^2_A}{\|e_k\|^2_A}= 1 - \frac{(r^T_kr_k)^2}{r^T_k Ar_k} \frac{1}{\| e_k \|^2_A} \quad \quad (2)$
 
