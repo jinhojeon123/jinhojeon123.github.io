@@ -277,15 +277,15 @@ $$
 $$
 
 
-$ \| e_{k+1}\|^{2}_{A} =  e^{T}_{k+1} A e_{k+1} = (e_k + \alpha_k r_k)^{T} A (e_k + \alpha_k r_k) = (e^{T}_k + \alpha_k r^{T}_k) A(e_k + \alpha_k r_k) $   
+$\| e_{k+1}\|^{2}_{A} =  e^{T}_{k+1} A e_{k+1} = (e_k + \alpha_k r_k)^{T} A (e_k + \alpha_k r_k) = (e^{T}_k + \alpha_k r^{T}_k) A(e_k + \alpha_k r_k) $   
 
 $= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_k A r_k) = e_k^T A e_k + \alpha_k r_k^T A e_k + \alpha_k e_k^T A r_k + \alpha^2_k r^T_k Ar_k $  
 
-$ = \| e_k\|^2_A + 2 \alpha_k r^T_k A e_k + \alpha^2_k r^T_k Ar_k $
+$= \| e_k\|^2_A + 2 \alpha_k r^T_k A e_k + \alpha^2_k r^T_k Ar_k $
 
 use $r_k = -Ae_k$,  
 
-$ \|e_{k+1}\|^2_A= \| e_k \|^2_{A} - 2 \frac{r^T_k r_k}{r^T_k Ar_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k Ar_k)^2} {r^T_k A r_k}$  
+$\|e_{k+1}\|^2_A= \| e_k \|^2_{A} - 2 \frac{r^T_k r_k}{r^T_k Ar_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k Ar_k)^2} {r^T_k A r_k}$  
 
 $\iff  \frac{\| e_{k+1}\|^2_A}{\|e_k\|^2_A}= 1 - \frac{(r^T_kr_k)^2}{r^T_k Ar_k} \frac{1}{\| e_k \|^2_A} \quad \quad (2)$
 
@@ -295,9 +295,9 @@ and  $p_i:= \frac{y^2_i}{\sum\nolimits_{j}{y^2_j}} \ \text{with} \ p_i \ge 0, \s
 
 and $\beta = \sum_{i}  y_i^2$, $\beta p_i = y_{i}^2$, $i.e.$  
 
-$ M_1 = r_k^T r_k = (-Ae_k)^T (-Ae_k) = e^T_k A^TAe_k = e^T_k A^2 e_k = e_k^TQ\Lambda^2 Q^Te_k = y^T_k \Lambda^2 y_k $  
+$M_1 = r_k^T r_k = (-Ae_k)^T (-Ae_k) = e^T_k A^TAe_k = e^T_k A^2 e_k = e_k^TQ\Lambda^2 Q^Te_k = y^T_k \Lambda^2 y_k $  
 
-$ = \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
+$= \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
 
 $M^2_1 = (r_k^T r_k)^2 =  (e^T_kA A e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_k \Lambda^2 y_k)^2 = \beta^2 (\sum_{i} \lambda_{i}^2 p_i )^2$
 
@@ -312,9 +312,9 @@ $$
   \frac{\| e_{k+1} \|_A} {\| e_{k} \|_A} = 1 - \frac{M^2_{1}}{M_2 M_3} $$
 
 
-Let $a_i := \sqrt{\lambda_i} |y_i|, \quad$ $b_i:= \lambda_i^{\frac{3}{2}} |y_i|$   
+Let $a_i := \sqrt{\lambda_i} |y_i|, \quad$ $b_i:= \lambda_i^{\frac{3}{2}} |y_i$   
 
-Therefore, $\frac{b_i}{a_i} = \lambda_i \in [m=\lambda_{\min}, M=\lambda_{\max}] $  
+Therefore, $\frac{b_i}{a_i} = \lambda_i \in [m=\lambda_{\min}, M=\lambda_{\max}]$  
 
 $(Ma_i -b_i)(b_i - ma_i) \ge 0 \quad (\because M-\lambda_i\ge 0 \ \text{and} \ \lambda_i -m \ge 0)$  
 
