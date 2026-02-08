@@ -492,10 +492,11 @@ Therefore, the main challenge is to increase the convergence rate from $\frac{\k
 
 ## 6. Reference 
 
-1. J. Nocedal and S. J. Wright,
-Numerical Optimization,
-2nd ed., Springer, 2006. 
+- J. Nocedal and S. J. Wright, *Numerical Optimization*, 2nd ed., Springer, 2006.  
+  https://link.springer.com/book/10.1007/978-0-387-40065-5
 
-2. https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf
+- “Painless Conjugate Gradient,” CMU:  
+  https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf
 
-3. https://optimization.cbe.cornell.edu/index.php?title=Line_search_methods
+- Line Search Methods — Cornell Optimization Wiki:  
+  https://optimization.cbe.cornell.edu/index.php?title=Line_search_methods
