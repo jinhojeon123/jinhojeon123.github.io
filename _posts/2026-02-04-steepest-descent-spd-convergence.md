@@ -468,7 +468,7 @@ $$
           y_{k+1} = (I-\alpha_k \Lambda) y_k \iff y_{k+1,i} = (1 - \alpha_k \lambda_i) y_{k,i} \ \forall i \ \text{where} \ {\frac{1}{\lambda_{\max}}\le\alpha_k \le \frac{1}{\lambda_{\min}}}, \  (6) 
   $$
 
-  From (5), (6), we have through SD, while performing zig-zag, it will reduce its largest eigenvalue part of r_k until satisfying the stopping criteria. 
+  From (5), (6), we have through **SD**, while performing zig-zag, it will reduce its largest eigenvalue part of $r_k$ until satisfying the stopping criteria. 
 
 Therefore, the main challenge is to increase the convergence rate from $\frac{\kappa-1}{\kappa+1}$ to $\frac{\sqrt{\kappa}-1}{\sqrt{\kappa}+1}$, thereby reducing the depedency on condition number.
 
