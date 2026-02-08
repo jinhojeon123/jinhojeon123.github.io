@@ -270,7 +270,7 @@ $$
 $$
 
 
-$\lVert e_{k+1} \rVert^2_A = e_{k+1}^T A e_{k+1} = {(e_k + \alpha_{k} r_{k})}^T A (e_k + \alpha_{k} r_k) = (e_k^T + \alpha_{k} r_k^T) A (e_k + \alpha_{k} r_k)$
+$\lVert e_{k+1} \rVert^2_A $ $= e_{k+1}^T A e_{k+1} = $ ${(e_k + \alpha_{k} r_{k})}^T A (e_k + \alpha_{k} r_k) = (e_k^T + \alpha_{k} r_k^T) A (e_k + \alpha_{k} r_k)$
 
 $= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_{k} A r_k) = e_k^T A e_k + \alpha_k r^{T}_{k} A e_{k} + \alpha_k e^{T}_{k} A r_k + \alpha^2_{k} r^{T}_k A {r}_k $  
 
