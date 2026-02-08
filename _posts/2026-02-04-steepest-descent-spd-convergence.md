@@ -30,7 +30,7 @@ math: true
   def : We say that $A$ is **SPD**(symmetric, positive-definite) if $A$ is symmetric, and positive definite.  
 
 - **normal matrix**:  
-  def : A complex square matrix $A$ is **normal** if $A^* A = A A^*$. If $A$ is a **real-matrix**, then $A^* = A^T$. The operation $*$ denotes **conjugate and transpose** in $\mathbb{C}^{n \times n}$.  
+  def : A complex square matrix $A$ is **normal** if $A^{\star} A = A A^{\star}$. If $A$ is a **real-matrix**, then $A^{\star} = A^T$. The operation $\star$ denotes **conjugate and transpose** in $\mathbb{C}^{n \times n}$.  
 
 - **Spectral Theorem** : Let $𝐴$ be a normal operator on a finite-dimensional inner product space $𝑉$. Then there exists an orthonormal basis of $𝑉$ consisting of eigenvectors of $𝐴$.  
 
@@ -270,7 +270,7 @@ $$
 $$
 
 
-$\| e_{k+1}\|^{2}_{A} =  e^{T}_{k+1} A e_{k+1} = (e_k + \alpha_k r_k)^{T} A (e_k + \alpha_k r_k) = (e^{T}_k + \alpha_k r^{T}_k) A(e_k + \alpha_k r_k) $   
+$\Vert e_{k+1} \Vert^2_A = e_{k+1}^T A e_{k+1} = (e_k + \alpha_k r_k)^T A (e_k + \alpha_k r_k) = (e_k^T + \alpha_k r_k^T) A (e_k + \alpha_k r_k)$
 
 $= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_k A r_k) = e_k^T A e_k + \alpha_k r_k^T A e_k + \alpha_k e_k^T A r_k + \alpha^2_k r^T_k Ar_k $  
 
@@ -296,7 +296,7 @@ $M_1^2 = (r_k^T r_k)^2 = (e^T_k A^2 e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_
 
 $M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
 
-$M_3 = \Vert e_k \Vert^2_A = e^T_k A e_k = e^T_k Q \Lambda Q^T e_k = y_k^T \Lambda y_k = \sum_{i} \lambda_i y_i^2 = \beta \sum_{i} \lambda_i p_i$
+$M_3 = {\Vert e_{k} \Vert}^2_{A} = {e}^{T}_{k} A e_{k} = e^{T}_{k} Q \Lambda {Q^{T}} e_{k} = {y_k}^{T} \Lambda y_{k} = \sum_{i} \lambda_i y_{i}^2 = \beta \sum_{i} \lambda_i p_{i}$
 
 
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
