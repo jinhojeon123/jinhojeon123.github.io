@@ -229,7 +229,7 @@ $$
     \|e_{k+1} \| = \| I - \alpha A \|  \| e_k\| \le \max\limits_{i} |1-\alpha \lambda_i| \ \|e_k\| 
 $$
 
-Therefore, to check whether it is convergent or not, we need to verify $\max_{i} |1-\alpha \lambda_i|<1$.
+Therefore, to check whether it is convergent or not, we need to verify $\max_{i} \lvert 1-\alpha \lambda_i \rvert < 1$.
 
 $$
   \begin{aligned}
@@ -285,25 +285,25 @@ $= \| e_k\|^2_A + 2 \alpha_k r^T_k A e_k + \alpha^2_k r^T_k Ar_k $
 
 use $r_k = -Ae_k$,  
 
-$\|e_{k+1}\|^2_A= \| e_k \|^2_{A} - 2 \frac{r^T_k r_k}{r^T_k Ar_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k Ar_k)^2} {r^T_k A r_k}$  
+$\Vert e_{k+1} \Vert^2_A = \Vert e_k \Vert^2_{A} - 2 \frac{r^T_k r_k}{r^T_k A r_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k A r_k)^2} (r^T_k A r_k)$
 
 $\iff  \frac{\| e_{k+1}\|^2_A}{\|e_k\|^2_A}= 1 - \frac{(r^T_kr_k)^2}{r^T_k Ar_k} \frac{1}{\| e_k \|^2_A} \quad \quad (2)$
 
 Let $y = Q^T e_k$ where $Q$ is from $A = Q\Lambda Q^T$. 
 
-and  $p_i:= \frac{y^2_i}{\sum\nolimits_{j}{y^2_j}} \ \text{with} \ p_i \ge 0, \sum_{i} p_i = 1$,
+and  $p_i := \frac{y_i^2}{\sum_j y_j^2} \quad  \text{with} \ \  p_i \ge 0, \ \sum_i p_i = 1$,
 
 and $\beta = \sum_{i}  y_i^2$, $\beta p_i = y_{i}^2$, $i.e.$  
 
-$M_1 = r_k^T r_k = (-Ae_k)^T (-Ae_k) = e^T_k A^TAe_k = e^T_k A^2 e_k = e_k^TQ\Lambda^2 Q^Te_k = y^T_k \Lambda^2 y_k $  
+$M_1 = r_k^T r_k = (-Ae_k)^T (-Ae_k) = e^T_k A^TAe_k = e^T_k A^2 e_k = e_k^TQ\Lambda^2 Q^Te_k = y^T_k \Lambda^2 y_k$  
 
 $= \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
 
-$M^2_1 = (r_k^T r_k)^2 =  (e^T_kA A e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_k \Lambda^2 y_k)^2 = \beta^2 (\sum_{i} \lambda_{i}^2 p_i )^2$
+$M_1^2 = (r_k^T r_k)^2 = (e^T_k A^2 e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_k \Lambda^2 y_k)^2 = \beta^2 \left(\sum_{i} \lambda_{i}^2 p_i \right)^2$
 
 $M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
 
-$M_3 = \| e_k \|^2_A = e^T_k A e_k = e^T_k Q \Lambda Q^T e_k  = y_k^T \Lambda y_k = \sum_{i} \lambda_i y_i^2 = \beta \sum_{i} \lambda_i p_i $  
+$M_3 = \Vert e_k \Vert^2_A = e^T_k A e_k = e^T_k Q \Lambda Q^T e_k = y_k^T \Lambda y_k = \sum_{i} \lambda_i y_i^2 = \beta \sum_{i} \lambda_i p_i$
 
 
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
@@ -312,7 +312,7 @@ $$
   \frac{\| e_{k+1} \|_A} {\| e_{k} \|_A} = 1 - \frac{M^2_{1}}{M_2 M_3} $$
 
 
-Let $a_i := \sqrt{\lambda_i} |y_i|, \quad$ $b_i:= \lambda_i^{\frac{3}{2}} |y_i$   
+Let $a_i := \sqrt{\lambda_i} |y_i|, \quad b_i := \lambda_i^{\frac{3}{2}} |y_i|$
 
 Therefore, $\frac{b_i}{a_i} = \lambda_i \in [m=\lambda_{\min}, M=\lambda_{\max}]$  
 
