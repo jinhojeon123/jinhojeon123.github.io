@@ -234,7 +234,7 @@ Therefore, to check whether it is convergent or not, we need to verify $\max\lim
 $$
   \begin{aligned}
   &|1-\alpha \lambda_i | < 1, \ \quad \quad \quad \ \quad \ \ \  \forall i  \\
-  &\iff |1- \alpha \lambda_{i} |< 1, \ \quad \ \ \ \ \forall i \\ % 여기 작성 중 
+  &\iff |1- \alpha \lambda_{i} |< 1, \ \quad \ \ \ \ \forall i \\ 
   &\iff -1<1-\alpha \lambda_i <1, \ \forall i \\  
   &\iff 0< \alpha < \frac{2}{\lambda_{i}}, \quad \ \ \ \ \ \ \ \ \forall i \\  
   &\iff 0< \alpha < \frac{2}{\lambda_{\max}} \quad \quad (1)  
