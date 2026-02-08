@@ -30,7 +30,7 @@ math: true
   def : We say that $A$ is **SPD**(symmetric, positive-definite) if $A$ is symmetric, and positive definite.  
 
 - **normal matrix**:  
-  def : a complex square matrix A is normal if ${A^*}A = A{A^*}$. If $A$ is a real-matrix, then $A^*$ = $A^T$. the operation $*$ denotes "conjugate and transpose" in $\mathbb{C}^{n \times n}$.    
+  def : A complex square matrix $A$ is **normal** if $A^* A = A A^*$. If $A$ is a **real-matrix**, then $A^* = A^T$. The operation $*$ denotes **conjugate and transpose** in $\mathbb{C}^{n \times n}$.  
 
 - **Spectral Theorem** : Let $𝐴$ be a normal operator on a finite-dimensional inner product space $𝑉$. Then there exists an orthonormal basis of $𝑉$ consisting of eigenvectors of $𝐴$.  
 
