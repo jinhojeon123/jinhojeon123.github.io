@@ -211,9 +211,9 @@ $$x_{k+1} = x_k - \alpha \nabla f(x_k)$$
 Let $r_k = -\nabla f(x_k) = b - Ax_k$ be the residual vector. Then:
 $$x_{k+1} = x_k + \alpha r_k$$
 
-To analyze convergence, we define the error vector $e_k = x_k - x^*$. Subtracting $x^*$ from both sides:
-$$x_{k+1} - x^* = x_k - x^* + \alpha r_k$$
-$$e_{k+1} = e_k + \alpha (Ax^* - Ax_k) \quad (\because Ax^* = b)$$
+To analyze convergence, we define the error vector $e_{k} = x_{k} - x^{\star}$. Subtracting $x^{\star}$ from both sides:
+$$x_{k+1} - x^{\star}= x_k - x^{\star} + \alpha r_k$$
+$$e_{k+1} = e_k + \alpha (Ax^{\star}- Ax_k) \quad (\because Ax^{\star}= b)$$
 $$e_{k+1} = e_k - \alpha A e_k = (I - \alpha A) e_k$$
 
 Since $I = QQ^{T} $, and $A = Q \Lambda Q^T$, 
@@ -357,9 +357,9 @@ $$
 \begin{aligned}
 \| e_{k+1}\|_A 
 &\le \frac{\kappa-1}{\kappa+1} \| e_k \|_A \\
-&\le \left(\frac{\kappa-1}{\kappa+1}\right)^2 \| e_{k-1}\|_A \\
+&\le \left(\frac{\kappa-1}{\kappa+1}\right)^2 \| e_{k-1}\|_{A} \\
 &\le \cdots \\
-&\le \left(\frac{\kappa-1}{\kappa+1}\right)^{k} \| e_1\|_A .
+&\le \left(\frac{\kappa-1}{\kappa+1}\right)^{k} \| e_1\|_{A} .
 \end{aligned}
 $$
 
