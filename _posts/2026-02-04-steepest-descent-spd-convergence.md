@@ -81,7 +81,7 @@ Intuitively, from $x_k$, move $\alpha_k$ units along $r_k$.
   - In exact line search, calculate the exact $\alpha$ with respect to current residual vector and $x_k$. 
   - But In inexact line search problem, we don't need to calculate exhaustive solution of the arg-min optmization problem. 
 
-  - why $\argmin$? Because we want to find out the minimum optimizer of the next step. 
+  - why $\arg\min$? Because we want to find out the minimum optimizer of the next step. 
   <!-- 왜 argmin -->
 <!-- - m-strongly convex:  
     def : Let $m>0$. we say that $f$ is $\text{\it{m-strongly convex}}$ if   
