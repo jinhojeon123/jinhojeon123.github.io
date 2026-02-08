@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /sitemap.xml
 
-Sitemap: https://jihonjeon.github.io/sitemap.xml
+Sitemap: https://jinhojeon123.github.io/sitemap.xml
