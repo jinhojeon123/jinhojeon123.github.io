@@ -198,7 +198,7 @@ Since $A$ is invertible, $x^{\star}=A^{-1}b$. (uniqueness)
 
 ### Converge
 
-Let  $f = \frac{1}{2} x^TAx -b^Tx + c $, a quadratic form of A, where x is a column vector, size n. 
+Let  $f = \frac{1}{2} x^TAx -b^Tx + c $, a quadratic form of A, where $x$ is a column vector, size n. 
 
 ### a. Constant step size with $0<\alpha<\frac{2}{\lambda_{\max}}$
 
@@ -338,7 +338,7 @@ $$
   &\\
   &\iff \frac{M_1^2}{M_2 M_3 } = \frac{(\sum_{i} \lambda_i^2 y_i^2)^2}{(\sum_{i} \lambda^3 y_i^2) (\sum_{i} \lambda y_i^2 )} \ge \frac{4mM}{(m+M)^2}
   \end{aligned}
-$$
+$$  
 
 Hence, 
 
