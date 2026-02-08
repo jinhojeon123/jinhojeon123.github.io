@@ -292,23 +292,25 @@ Let $y = Q^{\top} e_k$ where $Q$ is from $A = Q\Lambda Q^{\top}$.
 
 and  $p_i := \frac{y_i^2}{\sum_j y_j^2} \quad  \text{with} \ \  p_i \ge 0, \ \sum_i p_i = 1$,
 
-and $\beta = \sum_{i}  y_i^2$, $\beta p_i = y_{i}^2$, $i.e.$  
+and $\beta = \sum_{i}  y_i^2$, $\beta p_i = y_{i}^2 \ \ \forall i$. 
 
-$M_1 = r_k^{\top} r_k = (-Ae_k)^{\top} (-Ae_k) = e^{\top}_k A^{\top}Ae_k = e^{\top}_k A^2 e_k = e_k^{\top}Q\Lambda^2 Q^{\top}e_k = y^{\top}_k \Lambda^2 y_k$  
+We define $M_1$, $M_2$, and $M_3$ as follows:
+
+$M_1 = r_k^{\top} r_k = (-Ae_k)^{\top} (-Ae_k) = e^{\top}_k A^{\top}Ae_k $  
+
+$= e^{\top}_k A^2 e_k = e_k^{\top}Q\Lambda^2 Q^{\top}e_k = y^{\top}_k \Lambda^2 y_k$  
 
 $= \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
  
 
-$M_1^2=(r_k^\top r_k)^2=(e_k^\top A^2 e_k)^2=(e_k^\top Q\Lambda^2 Q^\top e_k)^2=(y_k^\top\Lambda^2 y_k)^2=\beta^2\left(\sum_i \lambda_i^2 p_i\right)^2$
+Thus, $M_1^2=(r_k^\top r_k)^2=(y_k^\top\Lambda^2 y_k)^2=\beta^2\left(\sum_i \lambda_i^2 p_i\right)^2$
 
 
-$M_2=r_k^\top A r_k =(-Ae_k)^\top A(-Ae_k) =e_k^\top A^3 e_k =e_k^\top Q\Lambda^3 Q^\top e_k =\sum_i \lambda_i^3 y_{k,i}^2$  
+$M_2=r_k^\top A r_k =(-Ae_k)^\top A(-Ae_k) =e_k^\top A^3 e_k $  
+
+$=e_k^\top Q\Lambda^3 Q^\top e_k =\sum_i \lambda_i^3 y_{k,i}^2 =\beta\sum_i \lambda_i^3 p_i$   
 
 
-$=\beta\sum_i \lambda_i^3 p_i$  
-
-
-  
 
 $M_3=\lVert e_k\rVert_A^2=e_k^\top A e_k=e_k^\top Q\Lambda Q^\top e_k=y_k^\top\Lambda   y_k=\sum_i\lambda_i y_{k,i}^2=\beta\sum_i\lambda_i p_i$
 
