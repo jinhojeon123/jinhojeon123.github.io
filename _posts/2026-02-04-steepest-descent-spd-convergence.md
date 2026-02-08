@@ -14,7 +14,7 @@ math: true
   Def : An eigenvalue $\lambda$ of $A$ is a scalar satisfying 
 
  $$ 
-    Ax = \lambda x, \ \text{with} \ x\not=0 
+\quad \quad    Ax = \lambda x, \ \text{with} \ x\not=0 
  $$ 
  where $\lambda$ is a solution of $det(\lambda I - A)=0$.
 
@@ -28,13 +28,14 @@ math: true
   def : We say that A is SPD(symmetric, positive-definite) if A is symmetric, and positive definite.  
 
 - normal matrix :  
-  def : a complex square matrix A is normal if $A^*A = AA^*$. If A is a real-matrix, then $A^*$ = $A^T$. the operation * denotes "conjugate and transpose".    
+  def : a complex square matrix A is normal if ${A^*}A = A{A^*}$. If $A$ is a real-matrix, then $A^*$ = $A^T$. the operation $*$ denotes "conjugate and transpose".    
 
 - Spectral Theorem : Let 
 𝐴 be a normal operator on a finite-dimensional inner product space 𝑉.
 Then there exists an orthonormal basis of 𝑉 consisting of eigenvectors of 𝐴.  
 
     i.e. by Spectral theorem, if A is normal matrix, there exists an orthogonal basis $\beta$ of eigenvectors A. by basis change from $\alpha$ to $\beta$, we can define the change of basis matrix 
+
     $$ 
         Q = \begin{pmatrix} q_1, \ q_2, \ q_3, \ \ldots, \ q_n \end{pmatrix}
     $$  
@@ -44,7 +45,8 @@ Then there exists an orthonormal basis of 𝑉 consisting of eigenvectors of �
      A = Q^{-1} \Lambda Q 
     $$ 
 
-    since $Q^T = \begin{pmatrix}
+
+since $Q^T = \begin{pmatrix}
 q_1^T \\
 q_2^T \\
 \vdots \\
@@ -60,6 +62,7 @@ $ maps $x \in V$ to its projection coefficients onto each basis direction,
 
 - Iterative update rule :  
   def : 
+
   $$
     x_{k+1} = x_k  + \alpha_k r_k
   $$
@@ -70,6 +73,7 @@ Intuitively, from $x_k$, move $\alpha_k$ units along $r_k$.
 
 - Line search:  
   To say whether it is a exact or inexact line search, the standard to distinguish is as below:
+
   $$
     \alpha_k^{\star} \in \arg\min_{\alpha>0} f(x_k + \alpha p_k)
   $$
@@ -86,12 +90,14 @@ $$
 $$ -->
 - strictly convex function:  
   def : A differentiable function $f:\mathbb{R}^n \to \mathbb{R} $ is called **strictly convex** if 
+
   $$
     f(y)>f(x) + \nabla f(x)^T (y-x) \quad \forall x\neq y. 
   $$
 
 - Lipschitz continuous :  
 def : $f$ is called $\text{\it{Lipschitz continuous}}$ satisfying as below:  
+
 $$
   \| \nabla f(x) - \nabla f(y) \| \le M \| x-y \|.
 $$
@@ -147,13 +153,15 @@ In practice, since the exact error $e_k$ is unknown, we use the relative residua
 ### existence and uniqueness
 
 Consider the quadratic function
+
 $$
   f(x) = \frac{1}{2} x^{T}A x - b^{T}x + c, 
 $$
 
 where $A \in \mathbb{R}^{n\times n}$ is symmetric positive definite. 
 
-Since $ A \succ 0$, The hessian of $f$ satisfies 
+Since $A \succ 0$, The hessian of $f$ satisfies 
+
 $$
    \nabla^2 f(x) = A \quad \forall x\in \mathbb{R}^{n} 
 $$
@@ -162,18 +170,20 @@ and also, $A$ is invertible. Suppose that $\exists x \in ker(A)$ such that $x$ i
 
 Hence, $f$ is strictly convex.
 
-$
+
 Moreover, by the spectral theorem,
+
 $$
   x^T Ax \ge \lambda_{\min}(A) \|x\|^2 
 $$
 
 which implies that $f$ is coercive and 
+
 $$ 
   f(x) \to \infty \quad \text{as } \|x\| \to  \infty  
 $$
 
-$ % existence $
+
 
 Therefore, by strict convexity and coerciveness, $f$ has its global minimum, $x^{\star}$ such that $\nabla f(x^{\star})$ = 0, $i.e.$, $Ax^{\star} = b$. (Existence)  
 
@@ -234,6 +244,7 @@ However, sadly, if $\alpha \ge \frac{2}{\lambda_{\max}}$, then it might not conv
 Before diving into calculation, define $\| v \|^{2}_{A} = v^T A v \ \ \forall v\in \mathbb{R}^n$ (easily can check that is is a norm, **energy norm**).
 
 Our goal : 
+
 $$
     \| e_{k+1} \|_A  \le \ ? \ \| e_{k} \|_A  
 $$
@@ -278,11 +289,11 @@ $ M_1 = r_k^T r_k = (-Ae_k)^T (-Ae_k) = e^T_k A^TAe_k = e^T_k A^2 e_k = e_k^TQ\L
 
 $ = \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
 
-$ M^2_1 = (r_k^T r_k)^2 =  (e^T_kA A e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_k \Lambda^2 y_k)^2 = \beta^2 (\sum_{i} \lambda_{i}^2 p_i )^2$
+$M^2_1 = (r_k^T r_k)^2 =  (e^T_kA A e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_k \Lambda^2 y_k)^2 = \beta^2 (\sum_{i} \lambda_{i}^2 p_i )^2$
 
-$ M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
+$M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
 
-$ M_3 = \| e_k \|^2_A = e^T_k A e_k = e^T_k Q \Lambda Q^T e_k  = y_k^T \Lambda y_k = \sum_{i} \lambda_i y_i^2 = \beta \sum_{i} \lambda_i p_i $  
+$M_3 = \| e_k \|^2_A = e^T_k A e_k = e^T_k Q \Lambda Q^T e_k  = y_k^T \Lambda y_k = \sum_{i} \lambda_i y_i^2 = \beta \sum_{i} \lambda_i p_i $  
 
 
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
@@ -338,6 +349,7 @@ $$
 $$
 
 Equivalently,
+
 $$
 \begin{aligned}
 \| e_{k+1}\|_A 
@@ -349,10 +361,13 @@ $$
 $$
 
 The number of loops is approximately
+
 $$
 N = \frac{\log(1/\varepsilon)}{\log(d)}, \quad (4)
 $$
+
 where $\varepsilon$ is a prescribed relative tolerance and
+
 $$
 d := \frac{\kappa+1}{\kappa-1} > 1.
 $$
@@ -424,12 +439,7 @@ end
 
 
 ## 5. limitation & next direction
-
-$ 
-  % 한계 명확하게 
-  % condition number => speed of convergence 에서 e_{k+1} <= (k-1)/(k+1) e_k
-  % 를 통해서 매번  
-$
+ 
 - ill-condition : As we said in the section "speed of convergence", due to its condition number, its convergence speed is very slow. when $\kappa$ is high, (e.g., 5000), the error reduction per iteration is $1-\frac{\kappa-1}{\kappa+1} = \frac{2}{\kappa+1} \approx 0$ for $\kappa \gg 1$. This implies that the number of iterations required for convergence $O(\kappa)$, leading to a slow linear convergence rate, rather than $O(\sqrt{\kappa})$.
 
 - the time complexity of SD is $O(n^2 * | loop| ) = O(n^2 \frac{\log(1/\varepsilon)}{\log{(d)}}) = O(\kappa n^2 \log(1/\varepsilon)) \\ 
@@ -437,6 +447,7 @@ $
 
 - Zig-zag : 
 We have discussed about this problem in terms of numerical words. I want to say this in terms of linear algebraic point of view, so-called "zig-zag". People normally focus on this expression: 
+
 $$
    \langle r_k, r_{k+1} \rangle = 0, \ (5)
 $$
