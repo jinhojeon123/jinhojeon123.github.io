@@ -211,10 +211,10 @@ $$x_{k+1} = x_k - \alpha \nabla f(x_k)$$
 Let $r_k = -\nabla f(x_k) = b - Ax_k$ be the residual vector. Then:
 $$x_{k+1} = x_k + \alpha r_k$$
 
-To analyze convergence, we define the error vector $e_{k} = x_{k} - x^{\star}$. Subtracting $x^{\star}$ from both sides:  
-$$x_{k+1} - x^{\star}= x_k - x^{\star} + \alpha r_k$$   
-$$e_{k+1} = e_k + \alpha (Ax^{\star}- Ax_k) \quad (\because Ax^{\star}= b)$$   
-$$e_{k+1} = e_k - \alpha A e_k = (I - \alpha A) e_k$$    
+To analyze convergence, we define the error vector $e_{k} = x_{k} - x^{\star}$. Subtracting $x^{\star}$ from both sides:
+$$x_{k+1} - x^{\star}= x_k - x^{\star} + \alpha r_k$$
+$$e_{k+1} = e_k + \alpha (Ax^{\star}- Ax_k) \quad (\because Ax^{\star}= b)$$
+$$e_{k+1} = e_k - \alpha A e_k = (I - \alpha A) e_k$$
 
 Since $I = QQ^{T} $, and $A = Q \Lambda Q^T$, 
 
@@ -270,15 +270,15 @@ $$
 $$
 
 
-$\Vert e_{k+1} \Vert^2_A = e_{k+1}^T A e_{k+1} = (e_k + \alpha_k r_k)^T A (e_k + \alpha_k r_k) = (e_k^T + \alpha_k r_k^T) A (e_k + \alpha_k r_k)$
+$\lVert e_{k+1} \rVert^2_A = e_{k+1}^T A e_{k+1} = {(e_k + \alpha_{k} r_{k})}^T A (e_k + \alpha_{k} r_k) = (e_k^T + \alpha_{k} r_k^T) A (e_k + \alpha_{k} r_k)$
 
-$= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_k A r_k) = e_k^T A e_k + \alpha_k r_k^T A e_k + \alpha_k e_k^T A r_k + \alpha^2_k r^T_k Ar_k $  
+$= (e^{T}_k + \alpha_k r^{T}_k) (A e_k + \alpha_{k} A r_k) = e_k^T A e_k + \alpha_k r^{T}_{k} A e_{k} + \alpha_k e^{T}_{k} A r_k + \alpha^2_{k} r^{T}_k A {r}_k $  
 
 $= \| e_k\|^2_A + 2 \alpha_k r^T_k A e_k + \alpha^2_k r^T_k Ar_k $
 
 use $r_k = -Ae_k$,  
 
-$\Vert e_{k+1} \Vert^2_A = \Vert e_k \Vert^2_{A} - 2 \frac{r^T_k r_k}{r^T_k A r_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k A r_k)^2} (r^T_k A r_k)$
+$\lVert e_{k+1} \rVert^2_A = \Vert e_k \Vert^2_{A} - 2 \frac{r^T_k r_k}{r^T_k A r_k} (r^T_k r_k) + \frac{(r^T_k r_k)^2}{(r^T_k A r_k)^2} (r^T_k A r_k)$
 
 $\iff  \frac{\| e_{k+1}\|^2_A}{\|e_k\|^2_A}= 1 - \frac{(r^T_kr_k)^2}{r^T_k Ar_k} \frac{1}{\| e_k \|^2_A} \quad \quad (2)$
 
@@ -296,7 +296,7 @@ $M_1^2 = (r_k^T r_k)^2 = (e^T_k A^2 e_k)^2 = (e^T_k Q\Lambda^2 Q^Te_k)^2 = (y^T_
 
 $M_2 = r^T_k A r_k = (-Ae_k)^T A (-Ae_k) = e^T_k A^3 e_k = e^T_k Q \Lambda^3 Q^T e_k  = \sum_{i} \lambda_i^3 y_i^2 = \beta \sum_{i} \lambda_i^3 p_i $ 
 
-$M_3 = {\Vert e_{k} \Vert}^2_{A} = {e}^{T}_{k} A e_{k} = e^{T}_{k} Q \Lambda {Q^{T}} e_{k} = {y_k}^{T} \Lambda y_{k} = \sum_{i} \lambda_i y_{i}^2 = \beta \sum_{i} \lambda_i p_{i}$
+$M_3 = {\lVert e_{k} \rVert}^2_{A} = {e}^{T}_{k} A e_{k} = e^{T}_{k} Q \Lambda {Q^{T}} e_{k} = {y_k}^{T} \Lambda y_{k} = \sum_{i} \lambda_i y_{i}^2 = \beta \sum_{i} \lambda_i p_{i}$
 
 
 Now, apply these $M_1, M_2, M_3$ into $(2)$, Then:
@@ -390,7 +390,12 @@ import math as m
 
 matlab:
 ```matlab
->> [~, i] = steep_descent(A_bad,[1:1:1000]');
+
+>> n = 1000;
+>> [Q, ~] = qr(randn(n)); % QR
+>> D = sparse(1:n, 1:n, linspace(1, 1800, n)); % to break Guassian-distribution
+>> A_bad = Q*D*Q';                             % SPD 
+>> [~, i] = steep_descent_eA2(A_bad,[1:1:1000]');
 
 i =
 
