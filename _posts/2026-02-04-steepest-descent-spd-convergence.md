@@ -129,7 +129,7 @@ function x = steep_descent(A,b) % A must be SPD
     iter_number = 27000;
 
     while i < iter_number  && delta > epsilon * epsilon * delta_0
-        % until
+                                    % until ||r_k||^2_2 < eps^2 ||r_0||^2_2 
         q = A*r;                    % next step 
         alpha = delta / (r' * q);   % alpha_k = (r'r)/r'Ar
         x = x + alpha * r;          % x_{k+1} = x_k + alpha_k r_k
@@ -139,7 +139,7 @@ function x = steep_descent(A,b) % A must be SPD
             r = r - alpha * q;      % r_{k+1} = r_k - alpha_k A r_k
                                     % from x_{k+1} = x_{k} + alpha_k r_k  
         end
-        delta = r' * r;             % ||r_k|| 
+        delta = r' * r;             % ||r_k||^2_2
         i=i+1;
     end 
 end 
