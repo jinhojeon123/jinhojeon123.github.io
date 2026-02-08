@@ -152,7 +152,7 @@ function x = steep_descent(A,b) % A must be SPD
 end 
 ```
 
-The reason for using this SD is simple: we can find this solution without computationally expensive operations like QR, LU, Gaussian-elimination, which are $O(n^3)$ algorithm.   
+The reason for using this **SD** is simple: we can find this solution without computationally expensive operations like QR, LU, Gaussian-elimination, which are $O(n^3)$ algorithm.   
 
 In practice, since the exact error $e_k$ is unknown, we use the relative residual norm as the stopping criterion. In our code, we use $\|r_k\|_2$ compared to $\| r_0 \|_2 $ as relative error. 
 
@@ -452,7 +452,7 @@ end
  
 - ill-condition : As we said in the section "speed of convergence", due to its condition number, its convergence speed is very slow. when $\kappa$ is high, (e.g., 5000), the error reduction per iteration is $1-\frac{\kappa-1}{\kappa+1} = \frac{2}{\kappa+1} \approx 0$ for $\kappa \gg 1$. This implies that the number of iterations required for convergence $O(\kappa)$, leading to a slow linear convergence rate, rather than $O(\sqrt{\kappa})$.
 
-- the time complexity of SD is $O(n^2 * | loop| ) = O(n^2 \frac{\log(1/\varepsilon)}{\log{(d)}}) = O(\kappa n^2 \log(1/\varepsilon)) \\ 
+- the time complexity of **SD** is $O(n^2 * | loop| ) = O(n^2 \frac{\log(1/\varepsilon)}{\log{(d)}}) = O(\kappa n^2 \log(1/\varepsilon)) \\ 
  \text{where} \ d = \frac{\kappa+1}{\kappa-1}, \log(\frac{\kappa+1}{\kappa-1})= \log(1+\frac{2}{\kappa-1})\approx \frac{2}{\kappa}$.
 
 - Zig-zag : 
