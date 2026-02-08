@@ -46,13 +46,19 @@ math: true
     $$ 
 
 
-Since $Q^T = \begin{pmatrix}
+Since 
+
+$$
+Q^T = \begin{pmatrix}
 q_1^T \\
 q_2^T \\
 \vdots \\
-q_n^T  
+q_n^T
 \end{pmatrix}
-$ maps $x \in V$ to its projection coefficients onto each basis direction, 
+$$
+
+
+maps $x \in V$ to its projection coefficients onto each basis direction, 
 
   we have $Q^T = Q^{-1}$. i.e., $A = Q^T \Lambda Q $ if A is normal by spectral theorem.
 
