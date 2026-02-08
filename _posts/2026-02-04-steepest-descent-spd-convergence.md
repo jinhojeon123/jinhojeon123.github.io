@@ -270,11 +270,17 @@ $$
 $$
 
 
-$\lVert e_{k+1}\rVert_{A}^2
-= e_{k+1}^\top A e_{k+1} = (e_k+\alpha_k r_k)^\top A (e_k+\alpha_k r_k) \\    
-= (e_k^\top+\alpha_k r_k^\top)(A e_k+\alpha_k A r_k) = e_k^\top A e_k+\alpha_k r_k^\top A e_k+\alpha_k e_k^\top A r_k+\alpha_k^2  r_k^\top A r_k \\ 
-\\ 
-= \| e_k\|^2_A + 2 \alpha_k r^{\top}_k A e_k + \alpha^2_k r^{\top}_k Ar_k $
+$\lVert e_{k+1}\rVert_A^2 = e_{k+1}^\top A e_{k+1}$
+
+$= (e_k+\alpha_k r_k)^\top A (e_k+\alpha_k r_k)$
+
+$= (e_k^\top+\alpha_k r_k^\top)(A e_k+\alpha_k A r_k)$
+
+$= e_k^\top A e_k + \alpha_k r_k^\top A e_k + \alpha_k e_k^\top A r_k + \alpha_k^2 r_k^\top A r_k$
+
+$= \lVert e_k\rVert_A^2 + 2\alpha_k r_k^\top A e_k + \alpha_k^2 r_k^\top A r_k$
+
+
 
 use $r_k = -Ae_k$,  
 
@@ -296,7 +302,8 @@ $= \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
 $M_1^2=(r_k^\top r_k)^2=(e_k^\top A^2 e_k)^2=(e_k^\top Q\Lambda^2 Q^\top e_k)^2=(y_k^\top\Lambda^2 y_k)^2=\beta^2\left(\sum_i \lambda_i^2 p_i\right)^2$
 
 
-$M_2=r_k^\top A r_k=(-Ae_k)^\top A(-Ae_k)=e_k^\top A^3 e_k=e_k^\top Q\Lambda^3 Q^\top e_k=\sum_i \lambda_i^3 y_{k,i}^2=\beta\sum_i \lambda_i^3 p_i$
+\(M_2=r_k^\top A r_k=(-Ae_k)^\top A(-Ae_k)=e_k^\top A^3 e_k=e_k^\top Q\Lambda^3 Q^\top e_k=\sum_i \lambda_i^3 y_{k,i}^2=\beta\sum_i \lambda_i^3 p_i\)
+
 
 
 $M_3=\lVert e_k\rVert_A^2=e_k^\top A e_k=e_k^\top Q\Lambda Q^\top e_k=y_k^\top\Lambda y_k=\sum_i\lambda_i y_{k,i}^2=\beta\sum_i\lambda_i p_i$
