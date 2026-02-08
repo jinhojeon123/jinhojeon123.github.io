@@ -302,7 +302,15 @@ $= \sum_i \lambda_i^2 y_i^2 = \beta \sum_{i} \lambda_{i}^2 p_i $
 $M_1^2=(r_k^\top r_k)^2=(e_k^\top A^2 e_k)^2=(e_k^\top Q\Lambda^2 Q^\top e_k)^2=(y_k^\top\Lambda^2 y_k)^2=\beta^2\left(\sum_i \lambda_i^2 p_i\right)^2$
 
 
-\(M_2=r_k^\top A r_k=(-Ae_k)^\top A(-Ae_k)=e_k^\top A^3 e_k=e_k^\top Q\Lambda^3 Q^\top e_k=\sum_i \lambda_i^3 y_{k,i}^2=\beta\sum_i \lambda_i^3 p_i\)
+$
+M_2=r_k^\top A r_k
+=(-Ae_k)^\top A(-Ae_k)
+=e_k^\top A^3 e_k
+=e_k^\top Q\Lambda^3 Q^\top e_k
+=\sum_i \lambda_i^3 y_{k,i}^2
+=\beta\sum_i \lambda_i^3 p_i
+$
+
 
 
 
