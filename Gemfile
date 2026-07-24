@@ -8,6 +8,7 @@ gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-feed"
+gem "jekyll-paginate"
 
 gem "html-proofer", "~> 5.0", group: :test
 
