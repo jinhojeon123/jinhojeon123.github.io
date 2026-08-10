@@ -4,6 +4,7 @@ date: 2026-07-31
 categories:
   - Seminar
   - Measure Theory Seminar
+  
 tags: [folland, measurable functions, simple functions, monotone convergence theorem]
 description: "Characterizations of measurable functions, measurability through generators, and the proof of the Monotone Convergence Theorem."
 math: true
