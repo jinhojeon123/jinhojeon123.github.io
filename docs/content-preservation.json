@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "algorithm": "sha256",
+  "body_boundary": "First delimiter line of 3 or more hyphens after opening front matter; hash includes all bytes after its line ending.",
+  "files": [
+    {
+      "original_path": "_posts/2025-07-18-ieee754-errors-and-algorithms.md",
+      "current_path": "_posts/2025-07-18-ieee754-errors-and-algorithms.md",
+      "body_sha256": "277c8d9c858dca9a296e0961c62a6aab3926dd66f823a46c9b0c02fb67f30b1d",
+      "original_file_sha256": "41a76bc926b165ce9e57846a60c329914fca7747c208ab24e4d437d8272f277f",
+      "body_lf_sha256": "4d5798cc21da13b5e4d9113af8ba1fa5483742a518afe41ef51fb45d03353fb9"
+    },
+    {
+      "original_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md",
+      "current_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md",
+      "body_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02",
+      "original_file_sha256": "db491460ea0ce86273efa4fa7b6d177b33c9361b266e56d49603f22db3f17612",
+      "body_lf_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02"
+    },
+    {
+      "original_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
+      "current_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
+      "body_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0",
+      "original_file_sha256": "e2fb0bbb6b5b50c1671ecda0aa0e4f9f3d6526e1967c46992d310afeba0f9d2b",
+      "body_lf_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0"
+    },
+    {
+      "original_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
+      "current_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
+      "body_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed",
+      "original_file_sha256": "34f6b518028a307219be9e4a130d37329ec85a7b6289fa3e21c0dea346334291",
+      "body_lf_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed"
+    },
+    {
+      "original_path": "_posts/2026-02-09-conjugate-gradient.md",
+      "current_path": "_posts/2026-02-09-conjugate-gradient.md",
+      "body_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114",
+      "original_file_sha256": "f53a74aae1328d3e646851ec82d0242dbab94c74776ca315bfae319295a72751",
+      "body_lf_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114"
+    },
+    {
+      "original_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
+      "current_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
+      "body_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf",
+      "original_file_sha256": "04d513220154aded9c301582feb8a9efeb4b7e91aa014f9df25e2fae137b6a38",
+      "body_lf_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf"
+    },
+    {
+      "original_path": "_posts/measure-theory/2026-07-24-folland-measures-and-set-convergence.md",
+      "current_path": "_posts/measure-theory/2026-07-24-folland-measures-and-set-convergence.md",
+      "body_sha256": "9219cd4eb05c83edd75cd2d4f086cb3db583bf6186eea3b016e0d5a3891a5970",
+      "original_file_sha256": "a98ceb54e516809fd6abfb92d66b9b13452c632b4379d1fbae56c74b3cf743cc",
+      "body_lf_sha256": "9219cd4eb05c83edd75cd2d4f086cb3db583bf6186eea3b016e0d5a3891a5970"
+    },
+    {
+      "original_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
+      "current_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
+      "body_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed",
+      "original_file_sha256": "a73291aca9dd9df2e59fdc50084930bb40ad190614ddf58e9402b47aa9fb9371",
+      "body_lf_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed"
+    },
+    {
+      "original_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
+      "current_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
+      "body_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2",
+      "original_file_sha256": "f98d83806afd8bf223848f4db26d2fe92c705762466164692d5cfdd0de0cd565",
+      "body_lf_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2"
+    },
+    {
+      "original_path": "_posts/measure-theory/2026-07-27-folland-product-measurable-spaces.md",
+      "current_path": "_posts/measure-theory/2026-07-27-folland-product-measurable-spaces.md",
+      "body_sha256": "15dc5fa50d14628b075c68e81319a97f60f6eb5f2306f3382d1bd7b143acbb2f",
+      "original_file_sha256": "2530589c3d11dc37a91115a99e900f6a218340c70c570f9b9dbd7030b961ee1d",
+      "body_lf_sha256": "15dc5fa50d14628b075c68e81319a97f60f6eb5f2306f3382d1bd7b143acbb2f"
+    },
+    {
+      "original_path": "_posts/measure-theory/2026-07-28-folland-cantor-set-and-completion.md",
+      "current_path": "_posts/measure-theory/2026-07-28-folland-cantor-set-and-completion.md",
+      "body_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8",
+      "original_file_sha256": "d664a710ad3797f135ef781954a2dc2f4d3b91f90ee4853871e62b61cb3792d5",
+      "body_lf_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8"
+    },
+    {
+      "original_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
+      "current_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
+      "body_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c",
+      "original_file_sha256": "c6826557adec4d702da0e1220d4f6919f189c54b80f614c9c40ee781f5111062",
+      "body_lf_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c"
+    },
+    {
+      "original_path": "_posts/seminar/2026-08-07-fatou-dct.md",
+      "current_path": "_posts/seminar/2026-08-07-fatou-dct.md",
+      "body_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a",
+      "original_file_sha256": "41163f05ef858bbb77de0b2837d581526e7619e06f9a0af72beb8ea42475671e",
+      "body_lf_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a"
+    },
+    {
+      "original_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
+      "current_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
+      "body_sha256": "ec8be65182c55d6de7cb948388854b4cb9f56e6b6471b6f2980edd9353782e45",
+      "original_file_sha256": "e71790f5ebef5fd1b8c80635b8c9958a7e3c6d4f8b19f785baad9413d7a0a18e",
+      "body_lf_sha256": "3e7597b79ce44c552bac6f7db17c1ad7c720f533d986e4c82bc1996996007ab8",
+      "original_snapshot": "archive/originals/2026-08-14-Lp-space-and-inequalities-04.md"
+    }
+  ],
+  "normalized_hash_rule": "Replace CRLF with LF; supports verification after Git line-ending normalization. Raw body_sha256 records the original local bytes."
+}

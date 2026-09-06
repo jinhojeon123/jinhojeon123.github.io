@@ -43,4 +43,7 @@ __pycache__/
 
 # Intentionally preserved historical editor files
 !/archive/legacy/**
-docs/
+# Keep local audit notes ignored, but commit the baselines required by CI.
+/docs/*
+!/docs/content-preservation.json
+!/docs/legacy-urls.json
