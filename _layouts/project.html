@@ -1,0 +1,19 @@
+---
+layout: page
+---
+<h1 class="project-title">{{ page.title | escape }}</h1>
+<div class="content">
+<p class="note-meta">Status: {{ page.status }} · {{ page.summary | escape }}</p>
+{{ content }}
+<h2 id="linked-notes">Linked notes</h2>
+{% assign project_notes = site.posts | where_exp: 'note', 'note.projects contains page.project_id' | sort: 'date' %}
+{% if project_notes.size > 0 %}
+  {% include note-list.html posts=project_notes %}
+{% else %}
+  <p>No project notes have been published yet. The steps above describe planned work.</p>
+{% endif %}
+<h2 id="linked-papers">Linked paper notes</h2>
+{% assign papers = project_notes | where: 'note_type', 'paper-note' %}
+{% if papers.size > 0 %}{% include note-list.html posts=papers %}{% else %}<p>No paper notes linked yet.</p>{% endif %}
+<p><a href="{{ '/projects/' | relative_url }}">All projects</a> · <a href="{{ '/research/' | relative_url }}">Research directions</a></p>
+</div>

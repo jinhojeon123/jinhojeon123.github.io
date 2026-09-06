@@ -1,0 +1,29 @@
+.home-wrap { max-width: 58rem; margin-inline: auto; }
+.home-hero { margin-block: 1.5rem 2rem; }
+.home-subtitle { max-width: 47rem; line-height: 1.8; color: var(--text-muted-color); }
+.home-links { display: flex; flex-wrap: wrap; gap: .6rem 1.3rem; margin-block: 1rem; }
+.home-section { margin-block: 2.5rem; }
+.research-path { padding: 1rem 1.2rem; border-left: 3px solid var(--link-color); background: var(--card-bg); line-height: 1.9; }
+.study-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.study-card { padding: 1rem 1.2rem; border: 1px solid var(--main-border-color); border-radius: .4rem; }
+.study-card h3 { font-size: 1.1rem; margin: 0 0 .65rem; }
+.study-card p { margin: 0; color: var(--text-muted-color); }
+.note-list { list-style: none; padding-left: 0; }
+.note-list li { padding: .7rem 0; border-bottom: 1px solid var(--main-border-color); }
+.note-meta { display: block; font-size: .88rem; color: var(--text-muted-color); }
+.notebook-context { margin-block: 2rem; padding-top: 1rem; border-top: 1px solid var(--main-border-color); }
+.notebook-context h2 { font-size: 1.25rem; }
+.notebook-context h3 { font-size: 1.05rem; }
+.notebook-context ol { padding-left: 1.4rem; }
+.notebook-context .note-meta { display: inline; }
+details { margin-block: 1rem; }
+summary { cursor: pointer; font-weight: 600; padding-block: .5rem; }
+.theorem, .definition, .proposition { border-left: 3px solid var(--link-color); padding: .8rem 1.1rem; margin-block: 1.2rem; }
+.content mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-block: .2rem; }
+.content p:has(mjx-container:not([display="true"])) { overflow-x: auto; }
+.content pre { tab-size: 4; }
+.content { overflow-wrap: break-word; }
+@media (max-width: 575px) {
+  .study-grid { grid-template-columns: 1fr; }
+  .home-hero h1 { font-size: 1.9rem; }
+}

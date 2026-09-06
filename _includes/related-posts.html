@@ -1,0 +1,32 @@
+<aside class="notebook-context" aria-label="Note context">
+  <h2>Reading context</h2>
+  <p class="note-meta">{{ page.note_type | default: 'concept' | replace: '-', ' ' | capitalize }} · {{ page.status | default: 'note' | replace: '-', ' ' }}</p>
+  {% if page.status == 'outline' %}
+    <p>This is a working outline. Empty sections are a study plan and do not represent completed results.</p>
+  {% endif %}
+  {% if page.series %}
+    {% assign series_notes = site.posts | where: 'series', page.series | sort: 'series_order' %}
+    <h3>In this series</h3>
+    <ol>
+      {% for note in series_notes %}
+        <li>{% if note.url == page.url %}<span aria-current="page">{{ note.title | escape }}</span>{% else %}<a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>{% endif %}{% if note.status == 'outline' %} <span class="note-meta">(outline)</span>{% endif %}</li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+  {% if page.projects.size > 0 %}
+    <h3>Project connections</h3>
+    <ul>
+      {% for project_id in page.projects %}
+        {% assign project = site.projects | where: 'project_id', project_id | first %}
+        <li><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a> · {{ project.status }}</li>
+      {% endfor %}
+    </ul>
+    {% for project_id in page.projects %}
+      {% assign related_notes = site.posts | where_exp: 'note', 'note.projects contains project_id' | sort: 'date' %}
+      <ul>
+        {% for note in related_notes %}{% unless note.url == page.url %}<li><a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a></li>{% endunless %}{% endfor %}
+      </ul>
+    {% endfor %}
+  {% endif %}
+  <p><a href="{{ '/notes/' | relative_url }}">All notes</a> · <a href="{{ '/projects/' | relative_url }}">Project index</a></p>
+</aside>

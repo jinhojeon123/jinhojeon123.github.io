@@ -1,19 +1,15 @@
 ---
 title: "IEEE 754, Errors, and Algorithms"
 date: 2025-07-18 12:00:00 +0900
-
-categories: [Numerical Analysis]
-tags: [floating-point, stability, ieee754, kahan, double]
-
+categories: ["Numerical Methods"]
+tags: ["floating-point", "stability", "ieee-754", "kahan-summation", "python"]
+description: "Study note on floating-point representation, rounding errors, and stable summation, with Python examples."
+status: "note"
+note_type: "concept"
 math: true
-permalink: /posts/ieee754-errors-and-algorithms/
-
-sitemap:
-  changefreq: weekly
-  priority: 0.5
-
-description: "An overview of IEEE 754 representation (single and double), common error types, and stable numerical algorithms such as Kahan summation etc."
-author: "JIN HO JEON"
+toc: true
+permalink: "/posts/ieee754-errors-and-algorithms/"
+projects: ["krylov-solvers"]
 ---
  
 

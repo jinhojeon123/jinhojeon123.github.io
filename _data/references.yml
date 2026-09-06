@@ -1,0 +1,9 @@
+# Shared references for future paper notes. Use stable keys, for example:
+# saad-2003:
+#   title: Iterative Methods for Sparse Linear Systems
+#   authors: Yousef Saad
+#   year: 2003
+#   venue: SIAM, second edition
+#   url: https://doi.org/10.1137/1.9780898718003
+# Existing handwritten references remain in their original posts.
+{}

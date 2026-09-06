@@ -14,3 +14,5 @@
 *.png binary
 *.jpg binary
 *.ico binary
+archive/legacy/** -text
+archive/originals/** -text

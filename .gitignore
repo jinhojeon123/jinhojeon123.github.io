@@ -1,7 +1,6 @@
 # Bundler cache
 .bundle
 vendor
-Gemfile.lock
 
 # Jekyll cache
 .jekyll-cache
@@ -28,3 +27,20 @@ assets/js/dist
 
 # Mac
 .DS_Store
+
+# Local verification and portable runtime (never publish)
+.tools-runtime/
+.validation/
+.audit-*
+_site*/
+*.log
+
+# Editor backup / undo files
+*~
+*.swp
+*.swo
+__pycache__/
+
+# Intentionally preserved historical editor files
+!/archive/legacy/**
+docs/

@@ -1,14 +1,16 @@
 ---
 title: "Measure Theory Seminar 03 – Measurable Functions and the Monotone Convergence Theorem"
 date: 2026-07-31
-categories:
-  - Seminar
-  - Measure Theory Seminar
-  
-tags: [folland, measurable functions, simple functions, monotone convergence theorem]
-description: "Characterizations of measurable functions, measurability through generators, and the proof of the Monotone Convergence Theorem."
+categories: ["Mathematics"]
+tags: ["measure-theory", "measurable-functions", "monotone-convergence", "folland"]
+description: "Seminar statements on measurable functions, simple-function integration, and monotone convergence; the proof section remains a placeholder."
+status: "working-note"
+note_type: "seminar"
 math: true
 toc: true
+permalink: "/seminar/measure theory seminar/2026/07/31/measure-theory-seminar-03.html"
+series: "measure-theory"
+series_order: 7
 ---
 
 # Today's Roadmap

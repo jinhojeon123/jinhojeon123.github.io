@@ -1,0 +1,10 @@
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: {{ page.equation_numbering | default: 'none' | jsonify }}
+    }
+  };
+</script>

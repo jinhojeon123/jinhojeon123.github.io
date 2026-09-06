@@ -1,16 +1,18 @@
 ---
-
 title: "Folland Real Analysis – Chapter 1: The Cantor Set, Null Sets, and Completion"
-
 date: 2026-07-28
-
-categories: [Measure Theory, Real Analysis]
-
-tags: [Folland, Cantor set, measure zero, null sets, Borel sets, Lebesgue measure, completion]
-
+categories: ["Mathematics"]
+tags: ["measure-theory", "cantor-set", "completion", "folland"]
+description: "Outline for the Cantor set, null sets, and the completion of Borel measure."
+status: "outline"
+note_type: "concept"
 math: true
-
-----------
+toc: true
+permalink: "/2026/08/10/2026-07-28-folland-cantor-set-and-completion.html"
+hidden: true
+series: "measure-theory"
+series_order: 6
+---
 
 ## Introduction
 

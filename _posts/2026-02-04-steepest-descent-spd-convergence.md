@@ -1,9 +1,15 @@
 ---
 title: "Steepest Descent with SPD Matrices: Convergence"
 date: 2026-02-04
-categories: [Numerical Analysis, Optimization]
-tags: [Steepest Descent, SPD, Convergence, Gradient Descent]
+categories: ["Solvers"]
+tags: ["steepest-descent", "spd", "conditioning", "matlab", "python"]
+description: "Derivations and MATLAB experiments for steepest descent on symmetric positive definite systems."
+status: "working-note"
+note_type: "numerical-method"
 math: true
+toc: true
+permalink: "/numerical analysis/optimization/2026/02/04/steepest-descent-spd-convergence.html"
+projects: ["krylov-solvers"]
 ---
 
 

@@ -1,9 +1,17 @@
 ---
 title: "Folland Real Analysis – Chapter 1: Measurable Structures"
 date: 2026-07-23
-categories: [Measure Theory, Real Analysis]
-tags: [Folland, set systems, sigma-algebra, generated sigma-algebra, Borel sets]
+categories: ["Mathematics"]
+tags: ["measure-theory", "sigma-algebra", "borel-sets", "folland"]
+description: "Outline for measurable structures, generated sigma-algebras, and Borel sets."
+status: "outline"
+note_type: "concept"
 math: true
+toc: true
+permalink: "/measure theory/real analysis/2026/07/23/folland-measurable-structures.html"
+hidden: true
+series: "measure-theory"
+series_order: 1
 ---
 
 ## Introduction

@@ -1,236 +1,46 @@
 ---
 layout: default
 ---
-
-<style>
-  /* Home에서는 오른쪽 Recently Updated / Trending Tags 제거 */
-  #panel-wrapper {
-    display: none !important;
-  }
-
-  /* 본문 영역 전체 폭 사용 */
-  main {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-  }
-
-  .home-wrap {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-top: 2rem;
-  }
-
-  .home-hero {
-    margin-bottom: 3.5rem;
-  }
-
-  .home-hero h1 {
-    font-size: 2.4rem;
-    margin-bottom: 0.7rem;
-  }
-
-  .home-subtitle {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: var(--text-muted-color);
-    max-width: 680px;
-  }
-
-  .home-links {
-    display: flex;
-    gap: 0.7rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-  }
-
-  .home-links a {
-    padding: 0.45rem 0.9rem;
-    border: 1px solid var(--btn-border-color);
-    border-radius: 0.6rem;
-    text-decoration: none;
-  }
-
-  .home-section {
-    margin-top: 3rem;
-  }
-
-  .home-section h2 {
-    margin-bottom: 1.3rem;
-  }
-
-  .note-row {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 1rem;
-    padding: 1.05rem 0;
-    border-bottom: 1px solid var(--main-border-color);
-  }
-
-  .note-date {
-    color: var(--text-muted-color);
-    font-size: 0.9rem;
-    padding-top: 0.15rem;
-  }
-
-  .note-title {
-    font-size: 1.08rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-
-  .note-title a {
-    text-decoration: none;
-  }
-
-  .note-meta {
-    color: var(--text-muted-color);
-    font-size: 0.88rem;
-  }
-
-  .view-all {
-    margin-top: 1.5rem;
-    text-align: right;
-  }
-
-  .study-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-
-  .study-card {
-    border: 1px solid var(--main-border-color);
-    border-radius: 0.8rem;
-    padding: 1.2rem;
-  }
-
-  .study-card h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .study-card p {
-    color: var(--text-muted-color);
-    margin-bottom: 0;
-    font-size: 0.92rem;
-  }
-
-  @media (max-width: 768px) {
-    .home-wrap {
-      padding-top: 1rem;
-    }
-
-    .home-hero h1 {
-      font-size: 2rem;
-    }
-
-    .note-row {
-      grid-template-columns: 1fr;
-      gap: 0.25rem;
-    }
-
-    .study-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
-
 <div class="home-wrap">
-
   <section class="home-hero">
-    <h1>Mathematics & Scientific Computing Notes</h1>
-
-    <p class="home-subtitle">
-      Personal notes on real analysis, numerical analysis,
-      optimization, and scientific computing.
-      Seminar notes and study archives are organized separately.
-    </p>
-
+    <h1>Mathematics &amp; Scientific Computing</h1>
+    <p class="home-subtitle">A working notebook on the mathematical foundations of numerical computation. Current notes cover measure theory, floating-point arithmetic, optimization, and iterative solvers. The next direction is numerical PDEs, preconditioning, and parallel implementation.</p>
+    <p class="research-path">Mathematical foundations → Numerical methods → Solvers → Parallel implementation → Research experiments</p>
     <div class="home-links">
-      <a href="/categories/">Categories</a>
-      <a href="/archives/">Archives</a>
-      <a href="/about/">About</a>
+      <a href="{{ '/notes/' | relative_url }}">Explore notes</a>
+      <a href="{{ '/projects/' | relative_url }}">Follow a project</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="https://github.com/jinhojeon123/jinhojeon123.github.io">Site repository</a>
     </div>
   </section>
-
-
-  <section class="home-section">
-
-    <h2>Latest Notes</h2>
-
-    {% assign visible_posts = site.posts | where_exp: "post", "post.hidden != true" %}
-
-    {% for post in visible_posts limit: 7 %}
-
-    <div class="note-row">
-
-      <div class="note-date">
-        {{ post.date | date: "%b %d, %Y" }}
-      </div>
-
-      <div>
-
-        <div class="note-title">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title }}
-          </a>
-        </div>
-
-        {% if post.categories.size > 0 %}
-        <div class="note-meta">
-
-          {% for category in post.categories %}
-            {{ category }}{% unless forloop.last %} · {% endunless %}
-          {% endfor %}
-
-        </div>
-        {% endif %}
-
-      </div>
-
-    </div>
-
-    {% endfor %}
-
-    <div class="view-all">
-      <a href="/archives/">View all notes →</a>
-    </div>
-
+  <section class="home-section" aria-labelledby="reading-starts">
+    <h2 id="reading-starts">Reading starting points</h2>
+    <ul>
+      <li><a href="{{ '/measure-theory/' | relative_url }}">Measure theory</a> — foundations, convergence theorems, and seminar notes.</li>
+      <li><a href="{% link _posts/2025-07-18-ieee754-errors-and-algorithms.md %}">IEEE 754, Errors, and Algorithms</a> — numerical representation and stable computation.</li>
+      <li><a href="{{ '/projects/krylov-solvers/' | relative_url }}">From steepest descent to conjugate gradients</a> — derivations and MATLAB implementations, with preconditioning planned.</li>
+    </ul>
   </section>
-
-
-  <section class="home-section">
-
-    <h2>Study Areas</h2>
-
+  <section class="home-section" aria-labelledby="latest-notes">
+    <h2 id="latest-notes">Recent notes</h2>
+    {% assign recent_notes = site.posts | where_exp: 'note', 'note.status != "outline"' | where_exp: 'note', 'note.hidden != true' | slice: 0, 6 %}
+    {% include note-list.html posts=recent_notes %}
+    <p><a href="{{ '/notes/' | relative_url }}">Browse all notes and outlines →</a></p>
+  </section>
+  <section class="home-section" aria-labelledby="study-areas">
+    <h2 id="study-areas">Study areas</h2>
     <div class="study-grid">
-
+      {% for area in site.data.taxonomy %}
       <div class="study-card">
-        <h3>Real Analysis</h3>
-        <p>
-          Measure theory, Lebesgue integration,
-          convergence theorems, and related foundations.
-        </p>
+        <h3><a href="{{ '/notes/#' | append: area.id | relative_url }}">{{ area.name }}</a></h3>
+        <p>{{ area.description }}</p>
       </div>
-
-      <div class="study-card">
-        <h3>Seminar</h3>
-        <p>
-          Material reorganized for seminar presentations
-          and proof-oriented study.
-        </p>
-      </div>
-
-      <div class="study-card">
-        <h3>Numerical Analysis</h3>
-        <p>
-          Iterative methods, optimization,
-          sparse linear algebra, and numerical computation.
-        </p>
-      </div>
-
+      {% endfor %}
     </div>
-
   </section>
-
+  <section class="home-section" aria-labelledby="implementation">
+    <h2 id="implementation">Implementation and evidence</h2>
+    <p>Existing notes contain MATLAB and Python code and C++-style pseudocode. Project pages distinguish published derivations and code from planned FEM, domain decomposition, and MPI experiments. Reproducible timings and scaling results will be linked when available.</p>
+    <p><a href="{{ '/research/' | relative_url }}">Research directions</a> · <a href="{{ '/papers/' | relative_url }}">Paper notes</a> · <a href="https://github.com/jinhojeon123">GitHub</a></p>
+  </section>
 </div>

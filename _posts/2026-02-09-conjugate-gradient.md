@@ -1,9 +1,15 @@
 ---
 title: "Conjugate Gradient Method: Theory and Implementation"
 date: 2026-02-09 15:06:00 +0900
-categories: [Numerical Analysis, Optimization]
-tags: [Conjugate Gradient, Krylov Subspace, SPD, Numerical Linear Algebra]
+categories: ["Solvers"]
+tags: ["conjugate-gradient", "krylov-methods", "spd", "matlab"]
+description: "Working note connecting Krylov subspaces to a MATLAB conjugate gradient implementation; some derivations remain incomplete."
+status: "working-note"
+note_type: "numerical-method"
 math: true
+toc: true
+permalink: "/numerical analysis/optimization/2026/02/09/conjugate-gradient.html"
+projects: ["krylov-solvers"]
 ---
 
 ### 1. Motivation : 

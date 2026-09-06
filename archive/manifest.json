@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "archived_at": "2026-09-07",
+  "purpose": "Preserve legacy files byte-for-byte outside the published Jekyll source.",
+  "checksum_algorithm": "SHA256",
+  "files": [
+    {
+      "original_path": "git",
+      "archived_path": "archive/legacy/git",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Empty root-level stray file; retained rather than deleted."
+    },
+    {
+      "original_path": "_posts/.placeholder",
+      "archived_path": "archive/legacy/_posts/.placeholder",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "reason": "Starter placeholder no longer needed after real posts were added."
+    },
+    {
+      "original_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md~",
+      "archived_path": "archive/legacy/_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md~",
+      "bytes": 2990,
+      "sha256": "f9452ab9fee042ce049a470e6e1cd6285108130004f306760ac01bb11a405de1",
+      "reason": "Editor backup; current published source retains this content and adds four references."
+    },
+    {
+      "original_path": "_posts/.2026-01-10-epsilon-optimal-cost-scaling-mcmf.md.un~",
+      "archived_path": "archive/legacy/_posts/.2026-01-10-epsilon-optimal-cost-scaling-mcmf.md.un~",
+      "bytes": 16690,
+      "sha256": "358740447e1fce187d522cbf4e262ea53d7def62806feb7ad2381dc8365763be",
+      "reason": "Vim persistent undo data; preserve for recovery, outside the published site and post tree."
+    },
+    {
+      "original_path": "_posts/seminar/YYYY-MM-DD-measure-theory-seminar-01.md",
+      "archived_path": "archive/legacy/_posts/seminar/YYYY-MM-DD-measure-theory-seminar-01.md",
+      "bytes": 404,
+      "sha256": "b36675a1dcebabc2affb06a3f9e5dc4f8b95ee9ec8beaf3729053feaafc8ae7e",
+      "reason": "Undated front-matter-only outline with placeholder date, not a publishable Jekyll post."
+    },
+    {
+      "original_path": "_posts/seminar/YYYY-MM-DD-measure-theory-seminar-02.md",
+      "archived_path": "archive/legacy/_posts/seminar/YYYY-MM-DD-measure-theory-seminar-02.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Empty undated seminar placeholder, retained for provenance."
+    },
+    {
+      "original_path": "_posts/sobolev-foundations/01-weak-derivatives.md",
+      "archived_path": "archive/legacy/_posts/sobolev-foundations/01-weak-derivatives.md",
+      "bytes": 120,
+      "sha256": "064009567fa2df42942dd9a423aa48ac44b6e479e81cf1ffeb9b4945fbbffb11",
+      "reason": "Undated mathematical fragment without front matter; retain its equation verbatim for later development."
+    },
+    {
+      "original_path": "workflows/pages.yml",
+      "archived_path": "archive/legacy/workflows/pages.yml",
+      "bytes": 1838,
+      "sha256": "c071b5934c7219d32967454106fa324b92750947a77db97cbc417be989fec4d4",
+      "reason": "Inactive workflow outside .github/workflows; superseded by the single maintained deployment workflow."
+    },
+    {
+      "original_path": "sitemap.xml",
+      "archived_path": "archive/legacy/sitemap.xml",
+      "bytes": 1034,
+      "sha256": "c75607019e067e272d753974a7b773858322ca459a0cfc0b087d9656a6be5f26",
+      "reason": "Manual posts-only sitemap; use jekyll-sitemap to include site pages and avoid duplicate ownership."
+    },
+    {
+      "original_path": "robots.txt",
+      "archived_path": "archive/legacy/robots.txt",
+      "bytes": 76,
+      "sha256": "5cce36ae469f22195e64b2debf1274f7de9d72a3e1b3b7d11728173bc34a0221",
+      "reason": "Static root robots file duplicates the theme-generated robots.txt destination; preserve the original and use the theme version with dynamic absolute sitemap URL."
+    }
+  ]
+}

@@ -1,9 +1,17 @@
 ---
 title: "Folland Real Analysis – Chapter 1: Measures and Set Convergence"
 date: 2026-07-24
-categories: [Measure Theory, Real Analysis]
-tags: [Folland, measures, countable additivity, null sets, completion]
+categories: ["Mathematics"]
+tags: ["measure-theory", "countable-additivity", "completion", "folland"]
+description: "Outline for measures, set convergence, null sets, and completion."
+status: "outline"
+note_type: "concept"
 math: true
+toc: true
+permalink: "/measure theory/real analysis/2026/07/24/folland-measures-and-set-convergence.html"
+hidden: true
+series: "measure-theory"
+series_order: 2
 ---
 
 ## Introduction

@@ -1,9 +1,17 @@
 ---
 title: "Folland Real Analysis – Chapter 1: Product Measurable Spaces"
 date: 2026-07-27
-categories: [Measure Theory, Real Analysis]
-tags: [Folland, product sigma-algebra, coordinate projections, cylinders, Borel sets]
+categories: ["Mathematics"]
+tags: ["measure-theory", "product-measures", "sigma-algebra", "folland"]
+description: "Outline for product sigma-algebras, coordinate projections, and cylinder sets."
+status: "outline"
+note_type: "concept"
 math: true
+toc: true
+permalink: "/measure theory/real analysis/2026/07/27/folland-product-measurable-spaces.html"
+hidden: true
+series: "measure-theory"
+series_order: 5
 ---
 
 ## Introduction

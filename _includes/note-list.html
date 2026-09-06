@@ -1,0 +1,8 @@
+<ul class="note-list">
+  {% for note in include.posts %}
+    <li>
+      <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>
+      <span class="note-meta">{{ note.date | date: '%Y-%m-%d' }} · {{ note.status | default: 'note' | replace: '-', ' ' }}</span>
+    </li>
+  {% endfor %}
+</ul>

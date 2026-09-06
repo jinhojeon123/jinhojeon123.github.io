@@ -1,9 +1,17 @@
 ---
 title: "Folland Real Analysis – Chapter 1: Carathéodory's Extension Theorem"
 date: 2026-07-25
-categories: [Measure Theory, Real Analysis]
-tags: [Folland, premeasure, outer measure, Carathéodory, measure extension]
+categories: ["Mathematics"]
+tags: ["measure-theory", "outer-measure", "caratheodory-extension", "folland"]
+description: "Outline for premeasures, outer measures, and measure extension; the premeasure definition is incomplete."
+status: "outline"
+note_type: "concept"
 math: true
+toc: true
+permalink: "/measure theory/real analysis/2026/07/25/folland-caratheodory-extension.html"
+hidden: true
+series: "measure-theory"
+series_order: 3
 ---
 
 

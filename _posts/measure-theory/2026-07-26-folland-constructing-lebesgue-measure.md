@@ -1,9 +1,17 @@
 ---
 title: "Folland Real Analysis – Chapter 1: Constructing Lebesgue Measure"
 date: 2026-07-26
-categories: [Measure Theory, Real Analysis]
-tags: [Folland, Lebesgue measure, Lebesgue-Stieltjes measure, regularity, completion]
+categories: ["Mathematics"]
+tags: ["measure-theory", "lebesgue-measure", "regularity", "folland"]
+description: "Outline for constructing Lebesgue and Lebesgue-Stieltjes measures."
+status: "outline"
+note_type: "concept"
 math: true
+toc: true
+permalink: "/measure theory/real analysis/2026/07/26/folland-constructing-lebesgue-measure.html"
+hidden: true
+series: "measure-theory"
+series_order: 4
 ---
 
 ## Introduction

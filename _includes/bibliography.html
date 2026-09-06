@@ -1,0 +1,13 @@
+{% if page.references.size > 0 %}
+<section aria-label="References" class="bibliography">
+  <h2 id="references">References</h2>
+  <ol>
+    {% for key in page.references %}
+      {% assign reference = site.data.references[key] %}
+      <li id="ref-{{ key }}">{{ reference.authors | escape }} ({{ reference.year }}).
+        <a href="{{ reference.url | relative_url }}">{{ reference.title | escape }}</a>. {{ reference.venue | escape }}.
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

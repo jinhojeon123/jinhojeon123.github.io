@@ -1,0 +1,16 @@
+- name: Mathematics
+  id: mathematics
+  description: Linear algebra, analysis, functional analysis, and PDE foundations.
+  topics: [linear-algebra, analysis, measure-theory, functional-analysis, pde, optimization]
+- name: Numerical Methods
+  id: numerical-methods
+  description: Discretization, approximation, numerical stability, and algorithms.
+  topics: [numerical-analysis, numerical-linear-algebra, fem, time-integration, floating-point, optimization]
+- name: Solvers
+  id: solvers
+  description: Iterative linear solvers, preconditioning, multigrid, and domain decomposition.
+  topics: [krylov-methods, conjugate-gradient, gmres, preconditioning, multigrid, domain-decomposition]
+- name: Scientific Computing
+  id: scientific-computing
+  description: Parallel implementation, reproducible experiments, and performance analysis.
+  topics: [mpi, openmp, gpu, sparse-matrices, performance, reproducibility]
