@@ -17,7 +17,6 @@ series_order: 1
 ## Introduction
 
 ### The Problem of Choosing Measurable Sets
-### Roadmap
 
 ---
 
@@ -63,7 +62,3 @@ series_order: 1
 ### 5.1 Why We Do Not Measure Every Subset
 ### 5.2 Why Generated Sigma-Algebras Are Useful
 ### 5.3 From Topological Sets to Measurable Sets
-
----
-
-## Summary

@@ -17,7 +17,6 @@ series_order: 5
 ## Introduction
 
 ### Why Product Measurable Spaces Are Needed
-### Roadmap
 
 ---
 
@@ -87,7 +86,3 @@ series_order: 5
 ### 8.2 Cylinders Versus Rectangles
 ### 8.3 Why Second Countability Appears
 ### 8.4 Preparing for Product Measures
-
----
-
-## Summary

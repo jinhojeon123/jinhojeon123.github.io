@@ -26,3 +26,7 @@ The linked posts contain derivations and code snippets. A standalone solver repo
 ## Planned experiments
 
 Record matrix source and dimensions, conditioning information when available, initial guess, residual definition, stopping tolerance, iteration count, setup time, solve time, and memory use. Compare methods against the same accuracy target and report failures as well as successes.
+
+## Study skeleton
+
+[Linear Algebra prerequisites]({% link Linear-Algebra-Review/index.md %}) → [Saad Study]({% link Saad/index.md %})

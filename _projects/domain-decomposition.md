@@ -26,3 +26,7 @@ Report the partition, overlap width, number of subdomains, local solver, coarse-
 ## Current evidence
 
 This is a planned project; no ASM/RAS implementation, coarse-space experiment, or scaling claim is published here yet.
+
+## Study prerequisites
+
+[Basic preconditioners]({% link Saad/10-Basic-Preconditioners.md %}) → [Domain Decomposition Bridge]({% link Saad/14-Domain-Decomposition-Bridge.md %})

@@ -17,7 +17,6 @@ series_order: 2
 ## Introduction
 
 ### From Measurable Sets to Measures
-### Roadmap
 
 ---
 
@@ -88,7 +87,3 @@ series_order: 2
 ### 8.1 Countable Additivity and Disjoint Decomposition
 ### 8.2 Set Convergence as Continuity of Measures
 ### 8.3 Why Measure-Zero Sets Cannot Be Ignored Completely
-
----
-
-## Summary

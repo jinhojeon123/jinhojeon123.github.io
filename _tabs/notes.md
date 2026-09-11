@@ -10,6 +10,14 @@ Notes follow four subject areas. Tags describe specific methods or tools; series
 
 [Measure theory reading order]({{ '/measure-theory/' | relative_url }}) · [Categories]({{ '/categories/' | relative_url }}) · [Tags]({{ '/tags/' | relative_url }}) · [Chronological archive]({{ '/archives/' | relative_url }})
 
+## Study roadmap
+
+- [전체 학습 순서]({% link STUDY-ROADMAP.md %})
+- [Folland Seminar]({% link Folland-Seminar/index.md %})
+- [Linear Algebra Review]({% link Linear-Algebra-Review/index.md %})
+- [Saad Study]({% link Saad/index.md %})
+- [기존 글 검토 및 남은 수정 사항]({% link STUDY-REVIEW.md %})
+
 {% for area in site.data.taxonomy %}
 <section aria-labelledby="{{ area.id }}">
   <h2 id="{{ area.id }}">{{ area.name }}</h2>

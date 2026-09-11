@@ -26,3 +26,7 @@ Record hardware, ranks, threads, placement and binding, compiler flags, MPI vers
 ## Current evidence
 
 This is a planned project. MPI/CMake source, timing data, and scaling figures will be linked when available.
+
+## Study prerequisites
+
+[Sparse linear systems]({% link Saad/01-Sparse-Linear-Systems.md %}) → [Parallel / PDE connection]({% link Saad/13-Parallel-and-PDE-Connection.md %})

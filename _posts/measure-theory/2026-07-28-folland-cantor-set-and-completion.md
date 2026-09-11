@@ -85,7 +85,3 @@ series_order: 6
 ### 8.1 Cardinality Does Not Determine Measure
 ### 8.2 Why Completion Adds New Sets
 ### 8.3 Why Borel and Lebesgue Measurability Differ
-
----
-
-## Summary

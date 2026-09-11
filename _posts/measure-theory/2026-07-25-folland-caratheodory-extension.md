@@ -19,7 +19,6 @@ series_order: 3
 
 ### The Measure Extension Problem
 ### The Central Construction
-### Roadmap
 
 ---
 
@@ -37,12 +36,16 @@ series_order: 3
 ### 2.1 Why Start with an Algebra?
 ### 2.2 Definition of a Premeasure
 
-Def Premeasure
-
 If $\mathcal{A} \subset \mathcal{P}(X)$ is an algebra, a function $\mu_0 : \mathcal{A} \rightarrow \left[0, \infty \right] $ will be called a **premeasure** if 
 
 - $\mu_0(\empty) = 0$
-- if $\left{ \right}$
+
+[수정 필요]
+
+- 문제: 두 번째 조건이 `- if $\left{ \right}$`에서 중단되어 premeasure의 countable additivity 조건이 빠져 있다. 미완성 TeX는 렌더링 오류를 피하도록 이 항목 안에 원문 그대로 보존했다.
+- 왜 문제인지: 첫 번째 조건만으로는 premeasure를 정의할 수 없고, algebra는 일반적인 countable union에 대해 닫혀 있지 않다.
+- 어떻게 수정해야 하는지: 모든 pairwise disjoint sequence에 대한 quantifier, 각 집합이 $\mathcal A$에 속한다는 조건, union도 $\mathcal A$에 속한다는 조건, countable additivity 등식을 직접 완성한다. Domain과 codomain 및 첫 번째 조건은 유지한다.
+
 ### 2.3 Finite and Countable Additivity
 ### 2.4 Why the Union Must Remain in the Algebra
 
@@ -110,7 +113,3 @@ If $\mathcal{A} \subset \mathcal{P}(X)$ is an algebra, a function $\mu_0 : \math
 ### 9.2 Why We Pass Through an Outer Measure
 ### 9.3 How Measurability Recovers Additivity
 ### 9.4 What the Extension Theorem Actually Accomplishes
-
----
-
-## Summary

@@ -75,7 +75,12 @@ purpose across subjects, rather than a competing category.
 ## Directory structure
 
 ```text
-_posts/                 Published notes; existing filenames and bodies retained
+_posts/                 Existing notes with local review annotations; URLs retained
+Folland-Seminar/        Ordered seminar skeletons starting at Lp duality
+Linear-Algebra-Review/  20 prerequisite and bridge units
+Saad/                  15 numerical linear algebra study units
+STUDY-ROADMAP.md        Current actions and dependency navigation
+STUDY-REVIEW.md         Section A/B/C decisions and outstanding corrections
 _projects/              Persistent project indexes and evidence/status
 _tabs/                  Five navigation pages (Home is index.html)
 _data/                  Taxonomy, bibliography, contacts, legacy redirect mapping
@@ -120,8 +125,11 @@ subpath, update `baseurl` and recheck the rendered links.
 - [Change summary](docs/change-summary.md): logical review groups and next steps.
 - [Archive manifest](archive/README.md): original paths, reasons, and byte checksums.
 
-The maintenance pass changed post metadata, not mathematical bodies, proofs,
-code, or numerical results. Historical URL and body-hash manifests verify this.
+The initial maintenance pass changed metadata only. The 2026-09-11 study review
+prunes repetitive prose and adds local mathematical correction instructions;
+new study pages contain headings and dependencies only. See
+[the study roadmap](STUDY-ROADMAP.md) and [section review](STUDY-REVIEW.md).
+Historical URL and body-hash manifests track intentional revisions.
 An intentional future content correction must update its preservation record with
 an explanation in the same change; see [maintenance](docs/maintenance.md).
 

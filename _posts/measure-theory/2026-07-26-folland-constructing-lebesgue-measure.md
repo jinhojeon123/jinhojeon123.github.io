@@ -17,7 +17,6 @@ series_order: 4
 ## Introduction
 
 ### From Interval Lengths to Lebesgue Measure
-### Roadmap
 
 ---
 
@@ -96,7 +95,3 @@ series_order: 4
 ### 8.2 Why Topology Reappears Through Regularity
 ### 8.3 The Difference Between Borel and Lebesgue Measure
 ### 8.4 How the Abstract Extension Theorem Becomes Concrete
-
----
-
-## Summary

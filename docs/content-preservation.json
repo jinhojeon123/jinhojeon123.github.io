@@ -6,101 +6,227 @@
     {
       "original_path": "_posts/2025-07-18-ieee754-errors-and-algorithms.md",
       "current_path": "_posts/2025-07-18-ieee754-errors-and-algorithms.md",
-      "body_sha256": "277c8d9c858dca9a296e0961c62a6aab3926dd66f823a46c9b0c02fb67f30b1d",
+      "body_sha256": "2243a0dc15a4c871be9f1996e60d1feabe17a27ac552ba01582bad88218bf943",
       "original_file_sha256": "41a76bc926b165ce9e57846a60c329914fca7747c208ab24e4d437d8272f277f",
-      "body_lf_sha256": "4d5798cc21da13b5e4d9113af8ba1fa5483742a518afe41ef51fb45d03353fb9"
+      "body_lf_sha256": "2243a0dc15a4c871be9f1996e60d1feabe17a27ac552ba01582bad88218bf943",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "277c8d9c858dca9a296e0961c62a6aab3926dd66f823a46c9b0c02fb67f30b1d",
+          "body_lf_sha256": "4d5798cc21da13b5e4d9113af8ba1fa5483742a518afe41ef51fb45d03353fb9"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md",
       "current_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md",
-      "body_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02",
+      "body_sha256": "c5c13870a7eaa265c58cde81d7dd3672e6886d2a7efffd6c74100f0675f4f66d",
       "original_file_sha256": "db491460ea0ce86273efa4fa7b6d177b33c9361b266e56d49603f22db3f17612",
-      "body_lf_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02"
+      "body_lf_sha256": "c5c13870a7eaa265c58cde81d7dd3672e6886d2a7efffd6c74100f0675f4f66d",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02",
+          "body_lf_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
       "current_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
-      "body_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0",
+      "body_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204",
       "original_file_sha256": "e2fb0bbb6b5b50c1671ecda0aa0e4f9f3d6526e1967c46992d310afeba0f9d2b",
-      "body_lf_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0"
+      "body_lf_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0",
+          "body_lf_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
       "current_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
-      "body_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed",
+      "body_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
       "original_file_sha256": "34f6b518028a307219be9e4a130d37329ec85a7b6289fa3e21c0dea346334291",
-      "body_lf_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed"
+      "body_lf_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed",
+          "body_lf_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged."
     },
     {
       "original_path": "_posts/2026-02-09-conjugate-gradient.md",
       "current_path": "_posts/2026-02-09-conjugate-gradient.md",
-      "body_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114",
+      "body_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d",
       "original_file_sha256": "f53a74aae1328d3e646851ec82d0242dbab94c74776ca315bfae319295a72751",
-      "body_lf_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114"
+      "body_lf_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114",
+          "body_lf_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
       "current_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
-      "body_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf",
+      "body_sha256": "1893858c9539c12a316b99200d27e127a307d70adaaf76ca4e4a03554ba339ba",
       "original_file_sha256": "04d513220154aded9c301582feb8a9efeb4b7e91aa014f9df25e2fae137b6a38",
-      "body_lf_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf"
+      "body_lf_sha256": "195ca65e1254e3920f1f3d2e8c43ee93b57470a06518f48887629eb8ba72a44b",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf",
+          "body_lf_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-24-folland-measures-and-set-convergence.md",
       "current_path": "_posts/measure-theory/2026-07-24-folland-measures-and-set-convergence.md",
-      "body_sha256": "9219cd4eb05c83edd75cd2d4f086cb3db583bf6186eea3b016e0d5a3891a5970",
+      "body_sha256": "0386afc0296295f848f787636acc4f9b09fb27d3c7c1dfb3773331655ad7dde3",
       "original_file_sha256": "a98ceb54e516809fd6abfb92d66b9b13452c632b4379d1fbae56c74b3cf743cc",
-      "body_lf_sha256": "9219cd4eb05c83edd75cd2d4f086cb3db583bf6186eea3b016e0d5a3891a5970"
+      "body_lf_sha256": "1ba3b91f0f0fbef706e29a45d109b1131ccea266d2fc96a462317b1c426e1bc7",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "9219cd4eb05c83edd75cd2d4f086cb3db583bf6186eea3b016e0d5a3891a5970",
+          "body_lf_sha256": "9219cd4eb05c83edd75cd2d4f086cb3db583bf6186eea3b016e0d5a3891a5970"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
       "current_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
-      "body_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed",
+      "body_sha256": "c438371d483277a69120dd350169a2560a0e4e774bf9eb21c92d106783df61d3",
       "original_file_sha256": "a73291aca9dd9df2e59fdc50084930bb40ad190614ddf58e9402b47aa9fb9371",
-      "body_lf_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed"
+      "body_lf_sha256": "e9076232fc7272ac2f5cc885d0dc27d826ae5641d350f6830c345ed61601fee9",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed",
+          "body_lf_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
       "current_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
-      "body_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2",
+      "body_sha256": "7c6071bb1eed0c8c7029e4c59904ab1fd413e2b309952da603bd79bc68f89c77",
       "original_file_sha256": "f98d83806afd8bf223848f4db26d2fe92c705762466164692d5cfdd0de0cd565",
-      "body_lf_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2"
+      "body_lf_sha256": "d4f2d57758fd65b5c11cdd187468f4e0721258076be279ab3cccfa47b8ab8aa2",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2",
+          "body_lf_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-27-folland-product-measurable-spaces.md",
       "current_path": "_posts/measure-theory/2026-07-27-folland-product-measurable-spaces.md",
-      "body_sha256": "15dc5fa50d14628b075c68e81319a97f60f6eb5f2306f3382d1bd7b143acbb2f",
+      "body_sha256": "5d9858a070f32458c07cf191eb477246ce779859090479f6985f101478730dcb",
       "original_file_sha256": "2530589c3d11dc37a91115a99e900f6a218340c70c570f9b9dbd7030b961ee1d",
-      "body_lf_sha256": "15dc5fa50d14628b075c68e81319a97f60f6eb5f2306f3382d1bd7b143acbb2f"
+      "body_lf_sha256": "0bfc4f89a4dcd7cebab477601e95b001481d4bd6736a1f0d33058e59193764f9",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "15dc5fa50d14628b075c68e81319a97f60f6eb5f2306f3382d1bd7b143acbb2f",
+          "body_lf_sha256": "15dc5fa50d14628b075c68e81319a97f60f6eb5f2306f3382d1bd7b143acbb2f"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-28-folland-cantor-set-and-completion.md",
       "current_path": "_posts/measure-theory/2026-07-28-folland-cantor-set-and-completion.md",
-      "body_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8",
+      "body_sha256": "19e95b50e9f554da9eb7b7de6cd687a6924df0253a5b915ae3b5cdd70d196eb4",
       "original_file_sha256": "d664a710ad3797f135ef781954a2dc2f4d3b91f90ee4853871e62b61cb3792d5",
-      "body_lf_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8"
+      "body_lf_sha256": "98143e158364ce164b46b4b2cf0b1643ad752e650977eb050036c7f833d8d92f",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8",
+          "body_lf_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
       "current_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
-      "body_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c",
+      "body_sha256": "c7460be50716edae71025359614b84cfd3d7153a66d4ce93c678919882a43c94",
       "original_file_sha256": "c6826557adec4d702da0e1220d4f6919f189c54b80f614c9c40ee781f5111062",
-      "body_lf_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c"
+      "body_lf_sha256": "a8408f549317ca8fd862858306f9a561bd875d9834854ccc13ed9da207e6f864",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c",
+          "body_lf_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/seminar/2026-08-07-fatou-dct.md",
       "current_path": "_posts/seminar/2026-08-07-fatou-dct.md",
-      "body_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a",
+      "body_sha256": "ebb7329d94a580c07febd9e43ef45b01312027a9b8eb71eafc95afe420135a1c",
       "original_file_sha256": "41163f05ef858bbb77de0b2837d581526e7619e06f9a0af72beb8ea42475671e",
-      "body_lf_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a"
+      "body_lf_sha256": "6615a48f1d8bde34a7b7d5eabf71ec395e4a71058466bef1607e893e569b6383",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a",
+          "body_lf_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     },
     {
       "original_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
       "current_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
-      "body_sha256": "ec8be65182c55d6de7cb948388854b4cb9f56e6b6471b6f2980edd9353782e45",
+      "body_sha256": "a2e2a00fe47fde2c8b8187994a2a3aa324af50389fd36a4d216b1eb74ae5619c",
       "original_file_sha256": "e71790f5ebef5fd1b8c80635b8c9958a7e3c6d4f8b19f785baad9413d7a0a18e",
-      "body_lf_sha256": "3e7597b79ce44c552bac6f7db17c1ad7c720f533d986e4c82bc1996996007ab8",
-      "original_snapshot": "archive/originals/2026-08-14-Lp-space-and-inequalities-04.md"
+      "body_lf_sha256": "fcbc5ed54ce4ea6f1f8fc1c20924f2f5065bc68bd4623655934e361b03ca9d87",
+      "original_snapshot": "archive/originals/2026-08-14-Lp-space-and-inequalities-04.md",
+      "revision_history": [
+        {
+          "date": "2026-09-11",
+          "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
+          "body_sha256": "ec8be65182c55d6de7cb948388854b4cb9f56e6b6471b6f2980edd9353782e45",
+          "body_lf_sha256": "3e7597b79ce44c552bac6f7db17c1ad7c720f533d986e4c82bc1996996007ab8"
+        }
+      ],
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
     }
   ],
   "normalized_hash_rule": "Replace CRLF with LF; supports verification after Git line-ending normalization. Raw body_sha256 records the original local bytes."
