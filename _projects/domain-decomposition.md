@@ -29,4 +29,4 @@ This is a planned project; no ASM/RAS implementation, coarse-space experiment, o
 
 ## Study prerequisites
 
-[Basic preconditioners]({% link Saad/10-Basic-Preconditioners.md %}) → [Domain Decomposition Bridge]({% link Saad/14-Domain-Decomposition-Bridge.md %})
+[Basic preconditioners]({% link _posts/saad/2026-09-11-saad-10-basic-preconditioners.md %}) → [Domain Decomposition Bridge]({% link _posts/saad/2026-09-11-saad-14-domain-decomposition-bridge.md %})

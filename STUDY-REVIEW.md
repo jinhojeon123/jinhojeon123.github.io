@@ -36,10 +36,10 @@ toc: true
 
 ## 학습 구조 결정
 
-- Folland 기존 기록의 진행 지점은 Seminar 04. 판본 표기가 없어 2판 (1999)을 reference edition으로 명시했다. 본인 교재의 edition·printing 대조는 [Folland index]({% link Folland-Seminar/index.md %})에 남겼다.
+- Folland 기존 기록의 진행 지점은 Seminar 04. 판본 표기가 없어 2판 (1999)을 reference edition으로 명시했다. 본인 교재의 edition·printing 대조는 [Folland index]({% link study/folland/index.md %})에 남겼다.
 - 각 Folland Week는 prerequisite가 준비된 상태의 2–3시간 발표를 기준으로 배분했다. 실제 proof 준비에서 초과하면 연결된 Part 경계에서 다시 나누도록 workload에 표시했다.
-- 기존 기록에서 확인되지 않은 선행 theorem은 [prerequisite checklist]({% link Folland-Seminar/Prerequisite-Checklist.md %})로 연결했다. 기존에 공부했다고 가정하거나 재작성하지 않았다.
-- Saad의 기본 linear algebra 정의는 [Linear Algebra Review]({% link Linear-Algebra-Review/index.md %})에서 소유하고 [Saad 00]({% link Saad/00-Prerequisites.md %})은 checklist로 연결했다. SVD existence → norms → low-rank approximation의 복귀 순서도 명시했다.
+- 기존 기록에서 확인되지 않은 선행 theorem은 [prerequisite checklist]({% link study/folland/prerequisite-checklist.md %})로 연결했다. 기존에 공부했다고 가정하거나 재작성하지 않았다.
+- Saad의 기본 linear algebra 정의는 [Linear Algebra Review]({% link study/linear-algebra/index.md %})에서 소유하고 [Saad 00]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %})은 checklist로 연결했다. SVD existence → norms → low-rank approximation의 복귀 순서도 명시했다.
 - Archive는 원래 byte를 보존했다. 수정된 active body의 preservation hash에는 날짜·이전 hash·이유를 기록했다.
 
 ## 검증

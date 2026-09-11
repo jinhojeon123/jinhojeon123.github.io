@@ -214,9 +214,9 @@
     {
       "original_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
       "current_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
-      "body_sha256": "a2e2a00fe47fde2c8b8187994a2a3aa324af50389fd36a4d216b1eb74ae5619c",
+      "body_sha256": "30e95454cc42f935f4064511521e8f23530f7cdd9f9378cfc669769765be8e57",
       "original_file_sha256": "e71790f5ebef5fd1b8c80635b8c9958a7e3c6d4f8b19f785baad9413d7a0a18e",
-      "body_lf_sha256": "fcbc5ed54ce4ea6f1f8fc1c20924f2f5065bc68bd4623655934e361b03ca9d87",
+      "body_lf_sha256": "d40e4684bd9b1bda6043cc8c32a0b21eb4427ca9bf63a185fb60259ff8ee66bc",
       "original_snapshot": "archive/originals/2026-08-14-Lp-space-and-inequalities-04.md",
       "revision_history": [
         {
@@ -224,9 +224,15 @@
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "ec8be65182c55d6de7cb948388854b4cb9f56e6b6471b6f2980edd9353782e45",
           "body_lf_sha256": "3e7597b79ce44c552bac6f7db17c1ad7c720f533d986e4c82bc1996996007ab8"
+        },
+        {
+          "date": "2026-09-12",
+          "previous_commit": "57f1cd310bd26f4db8bcd85fd8beadc048e82970",
+          "body_sha256": "a2e2a00fe47fde2c8b8187994a2a3aa324af50389fd36a4d216b1eb74ae5619c",
+          "body_lf_sha256": "fcbc5ed54ce4ea6f1f8fc1c20924f2f5065bc68bd4623655934e361b03ca9d87"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-12: Update only the Week 05 source link after moving study outlines into _posts; mathematical text is unchanged."
     }
   ],
   "normalized_hash_rule": "Replace CRLF with LF; supports verification after Git line-ending normalization. Raw body_sha256 records the original local bytes."

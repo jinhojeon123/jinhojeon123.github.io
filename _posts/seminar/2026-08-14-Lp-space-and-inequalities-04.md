@@ -328,7 +328,7 @@ $$
 
 ### Next Seminar
 
-- [Week 05 — Duality of Lp]({% link Folland-Seminar/Week-05-Duality-of-Lp.md %})
+- [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
 - Prerequisite TODO: bounded linear functionals, Lebesgue–Radon–Nikodym Theorem, simple-function density
 
 ## What I should remember

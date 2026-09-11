@@ -29,4 +29,4 @@ This is a planned project. There is no published FEM implementation or convergen
 
 ## Study prerequisites
 
-[Folland Seminar]({% link Folland-Seminar/index.md %}) · [Linear Algebra → Numerical PDE]({% link Linear-Algebra-Review/19-Bridge-to-Numerical-PDE.md %}) · [Saad → PDE / parallel operations]({% link Saad/13-Parallel-and-PDE-Connection.md %})
+[Folland Seminar]({% link study/folland/index.md %}) · [Linear Algebra → Numerical PDE]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-19-bridge-to-numerical-pde.md %}) · [Saad → PDE / parallel operations]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connection.md %})

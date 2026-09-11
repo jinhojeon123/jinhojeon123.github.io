@@ -29,4 +29,4 @@ Record matrix source and dimensions, conditioning information when available, in
 
 ## Study skeleton
 
-[Linear Algebra prerequisites]({% link Linear-Algebra-Review/index.md %}) → [Saad Study]({% link Saad/index.md %})
+[Linear Algebra prerequisites]({% link study/linear-algebra/index.md %}) → [Saad Study]({% link study/saad/index.md %})

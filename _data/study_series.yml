@@ -1,0 +1,12 @@
+- id: folland-seminar
+  title: Folland Seminar
+  url: /study/folland/
+  scope: Week 05–48 · Lp duality부터 시작
+- id: linear-algebra-review
+  title: Linear Algebra Review
+  url: /study/linear-algebra/
+  scope: 00–19 · 기초부터 numerical PDE 연결까지
+- id: saad
+  title: Saad Study
+  url: /study/saad/
+  scope: 00–14 · sparse systems에서 domain decomposition까지

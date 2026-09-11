@@ -22,6 +22,11 @@ layout: default
       <li><a href="{{ '/projects/krylov-solvers/' | relative_url }}">From steepest descent to conjugate gradients</a> — derivations and MATLAB implementations, with preconditioning planned.</li>
     </ul>
   </section>
+  <section class="home-section" aria-labelledby="study-series">
+    <h2 id="study-series">Study series</h2>
+    <p>선행 내용과 학습 순서에 따라 이어지는 게시글입니다. Outline은 앞으로 작성할 학습 개요를 뜻합니다.</p>
+    {% include study-series.html %}
+  </section>
   <section class="home-section" aria-labelledby="latest-notes">
     <h2 id="latest-notes">Recent notes</h2>
     {% assign recent_notes = site.posts | where_exp: 'note', 'note.status != "outline"' | where_exp: 'note', 'note.hidden != true' | slice: 0, 6 %}

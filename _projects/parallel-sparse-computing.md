@@ -29,4 +29,4 @@ This is a planned project. MPI/CMake source, timing data, and scaling figures wi
 
 ## Study prerequisites
 
-[Sparse linear systems]({% link Saad/01-Sparse-Linear-Systems.md %}) → [Parallel / PDE connection]({% link Saad/13-Parallel-and-PDE-Connection.md %})
+[Sparse linear systems]({% link _posts/saad/2026-09-11-saad-01-sparse-linear-systems.md %}) → [Parallel / PDE connection]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connection.md %})
