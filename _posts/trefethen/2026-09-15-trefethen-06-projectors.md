@@ -15,94 +15,94 @@ series_order: 6
 
 - **Reference:** Trefethen and Bau, *Numerical Linear Algebra*, Lecture 6, “Projectors”
 - **Part:** **II — QR Factorization and Least Squares**
-- **학습 초점:** 이론·유도
+- **Study focus:** Theory and derivation
 - **Series:** [Trefethen NLA in C++]({% link study/trefethen/index.md %})
 
-## 목표와 범위
+## Goal and scope
 
-직교·비직교 사영을 비교하고 직교 사영의 대수적·기하학적 조건을 확인한다.
+Compare orthogonal and oblique projections and check the algebraic and geometric conditions for orthogonal projection.
 
-## 선행 내용
+## Prerequisites
 
 - [Lecture 02 — Orthogonal Vectors and Matrices]({% link _posts/trefethen/2026-09-15-trefethen-02-orthogonal-vectors-and-matrices.md %})
 - [Lecture 03 — Norms]({% link _posts/trefethen/2026-09-15-trefethen-03-norms.md %})
-- 배경: 부분공간의 direct sum
+- Background: Direct sums of subspaces
 
-## 먼저 답할 질문
+## Guiding questions
 
-- P²=P만으로 직교 사영이라고 할 수 있는가?
-- orthogonal projector와 oblique projector의 range·null space는 어떻게 다른가?
+- Does P²=P alone imply that P is an orthogonal projector?
+- How do the ranges and null spaces of orthogonal and oblique projectors differ?
 
-## 핵심 내용 체크리스트
+## Coverage checklist
 
-- [ ] 사영의 idempotence와 orthogonality 조건
-- [ ] 직교정규 기저에서 P=QQ* 유도
+- [ ] Idempotence and orthogonality conditions for projectors
+- [ ] Derivation of P=$QQ^{\ast}$ from an orthonormal basis
 
-## 수학적 정리
+## Mathematical development
 
-### 설정과 표기
+### Setup and notation
 
-<!-- TODO: 행렬 크기, 실수·복소수, rank·대칭성 등 실제로 필요한 가정과 norm을 정한다. -->
+<!-- TODO: Specify dimensions, the scalar field, relevant rank/structure assumptions, and norms. -->
 
-### 정의와 결과
+### Definitions and results
 
-<!-- TODO: 핵심 결과의 가정과 결론을 구분해 자신의 말로 쓴다. -->
+<!-- TODO: State the assumptions and conclusions of the main results separately, in your own words. -->
 
-### 유도와 예제
+### Derivation and examples
 
-<!-- TODO: 핵심 식 또는 proof sketch를 직접 전개하고 작은 예·경계 사례를 붙인다. -->
+<!-- TODO: Derive the key identity or proof sketch, then add small examples and boundary cases. -->
 
-## C++ 확인 실험 계획
+## C++ verification plan
 
-이론 강의에서는 작은 계산으로 정의·정리의 의미를 확인한다.
-새 solver 구현은 필요한 경우에만 추가한다.
+Use small computations to illustrate the definitions and results in this theory lecture.
+Add a new solver implementation only when it serves the topic.
 
-**예정 대상:** `nla::orthogonal_projector` in `qr.*`
+**Planned target:** `nla::orthogonal_projector` in `qr.*`
 
-<!-- TODO: 실제 구현 후 코드 저장소의 파일·commit 링크와 최소 사용 예를 추가한다.
-위 이름은 구현 계획이며, 현재 존재하거나 검증된 API라는 뜻이 아니다. -->
+<!-- TODO: After implementation, add a source-file/commit link and a minimal usage example.
+The names above describe planned work, not an existing or validated API. -->
 
-- [ ] 손계산 가능한 작은 예와 가정이 깨지는 예를 고른다.
-- [ ] 기존 연산 또는 검증 라이브러리로 관찰할 값을 계산한다.
-- [ ] 유한한 실험 사례와 일반적인 증명을 구분한다.
+- [ ] Choose a small example that can be checked by hand and an example that violates an assumption.
+- [ ] Compute the quantities of interest using existing operations or a validated library.
+- [ ] Distinguish a finite collection of experiments from a general proof.
 
-## 수치 실험
+## Numerical experiments
 
-**확인할 비교:** Hermitian, idempotent, 최소 거리 조건과 residual 직교성을 검사한다.
+**Planned comparison:** Check Hermitian symmetry, idempotence, the minimum-distance property, and residual orthogonality.
 
-### 지표
+### Metrics
 
-- P²−P 및 P*−P의 norm
-- 사영 잔차의 부분공간 직교성과 최소 거리
+- Norms of P²−P and $P^{\ast}-P$
+- Orthogonality of the projection residual and the minimum-distance property
 
-각 norm과 정규화를 명시한다. 상대오차의 분모가 0인 경우에는 절대오차를 함께 기록한다.
+Specify every norm and normalization. If a relative-error denominator is zero, also report absolute error.
 
-### 실행 기록
+### Reproduction record
 
-<!-- TODO: 시리즈 안내의 재현 기록 항목을 채운다.
-compiler/Eigen 버전, scalar type, build flags, matrix family·size, seed,
-관련된 조건수·spectrum·tolerance, 실행 명령, code commit, raw output.
-아직 실행하지 않은 결과를 수치·그래프로 작성하지 않는다. -->
+<!-- TODO: Follow the series guide's reproduction checklist.
+Record compiler/Eigen versions, scalar type, build flags, matrix family/size, seed,
+relevant condition numbers/spectra/tolerances, commands, code commit, and raw output.
+Do not invent measurements or plots for experiments that have not been run. -->
 
-### 결과와 해석
+### Results and interpretation
 
-<!-- TODO: 실제 실행 후 표·그림과 함께 예상, 관측, 차이의 원인을 쓴다. -->
+<!-- TODO: After running the experiment, add tables/plots, expectations, observations, and explanations of any differences. -->
 
-## 주의할 점
+## Pitfalls
 
-**열이 직교정규가 아닌 Q에 `QQ*`를 그대로 적용**
+**Applying `QQ*` when the columns of Q are not orthonormal**
 
-<!-- TODO: 이 강의에 해당하는 가정 위반·conditioning·rounding·비용 문제를 설명한다. -->
+<!-- TODO: Discuss assumption violations, conditioning, rounding, and cost issues relevant to this lecture. -->
 
-## 복습과 남은 질문
+## Review and open questions
 
-- [ ] 위 질문에 책을 덮고 답하고 핵심 유도를 재구성했다.
-- [ ] 작은 예 또는 확인 실험으로 정리의 의미와 한계를 설명했다.
-- [ ] 아직 이해하지 못한 단계와 다음에 확인할 자료를 적었다.
+- [ ] Answer the guiding questions and reconstruct the main derivation with the book closed.
+- [ ] Use a small example or verification experiment to explain the result and its limitations.
+- [ ] Record unresolved steps and the sources to consult next.
 
-<!-- TODO: 학습 날짜와 해결되지 않은 질문을 적는다. 본문이 채워지면 status를 갱신한다. -->
+<!-- TODO: Record study dates and unresolved questions. Update status after developing the body of the note. -->
 
-## 이전 / 다음
+## Previous / Next
 
-- 이전: [Lecture 05 — More on the SVD]({% link _posts/trefethen/2026-09-15-trefethen-05-more-on-the-svd.md %})
-- 다음: [Lecture 07 — QR Factorization]({% link _posts/trefethen/2026-09-15-trefethen-07-qr-factorization.md %})
+- Previous: [Lecture 05 — More on the SVD]({% link _posts/trefethen/2026-09-15-trefethen-05-more-on-the-svd.md %})
+- Next: [Lecture 07 — QR Factorization]({% link _posts/trefethen/2026-09-15-trefethen-07-qr-factorization.md %})

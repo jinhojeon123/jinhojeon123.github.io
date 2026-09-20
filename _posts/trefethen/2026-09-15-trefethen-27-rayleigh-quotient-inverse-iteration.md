@@ -15,101 +15,101 @@ series_order: 27
 
 - **Reference:** Trefethen and Bau, *Numerical Linear Algebra*, Lecture 27, “Rayleigh Quotient, Inverse Iteration”
 - **Part:** **V — Eigenvalues**
-- **학습 초점:** 알고리즘·구현
+- **Study focus:** Algorithm and implementation
 - **Series:** [Trefethen NLA in C++]({% link study/trefethen/index.md %})
 
-## 목표와 범위
+## Goal and scope
 
-inverse iteration과 Rayleigh quotient iteration을 구현한다.
+Implement inverse iteration and Rayleigh quotient iteration.
 
-## 선행 내용
+## Prerequisites
 
 - [Lecture 17 — Stability of Back Substitution]({% link _posts/trefethen/2026-09-15-trefethen-17-stability-of-back-substitution.md %})
 - [Lecture 24 — Eigenvalue Problems]({% link _posts/trefethen/2026-09-15-trefethen-24-eigenvalue-problems.md %})
 - [Lecture 25 — Overview of Eigenvalue Algorithms]({% link _posts/trefethen/2026-09-15-trefethen-25-overview-of-eigenvalue-algorithms.md %})
-- 배경: shifted linear system과 정규화
+- Background: Shifted linear systems and normalization
 
-## 먼저 답할 질문
+## Guiding questions
 
-- inverse iteration의 shift는 수렴 대상과 풀이 난도에 어떤 영향을 주는가?
-- Rayleigh quotient iteration의 빠른 국소 수렴에는 어떤 가정이 필요한가?
+- How does the inverse-iteration shift affect the target eigenpair and the difficulty of the solve?
+- Which assumptions support rapid local convergence of Rayleigh quotient iteration?
 
-## 핵심 내용 체크리스트
+## Coverage checklist
 
-- [ ] Rayleigh quotient와 inverse iteration 유도
-- [ ] Hermitian 여부, 초기벡터, 거의 특이한 shifted solve
+- [ ] Derivation of the Rayleigh quotient and inverse iteration
+- [ ] Hermitian structure, initial vectors, and nearly singular shifted solves
 
-## 수학적 정리
+## Mathematical development
 
-### 설정과 표기
+### Setup and notation
 
-<!-- TODO: 행렬 크기, 실수·복소수, rank·대칭성 등 실제로 필요한 가정과 norm을 정한다. -->
+<!-- TODO: Specify dimensions, the scalar field, relevant rank/structure assumptions, and norms. -->
 
-### 정의와 결과
+### Definitions and results
 
-<!-- TODO: 핵심 결과의 가정과 결론을 구분해 자신의 말로 쓴다. -->
+<!-- TODO: State the assumptions and conclusions of the main results separately, in your own words. -->
 
-### 유도와 예제
+### Derivation and examples
 
-<!-- TODO: 핵심 식 또는 proof sketch를 직접 전개하고 작은 예·경계 사례를 붙인다. -->
+<!-- TODO: Derive the key identity or proof sketch, then add small examples and boundary cases. -->
 
-## 알고리즘과 비용
+## Algorithm and cost
 
-<!-- 아래 항목을 이 강의의 계산 절차로 채운다. 직접법에는 반복 종료 조건을 억지로 넣지 않는다. -->
+<!-- Fill in the procedure for this lecture. Direct methods do not need an artificial iterative stopping criterion. -->
 
-- [ ] 입력·출력의 차원과 필요한 가정을 명시한다.
-- [ ] 핵심 갱신식을 유도하고 손으로 계산한 작은 예를 적는다.
-- [ ] 종료·실패 조건 또는 분해가 불가능한 입력을 정의한다.
-- [ ] 연산량, 추가 저장량, 재사용 가능한 분해를 구분한다.
+- [ ] Specify input/output dimensions and required assumptions.
+- [ ] Derive the main updates and work through a small example by hand.
+- [ ] Define stopping/failure conditions or inputs for which the factorization is unavailable.
+- [ ] Distinguish operation counts, additional storage, and reusable factorizations.
 
-## C++ 구현 계획
+## C++ implementation plan
 
-**예정 대상:** `nla::inverse_iteration` and `nla::rayleigh_quotient_iteration`
+**Planned target:** `nla::inverse_iteration` and `nla::rayleigh_quotient_iteration`
 
-<!-- TODO: 실제 구현 후 코드 저장소의 파일·commit 링크와 최소 사용 예를 추가한다.
-위 이름은 구현 계획이며, 현재 존재하거나 검증된 API라는 뜻이 아니다. -->
+<!-- TODO: After implementation, add a source-file/commit link and a minimal usage example.
+The names above describe planned work, not an existing or validated API. -->
 
-- [ ] 최소 API와 입력 검사, 실패 상태를 정한다.
-- [ ] 작은 정상 입력과 이 강의의 경계·실패 사례를 검증한다.
-- [ ] Eigen 등 기준 구현과 비교할 때 부호·위상·순열 convention을 맞춘다.
+- [ ] Define a minimal API, input checks, and failure status.
+- [ ] Test small valid inputs and the boundary/failure cases relevant to this lecture.
+- [ ] Align sign, phase, and permutation conventions when comparing with Eigen or another reference implementation.
 
-## 수치 실험
+## Numerical experiments
 
-**확인할 비교:** shift 거리와 matrix class를 바꾸며 residual의 선형/고차 수렴을 비교한다.
+**Planned comparison:** Vary shift distance and matrix class to compare linear and higher-order residual convergence.
 
-### 지표
+### Metrics
 
-- 정규화한 eigenpair 잔차와 고유벡터 방향 오차
-- shift·초기벡터별 반복 이력과 solve 실패 상태
+- Normalized eigenpair residuals and eigenvector direction errors
+- Iteration histories and solve failures for different shifts and initial vectors
 
-각 norm과 정규화를 명시한다. 상대오차의 분모가 0인 경우에는 절대오차를 함께 기록한다.
+Specify every norm and normalization. If a relative-error denominator is zero, also report absolute error.
 
-### 실행 기록
+### Reproduction record
 
-<!-- TODO: 시리즈 안내의 재현 기록 항목을 채운다.
-compiler/Eigen 버전, scalar type, build flags, matrix family·size, seed,
-관련된 조건수·spectrum·tolerance, 실행 명령, code commit, raw output.
-아직 실행하지 않은 결과를 수치·그래프로 작성하지 않는다. -->
+<!-- TODO: Follow the series guide's reproduction checklist.
+Record compiler/Eigen versions, scalar type, build flags, matrix family/size, seed,
+relevant condition numbers/spectra/tolerances, commands, code commit, and raw output.
+Do not invent measurements or plots for experiments that have not been run. -->
 
-### 결과와 해석
+### Results and interpretation
 
-<!-- TODO: 실제 실행 후 표·그림과 함께 예상, 관측, 차이의 원인을 쓴다. -->
+<!-- TODO: After running the experiment, add tables/plots, expectations, observations, and explanations of any differences. -->
 
-## 주의할 점
+## Pitfalls
 
-**거의 singular한 shifted solve의 실패를 숨김**
+**Hiding failures in nearly singular shifted solves**
 
-<!-- TODO: 이 강의에 해당하는 가정 위반·conditioning·rounding·비용 문제를 설명한다. -->
+<!-- TODO: Discuss assumption violations, conditioning, rounding, and cost issues relevant to this lecture. -->
 
-## 복습과 남은 질문
+## Review and open questions
 
-- [ ] 위 질문에 책을 덮고 답하고 핵심 유도를 재구성했다.
-- [ ] 구현과 경계 사례를 검증하고 재현 명령을 기록했다.
-- [ ] 아직 이해하지 못한 단계와 다음에 확인할 자료를 적었다.
+- [ ] Answer the guiding questions and reconstruct the main derivation with the book closed.
+- [ ] Validate the implementation and boundary cases, and record reproduction commands.
+- [ ] Record unresolved steps and the sources to consult next.
 
-<!-- TODO: 학습 날짜와 해결되지 않은 질문을 적는다. 본문이 채워지면 status를 갱신한다. -->
+<!-- TODO: Record study dates and unresolved questions. Update status after developing the body of the note. -->
 
-## 이전 / 다음
+## Previous / Next
 
-- 이전: [Lecture 26 — Reduction to Hessenberg or Tridiagonal Form]({% link _posts/trefethen/2026-09-15-trefethen-26-reduction-to-hessenberg-or-tridiagonal-form.md %})
-- 다음: [Lecture 28 — QR Algorithm without Shifts]({% link _posts/trefethen/2026-09-15-trefethen-28-qr-algorithm-without-shifts.md %})
+- Previous: [Lecture 26 — Reduction to Hessenberg or Tridiagonal Form]({% link _posts/trefethen/2026-09-15-trefethen-26-reduction-to-hessenberg-or-tridiagonal-form.md %})
+- Next: [Lecture 28 — QR Algorithm without Shifts]({% link _posts/trefethen/2026-09-15-trefethen-28-qr-algorithm-without-shifts.md %})

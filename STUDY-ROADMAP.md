@@ -44,6 +44,6 @@ status: outline
 
 - [ ] [Folland Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})의 prerequisite 확인 및 발표 준비
 - [ ] [Linear Algebra 00]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %})부터 순서대로 복습
-- [ ] [Trefethen Lecture 01]({% link _posts/trefethen/2026-09-15-trefethen-01-matrix-vector-multiplication.md %})부터 C++ 구현과 수치 실험 기록
+- [ ] [Trefethen Lecture 01]({% link _posts/trefethen/2026-09-15-trefethen-01-matrix-vector-multiplication.md %}): implement in C++ and record numerical experiments
 - [ ] [Saad 00]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %})의 prerequisite checklist 확인
 - [ ] [기존 글의 High-priority 수정]({% link STUDY-REVIEW.md %}) 직접 해결

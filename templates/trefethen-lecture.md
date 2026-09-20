@@ -14,111 +14,111 @@ toc: true
 published: false
 ---
 
-<!-- Lecture 01–40은 이미 _posts/trefethen/에 있다. 해당 파일을 먼저 찾아 채운다.
-새 파일이 필요하면 _posts/trefethen/YYYY-MM-DD-trefethen-NN-slug.md에 복사하고
-날짜·제목·URL·series_order를 실제 값으로 교체한다. series_order는 중복 없는 정수다.
-기존 글을 대체할 때는 기존 permalink를 유지한다.
-공개 준비 후 published:false를 제거한다. 본문을 작성한 후 status를 갱신한다.
-YAML은 파일 첫 줄의 ---부터 다음 ---까지 한 번만 쓴다. -->
+<!-- Lectures 01–40 already exist in _posts/trefethen/. Develop those files first.
+For a new file, copy this template to _posts/trefethen/YYYY-MM-DD-trefethen-NN-slug.md.
+Replace the date, title, URL, and series_order. Use a unique integer for series_order.
+Preserve the permalink when replacing an existing note.
+Remove published:false when ready to publish, and update status as the body develops.
+Keep exactly one YAML block between --- delimiters at the beginning of the file. -->
 
 - **Reference:** Trefethen and Bau, *Numerical Linear Algebra*, Lecture NN, “TODO”
 - **Part:** TODO
-- **학습 초점:** TODO: 이론·유도 / 알고리즘·구현 / 비교·실험 중 선택
+- **Study focus:** TODO: choose theory and derivation / algorithm and implementation / comparison and experiment
 - **Series:** [Trefethen NLA in C++]({% link study/trefethen/index.md %})
 
-## 목표와 범위
+## Goal and scope
 
-<!-- 이 강의를 마치면 설명할 수 있어야 하는 것을 1–2문장으로 쓴다.
-교재에서 다루는 내용과 개인적인 C++ 확장을 구분한다. -->
+<!-- In 1–2 sentences, state what you should be able to explain after this lecture.
+Distinguish the book's content from personal C++ extensions. -->
 
-## 선행 내용
+## Prerequisites
 
-- [ ] TODO: 필요한 정의·정리와 실제 선행 글 링크
+- [ ] TODO: Required definitions/results and links to existing prerequisite notes
 
-## 먼저 답할 질문
+## Guiding questions
 
-- TODO: 이 강의에서 해결하는 수학적 문제는 무엇인가?
-- TODO: 다음 강의에 넘겨줄 결과는 무엇인가?
+- TODO: What mathematical problem does this lecture address?
+- TODO: Which result will the next lecture need?
 
-## 핵심 내용 체크리스트
+## Coverage checklist
 
-- [ ] TODO: 이 강의만의 결과와 핵심 유도
-- [ ] TODO: 가정이 필요한 이유와 경계 사례
+- [ ] TODO: Results and central derivations specific to this lecture
+- [ ] TODO: Why the assumptions matter, including boundary cases
 
-## 수학적 정리
+## Mathematical development
 
-### 설정과 표기
+### Setup and notation
 
-<!-- 행렬 크기·실수/복소수·rank·구조 가정·norm을 명시한다. -->
+<!-- Specify dimensions, real/complex scalars, rank/structure assumptions, and norms. -->
 
-### 정의와 결과
+### Definitions and results
 
-<!-- 정리의 가정과 결론을 분리하고 출처의 강의·정리 번호를 기록한다. -->
+<!-- Separate assumptions from conclusions and record the source lecture/theorem number. -->
 
-### 유도와 예제
+### Derivation and examples
 
-<!-- 핵심 계산이나 proof sketch를 자신의 말로 작성한다. 증명과 실험 관찰을 구분한다. -->
+<!-- Present the key calculation or proof sketch in your own words. Distinguish proofs from experimental observations. -->
 
-## 알고리즘과 비용
+## Algorithm and cost
 
-<!-- 알고리즘 강의에서 사용한다. 이론·비교 중심 강의라면 이 절을 삭제한다. -->
+<!-- Use this section for algorithm lectures. Remove it for theory or comparison lectures when it does not apply. -->
 
-- 입력·출력: TODO
-- 갱신식과 invariant: TODO
-- 종료·실패 조건: TODO
-- 연산량·추가 저장량: TODO
+- Inputs and outputs: TODO
+- Updates and invariants: TODO
+- Stopping/failure conditions: TODO
+- Operation counts and additional storage: TODO
 
-## C++ 구현 또는 확인 실험
+## C++ implementation or verification
 
-<!-- 이론 강의: 손계산 예를 확인하는 작은 프로그램이면 충분하다.
-알고리즘 강의: API·입력 검사·실패 상태와 경계 사례를 다룬다.
-비교 강의: 기존 구현을 재사용하고 비교 조건을 고정한다. -->
+<!-- Theory: a small program checking a hand-worked example may be sufficient.
+Algorithms: cover the API, input checks, failure states, and boundary cases.
+Comparisons: reuse existing implementations and hold comparison conditions fixed. -->
 
-- 예정 대상: TODO
-- 실제 코드·commit: TODO: 구현한 뒤 링크
+- Planned target: TODO
+- Actual source and commit: TODO: link after implementation
 
-<!-- 핵심 update 또는 최소 사용 예만 cpp 코드 블록으로 작성한다.
-아직 존재하지 않는 API를 사용 가능한 구현처럼 소개하지 않는다. -->
+<!-- Include only the main update or a minimal usage example in a cpp code block.
+Do not describe an API that does not yet exist as a working implementation. -->
 
-## 수치 실험
+## Numerical experiments
 
-### 질문과 지표
+### Questions and metrics
 
-- 확인할 비교: TODO
-- 지표·norm·정규화: TODO
-- 기준값을 얻는 방법과 정밀도: TODO
+- Planned comparison: TODO
+- Metrics, norms, and normalization: TODO
+- Reference-value method and precision: TODO
 
-### 실행 기록
+### Reproduction record
 
-<!-- 필요한 항목만 남긴다. 입력·참조값이 0인 경우 상대오차 분모 처리도 적는다. -->
+<!-- Keep relevant items. Explain how relative-error denominators are handled when inputs or reference values are zero. -->
 
-| 항목 | 기록 |
+| Item | Record |
 |---|---|
-| 코드 commit / 실행 명령 | TODO |
-| compiler / Eigen / scalar type | TODO |
-| build type / flags | TODO |
-| 입력 생성법 / 크기 / seed | TODO |
-| 조건수·spectrum / tolerance | TODO: 필요한 경우 |
-| raw output / 반복 측정 방식 | TODO |
+| Code commit / command | TODO |
+| Compiler / Eigen / scalar type | TODO |
+| Build type / flags | TODO |
+| Input generation / size / seed | TODO |
+| Condition number or spectrum / tolerance | TODO: if relevant |
+| Raw output / repeated-measurement procedure | TODO |
 
-### 결과와 해석
+### Results and interpretation
 
-<!-- 실제 실행한 결과만 표·그림으로 제시한다. 예상과 관측을 구분하고 차이를 설명한다. -->
+<!-- Use tables/plots only for experiments actually run. Separate expectations from observations and explain differences. -->
 
-## 주의할 점
+## Pitfalls
 
-<!-- 이 강의와 관련된 가정 위반, conditioning, rounding, breakdown, 비용을 설명한다. -->
+<!-- Discuss relevant assumption violations, conditioning, rounding, breakdown, and costs. -->
 
-## 복습과 남은 질문
+## Review and open questions
 
-- [ ] 핵심 질문에 책을 덮고 답하고 유도를 재구성했다.
-- [ ] 선택한 학습 초점에 필요한 예제·구현·검증을 마쳤다.
-- [ ] 이해하지 못한 단계와 다음에 확인할 자료를 적었다.
+- [ ] Answer the guiding questions and reconstruct the derivation with the book closed.
+- [ ] Complete the examples, implementation, and checks required by the selected study focus.
+- [ ] Record unresolved steps and the sources to consult next.
 
-## 이전 / 다음
+## Previous / Next
 
-<!-- 실제로 존재하는 소스 경로에 Jekyll link 태그를 사용한다.
-선행 지식 링크와 순서상 이전·다음 링크는 다를 수 있다. -->
+<!-- Use Jekyll link tags for source files that actually exist.
+Prerequisite dependencies may differ from the Previous/Next reading order. -->
 
-- 이전: TODO
-- 다음: TODO
+- Previous: TODO
+- Next: TODO

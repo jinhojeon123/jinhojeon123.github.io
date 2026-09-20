@@ -15,94 +15,94 @@ series_order: 12
 
 - **Reference:** Trefethen and Bau, *Numerical Linear Algebra*, Lecture 12, “Conditioning and Condition Numbers”
 - **Part:** **III — Conditioning and Stability**
-- **학습 초점:** 이론·유도
+- **Study focus:** Theory and derivation
 - **Series:** [Trefethen NLA in C++]({% link study/trefethen/index.md %})
 
-## 목표와 범위
+## Goal and scope
 
-문제의 민감도와 2-norm condition number를 연결한다.
+Connect problem sensitivity to the 2-norm condition number.
 
-## 선행 내용
+## Prerequisites
 
 - [Lecture 03 — Norms]({% link _posts/trefethen/2026-09-15-trefethen-03-norms.md %})
 - [Lecture 04 — The Singular Value Decomposition]({% link _posts/trefethen/2026-09-15-trefethen-04-the-singular-value-decomposition.md %})
-- 배경: 함수의 미분과 상대 변화량
+- Background: Differentiation and relative changes
 
-## 먼저 답할 질문
+## Guiding questions
 
-- 조건수는 문제와 알고리즘 중 어느 것의 성질인가?
-- 최악 방향의 perturbation과 임의 perturbation은 어떻게 다른가?
+- Is a condition number a property of the problem or the algorithm?
+- How does a worst-case perturbation direction differ from a random one?
 
-## 핵심 내용 체크리스트
+## Coverage checklist
 
-- [ ] absolute·relative conditioning의 정의
-- [ ] 행렬 곱·선형계의 조건수와 singular value 연결
+- [ ] Definitions of absolute and relative conditioning
+- [ ] Condition numbers for matrix multiplication and linear systems, and their connection to singular values
 
-## 수학적 정리
+## Mathematical development
 
-### 설정과 표기
+### Setup and notation
 
-<!-- TODO: 행렬 크기, 실수·복소수, rank·대칭성 등 실제로 필요한 가정과 norm을 정한다. -->
+<!-- TODO: Specify dimensions, the scalar field, relevant rank/structure assumptions, and norms. -->
 
-### 정의와 결과
+### Definitions and results
 
-<!-- TODO: 핵심 결과의 가정과 결론을 구분해 자신의 말로 쓴다. -->
+<!-- TODO: State the assumptions and conclusions of the main results separately, in your own words. -->
 
-### 유도와 예제
+### Derivation and examples
 
-<!-- TODO: 핵심 식 또는 proof sketch를 직접 전개하고 작은 예·경계 사례를 붙인다. -->
+<!-- TODO: Derive the key identity or proof sketch, then add small examples and boundary cases. -->
 
-## C++ 확인 실험 계획
+## C++ verification plan
 
-이론 강의에서는 작은 계산으로 정의·정리의 의미를 확인한다.
-새 solver 구현은 필요한 경우에만 추가한다.
+Use small computations to illustrate the definitions and results in this theory lecture.
+Add a new solver implementation only when it serves the topic.
 
-**예정 대상:** `nla::condition_number_2` in `stability.*`
+**Planned target:** `nla::condition_number_2` in `stability.*`
 
-<!-- TODO: 실제 구현 후 코드 저장소의 파일·commit 링크와 최소 사용 예를 추가한다.
-위 이름은 구현 계획이며, 현재 존재하거나 검증된 API라는 뜻이 아니다. -->
+<!-- TODO: After implementation, add a source-file/commit link and a minimal usage example.
+The names above describe planned work, not an existing or validated API. -->
 
-- [ ] 손계산 가능한 작은 예와 가정이 깨지는 예를 고른다.
-- [ ] 기존 연산 또는 검증 라이브러리로 관찰할 값을 계산한다.
-- [ ] 유한한 실험 사례와 일반적인 증명을 구분한다.
+- [ ] Choose a small example that can be checked by hand and an example that violates an assumption.
+- [ ] Compute the quantities of interest using existing operations or a validated library.
+- [ ] Distinguish a finite collection of experiments from a general proof.
 
-## 수치 실험
+## Numerical experiments
 
-**확인할 비교:** 제어한 perturbation 크기와 실제 상대 출력 변화를 condition bound와 비교한다.
+**Planned comparison:** Compare controlled perturbation sizes and relative output changes with a conditioning bound.
 
-### 지표
+### Metrics
 
-- 상대 입력 변화에 대한 상대 출력 변화의 비
-- perturbation 방향·크기별 관측 증폭률과 조건수 비교
+- Ratio of relative output change to relative input change
+- Observed amplification versus the condition number across perturbation directions and magnitudes
 
-각 norm과 정규화를 명시한다. 상대오차의 분모가 0인 경우에는 절대오차를 함께 기록한다.
+Specify every norm and normalization. If a relative-error denominator is zero, also report absolute error.
 
-### 실행 기록
+### Reproduction record
 
-<!-- TODO: 시리즈 안내의 재현 기록 항목을 채운다.
-compiler/Eigen 버전, scalar type, build flags, matrix family·size, seed,
-관련된 조건수·spectrum·tolerance, 실행 명령, code commit, raw output.
-아직 실행하지 않은 결과를 수치·그래프로 작성하지 않는다. -->
+<!-- TODO: Follow the series guide's reproduction checklist.
+Record compiler/Eigen versions, scalar type, build flags, matrix family/size, seed,
+relevant condition numbers/spectra/tolerances, commands, code commit, and raw output.
+Do not invent measurements or plots for experiments that have not been run. -->
 
-### 결과와 해석
+### Results and interpretation
 
-<!-- TODO: 실제 실행 후 표·그림과 함께 예상, 관측, 차이의 원인을 쓴다. -->
+<!-- TODO: After running the experiment, add tables/plots, expectations, observations, and explanations of any differences. -->
 
-## 주의할 점
+## Pitfalls
 
-**문제 conditioning과 구현 오차를 혼동**
+**Confusing problem conditioning with implementation error**
 
-<!-- TODO: 이 강의에 해당하는 가정 위반·conditioning·rounding·비용 문제를 설명한다. -->
+<!-- TODO: Discuss assumption violations, conditioning, rounding, and cost issues relevant to this lecture. -->
 
-## 복습과 남은 질문
+## Review and open questions
 
-- [ ] 위 질문에 책을 덮고 답하고 핵심 유도를 재구성했다.
-- [ ] 작은 예 또는 확인 실험으로 정리의 의미와 한계를 설명했다.
-- [ ] 아직 이해하지 못한 단계와 다음에 확인할 자료를 적었다.
+- [ ] Answer the guiding questions and reconstruct the main derivation with the book closed.
+- [ ] Use a small example or verification experiment to explain the result and its limitations.
+- [ ] Record unresolved steps and the sources to consult next.
 
-<!-- TODO: 학습 날짜와 해결되지 않은 질문을 적는다. 본문이 채워지면 status를 갱신한다. -->
+<!-- TODO: Record study dates and unresolved questions. Update status after developing the body of the note. -->
 
-## 이전 / 다음
+## Previous / Next
 
-- 이전: [Lecture 11 — Least Squares Problems]({% link _posts/trefethen/2026-09-15-trefethen-11-least-squares-problems.md %})
-- 다음: [Lecture 13 — Floating Point Arithmetic]({% link _posts/trefethen/2026-09-15-trefethen-13-floating-point-arithmetic.md %})
+- Previous: [Lecture 11 — Least Squares Problems]({% link _posts/trefethen/2026-09-15-trefethen-11-least-squares-problems.md %})
+- Next: [Lecture 13 — Floating Point Arithmetic]({% link _posts/trefethen/2026-09-15-trefethen-13-floating-point-arithmetic.md %})
