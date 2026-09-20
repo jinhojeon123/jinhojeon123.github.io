@@ -15,7 +15,7 @@ series_order: 5
 
 Source scope: Saad, 2nd ed. (2003), §6.2
 
-Prerequisite:
+## Prerequisite
 
 - [Projection Methods]({% link _posts/saad/2026-09-11-saad-03-projection-methods.md %})
 - [Polynomial Viewpoint]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-17-polynomial-viewpoint.md %})
@@ -60,6 +60,7 @@ Dependency: [03]({% link _posts/saad/2026-09-11-saad-03-projection-methods.md %}
 ## Connection to next topic
 
 - [Arnoldi]({% link _posts/saad/2026-09-11-saad-05-arnoldi.md %})
+
 ## Questions
 
 ## Final reconstruction

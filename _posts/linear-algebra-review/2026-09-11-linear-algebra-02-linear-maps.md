@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 3
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Vector Spaces and Subspaces]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-01-vector-spaces-and-subspaces.md %})
 

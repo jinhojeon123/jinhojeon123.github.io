@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 11
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Special Matrix Classes]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-09-special-matrix-classes.md %})
 

@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 2
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Scalars, Vectors, Matrices and Maps]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %})
 

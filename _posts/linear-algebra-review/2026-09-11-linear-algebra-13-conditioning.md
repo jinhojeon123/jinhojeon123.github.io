@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 14
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Matrix and Operator Norms]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-12-matrix-and-operator-norms.md %})
 

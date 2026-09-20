@@ -15,7 +15,7 @@ series_order: 6
 
 Source scope: Saad, 2nd ed. (2003), §§6.3–6.4
 
-Prerequisite:
+## Prerequisite
 
 - [Krylov Subspaces]({% link _posts/saad/2026-09-11-saad-04-krylov-subspaces.md %})
 - [Inner Product Geometry]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-05-inner-product-geometry.md %})
@@ -66,6 +66,7 @@ Dependency: [04]({% link _posts/saad/2026-09-11-saad-04-krylov-subspaces.md %}) 
 ## Connection to next topic
 
 - [GMRES]({% link _posts/saad/2026-09-11-saad-06-gmres.md %})
+
 ## Questions
 
 ## Final reconstruction

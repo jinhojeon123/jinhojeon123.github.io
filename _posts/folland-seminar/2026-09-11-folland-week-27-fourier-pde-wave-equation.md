@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 27
 ---
 
-- Main topic: Fourier Methods for PDE — Wave Equation
-- Reference: Folland 2nd edition, §8.7 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Fourier Methods for PDE — Wave Equation
+- **Reference:** Folland 2nd edition, §8.7 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -23,19 +23,11 @@ series_order: 27
 
 ## Must cover
 
-- TODO: wave equation
-- TODO: Fourier solution operator
-- TODO: dimension-dependent wave kernels
-- TODO: initial-data hypotheses
-- TODO: limitations motivating distributions
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 26 — Fourier Methods for PDE — Poisson and Heat Kernels]({% link _posts/folland-seminar/2026-09-11-folland-week-26-fourier-pde-poisson-and-heat-kernels.md %})
-- Current: Week 27
-- Next (읽기 순서): [Week 28 — Distributions — Test Functions and Derivatives]({% link _posts/folland-seminar/2026-09-11-folland-week-28-distributions-test-functions-and-derivatives.md %})
-- Connection TODO: wave equation의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: limitations motivating distributions → test-function topology
+- [ ] wave equation
+- [ ] Fourier solution operator
+- [ ] dimension-dependent wave kernels
+- [ ] initial-data hypotheses
+- [ ] limitations motivating distributions
 
 ## Seminar workload
 
@@ -56,6 +48,15 @@ series_order: 27
 
 ## Connections
 
+- [ ] Connection: wave equation의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: limitations motivating distributions → test-function topology
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 26 — Fourier Methods for PDE — Poisson and Heat Kernels]({% link _posts/folland-seminar/2026-09-11-folland-week-26-fourier-pde-poisson-and-heat-kernels.md %})
+- Current: Week 27
+- Next (읽기 순서): [Week 28 — Distributions — Test Functions and Derivatives]({% link _posts/folland-seminar/2026-09-11-folland-week-28-distributions-test-functions-and-derivatives.md %})

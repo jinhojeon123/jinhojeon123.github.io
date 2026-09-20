@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 44
 ---
 
-- Main topic: Haar Measure — Uniqueness and Modular Function
-- Reference: Folland 2nd edition, §11.1 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Haar Measure — Uniqueness and Modular Function
+- **Reference:** Folland 2nd edition, §11.1 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -24,19 +24,11 @@ series_order: 44
 
 ## Must cover
 
-- TODO: Haar measure uniqueness theorem
-- TODO: left versus right Haar measure
-- TODO: modular function
-- TODO: unimodularity
-- TODO: integration and convolution on groups
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 43 — Haar Measure — Existence]({% link _posts/folland-seminar/2026-09-11-folland-week-43-haar-measure-existence.md %})
-- Current: Week 44
-- Next (읽기 순서): [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})
-- Connection TODO: Haar measure uniqueness theorem의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: integration and convolution on groups → Hausdorff outer measures
+- [ ] Haar measure uniqueness theorem
+- [ ] left versus right Haar measure
+- [ ] modular function
+- [ ] unimodularity
+- [ ] integration and convolution on groups
 
 ## Seminar workload
 
@@ -57,6 +49,15 @@ series_order: 44
 
 ## Connections
 
+- [ ] Connection: Haar measure uniqueness theorem의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: integration and convolution on groups → Hausdorff outer measures
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 43 — Haar Measure — Existence]({% link _posts/folland-seminar/2026-09-11-folland-week-43-haar-measure-existence.md %})
+- Current: Week 44
+- Next (읽기 순서): [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})

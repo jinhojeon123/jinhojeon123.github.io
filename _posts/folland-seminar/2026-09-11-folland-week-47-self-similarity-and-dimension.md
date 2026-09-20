@@ -13,31 +13,23 @@ series: folland-seminar
 series_order: 47
 ---
 
-- Main topic: Self-Similarity and Dimension
-- Reference: Folland 2nd edition, §11.3
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Self-Similarity and Dimension
+- **Reference:** Folland 2nd edition, §11.3
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
 - [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})
 - [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})
-- TODO: contraction mapping theorem; compact metric spaces
+- [ ] contraction mapping theorem; compact metric spaces
 
 ## Must cover
 
-- TODO: iterated similarity systems
-- TODO: invariant compact sets
-- TODO: open set condition
-- TODO: self-similar Hausdorff dimension theorem
-- TODO: covering and measure construction
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})
-- Current: Week 47
-- Next (읽기 순서): [Week 48 — Integration on Manifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-48-integration-on-manifolds.md %})
-- Connection TODO: iterated similarity systems의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: covering and measure construction → smooth measures and densities
+- [ ] iterated similarity systems
+- [ ] invariant compact sets
+- [ ] open set condition
+- [ ] self-similar Hausdorff dimension theorem
+- [ ] covering and measure construction
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 47
 
 ## Connections
 
+- [ ] Connection: iterated similarity systems의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: covering and measure construction → smooth measures and densities
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})
+- Current: Week 47
+- Next (읽기 순서): [Week 48 — Integration on Manifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-48-integration-on-manifolds.md %})

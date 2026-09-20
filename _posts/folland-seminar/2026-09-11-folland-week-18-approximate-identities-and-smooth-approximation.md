@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 18
 ---
 
-- Main topic: Approximate Identities and Smooth Approximation
-- Reference: Folland 2nd edition, §8.2 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Approximate Identities and Smooth Approximation
+- **Reference:** Folland 2nd edition, §8.2 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -24,19 +24,11 @@ series_order: 18
 
 ## Must cover
 
-- TODO: approximate identities
-- TODO: translation continuity in Lp
-- TODO: norm and pointwise approximation
-- TODO: smooth compactly supported approximation
-- TODO: Schwartz space; seminorms
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 17 — Fourier Preliminaries and Convolution]({% link _posts/folland-seminar/2026-09-11-folland-week-17-fourier-preliminaries-and-convolution.md %})
-- Current: Week 18
-- Next (읽기 순서): [Week 19 — Fourier Transform on L1 and Schwartz Space]({% link _posts/folland-seminar/2026-09-11-folland-week-19-fourier-transform-on-l1-and-schwartz-space.md %})
-- Connection TODO: approximate identities의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: Schwartz space; seminorms → Fourier transform normalization
+- [ ] approximate identities
+- [ ] translation continuity in Lp
+- [ ] norm and pointwise approximation
+- [ ] smooth compactly supported approximation
+- [ ] Schwartz space; seminorms
 
 ## Seminar workload
 
@@ -57,6 +49,15 @@ series_order: 18
 
 ## Connections
 
+- [ ] Connection: approximate identities의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: Schwartz space; seminorms → Fourier transform normalization
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 17 — Fourier Preliminaries and Convolution]({% link _posts/folland-seminar/2026-09-11-folland-week-17-fourier-preliminaries-and-convolution.md %})
+- Current: Week 18
+- Next (읽기 순서): [Week 19 — Fourier Transform on L1 and Schwartz Space]({% link _posts/folland-seminar/2026-09-11-folland-week-19-fourier-transform-on-l1-and-schwartz-space.md %})

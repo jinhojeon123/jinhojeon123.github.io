@@ -13,31 +13,23 @@ series: folland-seminar
 series_order: 6
 ---
 
-- Main topic: Lp Duality — Endpoints and Consequences
-- Reference: Folland 2nd edition, §6.2 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Lp Duality — Endpoints and Consequences
+- **Reference:** Folland 2nd edition, §6.2 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
 - [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
-- TODO: Folland §§5.2, 5.4 — bidual; weak / weak-star topology; reflexivity
+- [ ] Folland §§5.2, 5.4 — bidual; weak / weak-star topology; reflexivity
 
 ## Must cover
 
-- TODO: p = 1 representation; sigma-finite hypothesis
-- TODO: semifinite versus sigma-finite hypotheses; canonical-map injectivity
-- TODO: p = ∞ endpoint; limitations of L1 representation
-- TODO: bidual; reflexivity for 1 < p < ∞
-- TODO: weak and weak-star convergence; scalar pairing tests
-- TODO: duality norm characterization
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
-- Current: Week 06
-- Next (읽기 순서): [Week 07 — Integral Inequalities and Kernel Operators]({% link _posts/folland-seminar/2026-09-11-folland-week-07-integral-inequalities-and-kernel-operators.md %})
-- Connection TODO: p = 1 representation; sigma-finite hypothesis의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: duality norm characterization → Chebyshev inequality
+- [ ] p = 1 representation; sigma-finite hypothesis
+- [ ] semifinite versus sigma-finite hypotheses; canonical-map injectivity
+- [ ] p = ∞ endpoint; limitations of L1 representation
+- [ ] bidual; reflexivity for 1 < p < ∞
+- [ ] weak and weak-star convergence; scalar pairing tests
+- [ ] duality norm characterization
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 6
 
 ## Connections
 
+- [ ] Connection: p = 1 representation; sigma-finite hypothesis의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: duality norm characterization → Chebyshev inequality
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
+- Current: Week 06
+- Next (읽기 순서): [Week 07 — Integral Inequalities and Kernel Operators]({% link _posts/folland-seminar/2026-09-11-folland-week-07-integral-inequalities-and-kernel-operators.md %})

@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 42
 ---
 
-- Main topic: Wiener Process — Continuous Paths
-- Reference: Folland 2nd edition, §10.5 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Wiener Process — Continuous Paths
+- **Reference:** Folland 2nd edition, §10.5 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -24,19 +24,11 @@ series_order: 42
 
 ## Must cover
 
-- TODO: continuous modification
-- TODO: Kolmogorov continuity argument
-- TODO: path regularity
-- TODO: Wiener measure on path space
-- TODO: measurability and null-set distinctions
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 41 — Wiener Process — Gaussian Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-41-wiener-process-gaussian-construction.md %})
-- Current: Week 42
-- Next (읽기 순서): [Week 43 — Haar Measure — Existence]({% link _posts/folland-seminar/2026-09-11-folland-week-43-haar-measure-existence.md %})
-- Connection TODO: continuous modification의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: measurability and null-set distinctions → locally compact topological groups
+- [ ] continuous modification
+- [ ] Kolmogorov continuity argument
+- [ ] path regularity
+- [ ] Wiener measure on path space
+- [ ] measurability and null-set distinctions
 
 ## Seminar workload
 
@@ -57,6 +49,15 @@ series_order: 42
 
 ## Connections
 
+- [ ] Connection: continuous modification의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: measurability and null-set distinctions → locally compact topological groups
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 41 — Wiener Process — Gaussian Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-41-wiener-process-gaussian-construction.md %})
+- Current: Week 42
+- Next (읽기 순서): [Week 43 — Haar Measure — Existence]({% link _posts/folland-seminar/2026-09-11-folland-week-43-haar-measure-existence.md %})

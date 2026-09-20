@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 19
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Orthogonal Decomposition]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-06-orthogonal-decomposition.md %})
 - [Polynomial Viewpoint]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-17-polynomial-viewpoint.md %})

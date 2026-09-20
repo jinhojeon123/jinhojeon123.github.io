@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 20
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Krylov Bridge]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-18-krylov-bridge.md %})
 

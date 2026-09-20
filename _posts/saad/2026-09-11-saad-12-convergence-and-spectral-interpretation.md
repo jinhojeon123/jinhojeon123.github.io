@@ -15,7 +15,7 @@ series_order: 13
 
 Source scope: Saad, 2nd ed. (2003), §6.11; §1.9
 
-Prerequisite:
+## Prerequisite
 
 - [Nonsymmetric Krylov Methods]({% link _posts/saad/2026-09-11-saad-11-nonsymmetric-krylov-methods.md %})
 - [Matrix and Operator Norms]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-12-matrix-and-operator-norms.md %})
@@ -66,6 +66,7 @@ Dependency: [11]({% link _posts/saad/2026-09-11-saad-11-nonsymmetric-krylov-meth
 ## Connection to next topic
 
 - [Parallel / PDE Connection]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connection.md %})
+
 ## Questions
 
 ## Final reconstruction

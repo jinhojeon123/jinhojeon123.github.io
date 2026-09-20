@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 26
 ---
 
-- Main topic: Fourier Methods for PDE — Poisson and Heat Kernels
-- Reference: Folland 2nd edition, §8.7 Part I
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Fourier Methods for PDE — Poisson and Heat Kernels
+- **Reference:** Folland 2nd edition, §8.7 Part I
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -25,19 +25,11 @@ series_order: 26
 
 ## Must cover
 
-- TODO: constant-coefficient operators; symbols
-- TODO: Laplacian and invariance
-- TODO: Poisson kernel; Dirichlet problem
-- TODO: heat kernel; initial-value problem
-- TODO: boundary and initial-data convergence
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 25 — Fourier Analysis of Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-25-fourier-analysis-of-measures.md %})
-- Current: Week 26
-- Next (읽기 순서): [Week 27 — Fourier Methods for PDE — Wave Equation]({% link _posts/folland-seminar/2026-09-11-folland-week-27-fourier-pde-wave-equation.md %})
-- Connection TODO: constant-coefficient operators; symbols의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: boundary and initial-data convergence → wave equation
+- [ ] constant-coefficient operators; symbols
+- [ ] Laplacian and invariance
+- [ ] Poisson kernel; Dirichlet problem
+- [ ] heat kernel; initial-value problem
+- [ ] boundary and initial-data convergence
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 26
 
 ## Connections
 
+- [ ] Connection: constant-coefficient operators; symbols의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: boundary and initial-data convergence → wave equation
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 25 — Fourier Analysis of Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-25-fourier-analysis-of-measures.md %})
+- Current: Week 26
+- Next (읽기 순서): [Week 27 — Fourier Methods for PDE — Wave Equation]({% link _posts/folland-seminar/2026-09-11-folland-week-27-fourier-pde-wave-equation.md %})

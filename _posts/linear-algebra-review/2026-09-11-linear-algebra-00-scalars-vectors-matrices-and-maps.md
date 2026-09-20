@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 1
 ---
 
-Prerequisite:
+## Prerequisite
 
 - 없음 — 시작점
 

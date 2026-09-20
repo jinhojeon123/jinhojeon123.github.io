@@ -15,7 +15,7 @@ series_order: 14
 
 Source scope: Saad, 2nd ed. (2003), Chs. 2, 11–12
 
-Prerequisite:
+## Prerequisite
 
 - [Sparse Linear Systems]({% link _posts/saad/2026-09-11-saad-01-sparse-linear-systems.md %})
 - [Basic Preconditioners]({% link _posts/saad/2026-09-11-saad-10-basic-preconditioners.md %})
@@ -76,6 +76,7 @@ Dependency: [12]({% link _posts/saad/2026-09-11-saad-12-convergence-and-spectral
 
 - [Parallel Sparse Computing project]({% link _projects/parallel-sparse-computing.md %})
 - [Numerical PDE / FEM project]({% link _projects/numerical-pde-fem.md %})
+
 ## Connection to next topic
 
 - [Domain Decomposition Bridge]({% link _posts/saad/2026-09-11-saad-14-domain-decomposition-bridge.md %})

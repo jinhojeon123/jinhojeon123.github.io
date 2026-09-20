@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 39
 ---
 
-- Main topic: Central Limit Theorem
-- Reference: Folland 2nd edition, §10.3
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Central Limit Theorem
+- **Reference:** Folland 2nd edition, §10.3
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -25,19 +25,11 @@ series_order: 39
 
 ## Must cover
 
-- TODO: characteristic functions
-- TODO: Gaussian distribution
-- TODO: normalization of sums
-- TODO: Central Limit Theorem
-- TODO: Fourier convergence criterion; moment assumptions
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 38 — Strong Law of Large Numbers]({% link _posts/folland-seminar/2026-09-11-folland-week-38-strong-law-of-large-numbers.md %})
-- Current: Week 39
-- Next (읽기 순서): [Week 40 — Construction of Sample Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-40-construction-of-sample-spaces.md %})
-- Connection TODO: characteristic functions의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: Fourier convergence criterion; moment assumptions → finite-dimensional distributions
+- [ ] characteristic functions
+- [ ] Gaussian distribution
+- [ ] normalization of sums
+- [ ] Central Limit Theorem
+- [ ] Fourier convergence criterion; moment assumptions
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 39
 
 ## Connections
 
+- [ ] Connection: characteristic functions의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: Fourier convergence criterion; moment assumptions → finite-dimensional distributions
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 38 — Strong Law of Large Numbers]({% link _posts/folland-seminar/2026-09-11-folland-week-38-strong-law-of-large-numbers.md %})
+- Current: Week 39
+- Next (읽기 순서): [Week 40 — Construction of Sample Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-40-construction-of-sample-spaces.md %})

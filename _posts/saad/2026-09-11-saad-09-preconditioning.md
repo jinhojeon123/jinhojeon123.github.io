@@ -15,7 +15,7 @@ series_order: 10
 
 Source scope: Saad, 2nd ed. (2003), Ch. 9
 
-Prerequisite:
+## Prerequisite
 
 - [GMRES]({% link _posts/saad/2026-09-11-saad-06-gmres.md %})
 - [Conjugate Gradient]({% link _posts/saad/2026-09-11-saad-08-conjugate-gradient.md %})
@@ -72,6 +72,7 @@ Dependency: [08]({% link _posts/saad/2026-09-11-saad-08-conjugate-gradient.md %}
 ## Connection to next topic
 
 - [Basic Preconditioners]({% link _posts/saad/2026-09-11-saad-10-basic-preconditioners.md %})
+
 ## Questions
 
 ## Final reconstruction

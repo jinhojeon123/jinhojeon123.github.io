@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 17
 ---
 
-- Main topic: Fourier Preliminaries and Convolution
-- Reference: Folland 2nd edition, §8.1; 8.2 Part I
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Fourier Preliminaries and Convolution
+- **Reference:** Folland 2nd edition, §8.1; 8.2 Part I
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -26,19 +26,11 @@ series_order: 17
 
 ## Must cover
 
-- TODO: translations; multi-indices; differentiation conventions
-- TODO: Taylor estimates; smooth cutoff functions
-- TODO: convolution; support and regularity
-- TODO: Young convolution inequality
-- TODO: Lp bounds from interpolation
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 16 — Products of Radon Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-16-products-of-radon-measures.md %})
-- Current: Week 17
-- Next (읽기 순서): [Week 18 — Approximate Identities and Smooth Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-18-approximate-identities-and-smooth-approximation.md %})
-- Connection TODO: translations; multi-indices; differentiation conventions의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: Lp bounds from interpolation → approximate identities
+- [ ] translations; multi-indices; differentiation conventions
+- [ ] Taylor estimates; smooth cutoff functions
+- [ ] convolution; support and regularity
+- [ ] Young convolution inequality
+- [ ] Lp bounds from interpolation
 
 ## Seminar workload
 
@@ -59,6 +51,15 @@ series_order: 17
 
 ## Connections
 
+- [ ] Connection: translations; multi-indices; differentiation conventions의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: Lp bounds from interpolation → approximate identities
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 16 — Products of Radon Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-16-products-of-radon-measures.md %})
+- Current: Week 17
+- Next (읽기 순서): [Week 18 — Approximate Identities and Smooth Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-18-approximate-identities-and-smooth-approximation.md %})

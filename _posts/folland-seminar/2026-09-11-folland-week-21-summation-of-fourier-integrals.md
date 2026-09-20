@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 21
 ---
 
-- Main topic: Periodization and Summation of Fourier Integrals
-- Reference: Folland 2nd edition, §8.3 Part III; 8.4 Part I
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Periodization and Summation of Fourier Integrals
+- **Reference:** Folland 2nd edition, §8.3 Part III; 8.4 Part I
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -24,19 +24,11 @@ series_order: 21
 
 ## Must cover
 
-- TODO: torus; Fourier coefficients; periodization
-- TODO: Poisson Summation Formula
-- TODO: summability kernels; Fourier-integral summation
-- TODO: approximate-identity criteria
-- TODO: norm convergence and pointwise convergence; kernel hypotheses
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 20 — Fourier Inversion and Plancherel]({% link _posts/folland-seminar/2026-09-11-folland-week-20-fourier-inversion-and-plancherel.md %})
-- Current: Week 21
-- Next (읽기 순서): [Week 22 — Summation of Fourier Series]({% link _posts/folland-seminar/2026-09-11-folland-week-22-summation-of-fourier-series.md %})
-- Connection TODO: torus; Fourier coefficients; periodization의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: norm convergence and pointwise convergence; kernel hypotheses → Dirichlet kernel; Fejér kernel
+- [ ] torus; Fourier coefficients; periodization
+- [ ] Poisson Summation Formula
+- [ ] summability kernels; Fourier-integral summation
+- [ ] approximate-identity criteria
+- [ ] norm convergence and pointwise convergence; kernel hypotheses
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 21
 
 ## Connections
 
+- [ ] Connection: torus; Fourier coefficients; periodization의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: norm convergence and pointwise convergence; kernel hypotheses → Dirichlet kernel; Fejér kernel
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 20 — Fourier Inversion and Plancherel]({% link _posts/folland-seminar/2026-09-11-folland-week-20-fourier-inversion-and-plancherel.md %})
+- Current: Week 21
+- Next (읽기 순서): [Week 22 — Summation of Fourier Series]({% link _posts/folland-seminar/2026-09-11-folland-week-22-summation-of-fourier-series.md %})

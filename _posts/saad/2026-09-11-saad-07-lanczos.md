@@ -15,7 +15,7 @@ series_order: 8
 
 Source scope: Saad, 2nd ed. (2003), §6.6
 
-Prerequisite:
+## Prerequisite
 
 - [Arnoldi]({% link _posts/saad/2026-09-11-saad-05-arnoldi.md %})
 - [GMRES]({% link _posts/saad/2026-09-11-saad-06-gmres.md %})
@@ -61,6 +61,7 @@ Dependency: [06]({% link _posts/saad/2026-09-11-saad-06-gmres.md %}) → 07 → 
 ## Connection to next topic
 
 - [Conjugate Gradient]({% link _posts/saad/2026-09-11-saad-08-conjugate-gradient.md %})
+
 ## Questions
 
 ## Final reconstruction

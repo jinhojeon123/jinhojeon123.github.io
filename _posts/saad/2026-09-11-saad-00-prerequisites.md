@@ -15,7 +15,7 @@ series_order: 1
 
 Source scope: Saad, 2nd ed. (2003), Ch. 1
 
-Prerequisite:
+## Prerequisite
 
 - [Scalars, Vectors, Matrices and Maps]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %})
 - [Rank and Fundamental Subspaces]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-03-rank-and-fundamental-subspaces.md %})
@@ -42,6 +42,7 @@ Dependency: 00 → [01]({% link _posts/saad/2026-09-11-saad-01-sparse-linear-sys
 ## Connection to next topic
 
 - [Sparse Linear Systems]({% link _posts/saad/2026-09-11-saad-01-sparse-linear-systems.md %})
+
 ## Questions
 
 ## Final reconstruction

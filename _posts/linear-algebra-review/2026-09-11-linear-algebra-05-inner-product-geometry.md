@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 6
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Quotient and Isomorphism Viewpoint]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-04-quotient-and-isomorphism-viewpoint.md %})
 

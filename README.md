@@ -63,6 +63,9 @@ the format; `series` and `projects` connect a reading sequence. Research is a
 purpose across subjects, rather than a competing category.
 
 - Start with a [template](templates/) and the [contribution guide](CONTRIBUTING.md).
+- For seminar outlines, use [the seminar template](templates/seminar-note.md).
+  [Markdown preview guidance](CONTRIBUTING.md#markdown-authoring-and-preview) explains
+  front matter, checklists, and the difference between VS Code and Jekyll previews.
 - Posts belong in `_posts/` or its subdirectories, use
   `YYYY-MM-DD-descriptive-kebab-case.md`, and include `layout: post`, `title`,
   `date`, `categories`, `tags`, `permalink`, `status`, and `note_type`.
@@ -104,7 +107,7 @@ assets/                 Profile image and notebook stylesheet
 measure-theory/         Ordered series index
 categories/, tags/      Existing subject indexes
 archives/, start-here/  Existing navigation routes
-templates/              Six reusable authoring templates; excluded from deployment
+templates/              Seven reusable authoring templates; excluded from deployment
 docs/                   Committed preservation and legacy URL manifests
 archive/                Preserved historical files; excluded from deployment
 tools/                  Preview, source validation, build and HTML checks

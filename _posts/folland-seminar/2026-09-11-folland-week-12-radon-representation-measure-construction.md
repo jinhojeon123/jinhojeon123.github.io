@@ -13,31 +13,23 @@ series: folland-seminar
 series_order: 12
 ---
 
-- Main topic: Radon Representation — Measure Construction
-- Reference: Folland 2nd edition, §7.1 Part I
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Radon Representation — Measure Construction
+- **Reference:** Folland 2nd edition, §7.1 Part I
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
-- TODO: Folland §§4.4–4.5 — locally compact Hausdorff spaces; Urysohn lemma; partitions of unity
-- TODO: Folland §1.4 — Carathéodory construction
+- [ ] Folland §§4.4–4.5 — locally compact Hausdorff spaces; Urysohn lemma; partitions of unity
+- [ ] Folland §1.4 — Carathéodory construction
 - [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
 
 ## Must cover
 
-- TODO: locally compact Hausdorff prerequisites
-- TODO: Cc(X); positive linear functionals
-- TODO: Riesz Representation Theorem for positive functionals
-- TODO: outer-measure construction
-- TODO: Radon regularity obligations
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 11 — Marcinkiewicz Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-11-marcinkiewicz-interpolation.md %})
-- Current: Week 12
-- Next (읽기 순서): [Week 13 — Radon Representation — Integral and Uniqueness]({% link _posts/folland-seminar/2026-09-11-folland-week-13-radon-representation-integral-and-uniqueness.md %})
-- Connection TODO: chapter 전환 — 위 Prerequisite의 결과와 현재 topic의 연결; 직전 Week 자체를 필수 hypothesis로 간주하지 않기
-- Next readiness TODO: Radon regularity obligations → Riesz Representation Theorem proof completion
+- [ ] locally compact Hausdorff prerequisites
+- [ ] Cc(X); positive linear functionals
+- [ ] Riesz Representation Theorem for positive functionals
+- [ ] outer-measure construction
+- [ ] Radon regularity obligations
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 12
 
 ## Connections
 
+- [ ] Connection: chapter 전환 — 위 Prerequisite의 결과와 현재 topic의 연결; 직전 Week 자체를 필수 hypothesis로 간주하지 않기
+- [ ] Next readiness: Radon regularity obligations → Riesz Representation Theorem proof completion
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 11 — Marcinkiewicz Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-11-marcinkiewicz-interpolation.md %})
+- Current: Week 12
+- Next (읽기 순서): [Week 13 — Radon Representation — Integral and Uniqueness]({% link _posts/folland-seminar/2026-09-11-folland-week-13-radon-representation-integral-and-uniqueness.md %})

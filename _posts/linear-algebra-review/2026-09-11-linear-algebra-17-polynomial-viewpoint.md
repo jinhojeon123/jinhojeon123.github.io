@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 18
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Jordan and Canonical Structure]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-16-jordan-and-canonical-structure.md %})
 

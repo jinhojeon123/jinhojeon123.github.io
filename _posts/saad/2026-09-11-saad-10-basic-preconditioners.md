@@ -15,7 +15,7 @@ series_order: 11
 
 Source scope: Saad, 2nd ed. (2003), Ch. 10; ยง12.2
 
-Prerequisite:
+## Prerequisite
 
 - [Stationary Iterative Methods]({% link _posts/saad/2026-09-11-saad-02-stationary-iterative-methods.md %})
 - [Preconditioning]({% link _posts/saad/2026-09-11-saad-09-preconditioning.md %})
@@ -72,6 +72,7 @@ Dependency: [09]({% link _posts/saad/2026-09-11-saad-09-preconditioning.md %}) โ
 ## Connection to next topic
 
 - [Nonsymmetric Krylov Methods]({% link _posts/saad/2026-09-11-saad-11-nonsymmetric-krylov-methods.md %})
+
 ## Questions
 
 ## Final reconstruction

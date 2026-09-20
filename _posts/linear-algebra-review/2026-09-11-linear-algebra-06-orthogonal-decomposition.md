@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 7
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Inner Product Geometry]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-05-inner-product-geometry.md %})
 

@@ -15,7 +15,7 @@ series_order: 4
 
 Source scope: Saad, 2nd ed. (2003), Ch. 5
 
-Prerequisite:
+## Prerequisite
 
 - [Stationary Iterative Methods]({% link _posts/saad/2026-09-11-saad-02-stationary-iterative-methods.md %})
 - [Inner Product Geometry]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-05-inner-product-geometry.md %})
@@ -68,6 +68,7 @@ Dependency: [02]({% link _posts/saad/2026-09-11-saad-02-stationary-iterative-met
 ## Existing notes / Project connections
 
 - [기존 Steepest Descent note — 본문 내 수정 지시 먼저 확인]({% link _posts/2026-02-04-steepest-descent-spd-convergence.md %})
+
 ## Connection to next topic
 
 - [Krylov Subspaces]({% link _posts/saad/2026-09-11-saad-04-krylov-subspaces.md %})

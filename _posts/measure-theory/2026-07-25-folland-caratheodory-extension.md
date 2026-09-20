@@ -36,7 +36,7 @@ series_order: 3
 ### 2.1 Why Start with an Algebra?
 ### 2.2 Definition of a Premeasure
 
-If $\mathcal{A} \subset \mathcal{P}(X)$ is an algebra, a function $\mu_0 : \mathcal{A} \rightarrow \left[0, \infty \right] $ will be called a **premeasure** if 
+If $\mathcal{A} \subset \mathcal{P}(X)$ is an algebra, a function $\mu_0 : \mathcal{A} \rightarrow \left[0, \infty \right] $ will be called a **premeasure** if
 
 - $\mu_0(\empty) = 0$
 

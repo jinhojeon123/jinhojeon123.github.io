@@ -10,6 +10,8 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.formatOnSave": false
   },
+  // Keep Jekyll metadata in the source while hiding it in Markdown previews.
+  "markdown.preview.frontMatter": "hide",
   // Formatter
   "[html][liquid]": {
     "editor.defaultFormatter": "Shopify.theme-check-vscode"

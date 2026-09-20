@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 4
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Linear Maps]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-02-linear-maps.md %})
 

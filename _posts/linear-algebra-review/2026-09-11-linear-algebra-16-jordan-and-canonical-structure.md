@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 17
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Schur Decomposition]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-15-schur-decomposition.md %})
 

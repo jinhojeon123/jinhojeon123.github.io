@@ -118,18 +118,24 @@
     {
       "original_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
       "current_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
-      "body_sha256": "c438371d483277a69120dd350169a2560a0e4e774bf9eb21c92d106783df61d3",
+      "body_sha256": "e83a07633cab6c9ae3cfa3b72b57d1538dd81fd7b5c5da4d0d3b7687a6d2606b",
       "original_file_sha256": "a73291aca9dd9df2e59fdc50084930bb40ad190614ddf58e9402b47aa9fb9371",
-      "body_lf_sha256": "e9076232fc7272ac2f5cc885d0dc27d826ae5641d350f6830c345ed61601fee9",
+      "body_lf_sha256": "e83a07633cab6c9ae3cfa3b72b57d1538dd81fd7b5c5da4d0d3b7687a6d2606b",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed",
           "body_lf_sha256": "56f7ff29216ecb4a881d42374f077b3d436caf364244ab8979f3083b916656ed"
+        },
+        {
+          "date": "2026-09-20",
+          "body_sha256": "c438371d483277a69120dd350169a2560a0e4e774bf9eb21c92d106783df61d3",
+          "body_lf_sha256": "e9076232fc7272ac2f5cc885d0dc27d826ae5641d350f6830c345ed61601fee9",
+          "reason": "Previous baseline before recording existing editor whitespace cleanup."
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: Record existing editor whitespace cleanup (one trailing space removed and final newline added); line-by-line comparison after trimming trailing whitespace confirms the mathematical text and equations are unchanged."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",

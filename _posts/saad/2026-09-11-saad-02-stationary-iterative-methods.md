@@ -15,7 +15,7 @@ series_order: 3
 
 Source scope: Saad, 2nd ed. (2003), Ch. 4
 
-Prerequisite:
+## Prerequisite
 
 - [Sparse Linear Systems]({% link _posts/saad/2026-09-11-saad-01-sparse-linear-systems.md %})
 - [Eigenvalues and Eigenvectors]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-07-eigenvalues-and-eigenvectors.md %})
@@ -64,6 +64,7 @@ Dependency: [01]({% link _posts/saad/2026-09-11-saad-01-sparse-linear-systems.md
 ## Connection to next topic
 
 - [Projection Methods]({% link _posts/saad/2026-09-11-saad-03-projection-methods.md %})
+
 ## Questions
 
 ## Final reconstruction

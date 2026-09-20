@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 12
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Spectral Theorem]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-10-spectral-theorem.md %})
 

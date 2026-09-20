@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 9
 ---
 
-- Main topic: Distribution Functions and Weak Lp
-- Reference: Folland 2nd edition, §6.4
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Distribution Functions and Weak Lp
+- **Reference:** Folland 2nd edition, §6.4
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -24,19 +24,11 @@ series_order: 9
 
 ## Must cover
 
-- TODO: distribution function
-- TODO: layer-cake integral representation
-- TODO: weak Lp quasi-norm
-- TODO: strong type and weak type
-- TODO: strong Lp versus weak Lp distinction
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 08 — Homogeneous Kernels and Hardy Inequalities]({% link _posts/folland-seminar/2026-09-11-folland-week-08-homogeneous-kernels-and-hardy-inequalities.md %})
-- Current: Week 09
-- Next (읽기 순서): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})
-- Connection TODO: distribution function의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: strong Lp versus weak Lp distinction → interpolation exponents
+- [ ] distribution function
+- [ ] layer-cake integral representation
+- [ ] weak Lp quasi-norm
+- [ ] strong type and weak type
+- [ ] strong Lp versus weak Lp distinction
 
 ## Seminar workload
 
@@ -57,6 +49,15 @@ series_order: 9
 
 ## Connections
 
+- [ ] Connection: distribution function의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: strong Lp versus weak Lp distinction → interpolation exponents
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 08 — Homogeneous Kernels and Hardy Inequalities]({% link _posts/folland-seminar/2026-09-11-folland-week-08-homogeneous-kernels-and-hardy-inequalities.md %})
+- Current: Week 09
+- Next (읽기 순서): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})

@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 11
 ---
 
-- Main topic: Marcinkiewicz Interpolation
-- Reference: Folland 2nd edition, §6.5 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Marcinkiewicz Interpolation
+- **Reference:** Folland 2nd edition, §6.5 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -24,20 +24,12 @@ series_order: 11
 
 ## Must cover
 
-- TODO: sublinear operators
-- TODO: Marcinkiewicz Interpolation Theorem
-- TODO: distribution-function proof
-- TODO: level-set decomposition
-- TODO: weak-type endpoint hypotheses
-- TODO: strong-type consequences
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})
-- Current: Week 11
-- Next (읽기 순서): [Week 12 — Radon Representation — Measure Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-12-radon-representation-measure-construction.md %})
-- Connection TODO: sublinear operators의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: strong-type consequences → locally compact Hausdorff prerequisites
+- [ ] sublinear operators
+- [ ] Marcinkiewicz Interpolation Theorem
+- [ ] distribution-function proof
+- [ ] level-set decomposition
+- [ ] weak-type endpoint hypotheses
+- [ ] strong-type consequences
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 11
 
 ## Connections
 
+- [ ] Connection: sublinear operators의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: strong-type consequences → locally compact Hausdorff prerequisites
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})
+- Current: Week 11
+- Next (읽기 순서): [Week 12 — Radon Representation — Measure Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-12-radon-representation-measure-construction.md %})

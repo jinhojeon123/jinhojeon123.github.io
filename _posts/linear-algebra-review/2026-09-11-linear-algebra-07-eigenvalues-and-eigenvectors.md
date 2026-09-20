@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 8
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Rank and Fundamental Subspaces]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-03-rank-and-fundamental-subspaces.md %})
 - [Orthogonal Decomposition]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-06-orthogonal-decomposition.md %})

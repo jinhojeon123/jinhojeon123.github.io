@@ -15,7 +15,7 @@ series_order: 2
 
 Source scope: Saad, 2nd ed. (2003), Ch. 3
 
-Prerequisite:
+## Prerequisite
 
 - [Prerequisites]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %})
 
@@ -62,6 +62,7 @@ Dependency: [00]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %}) →
 ## Connection to next topic
 
 - [Stationary Iterative Methods]({% link _posts/saad/2026-09-11-saad-02-stationary-iterative-methods.md %})
+
 ## Questions
 
 ## Final reconstruction

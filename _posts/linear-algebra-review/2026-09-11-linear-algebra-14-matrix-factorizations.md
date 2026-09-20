@@ -13,7 +13,7 @@ series: linear-algebra-review
 series_order: 15
 ---
 
-Prerequisite:
+## Prerequisite
 
 - [Conditioning]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-13-conditioning.md %})
 

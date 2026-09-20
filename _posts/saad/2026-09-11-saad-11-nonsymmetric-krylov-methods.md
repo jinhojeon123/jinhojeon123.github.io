@@ -15,7 +15,7 @@ series_order: 12
 
 Source scope: Saad, 2nd ed. (2003), Ch. 7; Ch. 8 connection
 
-Prerequisite:
+## Prerequisite
 
 - [GMRES]({% link _posts/saad/2026-09-11-saad-06-gmres.md %})
 - [Lanczos]({% link _posts/saad/2026-09-11-saad-07-lanczos.md %})
@@ -74,6 +74,7 @@ Dependency: [10]({% link _posts/saad/2026-09-11-saad-10-basic-preconditioners.md
 ## Connection to next topic
 
 - [Convergence and Spectral Interpretation]({% link _posts/saad/2026-09-11-saad-12-convergence-and-spectral-interpretation.md %})
+
 ## Questions
 
 ## Final reconstruction

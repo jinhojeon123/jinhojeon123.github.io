@@ -13,9 +13,9 @@ series: folland-seminar
 series_order: 31
 ---
 
-- Main topic: Tempered Distributions and Fourier Transform
-- Reference: Folland 2nd edition, §9.2 Part II
-- Prerequisite checklist: [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Main topic:** Tempered Distributions and Fourier Transform
+- **Reference:** Folland 2nd edition, §9.2 Part II
+- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -25,19 +25,11 @@ series_order: 31
 
 ## Must cover
 
-- TODO: Schwartz topology and tempered distributions
-- TODO: slow growth
-- TODO: Fourier transform on tempered distributions
-- TODO: Fourier inversion on distributions
-- TODO: fundamental solutions via Fourier transform
-
-## Previous Week / Next Week
-
-- Previous (읽기 순서): [Week 30 — Compactly Supported Distributions]({% link _posts/folland-seminar/2026-09-11-folland-week-30-compactly-supported-distributions.md %})
-- Current: Week 31
-- Next (읽기 순서): [Week 32 — Periodic Distributions and Fourier Coefficients]({% link _posts/folland-seminar/2026-09-11-folland-week-32-periodic-distributions-and-fourier-coefficients.md %})
-- Connection TODO: Schwartz topology and tempered distributions의 선행 결과와 현재 theorem의 연결
-- Next readiness TODO: fundamental solutions via Fourier transform → periodic distributions
+- [ ] Schwartz topology and tempered distributions
+- [ ] slow growth
+- [ ] Fourier transform on tempered distributions
+- [ ] Fourier inversion on distributions
+- [ ] fundamental solutions via Fourier transform
 
 ## Seminar workload
 
@@ -58,6 +50,15 @@ series_order: 31
 
 ## Connections
 
+- [ ] Connection: Schwartz topology and tempered distributions의 선행 결과와 현재 theorem의 연결
+- [ ] Next readiness: fundamental solutions via Fourier transform → periodic distributions
+
 ## Questions / Things I do not understand yet
 
 ## Final reconstruction
+
+## Previous Week / Next Week
+
+- Previous (읽기 순서): [Week 30 — Compactly Supported Distributions]({% link _posts/folland-seminar/2026-09-11-folland-week-30-compactly-supported-distributions.md %})
+- Current: Week 31
+- Next (읽기 순서): [Week 32 — Periodic Distributions and Fourier Coefficients]({% link _posts/folland-seminar/2026-09-11-folland-week-32-periodic-distributions-and-fourier-coefficients.md %})

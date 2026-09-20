@@ -15,7 +15,7 @@ series_order: 15
 
 Source scope: Saad, 2nd ed. (2003), Ch. 14; Ch. 13 connection
 
-Prerequisite:
+## Prerequisite
 
 - [Basic Preconditioners]({% link _posts/saad/2026-09-11-saad-10-basic-preconditioners.md %})
 - [Parallel / PDE Connection]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connection.md %})
@@ -81,6 +81,7 @@ Dependency: [13]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connect
 ## Existing notes / Project connections
 
 - [Domain Decomposition project]({% link _projects/domain-decomposition.md %})
+
 ## Connection to next topic
 
 ## Questions
