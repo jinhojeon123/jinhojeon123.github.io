@@ -15,7 +15,7 @@ series_order: 6
 
 - **Main topic:** Lp Duality — Endpoints and Consequences
 - **Reference:** Folland 2nd edition, §6.2 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 6
 
 ## Seminar workload
 
-- 총 150분
-- p = 1 / measure hypotheses: 60분
-- p = ∞ / counterexample TODO: 35분
-- bidual / reflexivity / weak convergence: 55분
+- Total: 150 min
+- p = 1 / measure hypotheses: 60 min
+- p = ∞ / counterexample TODO: 35 min
+- bidual / reflexivity / weak convergence: 55 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 6
 
 ## Connections
 
-- [ ] Connection: p = 1 representation; sigma-finite hypothesis의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on p = 1 representation; sigma-finite hypothesis to the current theorem
 - [ ] Next readiness: duality norm characterization → Chebyshev inequality
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 6
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
+- Previous (reading order): [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
 - Current: Week 06
-- Next (읽기 순서): [Week 07 — Integral Inequalities and Kernel Operators]({% link _posts/folland-seminar/2026-09-11-folland-week-07-integral-inequalities-and-kernel-operators.md %})
+- Next (reading order): [Week 07 — Integral Inequalities and Kernel Operators]({% link _posts/folland-seminar/2026-09-11-folland-week-07-integral-inequalities-and-kernel-operators.md %})

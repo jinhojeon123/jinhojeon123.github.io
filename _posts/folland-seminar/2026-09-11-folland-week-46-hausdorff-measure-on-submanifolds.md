@@ -15,7 +15,7 @@ series_order: 46
 
 - **Main topic:** Hausdorff Measure on Submanifolds
 - **Reference:** Folland 2nd edition, §11.2 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 46
 
 ## Seminar workload
 
-- 총 165분
-- Euclidean comparison: 45분
-- submanifold measure theorem proof TODO: 90분
-- coordinates / invariance: 30분
+- Total: 165 min
+- Euclidean comparison: 45 min
+- submanifold measure theorem proof TODO: 90 min
+- coordinates / invariance: 30 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 46
 
 ## Connections
 
-- [ ] Connection: Euclidean Lebesgue-measure comparison의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Euclidean Lebesgue-measure comparison to the current theorem
 - [ ] Next readiness: coordinate invariance; dimension and measure distinctions → iterated similarity systems
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 46
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})
+- Previous (reading order): [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})
 - Current: Week 46
-- Next (읽기 순서): [Week 47 — Self-Similarity and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-47-self-similarity-and-dimension.md %})
+- Next (reading order): [Week 47 — Self-Similarity and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-47-self-similarity-and-dimension.md %})

@@ -15,7 +15,7 @@ series_order: 27
 
 - **Main topic:** Fourier Methods for PDE — Wave Equation
 - **Reference:** Folland 2nd edition, §8.7 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -31,10 +31,10 @@ series_order: 27
 
 ## Seminar workload
 
-- 총 150분
-- wave solution operator: 65분
-- wave kernels / dimensional cases: 65분
-- distribution-theory dependency: 20분
+- Total: 150 min
+- wave solution operator: 65 min
+- wave kernels / dimensional cases: 65 min
+- distribution-theory dependency: 20 min
 
 ## Motivation
 
@@ -48,7 +48,7 @@ series_order: 27
 
 ## Connections
 
-- [ ] Connection: wave equation의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on wave equation to the current theorem
 - [ ] Next readiness: limitations motivating distributions → test-function topology
 
 ## Questions / Things I do not understand yet
@@ -57,6 +57,6 @@ series_order: 27
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 26 — Fourier Methods for PDE — Poisson and Heat Kernels]({% link _posts/folland-seminar/2026-09-11-folland-week-26-fourier-pde-poisson-and-heat-kernels.md %})
+- Previous (reading order): [Week 26 — Fourier Methods for PDE — Poisson and Heat Kernels]({% link _posts/folland-seminar/2026-09-11-folland-week-26-fourier-pde-poisson-and-heat-kernels.md %})
 - Current: Week 27
-- Next (읽기 순서): [Week 28 — Distributions — Test Functions and Derivatives]({% link _posts/folland-seminar/2026-09-11-folland-week-28-distributions-test-functions-and-derivatives.md %})
+- Next (reading order): [Week 28 — Distributions — Test Functions and Derivatives]({% link _posts/folland-seminar/2026-09-11-folland-week-28-distributions-test-functions-and-derivatives.md %})

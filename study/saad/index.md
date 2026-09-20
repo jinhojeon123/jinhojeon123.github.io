@@ -11,9 +11,9 @@ status: outline
 
 Reference edition: Yousef Saad, *Iterative Methods for Sparse Linear Systems*, 2nd ed. (2003).
 
-Source: [저자 공개본](https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf) · [판본 및 errata](https://www-users.cse.umn.edu/~saad/books.html)
+Source: [Author's public copy](https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf) · [Edition and errata](https://www-users.cse.umn.edu/~saad/books.html)
 
-[전체 roadmap]({% link STUDY-ROADMAP.md %})
+[Complete roadmap]({% link STUDY-ROADMAP.md %})
 
 ## Study order / Book mapping
 
@@ -41,13 +41,13 @@ Source: [저자 공개본](https://www-users.cse.umn.edu/~saad/IterMethBook_2ndE
 
 ## Ordering notes
 
-- Ch. 1 복습 → [Linear Algebra Review]({% link study/linear-algebra/index.md %})
-- Ch. 7의 nonsymmetric methods → 요청한 학습 순서에 따라 Chs. 9–10의 preconditioning을 공부한 뒤 11번에서 복습.
-- Ch. 8 → 11의 normal-equation connection.
-- Ch. 2 → 13의 PDE connection.
-- Ch. 12 → 10의 block Jacobi 및 13의 parallel preconditioners.
-- Ch. 13 → 14의 multigrid connection.
-- RAS / coarse correction / two-level 확장 → 14의 heading; 별도 reference 확인 TODO.
+- Review Ch. 1 → [Linear Algebra Review]({% link study/linear-algebra/index.md %})
+- Revisit the nonsymmetric methods of Ch. 7 in unit 11, after preconditioning in Chs. 9–10, following the requested study sequence.
+- Ch. 8 → the normal-equation connection in unit 11.
+- Ch. 2 → the PDE connection in unit 13.
+- Ch. 12 → block Jacobi in unit 10 and parallel preconditioners in unit 13.
+- Ch. 13 → the multigrid connection in unit 14.
+- RAS / coarse correction / two-level extensions → headings in unit 14; TODO: verify separate references.
 
 ## Current next action
 

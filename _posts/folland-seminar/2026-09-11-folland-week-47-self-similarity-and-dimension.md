@@ -15,7 +15,7 @@ series_order: 47
 
 - **Main topic:** Self-Similarity and Dimension
 - **Reference:** Folland 2nd edition, §11.3
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 47
 
 ## Seminar workload
 
-- 총 165분
-- similarity systems / invariant sets: 45분
-- dimension theorem proof TODO: 100분
-- hypotheses / reconstruction: 20분
+- Total: 165 min
+- similarity systems / invariant sets: 45 min
+- dimension theorem proof TODO: 100 min
+- hypotheses / reconstruction: 20 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 47
 
 ## Connections
 
-- [ ] Connection: iterated similarity systems의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on iterated similarity systems to the current theorem
 - [ ] Next readiness: covering and measure construction → smooth measures and densities
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 47
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})
+- Previous (reading order): [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})
 - Current: Week 47
-- Next (읽기 순서): [Week 48 — Integration on Manifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-48-integration-on-manifolds.md %})
+- Next (reading order): [Week 48 — Integration on Manifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-48-integration-on-manifolds.md %})

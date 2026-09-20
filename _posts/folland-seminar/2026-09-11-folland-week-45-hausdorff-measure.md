@@ -15,7 +15,7 @@ series_order: 45
 
 - **Main topic:** Hausdorff Measure and Dimension
 - **Reference:** Folland 2nd edition, §11.2 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,9 +33,9 @@ series_order: 45
 
 ## Seminar workload
 
-- 총 150분
-- covering construction / measurability: 80분
-- dimension / Lipschitz estimates: 70분
+- Total: 150 min
+- covering construction / measurability: 80 min
+- dimension / Lipschitz estimates: 70 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 45
 
 ## Connections
 
-- [ ] Connection: chapter 전환 — 위 Prerequisite의 결과와 현재 topic의 연결; 직전 Week 자체를 필수 hypothesis로 간주하지 않기
+- [ ] Connection: chapter transition — connect the prerequisites above to the current topic; do not treat the immediately preceding week itself as a required hypothesis
 - [ ] Next readiness: covering estimates → Euclidean Lebesgue-measure comparison
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 45
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 44 — Haar Measure — Uniqueness and Modular Function]({% link _posts/folland-seminar/2026-09-11-folland-week-44-haar-measure-uniqueness-and-modular-function.md %})
+- Previous (reading order): [Week 44 — Haar Measure — Uniqueness and Modular Function]({% link _posts/folland-seminar/2026-09-11-folland-week-44-haar-measure-uniqueness-and-modular-function.md %})
 - Current: Week 45
-- Next (읽기 순서): [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})
+- Next (reading order): [Week 46 — Hausdorff Measure on Submanifolds]({% link _posts/folland-seminar/2026-09-11-folland-week-46-hausdorff-measure-on-submanifolds.md %})

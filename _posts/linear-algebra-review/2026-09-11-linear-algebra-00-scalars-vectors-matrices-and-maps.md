@@ -15,7 +15,7 @@ series_order: 1
 
 ## Prerequisite
 
-- 없음 — 시작점
+- None — starting point
 
 Dependency: 00 → [01]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-01-vector-spaces-and-subspaces.md %})
 

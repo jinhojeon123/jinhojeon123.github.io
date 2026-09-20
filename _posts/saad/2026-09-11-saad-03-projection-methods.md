@@ -67,7 +67,7 @@ Dependency: [02]({% link _posts/saad/2026-09-11-saad-02-stationary-iterative-met
 
 ## Existing notes / Project connections
 
-- [기존 Steepest Descent note — 본문 내 수정 지시 먼저 확인]({% link _posts/2026-02-04-steepest-descent-spd-convergence.md %})
+- [Existing Steepest Descent note — read the in-text revision guidance first]({% link _posts/2026-02-04-steepest-descent-spd-convergence.md %})
 
 ## Connection to next topic
 

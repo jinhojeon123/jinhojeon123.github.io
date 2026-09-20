@@ -9,8 +9,8 @@ status: outline
 
 # Prerequisite Checklist
 
-- TODO: 아래 항목은 기존 notes에서 학습 완료를 확인하지 못한 dependency이며, 새 Week 번호를 부여하지 않음.
-- TODO: 필요한 Week 발표 전에 본인 교재와 개인 기록에서 확인하고 아래 source 위치 및 proof dependency를 채우기.
+- TODO: The dependencies below have not been confirmed as completed in the existing notes and are not assigned new week numbers.
+- TODO: Before the relevant presentation, check your textbook and personal notes, then fill in source locations and proof dependencies below.
 
 ## Before Week 05 — Duality of Lp
 
@@ -47,19 +47,19 @@ status: outline
 
 - TODO: Folland §5.4 — locally convex topology; seminorms; continuous dual
 - TODO: distributional pairing versus Hilbert inner product conventions
-- TODO: Folland §9.3의 Hs(Rn) 범위와 일반 W1p(Ω) 학습의 구분
+- TODO: Distinguish the Hs(Rn) setting of Folland §9.3 from the study of general W1p(Ω) spaces.
 
 ## Before Weeks 36–42 — Probability
 
 - TODO: Chapters 1–3; §7.4 product measures; §8.6 measure transforms
-- TODO: Chapters 8–9의 모든 topic을 probability의 필수 prerequisite로 표시하지 않기
+- TODO: Do not mark every topic in Chapters 8–9 as a required prerequisite for probability.
 
 ## Before Weeks 43–48 — Further Measures and Integration
 
 - TODO: Chapter 4 topology; §7.1 Radon representation; §7.4 products
 - TODO: §1.4 outer measures; metric coverings; contraction mapping theorem
 - TODO: manifold charts; multivariable change of variables; Jacobians; Gram determinants
-- TODO: §11.4 발표 전 differential geometry — densities; Riemannian metrics; top-degree forms; orientation; Lie groups
+- TODO: Before presenting §11.4, review differential geometry: densities, Riemannian metrics, top-degree forms, orientation, and Lie groups.
 
 ## Cross-reference
 

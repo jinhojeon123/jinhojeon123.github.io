@@ -15,7 +15,7 @@ series_order: 31
 
 - **Main topic:** Tempered Distributions and Fourier Transform
 - **Reference:** Folland 2nd edition, §9.2 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 31
 
 ## Seminar workload
 
-- 총 165분
-- tempered continuity / slow growth: 45분
-- Fourier extension / inversion: 75분
-- fundamental-solution connections: 45분
+- Total: 165 min
+- tempered continuity / slow growth: 45 min
+- Fourier extension / inversion: 75 min
+- fundamental-solution connections: 45 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 31
 
 ## Connections
 
-- [ ] Connection: Schwartz topology and tempered distributions의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Schwartz topology and tempered distributions to the current theorem
 - [ ] Next readiness: fundamental solutions via Fourier transform → periodic distributions
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 31
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 30 — Compactly Supported Distributions]({% link _posts/folland-seminar/2026-09-11-folland-week-30-compactly-supported-distributions.md %})
+- Previous (reading order): [Week 30 — Compactly Supported Distributions]({% link _posts/folland-seminar/2026-09-11-folland-week-30-compactly-supported-distributions.md %})
 - Current: Week 31
-- Next (읽기 순서): [Week 32 — Periodic Distributions and Fourier Coefficients]({% link _posts/folland-seminar/2026-09-11-folland-week-32-periodic-distributions-and-fourier-coefficients.md %})
+- Next (reading order): [Week 32 — Periodic Distributions and Fourier Coefficients]({% link _posts/folland-seminar/2026-09-11-folland-week-32-periodic-distributions-and-fourier-coefficients.md %})

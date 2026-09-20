@@ -14,85 +14,85 @@ projects: ["krylov-solvers"]
 
 ## 1. Motivation
 
-Steepest Descent (SD)를 통해 sparse linear algebra와 optimization의 기초를 공부하고 CG / Preconditioned CG로 이어간다. $Ax=b$를 푸는 iterative method가 QR / LU 같은 direct method보다 유리해지는 조건을 살펴본다.
+Study the foundations of sparse linear algebra and optimization through Steepest Descent (SD), then continue to CG and Preconditioned CG. Examine when an iterative method for $Ax=b$ becomes preferable to direct methods such as QR or LU.
 
 ## 2. Prerequisite
 
-- **Eigenvalue and Eigenvector**: $Ax=\lambda x$를 만족하는 scalar $\lambda$와 $x\ne0$. $\lambda$는 $\det(\lambda I-A)=0$의 해이다.
-- **Symmetric Matrix**: $A^\top=A$인 square matrix.
-- **Positive definite**: 원문에서는 모든 vector $x$에 대해 $x^\top Ax>0$인 matrix라고 정의한다.
-- **SPD**: symmetric이면서 positive definite인 matrix.
+- **Eigenvalue and Eigenvector**: A scalar $\lambda$ and vector $x\ne0$ satisfying $Ax=\lambda x$. The eigenvalue $\lambda$ solves $\det(\lambda I-A)=0$.
+- **Symmetric Matrix**: A square matrix satisfying $A^\top=A$.
+- **Positive definite**: The original text defines this as a matrix satisfying $x^\top Ax>0$ for every vector $x$.
+- **SPD**: A matrix that is symmetric and positive definite.
 
-[수정 필요]
+[Correction required]
 
-- 문제: positive definiteness의 quantifier에 $x\ne0$이 빠져 있다.
-- 왜 문제인지: $x=0$일 때 strict inequality를 만족하는 matrix는 없다.
-- 어떻게 수정해야 하는지: real square matrix의 domain을 명시하고 nonzero vector에 대한 조건으로 definition을 직접 수정할 것.
+- Issue: The quantifier in the definition of positive definiteness omits $x\ne0$.
+- Why this matters: No matrix satisfies the strict inequality at $x=0$.
+- Required revision: Specify the domain of real square matrices and revise the definition to quantify over nonzero vectors.
 
-- **Normal matrix**: complex square matrix에서 $A^\star A=AA^\star$. $\star$는 conjugate transpose이며 real matrix에서는 $A^\star=A^\top$이다.
-- **Spectral Theorem**: finite-dimensional inner product space $V$의 normal operator $A$에 대해 eigenvector로 이루어진 orthonormal basis가 존재한다.
+- **Normal matrix**: A complex square matrix satisfying $A^\star A=AA^\star$. Here $\star$ denotes the conjugate transpose; for a real matrix, $A^\star=A^\top$.
+- **Spectral Theorem**: A normal operator $A$ on a finite-dimensional inner product space $V$ admits an orthonormal basis of eigenvectors.
 
-원문은 eigenvector를 column으로 갖는 matrix
+The original text forms the matrix with eigenvectors as columns,
 
 $$
 Q=\begin{pmatrix}q_1,&q_2,&\cdots,&q_n\end{pmatrix}
 $$
 
-를 두고 다음을 주장한다.
+and makes the following claim:
 
 $$
 A=Q^{-1}\Lambda Q.
 $$
 
-$Q^\top$의 row는 $q_i^\top$이므로 $Q^\top x$가 각 basis direction의 projection coefficient를 준다. 따라서 $Q^\top=Q^{-1}$이고, 원문에서는 $A=Q^\top\Lambda Q$라고 결론낸다.
+The rows of $Q^\top$ are $q_i^\top$, so $Q^\top x$ gives the projection coefficients along the basis directions. Thus $Q^\top=Q^{-1}$, and the original text concludes that $A=Q^\top\Lambda Q$.
 
-[수정 필요]
+[Correction required]
 
-- 문제: real / complex field의 가정이 빠졌고, eigenvector를 column으로 둔 $Q$와 diagonalization 식의 방향이 맞지 않는다. complex case에서도 transpose를 사용한다.
-- 왜 문제인지: real normal matrix가 real eigenbasis를 갖는 것은 아니다. column eigenvector convention은 뒤 proof에서 사용하는 $A=Q\Lambda Q^\top$와 일치해야 한다.
-- 어떻게 수정해야 하는지: 이 글의 real SPD case와 complex normal case를 구분하고, $AQ=Q\Lambda$에서 basis-change 방향을 직접 검산할 것. complex case에는 conjugate transpose와 unitary 조건을 명시할 것.
+- Issue: The real/complex field assumptions are missing, and the diagonalization formula has the wrong orientation for a matrix $Q$ whose columns are eigenvectors. Transpose is also used in the complex case.
+- Why this matters: A real normal matrix need not have a real eigenbasis. The column-eigenvector convention must agree with $A=Q\Lambda Q^\top$, used in the later proof.
+- Required revision: Distinguish this note's real SPD case from the complex normal case, and verify the direction of the basis change from $AQ=Q\Lambda$. Specify conjugate transpose and unitarity in the complex case.
 
 - **Rayleigh Quotient**: $Ray(A)=\frac{x^\top Ax}{x^\top x}$.
-- **Quadratic form**: symmetric $A\in\mathbb R^{n\times n}$에 대해 $f(x)=x^\top Ax$.
+- **Quadratic form**: For symmetric $A\in\mathbb R^{n\times n}$, let $f(x)=x^\top Ax$.
 - **Iterative update rule**:
 
 $$
 x_{k+1}=x_k+\alpha_k r_k,
 $$
 
-  여기서 $r_k$는 descent direction, $\alpha_k$는 step size이다.
+  Here $r_k$ is the descent direction and $\alpha_k$ is the step size.
 - **Line search**:
 
 $$
 \alpha_k^\star\in\arg\min_{\alpha>0}f(x_k+\alpha p_k).
 $$
 
-  Exact line search는 이 minimizer를 계산하고, inexact line search는 정확한 minimizer까지 구하지 않는다.
-- **Strictly convex function**: differentiable $f:\mathbb R^n\to\mathbb R$에 대해
+  Exact line search computes this minimizer; inexact line search does not require the exact minimizer.
+- **Strictly convex function**: For differentiable $f:\mathbb R^n\to\mathbb R$,
 
 $$
 f(y)>f(x)+\nabla f(x)^\top(y-x)\qquad\forall x\ne y.
 $$
 
-- **Lipschitz continuous**: 원문의 조건은
+- **Lipschitz continuous**: The original condition is
 
 $$
 \|\nabla f(x)-\nabla f(y)\|\le M\|x-y\|.
 $$
 
-- **Condition Number**: $\kappa(A)=\frac{\sigma_{\max}}{\sigma_{\min}}$. SPD에서는 spectral theorem에 의해 $\kappa(A)=\frac{\lambda_{\max}}{\lambda_{\min}}$.
+- **Condition Number**: $\kappa(A)=\frac{\sigma_{\max}}{\sigma_{\min}}$. For SPD matrices, the spectral theorem gives $\kappa(A)=\frac{\lambda_{\max}}{\lambda_{\min}}$.
 
-[수정 필요]
+[Correction required]
 
-- 문제: $Ray(A)$에 vector dependence와 $x\ne0$이 빠져 있다. Lipschitz condition은 $f$ 자체가 아니라 gradient에 대한 조건이다. condition number의 norm / nonsingularity도 명시하지 않았다.
-- 왜 문제인지: 뒤의 step size는 residual 방향의 Rayleigh quotient에 의존한다. function의 Lipschitz continuity와 gradient의 Lipschitz continuity는 다른 성질이다.
-- 어떻게 수정해야 하는지: Rayleigh quotient의 matrix와 vector 인자를 구분하고, gradient Lipschitz의 domain / quantifier / 상수를 작성할 것. condition number는 induced 2-norm과 invertibility를 명시할 것.
+- Issue: $Ray(A)$ omits vector dependence and $x\ne0$. The Lipschitz condition applies to the gradient rather than $f$ itself. The norm and nonsingularity assumptions for the condition number are also missing.
+- Why this matters: The later step size depends on the Rayleigh quotient in the residual direction. Lipschitz continuity of a function and of its gradient are different properties.
+- Required revision: Distinguish the matrix and vector arguments of the Rayleigh quotient, and state the domain, quantifiers, and constant for a Lipschitz gradient. Specify the induced 2-norm and invertibility for the condition number.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: general search direction $p_k$와 뒤에서 정의할 residual $r_k$가 혼용된다.
-- 추가하면 좋은 내용: SD에서는 residual이 negative gradient인 이유와, exact solution에 도달하면 line search 전에 멈추는 조건을 직접 연결할 것.
-- 이유: 방향 선택과 step-size 선택을 구분하고 분모가 0이 되는 종료 상태를 처리하기 위해 필요하다.
+- Limitation of the current explanation: The general search direction $p_k$ is mixed with the residual $r_k$ defined later.
+- Suggested addition: Connect the fact that the SD residual is the negative gradient with the requirement to stop before line search when the exact solution is reached.
+- Reason: This distinguishes direction selection from step-size selection and handles termination when the denominator is zero.
 
 ## 3. Algorithm
 
@@ -129,83 +129,82 @@ function x = steep_descent(A,b) % A must be SPD
 end 
 ```
 
-원문은 SD의 장점으로 $O(n^3)$의 QR / LU / Gaussian elimination을 피한다는 점을 제시한다. 실제 error $e_k$를 모르므로 code에서는 $\|r_k\|_2$를 $\|r_0\|_2$와 비교하며, 이를 relative error라고 부른다.
+The original text presents avoiding $O(n^3)$ QR/LU/Gaussian elimination as an advantage of SD. Since the actual error $e_k$ is unknown, the code compares $\|r_k\|_2$ with $\|r_0\|_2$ and calls this relative error.
 
-[수정 필요]
+[Correction required]
 
-- 문제: relative residual을 뒤 문장에서 relative error라고 불러 terminology가 흔들리고, direct method보다 유리한 이유를 $O(n^3)$ 연산을 피한다는 점만으로 설명한다.
-- 왜 문제인지: residual과 solution error의 관계에는 conditioning이 관여한다. sparse direct cost와 iterative cost는 sparsity, fill, iteration 수와 tolerance에 따라 달라진다.
-- 어떻게 수정해야 하는지: stopping criterion을 relative residual로 표시하고 forward error와의 관계 및 초기 residual이 0인 경우를 직접 정리할 것. dense / sparse model과 iteration 수를 명시해 비교할 것.
+- Issue: The terminology shifts from relative residual to relative error, and the advantage over direct methods is explained only as avoiding $O(n^3)$ work.
+- Why this matters: The relation between residual and solution error involves conditioning. Sparse direct and iterative costs depend on sparsity, fill, iteration count, and tolerance.
+- Required revision: Label the stopping criterion as a relative residual and explain its relation to forward error, including a zero initial residual. State the dense/sparse model and iteration count when comparing costs.
 
 ## 4. Correctness and Convergence
 
 ### Existence and uniqueness
 
-$A\in\mathbb R^{n\times n}$를 SPD라 하고
+Let $A\in\mathbb R^{n\times n}$ be SPD and consider
 
 $$
 f(x)=\frac12 x^\top Ax-b^\top x+c
 $$
 
-를 생각한다. Hessian은
+whose Hessian is
 
 $$
 \nabla^2f(x)=A\qquad\forall x\in\mathbb R^n
 $$
 
-이며 $f$는 strictly convex이다. $0\ne x\in\ker A$가 존재하면 positive definiteness에 모순이므로 $A$는 invertible이다.
+so $f$ is strictly convex. A vector $0\ne x\in\ker A$ would contradict positive definiteness, so $A$ is invertible.
 
-Spectral theorem에 의해
+By the spectral theorem,
 
 $$
 x^\top Ax\ge\lambda_{\min}(A)\|x\|^2,
 $$
 
-따라서 $f$는 coercive이며 $\|x\|\to\infty$일 때 $f(x)\to\infty$이다. Strict convexity와 coerciveness에 의해 global minimum $x^\star$가 존재하고,
+Thus $f$ is coercive: $f(x)\to\infty$ as $\|x\|\to\infty$. Strict convexity and coercivity imply that a global minimizer $x^\star$ exists, with
 
 $$
 \nabla f(x^\star)=0,\qquad Ax^\star=b.
 $$
 
-$A$가 invertible이므로 $x^\star=A^{-1}b$는 유일하다.
+Since $A$ is invertible, $x^\star=A^{-1}b$ is unique.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: quadratic lower bound에서 선형항을 포함한 coercivity로 가는 단계와 minimum attainment의 조건이 압축되어 있다.
-- 추가하면 좋은 내용: $b\in\mathbb R^n$, $c\in\mathbb R$를 명시하고, 선형항의 성장률 비교 및 continuity / finite dimension을 사용하는 지점을 직접 표시할 것.
-- 이유: positive definiteness가 existence와 uniqueness에 각각 어떻게 사용되는지 복원할 수 있다.
+- Limitation of the current explanation: The passage from the quadratic lower bound to coercivity including the linear term, and the conditions for attaining the minimum, are compressed.
+- Suggested addition: State $b\in\mathbb R^n$ and $c\in\mathbb R$, compare the growth of the linear term, and identify where continuity and finite dimensionality are used.
+- Reason: This makes it possible to reconstruct the separate roles of positive definiteness in existence and uniqueness.
 
 ### a. Constant step size with $0<\alpha<2/\lambda_{\max}$
 
-$\nabla f(x)=Ax-b$이므로 update와 residual은
+Since $\nabla f(x)=Ax-b$, the update and residual are
 
 $$
 x_{k+1}=x_k-\alpha\nabla f(x_k)=x_k+\alpha r_k,
 \qquad r_k=b-Ax_k.
 $$
 
-$e_k=x_k-x^\star$로 두고 $Ax^\star=b$를 사용하면
+Set $e_k=x_k-x^\star$ and use $Ax^\star=b$ to obtain
 
 $$
 e_{k+1}=e_k+\alpha(Ax^\star-Ax_k)=(I-\alpha A)e_k.
 $$
 
-$I=QQ^\top$, $A=Q\Lambda Q^\top$에서 원문은
+Using $I=QQ^\top$ and $A=Q\Lambda Q^\top$, the original text obtains
 
 $$
 \|e_{k+1}\|=\|I-\alpha A\|\|e_k\|
 \le\max_i|1-\alpha\lambda_i|\|e_k\|
 $$
 
-를 얻는다.
 
-[수정 필요]
+[Correction required]
 
-- 문제: matrix-vector product의 norm을 operator norm과 vector norm의 곱과 같다고 쓴다.
-- 왜 문제인지: 일반적인 vector에서 equality는 보장되지 않는다. eigenvalue의 최대 절댓값으로 operator norm을 계산하는 단계도 norm과 symmetry에 의존한다.
-- 어떻게 수정해야 하는지: vector 2-norm / induced matrix 2-norm을 명시하고 첫 equality를 operator-norm inequality로 바로잡을 것. symmetric matrix의 norm을 eigenvalue로 계산하는 dependency를 확인할 것.
+- Issue: The norm of a matrix-vector product is written as equal to the product of the operator norm and vector norm.
+- Why this matters: Equality is not guaranteed for a general vector. Computing the operator norm as the largest absolute eigenvalue also depends on the norm and symmetry assumptions.
+- Required revision: Specify the vector 2-norm and induced matrix 2-norm, and replace the first equality with the operator-norm inequality. Check the prerequisite result relating a symmetric matrix's norm to its eigenvalues.
 
-모든 eigenvalue에 대해 contraction을 얻는 조건은
+The condition for contraction at every eigenvalue is
 
 $$
 \begin{aligned}
@@ -217,52 +216,52 @@ $$
 \tag{1}
 $$
 
-원문의 다음 문장에서는 $0<\alpha<1/\lambda_{\min}$을 선택하면 (1)을 만족한다고 주장한다. 이어 $\|e_k\|\to0$, $x_k\to x^\star$, $r_k\to0$를 결론낸다. $\alpha\ge2/\lambda_{\max}$에서는 수렴하지 않을 수 있다.
+The next sentence in the original text claims that choosing $0<\alpha<1/\lambda_{\min}$ satisfies (1), then concludes $\|e_k\|\to0$, $x_k\to x^\star$, and $r_k\to0$. Convergence may fail when $\alpha\ge2/\lambda_{\max}$.
 
-[수정 필요]
+[Correction required]
 
-- 문제: $0<\alpha<1/\lambda_{\min}$은 (1)을 보장하지 않는다.
-- 왜 문제인지: spectrum의 양 끝 비율에 따라 이 interval에는 contraction이 아닌 step size도 들어간다.
-- 어떻게 수정해야 하는지: convergence 결론의 hypothesis를 바로 앞에서 얻은 (1)과 일치시킬 것. 모든 initial error에 대한 보장과 특정 eigenspace에서의 예외를 구분할 것.
+- Issue: $0<\alpha<1/\lambda_{\min}$ does not guarantee (1).
+- Why this matters: Depending on the ratio of the spectral endpoints, this interval can include step sizes that do not give contraction.
+- Required revision: Make the convergence hypotheses consistent with (1), derived immediately above. Distinguish a guarantee for every initial error from exceptions restricted to particular eigenspaces.
 
 ### b. Exact line search (adaptive $\alpha_k$)
 
-Energy norm은
+Define the energy norm by
 
 $$
 \|v\|_A^2=v^\top Av\qquad\forall v\in\mathbb R^n
 $$
 
-로 두고, $\|e_{k+1}\|_A/\|e_k\|_A$를 추정한다. 원문의 step size는
+and estimate $\|e_{k+1}\|_A/\|e_k\|_A$. The original step size is
 
 $$
 \alpha_k=\frac1{Ray(A)}=\frac{r_k^\top r_k}{r_k^\top Ar_k}
 $$
 
-이며 $\phi(\tau)=f(x_k+\alpha_k r_k)$의 minimizer라고 설명한다.
+and is described as the minimizer of $\phi(\tau)=f(x_k+\alpha_k r_k)$.
 
-[수정 필요]
+[Correction required]
 
-- 문제: $\phi(\tau)$의 우변에 $\tau$가 없고, minimizer라는 주장에 derivation 및 $r_k\ne0$ 조건이 빠져 있다.
-- 왜 문제인지: 현재 식은 $\tau$에 대해 상수이며, 해에 도달하면 step-size formula가 $0/0$이 된다.
-- 어떻게 수정해야 하는지: line-search parameter와 optimizer를 구별하고 1-variable derivative / positive second derivative를 직접 확인할 것. residual이 0인 종료 경우를 분리하고 Rayleigh quotient의 vector 인자를 명시할 것.
+- Issue: The right-hand side of $\phi(\tau)$ contains no $\tau$, and the minimizer claim lacks both a derivation and the assumption $r_k\ne0$.
+- Why this matters: The current expression is constant in $\tau$, and the step-size formula becomes $0/0$ at the solution.
+- Required revision: Distinguish the line-search parameter from its optimizer and verify the one-variable derivative and positive second derivative. Separate termination at zero residual and specify the vector argument of the Rayleigh quotient.
 
-SPD matrix의 Rayleigh quotient는 $[\lambda_{\min},\lambda_{\max}]$에 속한다. 원문의 eigenvalue 표현은
+The Rayleigh quotient of an SPD matrix lies in $[\lambda_{\min},\lambda_{\max}]$. The original eigenvalue expression is
 
 $$
 Ray(A)=\frac{x^\top Ax}{x^\top x}
 =\frac{\sum_{i=1}^n\lambda_i\|x_i\|^2}{\sum_{i=1}^n\|x_i\|^2}.
 $$
 
-Nonnegative weight의 합이 1이므로 이 weighted average는 최소 eigenvalue와 최대 eigenvalue 사이에 있다.
+Because the nonnegative weights sum to 1, this weighted average lies between the smallest and largest eigenvalues.
 
-[수정 필요]
+[Correction required]
 
-- 문제: $x_i$가 original coordinate인지 eigenbasis coordinate인지 명시되지 않았다.
-- 왜 문제인지: 표시된 weighted eigenvalue 식은 eigenbasis에서의 coordinate를 사용해야 하며 $x=0$에서는 denominator가 0이다.
-- 어떻게 수정해야 하는지: $Q^\top x$의 coordinate임을 명시하고 nonzero vector 가정 및 §2의 corrected diagonalization과 연결할 것.
+- Issue: It is unspecified whether $x_i$ is an original coordinate or an eigenbasis coordinate.
+- Why this matters: The displayed weighted-eigenvalue expression requires eigenbasis coordinates, and its denominator is zero at $x=0$.
+- Required revision: State that it is a coordinate of $Q^\top x$, and connect it to the nonzero-vector assumption and the corrected diagonalization in §2.
 
-Energy error를 전개하면
+Expanding the energy error gives
 
 $$
 \begin{aligned}
@@ -272,7 +271,7 @@ $$
 \end{aligned}
 $$
 
-$r_k=-Ae_k$와 step-size 식을 대입하면
+Substituting $r_k=-Ae_k$ and the step-size formula gives
 
 $$
 \|e_{k+1}\|_A^2
@@ -281,21 +280,21 @@ $$
 +\frac{(r_k^\top r_k)^2}{(r_k^\top Ar_k)^2}(r_k^\top Ar_k),
 $$
 
-따라서
+Therefore,
 
 $$
 \frac{\|e_{k+1}\|_A^2}{\|e_k\|_A^2}
 =1-\frac{(r_k^\top r_k)^2}{r_k^\top Ar_k}\frac1{\|e_k\|_A^2}. \tag{2}
 $$
 
-$A=Q\Lambda Q^\top$에서 $y=Q^\top e_k$로 두고
+In $A=Q\Lambda Q^\top$, set $y=Q^\top e_k$ to obtain
 
 $$
 p_i=\frac{y_i^2}{\sum_jy_j^2},\quad p_i\ge0,\quad\sum_i p_i=1,
 \qquad \beta=\sum_i y_i^2,\quad\beta p_i=y_i^2
 $$
 
-로 두자. 다음의 세 quantity를 사용한다.
+and use the following three quantities.
 
 $$
 \begin{aligned}
@@ -308,19 +307,19 @@ M_3&=\|e_k\|_A^2=e_k^\top Ae_k
 \end{aligned}
 $$
 
-원문은 이를 (2)에 대입해 다음 식을 쓴다.
+The original text substitutes this into (2) and writes
 
 $$
 \frac{\|e_{k+1}\|_A}{\|e_k\|_A}=1-\frac{M_1^2}{M_2M_3}.
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: (2)와 달리 마지막 비율의 norm에서 square가 빠졌다. $p_i$와 error ratio는 $e_k=0$에서 정의되지 않는다. 원문의 $y$, $y_k$, $y_{k,i}$ 혼용은 위 전개에서 $y=Q^\top e_k$의 $i$번째 coordinate로 통일해 표시했다.
-- 왜 문제인지: squared norm estimate와 norm estimate를 혼동하면 contraction factor가 달라진다.
-- 어떻게 수정해야 하는지: 이 식의 square를 (2)와 일치시키고 해에 도달하지 않은 iteration에서만 나눗셈을 수행한다고 명시할 것.
+- Issue: Unlike (2), the final ratio omits the square on the norm. Neither $p_i$ nor the error ratio is defined at $e_k=0$. The original mixture of $y$, $y_k$, and $y_{k,i}$ was standardized above to the $i$th coordinate of $y=Q^\top e_k$.
+- Why this matters: Confusing a squared-norm estimate with a norm estimate changes the contraction factor.
+- Required revision: Make the square in this expression consistent with (2), and state that division is performed only before the solution is reached.
 
-이제
+Now set
 
 $$
 a_i=\sqrt{\lambda_i}|y_i|,\qquad
@@ -328,13 +327,13 @@ b_i=\lambda_i^{3/2}|y_i|,
 \qquad m=\lambda_{\min},\quad M=\lambda_{\max}
 $$
 
-로 둔다. 원문은 $b_i/a_i=\lambda_i\in[m,M]$를 사용해
+and use $b_i/a_i=\lambda_i\in[m,M]$, as in the original text, to obtain
 
 $$
 (Ma_i-b_i)(b_i-ma_i)\ge0
 $$
 
-를 얻고 다음 계산을 한다.
+and perform the following calculation.
 
 $$
 \begin{aligned}
@@ -350,19 +349,19 @@ $$
 \end{aligned}
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: 제곱한 줄의 numerator가 $4(mM)^2$로 되어 다음 줄의 $4mM$과 다르다. inequality를 약화시키는 단계에도 equivalence를 사용하며 $y_i=0$일 때 $b_i/a_i$를 정의할 수 없다. 원문의 중복 substitution 설명에서는 $b_i$의 $|y_i|$가 빠졌고 sum 안의 $\lambda$ index도 일부 누락되어 있었다. 위에서는 앞의 정의와 동일한 index를 표시했다.
-- 왜 문제인지: 이 bound가 최종 contraction factor의 핵심이므로 coefficient와 implication이 맞아야 한다. zero eigenbasis coordinate도 허용되어야 한다.
-- 어떻게 수정해야 하는지: 제곱 단계의 coefficient를 직접 검산하고 AM–GM을 사용하는 곳의 implication을 바로잡을 것. zero coordinate를 나누지 않는 방식으로 coordinatewise inequality를 정당화할 것.
+- Issue: The numerator in the squared line is $4(mM)^2$, inconsistent with $4mM$ in the next line. Equivalence is used where an inequality is weakened, and $b_i/a_i$ is undefined when $y_i=0$. The original repeated substitution also omitted $|y_i|$ from $b_i$ and some indices on $\lambda$ in the sum. The indices above were made consistent with the earlier definitions.
+- Why this matters: This bound determines the final contraction factor, so its coefficients and implications must be correct. Zero eigenbasis coordinates must also be allowed.
+- Required revision: Verify the coefficient in the squaring step and correct the implication where AM–GM is used. Justify the coordinatewise inequality without dividing by zero coordinates.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: 긴 inequality에서 왜 $a_i,b_i$를 선택했는지 proof idea가 드러나지 않는다.
-- 추가하면 좋은 내용: 세 spectral moment의 ratio를 비교하는 목적, spectrum interval을 coordinatewise inequality로 옮기는 단계, AM–GM의 역할을 본인의 말로 표시할 것.
-- 이유: 이 proof technique는 단순한 algebra와 달리 다른 convergence estimate에서도 재사용할 가치가 있다.
+- Limitation of the current explanation: The long inequality does not reveal why $a_i,b_i$ were chosen.
+- Suggested addition: Explain in your own words the comparison of three spectral moments, the conversion of the spectral interval into a coordinatewise inequality, and the role of AM–GM.
+- Reason: This proof technique can be reused in other convergence estimates and is more than a routine algebraic manipulation.
 
-따라서 원문의 결론은
+The original conclusion is therefore
 
 $$
 \begin{aligned}
@@ -375,30 +374,30 @@ $$
 \tag{3}
 $$
 
-원문은 $\kappa=\lambda_{\max}/\lambda_{\min}>0$이므로 $(\kappa-1)/(\kappa+1)$이 positive이고 1보다 작다고 하여 exact line search의 convergence를 결론낸다.
+The original text argues that $\kappa=\lambda_{\max}/\lambda_{\min}>0$ makes $(\kappa-1)/(\kappa+1)$ positive and less than 1, and concludes convergence under exact line search.
 
 ### Speed of convergence
 
-(3)을 반복하면, 원문에서 $q=(\kappa-1)/(\kappa+1)\in(0,1)$로 놓았을 때
+Iterating (3), with $q=(\kappa-1)/(\kappa+1)\in(0,1)$ as in the original text, gives
 
 $$
 \|e_k\|_A\le q^k\|e_0\|_A\qquad(k\ge0).
 $$
 
-원문의 approximate loop count는
+The original approximate loop count is
 
 $$
 N=\frac{\log(1/\varepsilon)}{\log(d)},\qquad
 d=\frac{\kappa+1}{\kappa-1}>1. \tag{4}
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: $\kappa=1$이면 $q=0$이어서 positive라는 주장과 $d$의 식을 그대로 사용할 수 없다. worst-case error bound를 실제 loop count의 근사식처럼 사용한다.
-- 왜 문제인지: SPD에서는 $\kappa\ge1$이며 endpoint를 분리해야 한다. upper bound의 달성 정도는 spectrum과 initial error에 따라 달라진다.
-- 어떻게 수정해야 하는지: $\kappa=1$ 및 초기 해의 경우를 분리하고, $\kappa>1$에서 prescribed energy-norm tolerance를 보장하는 sufficient iteration count로 (4)를 해석할 것. 정수 ceiling과 exact arithmetic 가정도 명시할 것.
+- Issue: When $\kappa=1$, $q=0$, so neither the positivity claim nor the formula for $d$ applies as written. A worst-case error bound is treated as an approximation to the actual loop count.
+- Why this matters: For SPD matrices, $\kappa\ge1$, and the endpoint must be treated separately. How closely the upper bound is attained depends on the spectrum and initial error.
+- Required revision: Separate $\kappa=1$ and the case where the initial iterate is already the solution. For $\kappa>1$, interpret (4) as a sufficient iteration count for a prescribed energy-norm tolerance, and state the integer ceiling and exact-arithmetic assumption.
 
-기존 실험은 $n=1000$, $\kappa=1800$, $\varepsilon=10^{-13}$에서 (4)와 관측 loop count를 비교한다.
+The existing experiment compares (4) with the observed loop count at $n=1000$, $\kappa=1800$, and $\varepsilon=10^{-13}$.
 
 Python:
 
@@ -469,23 +468,23 @@ end
 
 ```
 
-[수정 필요]
+[Correction required]
 
-- 문제: 호출부는 `[~, i]` 두 output을 요구하지만 function signature는 `x` 하나만 반환한다.
-- 왜 문제인지: 제시된 code를 그대로 실행하면 보고된 iteration count를 재현할 수 없다. random matrix 한 번의 관측도 bound의 일반적 sharpness를 증명하지 않는다.
-- 어떻게 수정해야 하는지: 반환값과 호출을 일치시키고 random seed / arithmetic 환경 / 실제 종료 조건을 기록할 것. computed reference solution의 error와 residual drift도 고려해 tolerance 달성 여부를 확인할 것.
+- Issue: The call requests two outputs, `[~, i]`, but the function signature returns only `x`.
+- Why this matters: Running the code as written cannot reproduce the reported iteration count. A single random-matrix experiment also does not establish the general sharpness of the bound.
+- Required revision: Make the return values and call consistent, and record the random seed, arithmetic environment, and actual stopping criterion. Account for reference-solution error and residual drift when checking whether the tolerance was attained.
 
 ## 5. Limitations and Next Direction
 
 ### Conditioning and cost
 
-원문에서는 큰 $\kappa$에서 per-iteration error reduction을
+For large $\kappa$, the original text describes the per-iteration error reduction as
 
 $$
 1-\frac{\kappa-1}{\kappa+1}=\frac2{\kappa+1}\approx0
 $$
 
-로 설명하고, iteration 수가 $O(\kappa)$라서 $O(\sqrt\kappa)$보다 느리다고 비교한다. Dense matrix-vector product를 사용한 원문의 cost 식은
+and compares the $O(\kappa)$ iteration count unfavorably with $O(\sqrt\kappa)$. Its cost expression using dense matrix-vector products is
 
 $$
 O(n^2|\mathrm{loop}|)
@@ -497,17 +496,17 @@ $$
 \log d=\log\left(1+\frac2{\kappa-1}\right)\approx\frac2\kappa.
 $$
 
-원문은 이를 “theoretical complexity는 $O(n^2)$이지만 $\kappa$와 $1/\varepsilon$의 큰 constant 때문에 $O(n^3)$보다 느릴 수 있다”고 설명한다.
+The original explanation is: “The theoretical complexity is $O(n^2)$, but large constants involving $\kappa$ and $1/\varepsilon$ may make it slower than $O(n^3)$.”
 
-[수정 필요]
+[Correction required]
 
-- 문제: worst-case contraction bound를 실제 감소량으로 읽게 하고, $\kappa$와 tolerance dependence를 constant로 취급해 전체 complexity를 $O(n^2)$라고 부른다.
-- 왜 문제인지: actual reduction은 iteration에 따라 달라지며 $n$, conditioning, tolerance의 변화는 구분해야 한다. 앞의 tolerance dependence는 $1/\varepsilon$ 자체가 아니라 logarithm이다.
-- 어떻게 수정해야 하는지: guaranteed reduction bound와 실제 감소를 구분하고 per-iteration / total cost를 분리할 것. fixed tolerance 여부, dense cost와 sparse $\operatorname{nnz}(A)$ 비용을 명시할 것.
+- Issue: A worst-case contraction bound is presented as the actual reduction, and dependence on $\kappa$ and tolerance is treated as constant when the total complexity is called $O(n^2)$.
+- Why this matters: Actual reduction varies between iterations; changes in $n$, conditioning, and tolerance must be distinguished. The earlier tolerance dependence is logarithmic, not proportional to $1/\varepsilon$ itself.
+- Required revision: Distinguish a guaranteed reduction bound from the observed reduction, and separate per-iteration and total costs. State whether tolerance is fixed and distinguish dense costs from sparse costs involving $\operatorname{nnz}(A)$.
 
 ### Zig-zag
 
-기존 관찰은 adjacent residual의 orthogonality와 eigenbasis error update이다.
+The existing observations concern orthogonality of adjacent residuals and the error update in an eigenbasis.
 
 $$
 \langle r_k,r_{k+1}\rangle=0. \tag{5}
@@ -519,19 +518,19 @@ y_{k+1}=(I-\alpha_k\Lambda)y_k,
 \qquad \frac1{\lambda_{\max}}\le\alpha_k\le\frac1{\lambda_{\min}}. \tag{6}
 $$
 
-원문은 (5), (6)에서 SD가 zig-zag하면서 residual의 largest-eigenvalue component를 줄인다고 결론낸다. 다음 학습 목표는 condition-number dependence를 줄이는 CG이다.
+From (5) and (6), the original text concludes that SD zig-zags while reducing the residual component associated with the largest eigenvalue. The next study topic is CG, which improves condition-number dependence.
 
-[수정 필요]
+[Correction required]
 
-- 문제: (5), (6)만으로 largest-eigenvalue component가 매 iteration 감소한다고 결론낼 수 없다.
-- 왜 문제인지: individual multiplier의 절댓값이 항상 1보다 작지는 않으며 energy norm의 감소와 각 component의 감소는 다르다.
-- 어떻게 수정해야 하는지: exact line search에서 (5)가 나오는 이유를 직접 확인하고 (6)의 multiplier sign / magnitude를 분석할 것. total energy decrease, oscillation, componentwise change를 구분할 것.
+- Issue: Equations (5) and (6) alone do not imply that the component associated with the largest eigenvalue decreases at every iteration.
+- Why this matters: Individual multipliers need not have magnitude less than 1. Decrease of the energy norm is different from decrease of every component.
+- Required revision: Verify why exact line search gives (5), and analyze the sign and magnitude of the multiplier in (6). Distinguish total energy decrease, oscillation, and componentwise changes.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: 원문의 두 convergence ratio 비교만으로는 CG의 bound가 SD의 one-step contraction을 그대로 대체하는 것처럼 보인다.
-- 추가하면 좋은 내용: CG의 Krylov minimization과 polynomial error bound를 다음 글에서 연결하고 bound의 norm / 상수 / iteration dependence를 직접 대조할 것.
-- 이유: condition number의 제곱근 의존성 개선을 quadratic convergence와 혼동하지 않기 위해 필요하다.
+- Limitation of the current explanation: The comparison of two convergence ratios suggests that the CG bound directly replaces the one-step contraction factor for SD.
+- Suggested addition: Connect CG's Krylov minimization to its polynomial error bound in the next note, and compare the norms, constants, and iteration dependence of the bounds.
+- Reason: This avoids confusing improved square-root dependence on the condition number with quadratic convergence.
 
 ## 6. Reference
 
@@ -541,4 +540,4 @@ $$
   https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf
 - Line Search Methods — Cornell Optimization Wiki:
   https://optimization.cbe.cornell.edu/index.php?title=Line_search_methods
-- [Saad, Iterative Methods for Sparse Linear Systems (2nd ed.)](https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf), §§5.3.1, 6.11.3: SD / CG의 convergence statement 검토.
+- [Saad, Iterative Methods for Sparse Linear Systems (2nd ed.)](https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf), §§5.3.1, 6.11.3: review of SD/CG convergence statements.

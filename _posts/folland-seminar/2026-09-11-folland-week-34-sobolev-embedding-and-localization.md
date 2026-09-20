@@ -15,7 +15,7 @@ series_order: 34
 
 - **Main topic:** Sobolev Embedding and Localization
 - **Reference:** Folland 2nd edition, §9.3 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 34
 
 ## Seminar workload
 
-- 총 165분
-- embedding proof TODO: 90분
-- multiplication / localization: 60분
-- regularity dependency: 15분
+- Total: 165 min
+- embedding proof TODO: 90 min
+- multiplication / localization: 60 min
+- regularity dependency: 15 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 34
 
 ## Connections
 
-- [ ] Connection: Sobolev Embedding Theorem의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Sobolev Embedding Theorem to the current theorem
 - [ ] Next readiness: compact-support localization → elliptic constant-coefficient operators
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 34
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 33 — Sobolev Spaces — Fourier and Hilbert Structure]({% link _posts/folland-seminar/2026-09-11-folland-week-33-sobolev-spaces-fourier-and-hilbert-structure.md %})
+- Previous (reading order): [Week 33 — Sobolev Spaces — Fourier and Hilbert Structure]({% link _posts/folland-seminar/2026-09-11-folland-week-33-sobolev-spaces-fourier-and-hilbert-structure.md %})
 - Current: Week 34
-- Next (읽기 순서): [Week 35 — Elliptic Regularity in Sobolev Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-35-elliptic-regularity-in-sobolev-spaces.md %})
+- Next (reading order): [Week 35 — Elliptic Regularity in Sobolev Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-35-elliptic-regularity-in-sobolev-spaces.md %})

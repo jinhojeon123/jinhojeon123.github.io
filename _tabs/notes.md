@@ -12,14 +12,14 @@ Notes follow four subject areas. Tags describe specific methods or tools; series
 
 ## Study roadmap
 
-- [전체 학습 순서]({% link STUDY-ROADMAP.md %})
-- [기존 글 검토 및 남은 수정 사항]({% link STUDY-REVIEW.md %})
+- [Complete study sequence]({% link STUDY-ROADMAP.md %})
+- [Review of existing notes and remaining corrections]({% link STUDY-REVIEW.md %})
 
 ## Study series
 
 {% include study-series.html %}
 
-각 목차에서 선행 내용과 순서대로 게시글을 읽을 수 있습니다. 학습 개요도 아래 **Study outlines**, Categories, Tags, Archives와 검색에 포함됩니다.
+Each series index identifies prerequisites and provides an ordered reading path. Outlines also appear under **Study outlines** below, Categories, Tags, Archives, and search.
 
 {% for area in site.data.taxonomy %}
 <section aria-labelledby="{{ area.id }}">

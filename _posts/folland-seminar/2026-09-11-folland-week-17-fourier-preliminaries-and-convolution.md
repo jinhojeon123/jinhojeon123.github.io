@@ -15,7 +15,7 @@ series_order: 17
 
 - **Main topic:** Fourier Preliminaries and Convolution
 - **Reference:** Folland 2nd edition, §8.1; 8.2 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -34,10 +34,10 @@ series_order: 17
 
 ## Seminar workload
 
-- 총 150분
-- multi-indices / cutoffs / Taylor prerequisites: 40분
-- convolution / support / regularity: 55분
-- Young convolution bounds: 55분
+- Total: 150 min
+- multi-indices / cutoffs / Taylor prerequisites: 40 min
+- convolution / support / regularity: 55 min
+- Young convolution bounds: 55 min
 
 ## Motivation
 
@@ -51,7 +51,7 @@ series_order: 17
 
 ## Connections
 
-- [ ] Connection: translations; multi-indices; differentiation conventions의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on translations; multi-indices; differentiation conventions to the current theorem
 - [ ] Next readiness: Lp bounds from interpolation → approximate identities
 
 ## Questions / Things I do not understand yet
@@ -60,6 +60,6 @@ series_order: 17
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 16 — Products of Radon Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-16-products-of-radon-measures.md %})
+- Previous (reading order): [Week 16 — Products of Radon Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-16-products-of-radon-measures.md %})
 - Current: Week 17
-- Next (읽기 순서): [Week 18 — Approximate Identities and Smooth Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-18-approximate-identities-and-smooth-approximation.md %})
+- Next (reading order): [Week 18 — Approximate Identities and Smooth Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-18-approximate-identities-and-smooth-approximation.md %})

@@ -15,7 +15,7 @@ series_order: 35
 
 - **Main topic:** Elliptic Regularity in Sobolev Spaces
 - **Reference:** Folland 2nd edition, §9.3 Part III
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 35
 
 ## Seminar workload
 
-- 총 165분
-- elliptic estimates: 60분
-- local regularity proof TODO: 90분
-- PDE bridge: 15분
+- Total: 165 min
+- elliptic estimates: 60 min
+- local regularity proof TODO: 90 min
+- PDE bridge: 15 min
 
 ## Motivation
 
@@ -52,7 +52,7 @@ series_order: 35
 
 - Dependency: [Numerical PDE bridge]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-19-bridge-to-numerical-pde.md %}) → [Saad PDE connection]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connection.md %})
 
-- [ ] Connection: elliptic constant-coefficient operators의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on elliptic constant-coefficient operators to the current theorem
 - [ ] Next readiness: numerical PDE functional-framework connection → probability spaces; random variables; distributions
 
 ## Questions / Things I do not understand yet
@@ -61,6 +61,6 @@ series_order: 35
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 34 — Sobolev Embedding and Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-34-sobolev-embedding-and-localization.md %})
+- Previous (reading order): [Week 34 — Sobolev Embedding and Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-34-sobolev-embedding-and-localization.md %})
 - Current: Week 35
-- Next (읽기 순서): [Week 36 — Probability — Measure and Independence]({% link _posts/folland-seminar/2026-09-11-folland-week-36-probability-measure-and-independence.md %})
+- Next (reading order): [Week 36 — Probability — Measure and Independence]({% link _posts/folland-seminar/2026-09-11-folland-week-36-probability-measure-and-independence.md %})

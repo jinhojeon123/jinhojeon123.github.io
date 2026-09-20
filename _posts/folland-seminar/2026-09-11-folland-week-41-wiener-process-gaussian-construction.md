@@ -15,7 +15,7 @@ series_order: 41
 
 - **Main topic:** Wiener Process — Gaussian Construction
 - **Reference:** Folland 2nd edition, §10.5 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 41
 
 ## Seminar workload
 
-- 총 150분
-- Gaussian family / consistency: 60분
-- construction / increments: 60분
-- moment estimates: 30분
+- Total: 150 min
+- Gaussian family / consistency: 60 min
+- construction / increments: 60 min
+- moment estimates: 30 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 41
 
 ## Connections
 
-- [ ] Connection: Wiener finite-dimensional distributions의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Wiener finite-dimensional distributions to the current theorem
 - [ ] Next readiness: moment estimates for increments → continuous modification
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 41
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 40 — Construction of Sample Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-40-construction-of-sample-spaces.md %})
+- Previous (reading order): [Week 40 — Construction of Sample Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-40-construction-of-sample-spaces.md %})
 - Current: Week 41
-- Next (읽기 순서): [Week 42 — Wiener Process — Continuous Paths]({% link _posts/folland-seminar/2026-09-11-folland-week-42-wiener-process-continuous-paths.md %})
+- Next (reading order): [Week 42 — Wiener Process — Continuous Paths]({% link _posts/folland-seminar/2026-09-11-folland-week-42-wiener-process-continuous-paths.md %})

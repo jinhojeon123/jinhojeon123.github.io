@@ -15,7 +15,7 @@ series_order: 19
 
 - **Main topic:** Fourier Transform on L1 and Schwartz Space
 - **Reference:** Folland 2nd edition, §8.3 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 19
 
 ## Seminar workload
 
-- 총 150분
-- L1 transform / Riemann–Lebesgue: 55분
-- transform identities / Gaussian: 55분
-- Schwartz-space invariance: 40분
+- Total: 150 min
+- L1 transform / Riemann–Lebesgue: 55 min
+- transform identities / Gaussian: 55 min
+- Schwartz-space invariance: 40 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 19
 
 ## Connections
 
-- [ ] Connection: Fourier transform normalization의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Fourier transform normalization to the current theorem
 - [ ] Next readiness: Schwartz-space invariance → Fourier Inversion Theorem
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 19
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 18 — Approximate Identities and Smooth Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-18-approximate-identities-and-smooth-approximation.md %})
+- Previous (reading order): [Week 18 — Approximate Identities and Smooth Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-18-approximate-identities-and-smooth-approximation.md %})
 - Current: Week 19
-- Next (읽기 순서): [Week 20 — Fourier Inversion and Plancherel]({% link _posts/folland-seminar/2026-09-11-folland-week-20-fourier-inversion-and-plancherel.md %})
+- Next (reading order): [Week 20 — Fourier Inversion and Plancherel]({% link _posts/folland-seminar/2026-09-11-folland-week-20-fourier-inversion-and-plancherel.md %})

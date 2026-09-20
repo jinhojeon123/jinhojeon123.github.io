@@ -75,7 +75,7 @@ Dependency: [07]({% link _posts/saad/2026-09-11-saad-07-lanczos.md %}) → 08 �
 
 ## Existing notes / Project connections
 
-- [기존 CG note — 본문 내 수정 지시 먼저 확인]({% link _posts/2026-02-09-conjugate-gradient.md %})
+- [Existing CG note — read the in-text revision guidance first]({% link _posts/2026-02-09-conjugate-gradient.md %})
 
 ## Connection to next topic
 

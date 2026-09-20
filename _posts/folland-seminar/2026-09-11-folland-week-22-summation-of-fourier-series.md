@@ -15,7 +15,7 @@ series_order: 22
 
 - **Main topic:** Summation of Fourier Series
 - **Reference:** Folland 2nd edition, §8.4 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 22
 
 ## Seminar workload
 
-- 총 150분
-- periodic kernels: 35분
-- Fejér theorem proof TODO: 65분
-- Abel / Poisson summability: 50분
+- Total: 150 min
+- periodic kernels: 35 min
+- Fejér theorem proof TODO: 65 min
+- Abel / Poisson summability: 50 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 22
 
 ## Connections
 
-- [ ] Connection: Dirichlet kernel; Fejér kernel의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Dirichlet kernel; Fejér kernel to the current theorem
 - [ ] Next readiness: periodization and approximate-identity hypotheses → localization principle
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 22
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 21 — Periodization and Summation of Fourier Integrals]({% link _posts/folland-seminar/2026-09-11-folland-week-21-summation-of-fourier-integrals.md %})
+- Previous (reading order): [Week 21 — Periodization and Summation of Fourier Integrals]({% link _posts/folland-seminar/2026-09-11-folland-week-21-summation-of-fourier-integrals.md %})
 - Current: Week 22
-- Next (읽기 순서): [Week 23 — Pointwise Fourier Convergence — Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-23-pointwise-fourier-convergence-localization.md %})
+- Next (reading order): [Week 23 — Pointwise Fourier Convergence — Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-23-pointwise-fourier-convergence-localization.md %})

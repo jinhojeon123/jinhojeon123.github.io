@@ -15,7 +15,7 @@ series_order: 37
 
 - **Main topic:** Laws of Large Numbers — Weak Law and Maximal Estimate
 - **Reference:** Folland 2nd edition, §10.2 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 37
 
 ## Seminar workload
 
-- 총 150분
-- weak law proof TODO: 50분
-- maximal inequality proof TODO: 80분
-- strong-law preparation: 20분
+- Total: 150 min
+- weak law proof TODO: 50 min
+- maximal inequality proof TODO: 80 min
+- strong-law preparation: 20 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 37
 
 ## Connections
 
-- [ ] Connection: Weak Law of Large Numbers의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Weak Law of Large Numbers to the current theorem
 - [ ] Next readiness: partial-sum control → Strong Law of Large Numbers
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 37
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 36 — Probability — Measure and Independence]({% link _posts/folland-seminar/2026-09-11-folland-week-36-probability-measure-and-independence.md %})
+- Previous (reading order): [Week 36 — Probability — Measure and Independence]({% link _posts/folland-seminar/2026-09-11-folland-week-36-probability-measure-and-independence.md %})
 - Current: Week 37
-- Next (읽기 순서): [Week 38 — Strong Law of Large Numbers]({% link _posts/folland-seminar/2026-09-11-folland-week-38-strong-law-of-large-numbers.md %})
+- Next (reading order): [Week 38 — Strong Law of Large Numbers]({% link _posts/folland-seminar/2026-09-11-folland-week-38-strong-law-of-large-numbers.md %})

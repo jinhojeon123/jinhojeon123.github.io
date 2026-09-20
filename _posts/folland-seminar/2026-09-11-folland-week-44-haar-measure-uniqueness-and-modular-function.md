@@ -15,7 +15,7 @@ series_order: 44
 
 - **Main topic:** Haar Measure — Uniqueness and Modular Function
 - **Reference:** Folland 2nd edition, §11.1 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 44
 
 ## Seminar workload
 
-- 총 165분
-- uniqueness proof TODO: 85분
-- modular function / unimodularity: 50분
-- group integration: 30분
+- Total: 165 min
+- uniqueness proof TODO: 85 min
+- modular function / unimodularity: 50 min
+- group integration: 30 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 44
 
 ## Connections
 
-- [ ] Connection: Haar measure uniqueness theorem의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Haar measure uniqueness theorem to the current theorem
 - [ ] Next readiness: integration and convolution on groups → Hausdorff outer measures
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 44
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 43 — Haar Measure — Existence]({% link _posts/folland-seminar/2026-09-11-folland-week-43-haar-measure-existence.md %})
+- Previous (reading order): [Week 43 — Haar Measure — Existence]({% link _posts/folland-seminar/2026-09-11-folland-week-43-haar-measure-existence.md %})
 - Current: Week 44
-- Next (읽기 순서): [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})
+- Next (reading order): [Week 45 — Hausdorff Measure and Dimension]({% link _posts/folland-seminar/2026-09-11-folland-week-45-hausdorff-measure.md %})

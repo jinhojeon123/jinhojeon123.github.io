@@ -15,7 +15,7 @@ series_order: 14
 
 - **Main topic:** Radon Regularity and Approximation
 - **Reference:** Folland 2nd edition, §7.2
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 14
 
 ## Seminar workload
 
-- 총 150분
-- regularity criteria: 55분
-- Lusin / Cc approximation: 75분
-- density consequences: 20분
+- Total: 150 min
+- regularity criteria: 55 min
+- Lusin / Cc approximation: 75 min
+- density consequences: 20 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 14
 
 ## Connections
 
-- [ ] Connection: regularity criteria의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on regularity criteria to the current theorem
 - [ ] Next readiness: density and measure regularity → C0(X); uniform norm
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 14
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 13 — Radon Representation — Integral and Uniqueness]({% link _posts/folland-seminar/2026-09-11-folland-week-13-radon-representation-integral-and-uniqueness.md %})
+- Previous (reading order): [Week 13 — Radon Representation — Integral and Uniqueness]({% link _posts/folland-seminar/2026-09-11-folland-week-13-radon-representation-integral-and-uniqueness.md %})
 - Current: Week 14
-- Next (읽기 순서): [Week 15 — The Dual of C0]({% link _posts/folland-seminar/2026-09-11-folland-week-15-the-dual-of-c0.md %})
+- Next (reading order): [Week 15 — The Dual of C0]({% link _posts/folland-seminar/2026-09-11-folland-week-15-the-dual-of-c0.md %})

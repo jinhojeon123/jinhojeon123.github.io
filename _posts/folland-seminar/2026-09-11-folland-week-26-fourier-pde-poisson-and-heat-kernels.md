@@ -15,7 +15,7 @@ series_order: 26
 
 - **Main topic:** Fourier Methods for PDE — Poisson and Heat Kernels
 - **Reference:** Folland 2nd edition, §8.7 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 26
 
 ## Seminar workload
 
-- 총 165분
-- symbols / Laplacian: 35분
-- Poisson kernel / boundary values: 65분
-- heat kernel / initial values: 65분
+- Total: 165 min
+- symbols / Laplacian: 35 min
+- Poisson kernel / boundary values: 65 min
+- heat kernel / initial values: 65 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 26
 
 ## Connections
 
-- [ ] Connection: constant-coefficient operators; symbols의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on constant-coefficient operators; symbols to the current theorem
 - [ ] Next readiness: boundary and initial-data convergence → wave equation
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 26
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 25 — Fourier Analysis of Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-25-fourier-analysis-of-measures.md %})
+- Previous (reading order): [Week 25 — Fourier Analysis of Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-25-fourier-analysis-of-measures.md %})
 - Current: Week 26
-- Next (읽기 순서): [Week 27 — Fourier Methods for PDE — Wave Equation]({% link _posts/folland-seminar/2026-09-11-folland-week-27-fourier-pde-wave-equation.md %})
+- Next (reading order): [Week 27 — Fourier Methods for PDE — Wave Equation]({% link _posts/folland-seminar/2026-09-11-folland-week-27-fourier-pde-wave-equation.md %})

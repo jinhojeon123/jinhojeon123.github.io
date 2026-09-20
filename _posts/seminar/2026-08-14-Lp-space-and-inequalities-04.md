@@ -27,7 +27,7 @@ series_order: 9
 
 ### Definition for $1\le p<\infty$
 
-Measure space $(X,\mathcal M,\mu)$에 대하여
+For a measure space $(X,\mathcal M,\mu)$,
 
 $$
 \mathcal L^p(X)=\left\{f:X\to\mathbb R\text{ measurable}:\int_X|f|^p\,d\mu<\infty\right\},
@@ -39,15 +39,15 @@ $$
 
 ### Equality Almost Everywhere / Equivalence Classes
 
-$\|f\|_p=0$에서는 $f=0$ a.e.만 보장되므로 a.e. 같은 함수들을 동일시한다.
+Since $\|f\|_p=0$ guarantees only $f=0$ almost everywhere, functions that agree almost everywhere are identified.
 
 ### The Space $L^p$
 
-[수정 필요]
+[Correction required]
 
-- 문제: $\mathcal L^p$에서 $L^p$로 가는 quotient definition과 $L^\infty$의 definition이 비어 있다.
-- 왜 문제인지: actual functions 위의 seminorm과 equivalence classes 위의 norm을 구분하지 않은 채 뒤에서 Banach space와 endpoint를 사용한다.
-- 어떻게 수정해야 하는지: equivalence relation, quotient $L^p$, representative independence를 직접 명시한다. essential supremum의 quantifier, $L^\infty$와 그 norm을 채운다. §9에서 사용할 complex-valued version의 scalar field도 정한다.
+- Issue: The quotient definition taking $\mathcal L^p$ to $L^p$ and the definition of $L^\infty$ are missing.
+- Why this matters: The later discussion uses Banach spaces and endpoints without distinguishing a seminorm on actual functions from a norm on equivalence classes.
+- Required revision: Specify the equivalence relation, quotient $L^p$, and independence of representatives. Supply the essential-supremum quantifier, $L^\infty$, and its norm. Also fix the scalar field for the complex-valued version used in §9.
 
 ### Basic Properties of the $L^p$-Norm
 
@@ -57,13 +57,13 @@ $\|f\|_p=0$에서는 $f=0$ a.e.만 보장되므로 a.e. 같은 함수들을 동�
 
 ### Conjugate Exponents / Statement
 
-$1<p<\infty$에서 conjugate exponent $q$는
+For $1<p<\infty$, define the conjugate exponent $q$ by
 
 $$
 \frac1p+\frac1q=1,\qquad q=\frac p{p-1}
 $$
 
-로 정한다. $a,b\ge0$에 대해
+For $a,b\ge0$,
 
 $$
 ab\le\frac{a^p}{p}+\frac{b^q}{q}.
@@ -71,21 +71,21 @@ $$
 
 ### Proof / Equality Case — TODO
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: statement만 있고 proof와 equality condition이 비어 있다.
-- 추가하면 좋은 내용: 사용할 convexity 또는 calculus argument의 핵심과 equality condition.
-- 이유: Hölder로 이어지는 pointwise estimate가 왜 성립하는지 복원할 수 있어야 한다.
+- Limitation of the current explanation: Only the statement is present; the proof and equality condition are missing.
+- Suggested addition: Supply the key convexity or calculus argument and the equality condition.
+- Reason: The pointwise estimate leading to Hölder should be reconstructible from its argument.
 
 ### Connection to Hölder
 
-Young's inequality의 pointwise estimate를 적분하여 Hölder's inequality를 얻는다.
+Integrating the pointwise estimate in Young's inequality gives Hölder's inequality.
 
 ## 4. Hölder's Inequality
 
 ### Statement
 
-$1/p+1/q=1$, $f\in L^p(X)$, $g\in L^q(X)$이면 $fg\in L^1(X)$이고
+If $1/p+1/q=1$, $f\in L^p(X)$, and $g\in L^q(X)$, then $fg\in L^1(X)$ and
 
 $$
 \|fg\|_1\le\|f\|_p\|g\|_q.
@@ -93,29 +93,29 @@ $$
 
 ### Normalization / Proof Using Young — TODO
 
-Normalization에 사용하는 함수는
+The functions used for normalization are
 
 $$
 \frac{|f|}{\|f\|_p},\qquad \frac{|g|}{\|g\|_q}.
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: statement의 exponent 범위와 zero-norm case가 명시되지 않고 normalization 뒤 proof가 비어 있다.
-- 왜 문제인지: $\|f\|_p=0$ 또는 $\|g\|_q=0$이면 위 나눗셈은 정의되지 않으며 Young argument는 endpoint에 직접 적용되지 않는다.
-- 어떻게 수정해야 하는지: $1\le p,q\le\infty$, $1/\infty=0$ convention을 명시하고 zero-norm case를 분리한다. $1<p<\infty$의 normalized Young integration과 endpoint proof를 각각 직접 채운다.
+- Issue: The exponent range and zero-norm case are not specified, and the proof after normalization is missing.
+- Why this matters: The displayed divisions are undefined when $\|f\|_p=0$ or $\|g\|_q=0$, and the Young-inequality argument does not apply directly at the endpoints.
+- Required revision: State $1\le p,q\le\infty$ and the convention $1/\infty=0$, and separate the zero-norm case. Complete the normalized Young-inequality integration for $1<p<\infty$ and the endpoint proofs separately.
 
 ### Endpoint Case: $p=1$, $q=\infty$ — TODO
 
 ### Cauchy–Schwarz / Product Integrability
 
-$p=q=2$이면
+When $p=q=2$,
 
 $$
 \int_X|fg|\,d\mu\le\|f\|_2\|g\|_2.
 $$
 
-Hölder는 product의 integrability를 제어한다: $L^p\times L^q\to L^1$.
+Hölder controls integrability of products: $L^p\times L^q\to L^1$.
 
 ### Equality Case — TODO
 
@@ -123,30 +123,30 @@ Hölder는 product의 integrability를 제어한다: $L^p\times L^q\to L^1$.
 
 ### Statement
 
-$1\le p\le\infty$에 대하여
+For $1\le p\le\infty$,
 
 $$
 \|f+g\|_p\le\|f\|_p+\|g\|_p.
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: $f,g$의 membership assumption이 생략되었고 Hölder 적용 전 $f+g\in L^p$를 확보하는 단계가 없다.
-- 왜 문제인지: 아직 finite인지 모르는 $\|f+g\|_p$로 나누면 circular argument가 된다.
-- 어떻게 수정해야 하는지: $f,g\in L^p(X)$를 명시하고 preliminary integrability estimate 또는 truncation으로 finiteness를 먼저 확보한다. zero-norm case와 $p=1,\infty$ endpoint도 분리한다.
+- Issue: Membership assumptions on $f,g$ are omitted, and $f+g\in L^p$ is not established before applying Hölder.
+- Why this matters: Dividing by $\|f+g\|_p$ before knowing it is finite creates a circular argument.
+- Required revision: State $f,g\in L^p(X)$ and establish finiteness first through a preliminary integrability estimate or truncation. Separate the zero-norm case and the endpoints $p=1,\infty$.
 
 ### The Case $p=1$ — TODO
 
 ### The Case $1<p<\infty$ / Applying Hölder
 
-Pointwise triangle inequality를 이용하면
+The pointwise triangle inequality gives
 
 $$
 |f+g|^p=|f+g||f+g|^{p-1}
 \le |f||f+g|^{p-1}+|g||f+g|^{p-1}.
 $$
 
-Conjugate exponent $q=p/(p-1)$에 대해 $(p-1)q=p$이다.
+For the conjugate exponent $q=p/(p-1)$, we have $(p-1)q=p$.
 
 ### Completion of the Proof / Endpoint $p=\infty$ — TODO
 
@@ -156,7 +156,7 @@ Conjugate exponent $q=p/(p-1)$에 대해 $(p-1)q=p$이다.
 
 ### Finite Measure / Inclusion / Norm Estimate
 
-$\mu(X)<\infty$, $1\le p<q\le\infty$이면 $L^q(X)\subset L^p(X)$이며
+If $\mu(X)<\infty$ and $1\le p<q\le\infty$, then $L^q(X)\subset L^p(X)$ and
 
 $$
 \|f\|_p\le\mu(X)^{1/p-1/q}\|f\|_q.
@@ -164,11 +164,11 @@ $$
 
 ### Proof Using Hölder — TODO
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: norm estimate와 finite measure assumption의 역할을 연결하는 proof가 없다.
-- 추가하면 좋은 내용: Hölder에 넣을 두 함수와 conjugate exponents, $q=\infty$ case, infinite measure 반례의 §7 연결.
-- 이유: exponent와 measure factor를 암기하지 않고 복원하기 위한 dependency이다.
+- Limitation of the current explanation: There is no proof connecting the norm estimate to the finite-measure assumption.
+- Suggested addition: Identify the two functions and conjugate exponents used in Hölder, treat $q=\infty$, and link the infinite-measure counterexample in §7.
+- Reason: These dependencies allow reconstruction of the exponents and measure factor without memorization.
 
 ### What Happens on Infinite Measure Spaces? — TODO
 
@@ -176,7 +176,7 @@ $$
 
 ### Power Functions Near Zero
 
-$f(x)=x^{-\alpha}$, $x\in(0,1)$에 대해
+For $f(x)=x^{-\alpha}$ with $x\in(0,1)$,
 
 $$
 f\in L^p(0,1)\quad\Longleftrightarrow\quad\alpha p<1.
@@ -184,17 +184,17 @@ $$
 
 ### Power Functions Near Infinity
 
-$f(x)=x^{-\alpha}$, $x\in(1,\infty)$에 대해
+For $f(x)=x^{-\alpha}$ with $x\in(1,\infty)$,
 
 $$
 f\in L^p(1,\infty)\quad\Longleftrightarrow\quad\alpha p>1.
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: 두 power-function 판정에서 $p$의 finite 범위, $\alpha$의 범위와 measure가 생략되었다.
-- 왜 문제인지: 앞에서는 $p=\infty$도 허용하므로 $\alpha p$를 endpoint 판정으로 읽을 수 있다. 일반 measure에서는 같은 적분 판정이 성립하지 않는다.
-- 어떻게 수정해야 하는지: Lebesgue measure, $1\le p<\infty$, $\alpha\in\mathbb R$를 명시하고 $p=\infty$는 essential boundedness로 별도 확인한다.
+- Issue: The two power-function criteria omit the finite range of $p$, the range of $\alpha$, and the measure.
+- Why this matters: The earlier discussion permits $p=\infty$, so $\alpha p$ could be misread as an endpoint criterion. The same integral test does not hold for a general measure.
+- Required revision: Specify Lebesgue measure, $1\le p<\infty$, and $\alpha\in\mathbb R$, and check $p=\infty$ separately through essential boundedness.
 
 ### $L^p\setminus L^q$ / $L^q\setminus L^p$ — TODO
 
@@ -206,34 +206,34 @@ $$
 
 ### Cauchy Sequences / Banach Spaces
 
-Normed space의 sequence $\{f_n\}$가 Cauchy라는 것은
+A sequence $\{f_n\}$ in a normed space is Cauchy if
 
 $$
 \forall\varepsilon>0,\quad\exists N:\quad
 m,n\ge N\implies\|f_n-f_m\|<\varepsilon
 $$
 
-라는 뜻이다. 모든 Cauchy sequence가 그 space의 원소로 수렴하면 complete라고 하며, complete normed vector space를 **Banach space**라고 한다.
+A space is complete if every Cauchy sequence converges to an element of that space. A complete normed vector space is a **Banach space**.
 
 ### Completeness Theorem
 
-$1\le p\le\infty$에서 $L^p(X)$는 complete이므로 Banach space이다.
+For $1\le p\le\infty$, $L^p(X)$ is complete and hence is a Banach space.
 
 ### Proof: Rapidly Convergent Subsequence / Summable Differences
 
-$L^p$-Cauchy sequence $\{f_n\}$에서
+From an $L^p$-Cauchy sequence $\{f_n\}$, choose a subsequence satisfying
 
 $$
 \|f_{n_{k+1}}-f_{n_k}\|_p<2^{-k}
 $$
 
-를 만족하는 subsequence를 선택한다. 다음을 놓으면
+and define the following quantities:
 
 $$
 g_m=\sum_{k=1}^m|f_{n_{k+1}}-f_{n_k}|,
 $$
 
-Minkowski에 의해
+By Minkowski,
 
 $$
 \|g_m\|_p\le\sum_{k=1}^m\|f_{n_{k+1}}-f_{n_k}\|_p
@@ -242,77 +242,76 @@ $$
 
 ### Proof: Monotone Limit / Pointwise Convergence
 
-$0\le g_1\le g_2\le\cdots$이므로
+Since $0\le g_1\le g_2\le\cdots$,
 
 $$
 g=\lim_{m\to\infty}g_m
 =\sum_{k=1}^\infty|f_{n_{k+1}}-f_{n_k}|.
 $$
 
-MCT / Fatou를 이용하여 $g\in L^p$를 보여야 한다. 그러면 $g(x)<\infty$ a.e.이므로
+Use MCT/Fatou to establish $g\in L^p$. Then $g(x)<\infty$ almost everywhere, so
 
 $$
 \sum_{k=1}^\infty|f_{n_{k+1}}(x)-f_{n_k}(x)|<\infty
 \qquad\text{a.e.}
 $$
 
-따라서 $\{f_{n_k}(x)\}$는 a.e.에서 $\mathbb R$의 Cauchy sequence이다. Limit이 존재하는 점에서
+Thus $\{f_{n_k}(x)\}$ is a Cauchy sequence in $\mathbb R$ almost everywhere. At points where the limit exists, define
 
 $$
 f(x)=\lim_{k\to\infty}f_{n_k}(x)
 $$
 
-로 놓는다.
 
 ### Proof: $L^p$ Convergence / Original Sequence — TODO
 
-보여야 할 것은 $f_{n_k}\to f$ in $L^p$이다. 이를 보이면 원래 sequence의 Cauchy property로부터 $f_n\to f$ in $L^p$를 얻어 completeness가 따른다.
+It remains to prove $f_{n_k}\to f$ in $L^p$. The Cauchy property of the original sequence then gives $f_n\to f$ in $L^p$, establishing completeness.
 
-[수정 필요]
+[Correction required]
 
-- 문제: $g\in L^p$, $f$의 measurable extension과 membership, norm convergence가 TODO이고 $p=\infty$ proof가 분리되지 않았다.
-- 왜 문제인지: pointwise a.e. convergence만으로 $L^p$ convergence는 나오지 않는다. MCT / Fatou를 $p$-th power에 적용하는 argument는 $p=\infty$를 다루지 않는다.
-- 어떻게 수정해야 하는지: $1\le p<\infty$에서 $g_m^p$의 limit과 summable tail estimate를 직접 채우고 exceptional measurable null set에서 $f$를 정의한다. 이후 원래 sequence로 돌아가는 triangle estimate를 적는다. $p=\infty$에는 공통 null set 밖 uniform Cauchy argument를 별도로 작성한다.
+- Issue: The claims $g\in L^p$, measurable extension and membership of $f$, and norm convergence remain TODOs. The proof for $p=\infty$ is not separated.
+- Why this matters: Pointwise almost-everywhere convergence alone does not imply $L^p$ convergence. Applying MCT/Fatou to $p$th powers does not cover $p=\infty$.
+- Required revision: For $1\le p<\infty$, complete the limit argument for $g_m^p$ and the summable-tail estimate, and define $f$ on the exceptional measurable null set. Then write the triangle estimate returning to the original sequence. For $p=\infty$, give a separate uniform Cauchy argument outside a common null set.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: subsequence 선택의 목적이 드러나지 않는다.
-- 추가하면 좋은 내용: summable norm increments → a.e. absolute convergence → norm convergence라는 proof idea를 자기 말로 기록.
-- 이유: 이 subsequence technique은 다른 completeness 및 convergence argument에도 반복된다.
+- Limitation of the current explanation: The purpose of selecting the subsequence is not explained.
+- Suggested addition: State the proof idea in your own words: summable norm increments → almost-everywhere absolute convergence → norm convergence.
+- Reason: This subsequence technique also appears in other completeness and convergence arguments.
 
 ## 9. Why $L^2$ Is Special
 
 ### Inner Product / Induced Norm
 
-Real-valued functions에서는
+For real-valued functions,
 
 $$
 \langle f,g\rangle_{L^2}=\int_Xfg\,d\mu,
 $$
 
-complex-valued functions에서는
+for complex-valued functions,
 
 $$
 \langle f,g\rangle_{L^2}=\int_Xf\overline g\,d\mu.
 $$
 
-Induced norm은 $\|f\|_2=\sqrt{\langle f,f\rangle_{L^2}}$이다.
+The induced norm is $\|f\|_2=\sqrt{\langle f,f\rangle_{L^2}}$.
 
 ### Hilbert Spaces / Banach vs. Hilbert
 
-Complete inner product space를 **Hilbert space**라고 한다. $L^2$가 complete이므로 $L^2(X)$는 Hilbert space이다. 모든 Hilbert space는 induced norm에 대해 Banach space지만 그 역은 일반적으로 성립하지 않는다.
+A complete inner product space is a **Hilbert space**. Since $L^2$ is complete, $L^2(X)$ is a Hilbert space. Every Hilbert space is a Banach space under its induced norm, but the converse does not hold in general.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: inner product의 well-definedness와 §2의 real-valued convention을 확장하는 위치가 분명하지 않다.
-- 추가하면 좋은 내용: $f,g\in L^2$와 Cauchy–Schwarz에 의한 integrability, representative independence, complex scalar field와 linear-slot convention.
-- 이유: 다음 duality의 canonical pairing과 Hilbert inner product를 혼동하지 않아야 한다.
+- Limitation of the current explanation: It is unclear where well-definedness of the inner product is established and where the real-valued convention of §2 is extended.
+- Suggested addition: State $f,g\in L^2$, integrability by Cauchy–Schwarz, independence of representatives, the complex scalar field, and the convention for the linear slot.
+- Reason: The canonical pairing in the subsequent duality discussion must be distinguished from a Hilbert inner product.
 
 ## 10. Connections / Next Seminar
 
 ### Weak Derivatives / Sobolev Preview
 
-PDE에서는 $\|u\|_p$뿐 아니라 $D_i u$도 제어해야 한다. Classical differentiability의 제약에서 weak derivative로 나아간다. 기존 preview는 다음과 같다.
+PDEs require control of $D_i u$ as well as $\|u\|_p$. This leads beyond classical differentiability to weak derivatives. The existing preview is
 
 $$
 W^{1,p}(\Omega)
@@ -320,11 +319,11 @@ W^{1,p}(\Omega)
 \qquad H^1(\Omega)=W^{1,2}(\Omega).
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: $\Omega$의 조건, index $i$의 quantifier, $D_i$의 의미가 빠져 있다.
-- 왜 문제인지: classical derivative와 weak derivative를 구별하지 않은 식은 Sobolev space의 정확한 definition이 아니다.
-- 어떻게 수정해야 하는지: $\Omega\subset\mathbb R^n$ open, 모든 $i=1,\ldots,n$, distributional/weak derivative라는 조건을 명시한다. 이 위치는 preview로 두고 실제 definition과 proof는 이후 §9.3 study에서 직접 채운다.
+- Issue: Conditions on $\Omega$, the quantifier on $i$, and the meaning of $D_i$ are missing.
+- Why this matters: An expression that does not distinguish classical from weak derivatives is not a precise definition of a Sobolev space.
+- Required revision: Specify that $\Omega\subset\mathbb R^n$ is open, quantify over all $i=1,\ldots,n$, and identify distributional/weak derivatives. Keep this location as a preview and develop the actual definition and proof in the later §9.3 study.
 
 ### Next Seminar
 
@@ -339,4 +338,4 @@ L^p\longrightarrow\text{Young}\longrightarrow\text{Hölder}
 \longrightarrow\text{Banach structure}
 $$
 
-Pointwise estimate → product integrability → triangle inequality → completeness가 이 글의 연결이다. $p=2$에서는 inner product가 더해진다. 이후 duality와 weak derivatives를 거쳐 Sobolev spaces 및 PDE로 연결한다.
+This note follows pointwise estimates → product integrability → the triangle inequality → completeness. At $p=2$, an inner product is added. Duality and weak derivatives then lead to Sobolev spaces and PDEs.

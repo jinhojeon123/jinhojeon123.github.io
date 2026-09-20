@@ -15,7 +15,7 @@ series_order: 23
 
 - **Main topic:** Pointwise Fourier Convergence — Localization
 - **Reference:** Folland 2nd edition, §8.5 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 23
 
 ## Seminar workload
 
-- 총 165분
-- localization / Dini: 75분
-- Dirichlet–Jordan proof TODO: 75분
-- hypotheses / reconstruction: 15분
+- Total: 165 min
+- localization / Dini: 75 min
+- Dirichlet–Jordan proof TODO: 75 min
+- hypotheses / reconstruction: 15 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 23
 
 ## Connections
 
-- [ ] Connection: localization principle의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on localization principle to the current theorem
 - [ ] Next readiness: pointwise convergence assumptions → operator norms of partial sums
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 23
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 22 — Summation of Fourier Series]({% link _posts/folland-seminar/2026-09-11-folland-week-22-summation-of-fourier-series.md %})
+- Previous (reading order): [Week 22 — Summation of Fourier Series]({% link _posts/folland-seminar/2026-09-11-folland-week-22-summation-of-fourier-series.md %})
 - Current: Week 23
-- Next (읽기 순서): [Week 24 — Pointwise Fourier Convergence — Limits of the Theory]({% link _posts/folland-seminar/2026-09-11-folland-week-24-pointwise-fourier-convergence-limits.md %})
+- Next (reading order): [Week 24 — Pointwise Fourier Convergence — Limits of the Theory]({% link _posts/folland-seminar/2026-09-11-folland-week-24-pointwise-fourier-convergence-limits.md %})

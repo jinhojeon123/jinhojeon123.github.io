@@ -57,7 +57,7 @@ Dependency: [11]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-
 
 ## Connections
 
-- [11. SVD — Low-rank approximation / Eckart–Young 후속 학습]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-11-svd.md %})
+- [11. SVD — Follow-up on low-rank approximation / Eckart–Young]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-11-svd.md %})
 
 - [Lp norms]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %})
 

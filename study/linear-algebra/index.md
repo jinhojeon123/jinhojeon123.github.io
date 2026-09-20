@@ -11,7 +11,7 @@ status: outline
 
 Scope: Saad → Numerical Linear Algebra → Krylov Methods → Numerical PDE / FEM
 
-[전체 roadmap]({% link STUDY-ROADMAP.md %})
+[Complete roadmap]({% link STUDY-ROADMAP.md %})
 
 ## Study order
 

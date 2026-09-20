@@ -15,7 +15,7 @@ series_order: 30
 
 - **Main topic:** Compactly Supported Distributions
 - **Reference:** Folland 2nd edition, §9.2 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -31,10 +31,10 @@ series_order: 30
 
 ## Seminar workload
 
-- 총 165분
-- compact support / finite order: 45분
-- structure theorem proof TODO: 85분
-- convolution / hypotheses: 35분
+- Total: 165 min
+- compact support / finite order: 45 min
+- structure theorem proof TODO: 85 min
+- convolution / hypotheses: 35 min
 
 ## Motivation
 
@@ -48,7 +48,7 @@ series_order: 30
 
 ## Connections
 
-- [ ] Connection: compact support and finite order의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on compact support and finite order to the current theorem
 - [ ] Next readiness: support hypotheses → Schwartz topology and tempered distributions
 
 ## Questions / Things I do not understand yet
@@ -57,6 +57,6 @@ series_order: 30
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 29 — Distributions — Localization and Regularization]({% link _posts/folland-seminar/2026-09-11-folland-week-29-distributions-localization-and-regularization.md %})
+- Previous (reading order): [Week 29 — Distributions — Localization and Regularization]({% link _posts/folland-seminar/2026-09-11-folland-week-29-distributions-localization-and-regularization.md %})
 - Current: Week 30
-- Next (읽기 순서): [Week 31 — Tempered Distributions and Fourier Transform]({% link _posts/folland-seminar/2026-09-11-folland-week-31-tempered-distributions-and-fourier-transform.md %})
+- Next (reading order): [Week 31 — Tempered Distributions and Fourier Transform]({% link _posts/folland-seminar/2026-09-11-folland-week-31-tempered-distributions-and-fourier-transform.md %})

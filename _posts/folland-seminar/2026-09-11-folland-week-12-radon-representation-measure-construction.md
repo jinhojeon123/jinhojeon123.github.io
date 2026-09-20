@@ -15,7 +15,7 @@ series_order: 12
 
 - **Main topic:** Radon Representation — Measure Construction
 - **Reference:** Folland 2nd edition, §7.1 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 12
 
 ## Seminar workload
 
-- 총 165분
-- Cc(X) / positivity / LCH prerequisites: 35분
-- representing-measure construction: 100분
-- regularity obligations: 30분
+- Total: 165 min
+- Cc(X) / positivity / LCH prerequisites: 35 min
+- representing-measure construction: 100 min
+- regularity obligations: 30 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 12
 
 ## Connections
 
-- [ ] Connection: chapter 전환 — 위 Prerequisite의 결과와 현재 topic의 연결; 직전 Week 자체를 필수 hypothesis로 간주하지 않기
+- [ ] Connection: chapter transition — connect the prerequisites above to the current topic; do not treat the immediately preceding week itself as a required hypothesis
 - [ ] Next readiness: Radon regularity obligations → Riesz Representation Theorem proof completion
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 12
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 11 — Marcinkiewicz Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-11-marcinkiewicz-interpolation.md %})
+- Previous (reading order): [Week 11 — Marcinkiewicz Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-11-marcinkiewicz-interpolation.md %})
 - Current: Week 12
-- Next (읽기 순서): [Week 13 — Radon Representation — Integral and Uniqueness]({% link _posts/folland-seminar/2026-09-11-folland-week-13-radon-representation-integral-and-uniqueness.md %})
+- Next (reading order): [Week 13 — Radon Representation — Integral and Uniqueness]({% link _posts/folland-seminar/2026-09-11-folland-week-13-radon-representation-integral-and-uniqueness.md %})

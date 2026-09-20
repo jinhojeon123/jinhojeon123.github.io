@@ -15,7 +15,7 @@ series_order: 9
 
 - **Main topic:** Distribution Functions and Weak Lp
 - **Reference:** Folland 2nd edition, §6.4
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 9
 
 ## Seminar workload
 
-- 총 150분
-- distribution functions / integral representation: 60분
-- weak Lp / quasi-norm: 50분
-- operator types / counterexample TODO: 40분
+- Total: 150 min
+- distribution functions / integral representation: 60 min
+- weak Lp / quasi-norm: 50 min
+- operator types / counterexample TODO: 40 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 9
 
 ## Connections
 
-- [ ] Connection: distribution function의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on distribution function to the current theorem
 - [ ] Next readiness: strong Lp versus weak Lp distinction → interpolation exponents
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 9
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 08 — Homogeneous Kernels and Hardy Inequalities]({% link _posts/folland-seminar/2026-09-11-folland-week-08-homogeneous-kernels-and-hardy-inequalities.md %})
+- Previous (reading order): [Week 08 — Homogeneous Kernels and Hardy Inequalities]({% link _posts/folland-seminar/2026-09-11-folland-week-08-homogeneous-kernels-and-hardy-inequalities.md %})
 - Current: Week 09
-- Next (읽기 순서): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})
+- Next (reading order): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})

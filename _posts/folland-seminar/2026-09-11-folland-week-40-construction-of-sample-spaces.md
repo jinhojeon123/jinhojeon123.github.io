@@ -15,7 +15,7 @@ series_order: 40
 
 - **Main topic:** Construction of Sample Spaces
 - **Reference:** Folland 2nd edition, §10.4
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 40
 
 ## Seminar workload
 
-- 총 150분
-- consistent families / product spaces: 45분
-- extension theorem proof TODO: 85분
-- canonical process: 20분
+- Total: 150 min
+- consistent families / product spaces: 45 min
+- extension theorem proof TODO: 85 min
+- canonical process: 20 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 40
 
 ## Connections
 
-- [ ] Connection: finite-dimensional distributions의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on finite-dimensional distributions to the current theorem
 - [ ] Next readiness: canonical process → Wiener finite-dimensional distributions
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 40
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 39 — Central Limit Theorem]({% link _posts/folland-seminar/2026-09-11-folland-week-39-central-limit-theorem.md %})
+- Previous (reading order): [Week 39 — Central Limit Theorem]({% link _posts/folland-seminar/2026-09-11-folland-week-39-central-limit-theorem.md %})
 - Current: Week 40
-- Next (읽기 순서): [Week 41 — Wiener Process — Gaussian Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-41-wiener-process-gaussian-construction.md %})
+- Next (reading order): [Week 41 — Wiener Process — Gaussian Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-41-wiener-process-gaussian-construction.md %})

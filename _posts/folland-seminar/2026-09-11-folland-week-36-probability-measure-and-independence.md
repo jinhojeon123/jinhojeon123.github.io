@@ -15,7 +15,7 @@ series_order: 36
 
 - **Main topic:** Probability — Measure and Independence
 - **Reference:** Folland 2nd edition, §10.1
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 36
 
 ## Seminar workload
 
-- 총 150분
-- probability / expectation / independence: 60분
-- Borel–Cantelli proof TODO: 50분
-- modes of convergence: 40분
+- Total: 150 min
+- probability / expectation / independence: 60 min
+- Borel–Cantelli proof TODO: 50 min
+- modes of convergence: 40 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 36
 
 ## Connections
 
-- [ ] Connection: chapter 전환 — 위 Prerequisite의 결과와 현재 topic의 연결; 직전 Week 자체를 필수 hypothesis로 간주하지 않기
+- [ ] Connection: chapter transition — connect the prerequisites above to the current topic; do not treat the immediately preceding week itself as a required hypothesis
 - [ ] Next readiness: convergence in probability; convergence in distribution → Weak Law of Large Numbers
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 36
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 35 — Elliptic Regularity in Sobolev Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-35-elliptic-regularity-in-sobolev-spaces.md %})
+- Previous (reading order): [Week 35 — Elliptic Regularity in Sobolev Spaces]({% link _posts/folland-seminar/2026-09-11-folland-week-35-elliptic-regularity-in-sobolev-spaces.md %})
 - Current: Week 36
-- Next (읽기 순서): [Week 37 — Laws of Large Numbers — Weak Law and Maximal Estimate]({% link _posts/folland-seminar/2026-09-11-folland-week-37-large-numbers-weak-law-and-maximal-estimate.md %})
+- Next (reading order): [Week 37 — Laws of Large Numbers — Weak Law and Maximal Estimate]({% link _posts/folland-seminar/2026-09-11-folland-week-37-large-numbers-weak-law-and-maximal-estimate.md %})

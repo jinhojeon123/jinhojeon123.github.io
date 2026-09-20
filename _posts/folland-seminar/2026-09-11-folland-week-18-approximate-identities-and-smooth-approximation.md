@@ -15,7 +15,7 @@ series_order: 18
 
 - **Main topic:** Approximate Identities and Smooth Approximation
 - **Reference:** Folland 2nd edition, §8.2 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 18
 
 ## Seminar workload
 
-- 총 165분
-- approximate-identity convergence: 85분
-- smooth approximation: 45분
-- Schwartz-space preparation: 35분
+- Total: 165 min
+- approximate-identity convergence: 85 min
+- smooth approximation: 45 min
+- Schwartz-space preparation: 35 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 18
 
 ## Connections
 
-- [ ] Connection: approximate identities의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on approximate identities to the current theorem
 - [ ] Next readiness: Schwartz space; seminorms → Fourier transform normalization
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 18
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 17 — Fourier Preliminaries and Convolution]({% link _posts/folland-seminar/2026-09-11-folland-week-17-fourier-preliminaries-and-convolution.md %})
+- Previous (reading order): [Week 17 — Fourier Preliminaries and Convolution]({% link _posts/folland-seminar/2026-09-11-folland-week-17-fourier-preliminaries-and-convolution.md %})
 - Current: Week 18
-- Next (읽기 순서): [Week 19 — Fourier Transform on L1 and Schwartz Space]({% link _posts/folland-seminar/2026-09-11-folland-week-19-fourier-transform-on-l1-and-schwartz-space.md %})
+- Next (reading order): [Week 19 — Fourier Transform on L1 and Schwartz Space]({% link _posts/folland-seminar/2026-09-11-folland-week-19-fourier-transform-on-l1-and-schwartz-space.md %})

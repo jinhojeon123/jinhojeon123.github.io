@@ -40,11 +40,11 @@ If $\mathcal{A} \subset \mathcal{P}(X)$ is an algebra, a function $\mu_0 : \math
 
 - $\mu_0(\empty) = 0$
 
-[수정 필요]
+[Correction required]
 
-- 문제: 두 번째 조건이 `- if $\left{ \right}$`에서 중단되어 premeasure의 countable additivity 조건이 빠져 있다. 미완성 TeX는 렌더링 오류를 피하도록 이 항목 안에 원문 그대로 보존했다.
-- 왜 문제인지: 첫 번째 조건만으로는 premeasure를 정의할 수 없고, algebra는 일반적인 countable union에 대해 닫혀 있지 않다.
-- 어떻게 수정해야 하는지: 모든 pairwise disjoint sequence에 대한 quantifier, 각 집합이 $\mathcal A$에 속한다는 조건, union도 $\mathcal A$에 속한다는 조건, countable additivity 등식을 직접 완성한다. Domain과 codomain 및 첫 번째 조건은 유지한다.
+- Issue: The second condition stops at `- if $\left{ \right}$`, omitting countable additivity for a premeasure. The unfinished TeX was preserved verbatim as code within this item to avoid rendering errors.
+- Why this matters: The first condition alone does not define a premeasure, and an algebra need not be closed under arbitrary countable unions.
+- Required revision: Complete the quantifier over all pairwise disjoint sequences, membership of every set in $\mathcal A$, membership of the union in $\mathcal A$, and the countable-additivity identity. Preserve the domain, codomain, and first condition.
 
 ### 2.3 Finite and Countable Additivity
 ### 2.4 Why the Union Must Remain in the Algebra

@@ -15,7 +15,7 @@ series_order: 11
 
 - **Main topic:** Marcinkiewicz Interpolation
 - **Reference:** Folland 2nd edition, §6.5 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 11
 
 ## Seminar workload
 
-- 총 165분
-- sublinear / weak endpoints: 30분
-- Marcinkiewicz proof TODO: 100분
-- strong-type consequences: 35분
+- Total: 165 min
+- sublinear / weak endpoints: 30 min
+- Marcinkiewicz proof TODO: 100 min
+- strong-type consequences: 35 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 11
 
 ## Connections
 
-- [ ] Connection: sublinear operators의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on sublinear operators to the current theorem
 - [ ] Next readiness: strong-type consequences → locally compact Hausdorff prerequisites
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 11
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})
+- Previous (reading order): [Week 10 — Riesz–Thorin Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-10-riesz-thorin-interpolation.md %})
 - Current: Week 11
-- Next (읽기 순서): [Week 12 — Radon Representation — Measure Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-12-radon-representation-measure-construction.md %})
+- Next (reading order): [Week 12 — Radon Representation — Measure Construction]({% link _posts/folland-seminar/2026-09-11-folland-week-12-radon-representation-measure-construction.md %})

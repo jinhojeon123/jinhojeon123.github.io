@@ -15,7 +15,7 @@ series_order: 16
 
 - **Main topic:** Products of Radon Measures
 - **Reference:** Folland 2nd edition, §7.4
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 16
 
 ## Seminar workload
 
-- 총 150분
-- product construction / Borel distinction: 70분
-- Fubini / regularity: 60분
-- Fourier-analysis dependency: 20분
+- Total: 150 min
+- product construction / Borel distinction: 70 min
+- Fubini / regularity: 60 min
+- Fourier-analysis dependency: 20 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 16
 
 ## Connections
 
-- [ ] Connection: Radon product construction의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Radon product construction to the current theorem
 - [ ] Next readiness: sigma-finite hypotheses → translations; multi-indices; differentiation conventions
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 16
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 15 — The Dual of C0]({% link _posts/folland-seminar/2026-09-11-folland-week-15-the-dual-of-c0.md %})
+- Previous (reading order): [Week 15 — The Dual of C0]({% link _posts/folland-seminar/2026-09-11-folland-week-15-the-dual-of-c0.md %})
 - Current: Week 16
-- Next (읽기 순서): [Week 17 — Fourier Preliminaries and Convolution]({% link _posts/folland-seminar/2026-09-11-folland-week-17-fourier-preliminaries-and-convolution.md %})
+- Next (reading order): [Week 17 — Fourier Preliminaries and Convolution]({% link _posts/folland-seminar/2026-09-11-folland-week-17-fourier-preliminaries-and-convolution.md %})

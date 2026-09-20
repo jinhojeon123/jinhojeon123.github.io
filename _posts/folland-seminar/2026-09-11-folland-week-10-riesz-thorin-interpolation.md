@@ -15,7 +15,7 @@ series_order: 10
 
 - **Main topic:** Riesz–Thorin Interpolation
 - **Reference:** Folland 2nd edition, §6.5 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -35,10 +35,10 @@ series_order: 10
 
 ## Seminar workload
 
-- 총 165분
-- three-lines prerequisite / exponents: 30분
-- Riesz–Thorin proof TODO: 100분
-- density / endpoints / consequences: 35분
+- Total: 165 min
+- three-lines prerequisite / exponents: 30 min
+- Riesz–Thorin proof TODO: 100 min
+- density / endpoints / consequences: 35 min
 
 ## Motivation
 
@@ -52,7 +52,7 @@ series_order: 10
 
 ## Connections
 
-- [ ] Connection: interpolation exponents의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on interpolation exponents to the current theorem
 - [ ] Next readiness: endpoint hypotheses → sublinear operators
 
 ## Questions / Things I do not understand yet
@@ -61,6 +61,6 @@ series_order: 10
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 09 — Distribution Functions and Weak Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-09-distribution-functions-and-weak-lp.md %})
+- Previous (reading order): [Week 09 — Distribution Functions and Weak Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-09-distribution-functions-and-weak-lp.md %})
 - Current: Week 10
-- Next (읽기 순서): [Week 11 — Marcinkiewicz Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-11-marcinkiewicz-interpolation.md %})
+- Next (reading order): [Week 11 — Marcinkiewicz Interpolation]({% link _posts/folland-seminar/2026-09-11-folland-week-11-marcinkiewicz-interpolation.md %})

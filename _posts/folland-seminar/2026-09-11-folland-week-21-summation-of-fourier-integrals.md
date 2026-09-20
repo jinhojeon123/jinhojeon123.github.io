@@ -15,7 +15,7 @@ series_order: 21
 
 - **Main topic:** Periodization and Summation of Fourier Integrals
 - **Reference:** Folland 2nd edition, §8.3 Part III; 8.4 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,11 +32,11 @@ series_order: 21
 
 ## Seminar workload
 
-- 총 165분
-- torus / periodization: 25분
-- Poisson summation proof TODO: 55분
-- Fourier-integral summation proof TODO: 65분
-- norm / pointwise distinctions: 20분
+- Total: 165 min
+- torus / periodization: 25 min
+- Poisson summation proof TODO: 55 min
+- Fourier-integral summation proof TODO: 65 min
+- norm / pointwise distinctions: 20 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 21
 
 ## Connections
 
-- [ ] Connection: torus; Fourier coefficients; periodization의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on torus; Fourier coefficients; periodization to the current theorem
 - [ ] Next readiness: norm convergence and pointwise convergence; kernel hypotheses → Dirichlet kernel; Fejér kernel
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 21
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 20 — Fourier Inversion and Plancherel]({% link _posts/folland-seminar/2026-09-11-folland-week-20-fourier-inversion-and-plancherel.md %})
+- Previous (reading order): [Week 20 — Fourier Inversion and Plancherel]({% link _posts/folland-seminar/2026-09-11-folland-week-20-fourier-inversion-and-plancherel.md %})
 - Current: Week 21
-- Next (읽기 순서): [Week 22 — Summation of Fourier Series]({% link _posts/folland-seminar/2026-09-11-folland-week-22-summation-of-fourier-series.md %})
+- Next (reading order): [Week 22 — Summation of Fourier Series]({% link _posts/folland-seminar/2026-09-11-folland-week-22-summation-of-fourier-series.md %})

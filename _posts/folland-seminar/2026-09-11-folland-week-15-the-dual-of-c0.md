@@ -15,7 +15,7 @@ series_order: 15
 
 - **Main topic:** The Dual of C0
 - **Reference:** Folland 2nd edition, §7.3
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -34,10 +34,10 @@ series_order: 15
 
 ## Seminar workload
 
-- 총 165분
-- complex measures / total variation prerequisites: 30분
-- C0 dual representation proof TODO: 95분
-- vague convergence / consequences: 40분
+- Total: 165 min
+- complex measures / total variation prerequisites: 30 min
+- C0 dual representation proof TODO: 95 min
+- vague convergence / consequences: 40 min
 
 ## Motivation
 
@@ -51,7 +51,7 @@ series_order: 15
 
 ## Connections
 
-- [ ] Connection: C0(X); uniform norm의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on C0(X); uniform norm to the current theorem
 - [ ] Next readiness: vague convergence; weak-star topology → Radon product construction
 
 ## Questions / Things I do not understand yet
@@ -60,6 +60,6 @@ series_order: 15
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 14 — Radon Regularity and Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-14-radon-regularity-and-approximation.md %})
+- Previous (reading order): [Week 14 — Radon Regularity and Approximation]({% link _posts/folland-seminar/2026-09-11-folland-week-14-radon-regularity-and-approximation.md %})
 - Current: Week 15
-- Next (읽기 순서): [Week 16 — Products of Radon Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-16-products-of-radon-measures.md %})
+- Next (reading order): [Week 16 — Products of Radon Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-16-products-of-radon-measures.md %})

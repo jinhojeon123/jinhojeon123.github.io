@@ -15,7 +15,7 @@ series_order: 5
 
 - **Main topic:** Duality of Lp
 - **Reference:** Folland 2nd edition, §6.2 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -38,11 +38,11 @@ series_order: 5
 
 ## Seminar workload
 
-- 총 165분
-- pairing / isometry: 35분
-- representation / localization: 85분
-- globalization / uniqueness: 30분
-- hypotheses / endpoint handoff: 15분
+- Total: 165 min
+- pairing / isometry: 35 min
+- representation / localization: 85 min
+- globalization / uniqueness: 30 min
+- hypotheses / endpoint handoff: 15 min
 
 ## Motivation
 
@@ -56,7 +56,7 @@ series_order: 5
 
 ## Connections
 
-- [ ] Connection: conjugate exponents p, q의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on conjugate exponents p, q to the current theorem
 - [ ] Next readiness: duality theorem consequences — Week 06 dependency → p = 1 representation; sigma-finite hypothesis
 
 ## Questions / Things I do not understand yet
@@ -65,6 +65,6 @@ series_order: 5
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Seminar 04 — Lp Spaces and Fundamental Inequalities]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %})
+- Previous (reading order): [Seminar 04 — Lp Spaces and Fundamental Inequalities]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %})
 - Current: Week 05
-- Next (읽기 순서): [Week 06 — Lp Duality — Endpoints and Consequences]({% link _posts/folland-seminar/2026-09-11-folland-week-06-lp-duality-endpoints-and-consequences.md %})
+- Next (reading order): [Week 06 — Lp Duality — Endpoints and Consequences]({% link _posts/folland-seminar/2026-09-11-folland-week-06-lp-duality-endpoints-and-consequences.md %})

@@ -9,18 +9,18 @@ status: outline
 
 # Current
 
-- Folland Seminar: [기존 Seminar 04 — Lp spaces]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %}) → [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
+- Folland Seminar: [Existing Seminar 04 — Lp spaces]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %}) → [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
 - Linear Algebra Review: [00 — Scalars, Vectors, Matrices and Maps]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %})
 - Saad: [00 — Prerequisites]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %})
 - Trefethen NLA in C++: [01 — Matrix-Vector Multiplication]({% link _posts/trefethen/2026-09-15-trefethen-01-matrix-vector-multiplication.md %})
 
 # Study order
 
-- [Folland Seminar — Week별 순서와 prerequisite]({% link study/folland/index.md %})
+- [Folland Seminar — weekly sequence and prerequisites]({% link study/folland/index.md %})
 - [Linear Algebra Review — 00–19]({% link study/linear-algebra/index.md %})
 - [Trefethen NLA in C++ — 01–40]({% link study/trefethen/index.md %})
 - [Saad Study — 00–14]({% link study/saad/index.md %})
-- [기존 글의 A/B/C 분류 및 수정 지시]({% link STUDY-REVIEW.md %})
+- [A/B/C classifications and revision guidance for existing notes]({% link STUDY-REVIEW.md %})
 
 # Dependency
 
@@ -42,8 +42,8 @@ status: outline
 
 # Current next actions
 
-- [ ] [Folland Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})의 prerequisite 확인 및 발표 준비
-- [ ] [Linear Algebra 00]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %})부터 순서대로 복습
+- [ ] [Folland Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %}): check prerequisites and prepare the presentation
+- [ ] [Linear Algebra 00]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %}): review from this point in order
 - [ ] [Trefethen Lecture 01]({% link _posts/trefethen/2026-09-15-trefethen-01-matrix-vector-multiplication.md %}): implement in C++ and record numerical experiments
-- [ ] [Saad 00]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %})의 prerequisite checklist 확인
-- [ ] [기존 글의 High-priority 수정]({% link STUDY-REVIEW.md %}) 직접 해결
+- [ ] [Saad 00]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %}): check the prerequisite checklist
+- [ ] [High-priority corrections to existing notes]({% link STUDY-REVIEW.md %}): address the listed issues

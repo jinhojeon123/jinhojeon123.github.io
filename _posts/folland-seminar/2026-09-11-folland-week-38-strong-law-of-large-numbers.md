@@ -15,7 +15,7 @@ series_order: 38
 
 - **Main topic:** Strong Law of Large Numbers
 - **Reference:** Folland 2nd edition, §10.2 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 38
 
 ## Seminar workload
 
-- 총 165분
-- moment / truncation preparation: 35분
-- strong law proof TODO: 100분
-- hypotheses / consequences: 30분
+- Total: 165 min
+- moment / truncation preparation: 35 min
+- strong law proof TODO: 100 min
+- hypotheses / consequences: 30 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 38
 
 ## Connections
 
-- [ ] Connection: Strong Law of Large Numbers의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Strong Law of Large Numbers to the current theorem
 - [ ] Next readiness: almost sure convergence → characteristic functions
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 38
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 37 — Laws of Large Numbers — Weak Law and Maximal Estimate]({% link _posts/folland-seminar/2026-09-11-folland-week-37-large-numbers-weak-law-and-maximal-estimate.md %})
+- Previous (reading order): [Week 37 — Laws of Large Numbers — Weak Law and Maximal Estimate]({% link _posts/folland-seminar/2026-09-11-folland-week-37-large-numbers-weak-law-and-maximal-estimate.md %})
 - Current: Week 38
-- Next (읽기 순서): [Week 39 — Central Limit Theorem]({% link _posts/folland-seminar/2026-09-11-folland-week-39-central-limit-theorem.md %})
+- Next (reading order): [Week 39 — Central Limit Theorem]({% link _posts/folland-seminar/2026-09-11-folland-week-39-central-limit-theorem.md %})

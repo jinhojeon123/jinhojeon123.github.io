@@ -15,7 +15,7 @@ series_order: 32
 
 - **Main topic:** Periodic Distributions and Fourier Coefficients
 - **Reference:** Folland 2nd edition, §9.2 Part III
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 32
 
 ## Seminar workload
 
-- 총 150분
-- periodic distributions / periodization: 45분
-- coefficient growth / Fourier series proof TODO: 80분
-- Poisson summation connection: 25분
+- Total: 150 min
+- periodic distributions / periodization: 45 min
+- coefficient growth / Fourier series proof TODO: 80 min
+- Poisson summation connection: 25 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 32
 
 ## Connections
 
-- [ ] Connection: periodic distributions의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on periodic distributions to the current theorem
 - [ ] Next readiness: Poisson summation connection → Folland Hs(Rn) convention
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 32
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 31 — Tempered Distributions and Fourier Transform]({% link _posts/folland-seminar/2026-09-11-folland-week-31-tempered-distributions-and-fourier-transform.md %})
+- Previous (reading order): [Week 31 — Tempered Distributions and Fourier Transform]({% link _posts/folland-seminar/2026-09-11-folland-week-31-tempered-distributions-and-fourier-transform.md %})
 - Current: Week 32
-- Next (읽기 순서): [Week 33 — Sobolev Spaces — Fourier and Hilbert Structure]({% link _posts/folland-seminar/2026-09-11-folland-week-33-sobolev-spaces-fourier-and-hilbert-structure.md %})
+- Next (reading order): [Week 33 — Sobolev Spaces — Fourier and Hilbert Structure]({% link _posts/folland-seminar/2026-09-11-folland-week-33-sobolev-spaces-fourier-and-hilbert-structure.md %})

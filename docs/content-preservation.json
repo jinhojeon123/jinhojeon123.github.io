@@ -6,82 +6,112 @@
     {
       "original_path": "_posts/2025-07-18-ieee754-errors-and-algorithms.md",
       "current_path": "_posts/2025-07-18-ieee754-errors-and-algorithms.md",
-      "body_sha256": "2243a0dc15a4c871be9f1996e60d1feabe17a27ac552ba01582bad88218bf943",
+      "body_sha256": "8b21c8e05e48a310920381ce1fa59c1a1155949f12404a4b23d9f7a1034b5e01",
       "original_file_sha256": "41a76bc926b165ce9e57846a60c329914fca7747c208ab24e4d437d8272f277f",
-      "body_lf_sha256": "2243a0dc15a4c871be9f1996e60d1feabe17a27ac552ba01582bad88218bf943",
+      "body_lf_sha256": "8b21c8e05e48a310920381ce1fa59c1a1155949f12404a4b23d9f7a1034b5e01",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "277c8d9c858dca9a296e0961c62a6aab3926dd66f823a46c9b0c02fb67f30b1d",
           "body_lf_sha256": "4d5798cc21da13b5e4d9113af8ba1fa5483742a518afe41ef51fb45d03353fb9"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "2243a0dc15a4c871be9f1996e60d1feabe17a27ac552ba01582bad88218bf943",
+          "body_lf_sha256": "2243a0dc15a4c871be9f1996e60d1feabe17a27ac552ba01582bad88218bf943"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md",
       "current_path": "_posts/2026-01-10-epsilon-optimal-cost-scaling-mcmf.md",
-      "body_sha256": "c5c13870a7eaa265c58cde81d7dd3672e6886d2a7efffd6c74100f0675f4f66d",
+      "body_sha256": "7d295fadbb7efb43e69b2a608d9b3e0f3c2617850c7a75afb359b3f66510803e",
       "original_file_sha256": "db491460ea0ce86273efa4fa7b6d177b33c9361b266e56d49603f22db3f17612",
-      "body_lf_sha256": "c5c13870a7eaa265c58cde81d7dd3672e6886d2a7efffd6c74100f0675f4f66d",
+      "body_lf_sha256": "7d295fadbb7efb43e69b2a608d9b3e0f3c2617850c7a75afb359b3f66510803e",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02",
           "body_lf_sha256": "c27aee8f16ab404914254d9b286c6901d3de3198e3ee6046edeccd715b123e02"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "c5c13870a7eaa265c58cde81d7dd3672e6886d2a7efffd6c74100f0675f4f66d",
+          "body_lf_sha256": "c5c13870a7eaa265c58cde81d7dd3672e6886d2a7efffd6c74100f0675f4f66d"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
       "current_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
-      "body_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204",
+      "body_sha256": "3784b4b09cc6357019e683073418d30057d5175e2fa905160c5d9826a254d964",
       "original_file_sha256": "e2fb0bbb6b5b50c1671ecda0aa0e4f9f3d6526e1967c46992d310afeba0f9d2b",
-      "body_lf_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204",
+      "body_lf_sha256": "3784b4b09cc6357019e683073418d30057d5175e2fa905160c5d9826a254d964",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0",
           "body_lf_sha256": "b6972b038edc46d3dc62b4bd76e0e84598b5c9bdf2973aa3bca392c83c0138d0"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204",
+          "body_lf_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
       "current_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
-      "body_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
+      "body_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
       "original_file_sha256": "34f6b518028a307219be9e4a130d37329ec85a7b6289fa3e21c0dea346334291",
-      "body_lf_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
+      "body_lf_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed",
           "body_lf_sha256": "a8a7455b8c66c4d1d08e67408eb15cee08c2ab517bcfb31835f9d1695d4391ed"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
+          "body_lf_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/2026-02-09-conjugate-gradient.md",
       "current_path": "_posts/2026-02-09-conjugate-gradient.md",
-      "body_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d",
+      "body_sha256": "c84c2fe0502b2b2b30bf1d78f560377d41e5ffe0e576083043bb76b1fbc83553",
       "original_file_sha256": "f53a74aae1328d3e646851ec82d0242dbab94c74776ca315bfae319295a72751",
-      "body_lf_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d",
+      "body_lf_sha256": "c84c2fe0502b2b2b30bf1d78f560377d41e5ffe0e576083043bb76b1fbc83553",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114",
           "body_lf_sha256": "edbf33706be1f528232b9d8a7b89da0ab199af1984d8b378d40118310c019114"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d",
+          "body_lf_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
@@ -118,9 +148,9 @@
     {
       "original_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
       "current_path": "_posts/measure-theory/2026-07-25-folland-caratheodory-extension.md",
-      "body_sha256": "e83a07633cab6c9ae3cfa3b72b57d1538dd81fd7b5c5da4d0d3b7687a6d2606b",
+      "body_sha256": "3bd70b42dda027f4182979904245715e35793d20fef9ed507b5622249de7cac0",
       "original_file_sha256": "a73291aca9dd9df2e59fdc50084930bb40ad190614ddf58e9402b47aa9fb9371",
-      "body_lf_sha256": "e83a07633cab6c9ae3cfa3b72b57d1538dd81fd7b5c5da4d0d3b7687a6d2606b",
+      "body_lf_sha256": "3bd70b42dda027f4182979904245715e35793d20fef9ed507b5622249de7cac0",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -133,9 +163,15 @@
           "body_sha256": "c438371d483277a69120dd350169a2560a0e4e774bf9eb21c92d106783df61d3",
           "body_lf_sha256": "e9076232fc7272ac2f5cc885d0dc27d826ae5641d350f6830c345ed61601fee9",
           "reason": "Previous baseline before recording existing editor whitespace cleanup."
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "e83a07633cab6c9ae3cfa3b72b57d1538dd81fd7b5c5da4d0d3b7687a6d2606b",
+          "body_lf_sha256": "e83a07633cab6c9ae3cfa3b72b57d1538dd81fd7b5c5da4d0d3b7687a6d2606b"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: Record existing editor whitespace cleanup (one trailing space removed and final newline added); line-by-line comparison after trimming trailing whitespace confirms the mathematical text and equations are unchanged."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: Record existing editor whitespace cleanup (one trailing space removed and final newline added); line-by-line comparison after trimming trailing whitespace confirms the mathematical text and equations are unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
@@ -188,41 +224,53 @@
     {
       "original_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
       "current_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
-      "body_sha256": "c7460be50716edae71025359614b84cfd3d7153a66d4ce93c678919882a43c94",
+      "body_sha256": "9cb4e6bfdb6c4fa1ad28c1b213dada7488aa72d26101e8a0da57cdd8119a4060",
       "original_file_sha256": "c6826557adec4d702da0e1220d4f6919f189c54b80f614c9c40ee781f5111062",
-      "body_lf_sha256": "a8408f549317ca8fd862858306f9a561bd875d9834854ccc13ed9da207e6f864",
+      "body_lf_sha256": "9cb4e6bfdb6c4fa1ad28c1b213dada7488aa72d26101e8a0da57cdd8119a4060",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c",
           "body_lf_sha256": "ac6045ace75e6fcd043d23387189244ec1ba948cc12900346e1165c484ec0b4c"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "c7460be50716edae71025359614b84cfd3d7153a66d4ce93c678919882a43c94",
+          "body_lf_sha256": "a8408f549317ca8fd862858306f9a561bd875d9834854ccc13ed9da207e6f864"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/seminar/2026-08-07-fatou-dct.md",
       "current_path": "_posts/seminar/2026-08-07-fatou-dct.md",
-      "body_sha256": "ebb7329d94a580c07febd9e43ef45b01312027a9b8eb71eafc95afe420135a1c",
+      "body_sha256": "6c4b190b1f22fd81c0293a7a50174b77b84ca91dc6e9d6e020252911bc0f55ea",
       "original_file_sha256": "41163f05ef858bbb77de0b2837d581526e7619e06f9a0af72beb8ea42475671e",
-      "body_lf_sha256": "6615a48f1d8bde34a7b7d5eabf71ec395e4a71058466bef1607e893e569b6383",
+      "body_lf_sha256": "6c4b190b1f22fd81c0293a7a50174b77b84ca91dc6e9d6e020252911bc0f55ea",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a",
           "body_lf_sha256": "52c9d2f1dae75b2a2b38c461ad25ea065f7072e0d0b85a616efd11c54f702e8a"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "ebb7329d94a580c07febd9e43ef45b01312027a9b8eb71eafc95afe420135a1c",
+          "body_lf_sha256": "6615a48f1d8bde34a7b7d5eabf71ec395e4a71058466bef1607e893e569b6383"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     },
     {
       "original_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
       "current_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",
-      "body_sha256": "30e95454cc42f935f4064511521e8f23530f7cdd9f9378cfc669769765be8e57",
+      "body_sha256": "1ad68fcc17846c0a2af060ffeb36fba731a7de57e67cd6ea8dc02451e20217b7",
       "original_file_sha256": "e71790f5ebef5fd1b8c80635b8c9958a7e3c6d4f8b19f785baad9413d7a0a18e",
-      "body_lf_sha256": "d40e4684bd9b1bda6043cc8c32a0b21eb4427ca9bf63a185fb60259ff8ee66bc",
+      "body_lf_sha256": "1ad68fcc17846c0a2af060ffeb36fba731a7de57e67cd6ea8dc02451e20217b7",
       "original_snapshot": "archive/originals/2026-08-14-Lp-space-and-inequalities-04.md",
       "revision_history": [
         {
@@ -236,9 +284,15 @@
           "previous_commit": "57f1cd310bd26f4db8bcd85fd8beadc048e82970",
           "body_sha256": "a2e2a00fe47fde2c8b8187994a2a3aa324af50389fd36a4d216b1eb74ae5619c",
           "body_lf_sha256": "fcbc5ed54ce4ea6f1f8fc1c20924f2f5065bc68bd4623655934e361b03ca9d87"
+        },
+        {
+          "date": "2026-09-20",
+          "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
+          "body_sha256": "30e95454cc42f935f4064511521e8f23530f7cdd9f9378cfc669769765be8e57",
+          "body_lf_sha256": "d40e4684bd9b1bda6043cc8c32a0b21eb4427ca9bf63a185fb60259ff8ee66bc"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-12: Update only the Week 05 source link after moving study outlines into _posts; mathematical text is unchanged."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-12: Update only the Week 05 source link after moving study outlines into _posts; mathematical text is unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
     }
   ],
   "normalized_hash_rule": "Replace CRLF with LF; supports verification after Git line-ending normalization. Raw body_sha256 records the original local bytes."

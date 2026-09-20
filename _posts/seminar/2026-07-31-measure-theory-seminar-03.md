@@ -17,39 +17,38 @@ series_order: 7
 
 ## Proposition 2.1
 
-Measurable spaces $(X,\mathcal M)$, $(Y,\mathcal N)$에서 $\mathcal N=\sigma(\mathcal E)$라 하자. 함수 $f:X\to Y$가 $(\mathcal M,\mathcal N)$-measurable일 필요충분조건은
+For measurable spaces $(X,\mathcal M)$ and $(Y,\mathcal N)$, suppose $\mathcal N=\sigma(\mathcal E)$. A function $f:X\to Y$ is $(\mathcal M,\mathcal N)$-measurable if and only if
 
 $$
 f^{-1}(E)\in\mathcal M\qquad\text{for every }E\in\mathcal E
 $$
 
-이다.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: generating collection만 검사해도 되는 이유가 없다.
-- 추가하면 좋은 내용: measurable preimage를 갖는 집합들의 collection이 $\sigma$-algebra가 되는 proof와 이 판정법의 motivation.
-- 이유: 이후 measurability proof에서 반복 사용하는 technique이다.
+- Limitation of the current explanation: There is no explanation of why checking only a generating collection is sufficient.
+- Suggested addition: Prove that the collection of sets with measurable preimages is a $\sigma$-algebra, and explain the motivation for this criterion.
+- Reason: This technique recurs in later measurability proofs.
 
 ## Proposition 2.3
 
-Measurable space $(X,\mathcal M)$와 함수 $f:X\to\mathbb R$에 대하여 다음은 동치이다.
+For a measurable space $(X,\mathcal M)$ and a function $f:X\to\mathbb R$, the following are equivalent.
 
-1. $f$는 $\mathcal M$-measurable이다.
-2. 모든 $a\in\mathbb R$에 대하여 $f^{-1}((a,\infty))\in\mathcal M$.
-3. 모든 $a\in\mathbb R$에 대하여 $f^{-1}([a,\infty))\in\mathcal M$.
-4. 모든 $a\in\mathbb R$에 대하여 $f^{-1}((-\infty,a))\in\mathcal M$.
-5. 모든 $a\in\mathbb R$에 대하여 $f^{-1}((-\infty,a])\in\mathcal M$.
+1. $f$ is $\mathcal M$-measurable.
+2. For every $a\in\mathbb R$, $f^{-1}((a,\infty))\in\mathcal M$.
+3. For every $a\in\mathbb R$, $f^{-1}([a,\infty))\in\mathcal M$.
+4. For every $a\in\mathbb R$, $f^{-1}((-\infty,a))\in\mathcal M$.
+5. For every $a\in\mathbb R$, $f^{-1}((-\infty,a])\in\mathcal M$.
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: codomain의 $\sigma$-algebra와 Proposition 2.1과의 dependency가 암묵적이다.
-- 추가하면 좋은 내용: $\mathbb R$의 Borel $\sigma$-algebra 명시와 각 family의 generation 확인.
-- 이유: 임의의 codomain $\sigma$-algebra에 같은 판정을 적용하는 혼동을 막는다.
+- Limitation of the current explanation: The codomain $\sigma$-algebra and the dependency on Proposition 2.1 are implicit.
+- Suggested addition: Specify the Borel $\sigma$-algebra on $\mathbb R$ and verify generation by each family.
+- Reason: This prevents incorrectly applying the same criterion to an arbitrary codomain $\sigma$-algebra.
 
 ## Proposition 2.13
 
-Measure space $(X,\mathcal M,\mu)$의 nonnegative simple functions $\phi,\psi$와 $E\in\mathcal M$에 대하여
+For nonnegative simple functions $\phi,\psi$ on a measure space $(X,\mathcal M,\mu)$ and $E\in\mathcal M$,
 
 $$
 \int_E c\phi\,d\mu=c\int_E\phi\,d\mu\qquad(c\ge0),
@@ -59,43 +58,43 @@ $$
 \int_E(\phi+\psi)\,d\mu=\int_E\phi\,d\mu+\int_E\psi\,d\mu.
 $$
 
-$\phi\le\psi$이면
+if $\phi\le\psi$,
 
 $$
 \int_E\phi\,d\mu\le\int_E\psi\,d\mu.
 $$
 
-또한 $E_n\uparrow E$이면
+and if $E_n\uparrow E$,
 
 $$
 \lim_{n\to\infty}\int_{E_n}\phi\,d\mu=\int_E\phi\,d\mu.
 $$
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: simple-function integral의 definition과 extended integral convention이 생략되어 있다.
-- 추가하면 좋은 내용: canonical representation에 따른 integral definition, representation independence, $0\cdot\infty=0$ convention, measure의 continuity from below와의 연결.
-- 이유: $c=0$ 또는 무한 integral을 포함하는 statement의 의미를 고정해야 한다.
+- Limitation of the current explanation: The definition of a simple-function integral and the extended-integral conventions are omitted.
+- Suggested addition: Supply the integral definition via the canonical representation, independence of representation, the convention $0\cdot\infty=0$, and the connection to continuity from below of the measure.
+- Reason: The meaning of statements involving $c=0$ or infinite integrals must be fixed.
 
 ## Monotone Convergence Theorem
 
-Measure space $(X,\mathcal M,\mu)$에서 $\{f_n\}_{n=1}^{\infty}\subset L^+$가 모든 $n$에 대해 $f_n\le f_{n+1}$을 만족한다고 하자. 다음과 같이 놓으면
+On a measure space $(X,\mathcal M,\mu)$, suppose $\{f_n\}_{n=1}^{\infty}\subset L^+$ satisfies $f_n\le f_{n+1}$ for every $n$. Set
 
 $$
 f(x)=\lim_{n\to\infty}f_n(x)=\sup_n f_n(x),
 $$
 
-$f\in L^+$이고
+Then $f\in L^+$ and
 
 $$
 \int_X f\,d\mu=\lim_{n\to\infty}\int_X f_n\,d\mu.
 $$
 
-[수정 필요]
+[Correction required]
 
-- 문제: $L^+$의 definition과 MCT의 proof가 비어 있어 이 문서만으로 theorem을 복원할 수 없다.
-- 왜 문제인지: extended-valued nonnegative measurable functions인지 분명하지 않고, integral을 정의하는 supremum에서 limit으로 넘어가는 논리가 없다.
-- 어떻게 수정해야 하는지: $L^+$의 domain/codomain과 measurability를 명시하고, simple function 및 $0<c<1$을 사용하는 lower-bound proof를 직접 채운다. 증가 집합의 union과 $c\uparrow1$ 단계도 확인한다.
+- Issue: The definition of $L^+$ and the proof of MCT are missing, so the theorem cannot be reconstructed from this note alone.
+- Why this matters: It is unclear whether the functions are nonnegative, measurable, and extended-valued. The argument passing from the supremum defining the integral to the limit is missing.
+- Required revision: Specify the domain, codomain, and measurability in $L^+$, and complete the lower-bound proof using simple functions and $0<c<1$. Check the union of the increasing sets and the step $c\uparrow1$.
 
 ### Proof of MCT — TODO
 
@@ -103,7 +102,7 @@ $$
 
 ## Questions
 
-- Proposition 2.1은 어떤 measurability 검사에 유용한가?
-- MCT proof에서 $c\phi$를 도입하는 이유는 무엇인가?
-- MCT proof에서 사용하는 $E_n$의 definition은 무엇이며, 어떤 set으로 증가하는가?
-- MCT의 nonnegativity와 monotonicity 아래에서 pointwise convergence로 충분한 이유는 무엇인가?
+- Which measurability checks can be simplified by Proposition 2.1?
+- Why is $c\phi$ introduced in the proof of MCT?
+- How are the sets $E_n$ defined in the MCT proof, and to which set do they increase?
+- Why is pointwise convergence sufficient under the nonnegativity and monotonicity assumptions of MCT?

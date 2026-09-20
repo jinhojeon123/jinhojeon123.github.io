@@ -15,7 +15,7 @@ series_order: 43
 
 - **Main topic:** Haar Measure — Existence
 - **Reference:** Folland 2nd edition, §11.1 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -34,10 +34,10 @@ series_order: 43
 
 ## Seminar workload
 
-- 총 165분
-- topological groups / translations: 40분
-- Haar existence proof TODO: 110분
-- uniqueness preparation: 15분
+- Total: 165 min
+- topological groups / translations: 40 min
+- Haar existence proof TODO: 110 min
+- uniqueness preparation: 15 min
 
 ## Motivation
 
@@ -51,7 +51,7 @@ series_order: 43
 
 ## Connections
 
-- [ ] Connection: chapter 전환 — 위 Prerequisite의 결과와 현재 topic의 연결; 직전 Week 자체를 필수 hypothesis로 간주하지 않기
+- [ ] Connection: chapter transition — connect the prerequisites above to the current topic; do not treat the immediately preceding week itself as a required hypothesis
 - [ ] Next readiness: Radon representation dependency → Haar measure uniqueness theorem
 
 ## Questions / Things I do not understand yet
@@ -60,6 +60,6 @@ series_order: 43
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 42 — Wiener Process — Continuous Paths]({% link _posts/folland-seminar/2026-09-11-folland-week-42-wiener-process-continuous-paths.md %})
+- Previous (reading order): [Week 42 — Wiener Process — Continuous Paths]({% link _posts/folland-seminar/2026-09-11-folland-week-42-wiener-process-continuous-paths.md %})
 - Current: Week 43
-- Next (읽기 순서): [Week 44 — Haar Measure — Uniqueness and Modular Function]({% link _posts/folland-seminar/2026-09-11-folland-week-44-haar-measure-uniqueness-and-modular-function.md %})
+- Next (reading order): [Week 44 — Haar Measure — Uniqueness and Modular Function]({% link _posts/folland-seminar/2026-09-11-folland-week-44-haar-measure-uniqueness-and-modular-function.md %})

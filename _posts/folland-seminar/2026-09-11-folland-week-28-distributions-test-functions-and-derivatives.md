@@ -15,7 +15,7 @@ series_order: 28
 
 - **Main topic:** Distributions — Test Functions and Derivatives
 - **Reference:** Folland 2nd edition, §9.1 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 28
 
 ## Seminar workload
 
-- 총 150분
-- test-function topology / continuity: 60분
-- derivatives / multiplication: 60분
-- example names / reconstruction: 30분
+- Total: 150 min
+- test-function topology / continuity: 60 min
+- derivatives / multiplication: 60 min
+- example names / reconstruction: 30 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 28
 
 ## Connections
 
-- [ ] Connection: test-function topology의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on test-function topology to the current theorem
 - [ ] Next readiness: multiplication by smooth functions → support of a distribution
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 28
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 27 — Fourier Methods for PDE — Wave Equation]({% link _posts/folland-seminar/2026-09-11-folland-week-27-fourier-pde-wave-equation.md %})
+- Previous (reading order): [Week 27 — Fourier Methods for PDE — Wave Equation]({% link _posts/folland-seminar/2026-09-11-folland-week-27-fourier-pde-wave-equation.md %})
 - Current: Week 28
-- Next (읽기 순서): [Week 29 — Distributions — Localization and Regularization]({% link _posts/folland-seminar/2026-09-11-folland-week-29-distributions-localization-and-regularization.md %})
+- Next (reading order): [Week 29 — Distributions — Localization and Regularization]({% link _posts/folland-seminar/2026-09-11-folland-week-29-distributions-localization-and-regularization.md %})

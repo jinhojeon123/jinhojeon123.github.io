@@ -15,7 +15,7 @@ series_order: 7
 
 - **Main topic:** Integral Inequalities and Kernel Operators
 - **Reference:** Folland 2nd edition, §6.3 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 7
 
 ## Seminar workload
 
-- 총 150분
-- Chebyshev / hypotheses: 25분
-- kernel bounds: 55분
-- Minkowski for integrals: 70분
+- Total: 150 min
+- Chebyshev / hypotheses: 25 min
+- kernel bounds: 55 min
+- Minkowski for integrals: 70 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 7
 
 ## Connections
 
-- [ ] Connection: Chebyshev inequality의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Chebyshev inequality to the current theorem
 - [ ] Next readiness: duality norm characterization in integral estimates → homogeneous integral kernels
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 7
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 06 — Lp Duality — Endpoints and Consequences]({% link _posts/folland-seminar/2026-09-11-folland-week-06-lp-duality-endpoints-and-consequences.md %})
+- Previous (reading order): [Week 06 — Lp Duality — Endpoints and Consequences]({% link _posts/folland-seminar/2026-09-11-folland-week-06-lp-duality-endpoints-and-consequences.md %})
 - Current: Week 07
-- Next (읽기 순서): [Week 08 — Homogeneous Kernels and Hardy Inequalities]({% link _posts/folland-seminar/2026-09-11-folland-week-08-homogeneous-kernels-and-hardy-inequalities.md %})
+- Next (reading order): [Week 08 — Homogeneous Kernels and Hardy Inequalities]({% link _posts/folland-seminar/2026-09-11-folland-week-08-homogeneous-kernels-and-hardy-inequalities.md %})

@@ -15,7 +15,7 @@ series_order: 33
 
 - **Main topic:** Sobolev Spaces — Fourier and Hilbert Structure
 - **Reference:** Folland 2nd edition, §9.3 Part I
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -35,10 +35,10 @@ series_order: 33
 
 ## Seminar workload
 
-- 총 165분
-- integer-order / Fourier definition: 55분
-- Hilbert structure / density: 50분
-- duality / negative orders: 60분
+- Total: 165 min
+- integer-order / Fourier definition: 55 min
+- Hilbert structure / density: 50 min
+- duality / negative orders: 60 min
 
 ## Motivation
 
@@ -54,7 +54,7 @@ series_order: 33
 
 - Dependency: [Orthogonal Decomposition]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-06-orthogonal-decomposition.md %})
 
-- [ ] Connection: Folland Hs(Rn) convention의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Folland Hs(Rn) convention to the current theorem
 - [ ] Next readiness: Sobolev duality; negative orders → Sobolev Embedding Theorem
 
 ## Questions / Things I do not understand yet
@@ -63,6 +63,6 @@ series_order: 33
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 32 — Periodic Distributions and Fourier Coefficients]({% link _posts/folland-seminar/2026-09-11-folland-week-32-periodic-distributions-and-fourier-coefficients.md %})
+- Previous (reading order): [Week 32 — Periodic Distributions and Fourier Coefficients]({% link _posts/folland-seminar/2026-09-11-folland-week-32-periodic-distributions-and-fourier-coefficients.md %})
 - Current: Week 33
-- Next (읽기 순서): [Week 34 — Sobolev Embedding and Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-34-sobolev-embedding-and-localization.md %})
+- Next (reading order): [Week 34 — Sobolev Embedding and Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-34-sobolev-embedding-and-localization.md %})

@@ -34,11 +34,11 @@ subject to
 Ax\ge b,\quad x\ge0.
 \]
 
-[보완 권장]
+[Suggested addition]
 
-- 현재 설명의 한계: matrix / vector의 크기, scalar field와 canonical form이라는 명칭의 convention이 없다.
-- 추가하면 좋은 내용: $A,b,c,x$의 domain과 dimension, inequality의 componentwise 의미를 명시하고 해당 textbook의 form 이름을 확인할 것.
-- 이유: 최적화 문제의 입력과 decision variable을 구분하고 이후 duality의 부호 convention을 고정해야 한다.
+- Limitation of the current explanation: Matrix/vector dimensions, the scalar field, and the convention for the name canonical form are missing.
+- Suggested addition: Specify the domains and dimensions of $A,b,c,x$, the componentwise meaning of the inequalities, and the textbook's name for this form.
+- Reason: This distinguishes optimization inputs from decision variables and fixes sign conventions for later duality arguments.
 
 ### Examples
 

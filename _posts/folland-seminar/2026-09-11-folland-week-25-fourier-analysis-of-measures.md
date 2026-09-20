@@ -15,7 +15,7 @@ series_order: 25
 
 - **Main topic:** Fourier Analysis of Measures
 - **Reference:** Folland 2nd edition, §8.6
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -33,10 +33,10 @@ series_order: 25
 
 ## Seminar workload
 
-- 총 150분
-- measure transforms / convolution: 45분
-- uniqueness proof TODO: 55분
-- vague convergence / probability bridge: 50분
+- Total: 150 min
+- measure transforms / convolution: 45 min
+- uniqueness proof TODO: 55 min
+- vague convergence / probability bridge: 50 min
 
 ## Motivation
 
@@ -50,7 +50,7 @@ series_order: 25
 
 ## Connections
 
-- [ ] Connection: Fourier–Stieltjes transform의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on Fourier–Stieltjes transform to the current theorem
 - [ ] Next readiness: probability characteristic-function dependency → constant-coefficient operators; symbols
 
 ## Questions / Things I do not understand yet
@@ -59,6 +59,6 @@ series_order: 25
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 24 — Pointwise Fourier Convergence — Limits of the Theory]({% link _posts/folland-seminar/2026-09-11-folland-week-24-pointwise-fourier-convergence-limits.md %})
+- Previous (reading order): [Week 24 — Pointwise Fourier Convergence — Limits of the Theory]({% link _posts/folland-seminar/2026-09-11-folland-week-24-pointwise-fourier-convergence-limits.md %})
 - Current: Week 25
-- Next (읽기 순서): [Week 26 — Fourier Methods for PDE — Poisson and Heat Kernels]({% link _posts/folland-seminar/2026-09-11-folland-week-26-fourier-pde-poisson-and-heat-kernels.md %})
+- Next (reading order): [Week 26 — Fourier Methods for PDE — Poisson and Heat Kernels]({% link _posts/folland-seminar/2026-09-11-folland-week-26-fourier-pde-poisson-and-heat-kernels.md %})

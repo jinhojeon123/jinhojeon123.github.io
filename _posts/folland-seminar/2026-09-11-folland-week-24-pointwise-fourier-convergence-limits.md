@@ -15,7 +15,7 @@ series_order: 24
 
 - **Main topic:** Pointwise Fourier Convergence — Limits of the Theory
 - **Reference:** Folland 2nd edition, §8.5 Part II
-- **Prerequisite checklist:** [미확인 선행 내용]({% link study/folland/prerequisite-checklist.md %})
+- **Prerequisite checklist:** [Unverified prerequisites]({% link study/folland/prerequisite-checklist.md %})
 
 ## Prerequisite
 
@@ -32,10 +32,10 @@ series_order: 24
 
 ## Seminar workload
 
-- 총 150분
-- partial sums / operator norms: 65분
-- divergence argument TODO: 65분
-- convergence distinctions: 20분
+- Total: 150 min
+- partial sums / operator norms: 65 min
+- divergence argument TODO: 65 min
+- convergence distinctions: 20 min
 
 ## Motivation
 
@@ -49,7 +49,7 @@ series_order: 24
 
 ## Connections
 
-- [ ] Connection: operator norms of partial sums의 선행 결과와 현재 theorem의 연결
+- [ ] Connection: connect prerequisite results on operator norms of partial sums to the current theorem
 - [ ] Next readiness: sharpness of sufficient hypotheses → Fourier–Stieltjes transform
 
 ## Questions / Things I do not understand yet
@@ -58,6 +58,6 @@ series_order: 24
 
 ## Previous Week / Next Week
 
-- Previous (읽기 순서): [Week 23 — Pointwise Fourier Convergence — Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-23-pointwise-fourier-convergence-localization.md %})
+- Previous (reading order): [Week 23 — Pointwise Fourier Convergence — Localization]({% link _posts/folland-seminar/2026-09-11-folland-week-23-pointwise-fourier-convergence-localization.md %})
 - Current: Week 24
-- Next (읽기 순서): [Week 25 — Fourier Analysis of Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-25-fourier-analysis-of-measures.md %})
+- Next (reading order): [Week 25 — Fourier Analysis of Measures]({% link _posts/folland-seminar/2026-09-11-folland-week-25-fourier-analysis-of-measures.md %})
