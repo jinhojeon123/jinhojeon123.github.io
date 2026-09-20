@@ -66,6 +66,8 @@ purpose across subjects, rather than a competing category.
 - For seminar outlines, use [the seminar template](templates/seminar-note.md).
   [Markdown preview guidance](CONTRIBUTING.md#markdown-authoring-and-preview) explains
   front matter, checklists, and the difference between VS Code and Jekyll previews.
+- For Trefethen lectures, use [the dedicated template](templates/trefethen-lecture.md)
+  and [the series writing guide](study/trefethen/index.md).
 - Posts belong in `_posts/` or its subdirectories, use
   `YYYY-MM-DD-descriptive-kebab-case.md`, and include `layout: post`, `title`,
   `date`, `categories`, `tags`, `permalink`, `status`, and `note_type`.
@@ -74,8 +76,8 @@ purpose across subjects, rather than a competing category.
   though their source files now live in `_posts/`.
 - Templates start with `published: false`; replace placeholders before publishing.
 - An existing unfinished post retains its URL with `status: outline`.
-- The 79 study outlines are published posts: Folland Seminar (44), Linear Algebra
-  Review (20), and Saad Study (15). Their dates record creation, not planned
+- The 119 study outlines are published posts: Folland Seminar (44), Linear Algebra
+  Review (20), Saad Study (15), and Trefethen NLA in C++ (40). Their dates record creation, not planned
   seminar dates; `series` and `series_order` define the reading sequence.
 - Home and Notes link to each study series. Outlines also appear in the Notes
   outline lists, Categories, Tags, Archives, and search. Recent notes and the feed
@@ -93,7 +95,8 @@ purpose across subjects, rather than a competing category.
 _posts/                 Notes and published study outlines; explicit URLs retained
   folland-seminar/       44 seminar posts, Week 05–48, starting at Lp duality
   linear-algebra-review/ 20 prerequisite and bridge posts, units 00–19
-  saad/                  15 numerical linear algebra posts, units 00–14
+  saad/                  15 iterative-method posts, units 00–14
+  trefethen/             40 numerical linear algebra posts, lectures 01–40
 study/                  Series index pages and the Folland prerequisite checklist
 STUDY-ROADMAP.md         Current actions and dependency navigation
 STUDY-REVIEW.md          Section A/B/C decisions and outstanding corrections
@@ -107,7 +110,7 @@ assets/                 Profile image and notebook stylesheet
 measure-theory/         Ordered series index
 categories/, tags/      Existing subject indexes
 archives/, start-here/  Existing navigation routes
-templates/              Seven reusable authoring templates; excluded from deployment
+templates/              Eight reusable authoring templates; excluded from deployment
 docs/                   Committed preservation and legacy URL manifests
 archive/                Preserved historical files; excluded from deployment
 tools/                  Preview, source validation, build and HTML checks

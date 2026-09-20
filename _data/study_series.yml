@@ -10,3 +10,7 @@
   title: Saad Study
   url: /study/saad/
   scope: 00–14 · sparse systems에서 domain decomposition까지
+- id: trefethen-nla
+  title: Trefethen NLA in C++
+  url: /study/trefethen/
+  scope: 01–40 · fundamentals부터 preconditioning까지
