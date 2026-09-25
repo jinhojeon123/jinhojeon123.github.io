@@ -4,14 +4,29 @@
   {% if page.status == 'outline' %}
     <p>This is a working outline. Empty sections are a study plan and do not represent completed results.</p>
   {% endif %}
+  {% if page.content contains 'class="review-note ' %}
+    <p>Highlighted review notes mark statements that still need correction or expansion. Read the surrounding argument with them in mind.</p>
+  {% endif %}
   {% if page.series %}
     {% assign series_notes = site.posts | where: 'series', page.series | sort: 'series_order' %}
-    <h3>In this series</h3>
-    <ol>
-      {% for note in series_notes %}
-        <li>{% if note.url == page.url %}<span aria-current="page">{{ note.title | escape }}</span>{% else %}<a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>{% endif %}{% if note.status == 'outline' %} <span class="note-meta">(outline)</span>{% endif %}</li>
-      {% endfor %}
-    </ol>
+    {% assign series_info = site.data.study_series | where: 'id', page.series | first %}
+    {% for note in series_notes %}{% if note.url == page.url %}{% assign series_index = forloop.index0 %}{% endif %}{% endfor %}
+    <h3>In this series{% if series_info %}: <a href="{{ series_info.url | relative_url }}">{{ series_info.title | escape }}</a>{% endif %}</h3>
+    <ul class="series-nav">
+      {% if series_index > 0 %}{% assign previous_index = series_index | minus: 1 %}{% assign previous_note = series_notes[previous_index] %}
+        <li>Previous: <a href="{{ previous_note.url | relative_url }}">{{ previous_note.title | escape }}</a></li>
+      {% endif %}
+      {% assign next_index = series_index | plus: 1 %}{% assign next_note = series_notes[next_index] %}
+      {% if next_note %}<li>Next: <a href="{{ next_note.url | relative_url }}">{{ next_note.title | escape }}</a></li>{% endif %}
+    </ul>
+    <details{% if series_notes.size <= 12 %} open{% endif %}>
+      <summary>All {{ series_notes.size }} posts in reading order (this is post {{ series_index | plus: 1 }})</summary>
+      <ol>
+        {% for note in series_notes %}
+          <li>{% if note.url == page.url %}<span aria-current="page">{{ note.title | escape }}</span>{% else %}<a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>{% endif %}{% if note.status == 'outline' %} <span class="note-meta">(outline)</span>{% endif %}</li>
+        {% endfor %}
+      </ol>
+    </details>
   {% endif %}
   {% if page.projects.size > 0 %}
     <h3>Project connections</h3>

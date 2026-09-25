@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Notes
+date: 2026-09-07 02:43:10 +0900
 icon: fas fa-book-open
 order: 1
 permalink: /notes/
@@ -34,7 +35,22 @@ Each series index identifies prerequisites and provides an ordered reading path.
     <p>No developed notes published in this area yet.</p>
   {% endif %}
   {% if outlines.size > 0 %}
-    <details><summary>Study outlines ({{ outlines.size }})</summary>{% include note-list.html posts=outlines %}</details>
+    <details><summary>Study outlines ({{ outlines.size }})</summary>
+    {% for series in site.data.study_series %}
+      {% assign series_outlines = outlines | where: 'series', series.id | sort: 'series_order' %}
+      {% if series_outlines.size > 0 %}
+        <h3 class="outline-group"><a href="{{ series.url | relative_url }}">{{ series.title | escape }}</a> <span class="note-meta">in reading order</span></h3>
+        {% include note-list.html posts=series_outlines meta=false %}
+      {% endif %}
+    {% endfor %}
+    {% assign series_ids = site.data.study_series | map: 'id' %}
+    {% assign other_outlines = '' | split: '' %}
+    {% for note in outlines %}{% unless series_ids contains note.series %}{% assign other_outlines = other_outlines | push: note %}{% endunless %}{% endfor %}
+    {% if other_outlines.size > 0 %}
+      <h3 class="outline-group">Other outlines</h3>
+      {% include note-list.html posts=other_outlines meta=false %}
+    {% endif %}
+    </details>
   {% endif %}
 </section>
 {% endfor %}

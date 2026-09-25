@@ -7,8 +7,6 @@ toc: true
 status: outline
 ---
 
-# Prerequisite Checklist
-
 - TODO: The dependencies below have not been confirmed as completed in the existing notes and are not assigned new week numbers.
 - TODO: Before the relevant presentation, check your textbook and personal notes, then fill in source locations and proof dependencies below.
 

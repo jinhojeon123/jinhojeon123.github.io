@@ -43,7 +43,7 @@ series_order: 1
 ## 3. Borel Sigma-Algebras
 
 ### 3.1 Borel Sets on a Topological Space
-### 3.2 Standard Generators of \(\mathcal B(\mathbb R)\)
+### 3.2 Standard Generators of $\mathcal B(\mathbb R)$
 ### 3.3 Countable Borel Generators
 ### 3.4 How Topology Enters Measure Theory
 

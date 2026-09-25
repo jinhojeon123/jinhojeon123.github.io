@@ -24,15 +24,15 @@ hidden: true
 
 ### Canonical Form
 
-\[
+$$
 \min c^T x
-\]
+$$
 
 subject to
 
-\[
+$$
 Ax\ge b,\quad x\ge0.
-\]
+$$
 
 [Suggested addition]
 

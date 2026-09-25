@@ -7,8 +7,6 @@ toc: true
 status: outline
 ---
 
-# Linear Algebra Review
-
 Scope: Saad → Numerical Linear Algebra → Krylov Methods → Numerical PDE / FEM
 
 [Complete roadmap]({% link STUDY-ROADMAP.md %})

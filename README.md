@@ -79,9 +79,11 @@ purpose across subjects, rather than a competing category.
 - The 119 study outlines are published posts: Folland Seminar (44), Linear Algebra
   Review (20), Saad Study (15), and Trefethen NLA in C++ (40). Their dates record creation, not planned
   seminar dates; `series` and `series_order` define the reading sequence.
-- Home and Notes link to each study series. Outlines also appear in the Notes
-  outline lists, Categories, Tags, Archives, and search. Recent notes and the feed
-  show developed notes; change `status` when an outline becomes a working note.
+- Home and Notes link to each study series, including the earlier Measure Theory
+  Notes (`series: measure-theory`). Notes lists each area's outlines grouped by
+  series in `series_order`; outlines also appear in Categories, Tags, Archives, and
+  search. Recent notes and the feed show developed notes; change `status` when an
+  outline becomes a working note.
 - Keep series metadata in `_data/study_series.yml` and ordered topic/prerequisite
   indexes in `study/`. Ordinary pages outside `_posts/` are not posts.
 - Register project indexes under `_projects/` and use their `project_id` in a
@@ -105,7 +107,7 @@ _projects/              Persistent project indexes and evidence/status
 _tabs/                  Five navigation pages (Home is index.html)
 _data/                  Taxonomy, bibliography, contacts, legacy redirect mapping
 _includes/, _layouts/   Small site-specific theme extensions
-_plugins/               Git last-modified dates and taxonomy compatibility routes
+_plugins/               Math-safe Markdown, Git last-modified dates, taxonomy compatibility routes
 assets/                 Profile image and notebook stylesheet
 measure-theory/         Ordered series index
 categories/, tags/      Existing subject indexes
@@ -113,7 +115,7 @@ archives/, start-here/  Existing navigation routes
 templates/              Eight reusable authoring templates; excluded from deployment
 docs/                   Committed preservation and legacy URL manifests
 archive/                Preserved historical files; excluded from deployment
-tools/                  Preview, source validation, build and HTML checks
+tools/                  Preview, source validation, revision records, build and HTML checks
 .github/workflows/      One PR validation and Pages deployment workflow
 ```
 
@@ -152,7 +154,8 @@ moved all 79 topics into `_posts/` and retained every `/study/.../` address. See
 [the study roadmap](STUDY-ROADMAP.md) and [section review](STUDY-REVIEW.md).
 Historical URL and body-hash manifests track intentional revisions.
 An intentional future content correction must update its preservation record with
-an explanation in the same change. Local audit notes under `docs/` are ignored;
+an explanation in the same change; `tools/record-revision.rb` does this (see
+[Editing a preserved note](CONTRIBUTING.md#editing-a-preserved-note)). Local audit notes under `docs/` are ignored;
 the two linked JSON manifests are committed and used by CI.
 
 ## Contributions and license

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+date: 2026-01-05 00:22:51 +0900
 icon: fas fa-user
 order: 5
 permalink: /about/

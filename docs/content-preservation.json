@@ -50,9 +50,9 @@
     {
       "original_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
       "current_path": "_posts/2026-01-23-bertsimas-linear-optimization-ch1-1.md",
-      "body_sha256": "3784b4b09cc6357019e683073418d30057d5175e2fa905160c5d9826a254d964",
+      "body_sha256": "f9c34e4ade984a55150702ac9bb3ed84fcf4efdeb16e0c1ccdfe55c6b5fd4ebc",
       "original_file_sha256": "e2fb0bbb6b5b50c1671ecda0aa0e4f9f3d6526e1967c46992d310afeba0f9d2b",
-      "body_lf_sha256": "3784b4b09cc6357019e683073418d30057d5175e2fa905160c5d9826a254d964",
+      "body_lf_sha256": "f9c34e4ade984a55150702ac9bb3ed84fcf4efdeb16e0c1ccdfe55c6b5fd4ebc",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -65,16 +65,22 @@
           "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
           "body_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204",
           "body_lf_sha256": "7a221770192e2e287435885cb1d4c1b6f5a88f63fae2a90ffeaf0a3bfac8a204"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "b2adc4f2406ebb6d88925c612a5bfb530bc75152",
+          "body_sha256": "3784b4b09cc6357019e683073418d30057d5175e2fa905160c5d9826a254d964",
+          "body_lf_sha256": "3784b4b09cc6357019e683073418d30057d5175e2fa905160c5d9826a254d964"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note. 2026-09-25: Math delimiters only: \\(...\\) and \\[...\\] replaced by $...$ and $$...$$, because kramdown removed the backslashes and the TeX rendered as plain text. TeX unchanged."
     },
     {
       "original_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
       "current_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
-      "body_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
+      "body_sha256": "73e41ec7bc01e31efa1939f93d904f0e8770ace6aaa4e47d2c514603c87c8c50",
       "original_file_sha256": "34f6b518028a307219be9e4a130d37329ec85a7b6289fa3e21c0dea346334291",
-      "body_lf_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
+      "body_lf_sha256": "73e41ec7bc01e31efa1939f93d904f0e8770ace6aaa4e47d2c514603c87c8c50",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -87,16 +93,22 @@
           "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
           "body_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
           "body_lf_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "b2adc4f2406ebb6d88925c612a5bfb530bc75152",
+          "body_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
+          "body_lf_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note. 2026-09-25: Author's editor cleanup, formatting only: trailing whitespace removed, two list continuation lines unindented, and one emphasis marker changed from * to _. Text, TeX, and code unchanged."
     },
     {
       "original_path": "_posts/2026-02-09-conjugate-gradient.md",
       "current_path": "_posts/2026-02-09-conjugate-gradient.md",
-      "body_sha256": "c84c2fe0502b2b2b30bf1d78f560377d41e5ffe0e576083043bb76b1fbc83553",
+      "body_sha256": "246961d25838fd2c1f3611bf49d455394479827cf8cef65ded100be1d46f0ca1",
       "original_file_sha256": "f53a74aae1328d3e646851ec82d0242dbab94c74776ca315bfae319295a72751",
-      "body_lf_sha256": "c84c2fe0502b2b2b30bf1d78f560377d41e5ffe0e576083043bb76b1fbc83553",
+      "body_lf_sha256": "246961d25838fd2c1f3611bf49d455394479827cf8cef65ded100be1d46f0ca1",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -109,25 +121,37 @@
           "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
           "body_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d",
           "body_lf_sha256": "7882ce0dd1c3ba6b276800b848d7828d14a8b7ce054bf48507c2628f825ac56d"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "b2adc4f2406ebb6d88925c612a5bfb530bc75152",
+          "body_sha256": "c84c2fe0502b2b2b30bf1d78f560377d41e5ffe0e576083043bb76b1fbc83553",
+          "body_lf_sha256": "c84c2fe0502b2b2b30bf1d78f560377d41e5ffe0e576083043bb76b1fbc83553"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note. 2026-09-25: Heading levels only: body sections now start at h2, so the page has one h1 and the table of contents lists the top-level sections. Heading text and all other content unchanged."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
       "current_path": "_posts/measure-theory/2026-07-23-folland-measurable-structures.md",
-      "body_sha256": "1893858c9539c12a316b99200d27e127a307d70adaaf76ca4e4a03554ba339ba",
+      "body_sha256": "aad01d02c2abbaa58931a0fda0440fc2459f157681197d47c9037fdb6aae3624",
       "original_file_sha256": "04d513220154aded9c301582feb8a9efeb4b7e91aa014f9df25e2fae137b6a38",
-      "body_lf_sha256": "195ca65e1254e3920f1f3d2e8c43ee93b57470a06518f48887629eb8ba72a44b",
+      "body_lf_sha256": "aad01d02c2abbaa58931a0fda0440fc2459f157681197d47c9037fdb6aae3624",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf",
           "body_lf_sha256": "7a6b58a3cf14733faa01ae87ef86986a44f78eb88be8c9359d843c78a1355caf"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "57f1cd310bd26f4db8bcd85fd8beadc048e82970",
+          "body_sha256": "1893858c9539c12a316b99200d27e127a307d70adaaf76ca4e4a03554ba339ba",
+          "body_lf_sha256": "195ca65e1254e3920f1f3d2e8c43ee93b57470a06518f48887629eb8ba72a44b"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-25: Math delimiters only: \\(...\\) and \\[...\\] replaced by $...$ and $$...$$, because kramdown removed the backslashes and the TeX rendered as plain text. TeX unchanged."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-24-folland-measures-and-set-convergence.md",
@@ -176,18 +200,24 @@
     {
       "original_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
       "current_path": "_posts/measure-theory/2026-07-26-folland-constructing-lebesgue-measure.md",
-      "body_sha256": "7c6071bb1eed0c8c7029e4c59904ab1fd413e2b309952da603bd79bc68f89c77",
+      "body_sha256": "f641884c68800d1ec35233794cb718328cc220215008902c94b4eb349bc1136d",
       "original_file_sha256": "f98d83806afd8bf223848f4db26d2fe92c705762466164692d5cfdd0de0cd565",
-      "body_lf_sha256": "d4f2d57758fd65b5c11cdd187468f4e0721258076be279ab3cccfa47b8ab8aa2",
+      "body_lf_sha256": "f641884c68800d1ec35233794cb718328cc220215008902c94b4eb349bc1136d",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2",
           "body_lf_sha256": "98624b3dffe7f6f23d7208432632684568ad15c3cfafd8158d0a31455ac46db2"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "57f1cd310bd26f4db8bcd85fd8beadc048e82970",
+          "body_sha256": "7c6071bb1eed0c8c7029e4c59904ab1fd413e2b309952da603bd79bc68f89c77",
+          "body_lf_sha256": "d4f2d57758fd65b5c11cdd187468f4e0721258076be279ab3cccfa47b8ab8aa2"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-25: Math delimiters only: \\(...\\) and \\[...\\] replaced by $...$ and $$...$$, because kramdown removed the backslashes and the TeX rendered as plain text. TeX unchanged."
     },
     {
       "original_path": "_posts/measure-theory/2026-07-27-folland-product-measurable-spaces.md",
@@ -208,25 +238,31 @@
     {
       "original_path": "_posts/measure-theory/2026-07-28-folland-cantor-set-and-completion.md",
       "current_path": "_posts/measure-theory/2026-07-28-folland-cantor-set-and-completion.md",
-      "body_sha256": "19e95b50e9f554da9eb7b7de6cd687a6924df0253a5b915ae3b5cdd70d196eb4",
+      "body_sha256": "742806e15b4c201ae895fb4568b012d8986660d2bf5ddd1940692fd5aa58d2fc",
       "original_file_sha256": "d664a710ad3797f135ef781954a2dc2f4d3b91f90ee4853871e62b61cb3792d5",
-      "body_lf_sha256": "98143e158364ce164b46b4b2cf0b1643ad752e650977eb050036c7f833d8d92f",
+      "body_lf_sha256": "742806e15b4c201ae895fb4568b012d8986660d2bf5ddd1940692fd5aa58d2fc",
       "revision_history": [
         {
           "date": "2026-09-11",
           "previous_commit": "1d8fde3f5faa44a3d7b08797c1cea41875eb4b14",
           "body_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8",
           "body_lf_sha256": "5773eb90d56d74b94c5feea6d41b0c5e3d401c5da9345c31efbd8a2a591b68c8"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "57f1cd310bd26f4db8bcd85fd8beadc048e82970",
+          "body_sha256": "19e95b50e9f554da9eb7b7de6cd687a6924df0253a5b915ae3b5cdd70d196eb4",
+          "body_lf_sha256": "98143e158364ce164b46b4b2cf0b1643ad752e650977eb050036c7f833d8d92f"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-25: Math delimiters only: \\(...\\) and \\[...\\] replaced by $...$ and $$...$$, because kramdown removed the backslashes and the TeX rendered as plain text. TeX unchanged."
     },
     {
       "original_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
       "current_path": "_posts/seminar/2026-07-31-measure-theory-seminar-03.md",
-      "body_sha256": "9cb4e6bfdb6c4fa1ad28c1b213dada7488aa72d26101e8a0da57cdd8119a4060",
+      "body_sha256": "972bbdfd720eb4d05d914b344d9afe348c9f595b4847d1f04eda3b875cf03715",
       "original_file_sha256": "c6826557adec4d702da0e1220d4f6919f189c54b80f614c9c40ee781f5111062",
-      "body_lf_sha256": "9cb4e6bfdb6c4fa1ad28c1b213dada7488aa72d26101e8a0da57cdd8119a4060",
+      "body_lf_sha256": "972bbdfd720eb4d05d914b344d9afe348c9f595b4847d1f04eda3b875cf03715",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -239,16 +275,22 @@
           "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
           "body_sha256": "c7460be50716edae71025359614b84cfd3d7153a66d4ce93c678919882a43c94",
           "body_lf_sha256": "a8408f549317ca8fd862858306f9a561bd875d9834854ccc13ed9da207e6f864"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "b2adc4f2406ebb6d88925c612a5bfb530bc75152",
+          "body_sha256": "9cb4e6bfdb6c4fa1ad28c1b213dada7488aa72d26101e8a0da57cdd8119a4060",
+          "body_lf_sha256": "9cb4e6bfdb6c4fa1ad28c1b213dada7488aa72d26101e8a0da57cdd8119a4060"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note. 2026-09-25: Heading levels only: body sections now start at h2, so the page has one h1 and the table of contents lists the top-level sections. Heading text and all other content unchanged."
     },
     {
       "original_path": "_posts/seminar/2026-08-07-fatou-dct.md",
       "current_path": "_posts/seminar/2026-08-07-fatou-dct.md",
-      "body_sha256": "6c4b190b1f22fd81c0293a7a50174b77b84ca91dc6e9d6e020252911bc0f55ea",
+      "body_sha256": "7522d9536813ddb5a15b074f26b12327e74089d9f709fc65215e417b7f340284",
       "original_file_sha256": "41163f05ef858bbb77de0b2837d581526e7619e06f9a0af72beb8ea42475671e",
-      "body_lf_sha256": "6c4b190b1f22fd81c0293a7a50174b77b84ca91dc6e9d6e020252911bc0f55ea",
+      "body_lf_sha256": "7522d9536813ddb5a15b074f26b12327e74089d9f709fc65215e417b7f340284",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -261,9 +303,15 @@
           "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
           "body_sha256": "ebb7329d94a580c07febd9e43ef45b01312027a9b8eb71eafc95afe420135a1c",
           "body_lf_sha256": "6615a48f1d8bde34a7b7d5eabf71ec395e4a71058466bef1607e893e569b6383"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "b2adc4f2406ebb6d88925c612a5bfb530bc75152",
+          "body_sha256": "6c4b190b1f22fd81c0293a7a50174b77b84ca91dc6e9d6e020252911bc0f55ea",
+          "body_lf_sha256": "6c4b190b1f22fd81c0293a7a50174b77b84ca91dc6e9d6e020252911bc0f55ea"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note. 2026-09-25: Heading levels only: body sections now start at h2, so the page has one h1 and the table of contents lists the top-level sections. Heading text and all other content unchanged."
     },
     {
       "original_path": "_posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md",

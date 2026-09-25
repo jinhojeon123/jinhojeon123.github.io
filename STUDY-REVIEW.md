@@ -6,8 +6,6 @@ math: true
 toc: true
 ---
 
-# Study review
-
 Review date: 2026-09-11. All 14 existing posts, archived fragments, and project/navigation documents were reviewed. Core proofs, assumptions, intermediate steps, and representative counterexamples were preserved, while repetitive explanations, duplicate roadmaps, and routine calculation examples were reduced. Mathematical claims needing revision were marked in place with `[Correction required]` or `[Suggested addition]`.
 
 - Section/element classifications: A 350 · B 42 · C 23. [Complete decision table]({% link study-review/section-decisions.md %})
@@ -64,7 +62,7 @@ Review date: 2026-09-11. All 14 existing posts, archived fragments, and project/
 - [Goldberg–Tardos–Tarjan, Network Flow Algorithms](https://www.cs.cornell.edu/~eva/Network.Flow.Algorithms.pdf) — §§3.2–3.4, Theorem 3.2.1: checked integral costs, epsilon-optimal circulations, and the exact-optimality threshold.
 - [Wiley publisher catalogue — edition and chapter order](https://www.wiley-vch.de/en?isbn=9780471317166&option=com_eshop&view=product)
 - [Gerald B. Folland author errata — printing distinction](https://sites.math.washington.edu/~folland/)
-- [Folland book itself, 2nd edition, Contents pp. xiii–xiv (secondary-hosted scan consulted; publisher catalogue corroborates chapters)](https://djvu.online/file/NPF4BEtSuqdFA)
+- G. B. Folland, *Real Analysis: Modern Techniques and Their Applications*, 2nd ed., Wiley, 1999, Contents pp. xiii–xiv (chapter order corroborated by the publisher catalogue above)
 
 ## Remaining corrections
 

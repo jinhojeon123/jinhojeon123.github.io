@@ -38,6 +38,24 @@ fixture = <<~'MARKDOWN'
   **Definition (rendering fixture).** The residual notation is $r=b-Ax$.
   </div>
 
+  ## Inline TeX that Markdown must not alter
+
+  Set and prime: $\{f_n\}$ and $f'(x)$. Currency is not mathematics: $5 and $10.
+
+  Suppose $|f_n|\le g$ almost everywhere.
+
+  | Quantity | Value |
+  | --- | --- |
+  | absolute value | $|x|$ |
+
+  Inline code keeps its source: `$\|a\|$`.
+
+  [Correction required]
+
+  - Issue: rendering fixture for a review note — Hölder, §9, $\Omega$.
+
+  Text after the review note — Ω.
+
   ## MATLAB
 
   ```matlab
@@ -142,6 +160,24 @@ abort "Missing rendered code blocks: #{missing.join(', ')}" unless missing.empty
   abort "No highlighted tokens for #{language}" unless html.at_css(".language-#{language} .highlight span")
 end
 abort "Missing theorem markup" unless html.at_css(".theorem strong")
+paragraphs = html.css(".content p").map(&:text)
+{
+  "norm bars" => '$\|r_k\|_2 / \|r_0\|_2$',
+  "set braces" => '$\{f_n\}$',
+  "prime" => "$f'(x)$",
+  "currency" => "$5 and $10",
+  "absolute value in a paragraph" => '$|f_n|\le g$'
+}.each do |name, tex|
+  abort "Inline TeX changed by Markdown (#{name}): #{tex}" unless paragraphs.any? { |text| text.include?(tex) }
+end
+content_tables = html.css(".content table").reject { |table| table["class"].to_s.include?("rouge-table") }
+abort "Expected exactly one Markdown table" unless content_tables.length == 1
+abort "Absolute value in a table cell changed" unless content_tables.first.css("td").map(&:text).include?("$|x|$")
+abort "Inline code changed" unless html.css(".content code").map(&:text).include?('$\|a\|$')
+review_note = html.at_css("aside.review-note--correction")
+abort "Missing review-note callout" unless review_note&.at_css(".review-note__label")
+abort "Review note must contain only its list" unless review_note.css("li").length == 1 && !review_note.text.include?("Text after")
+abort "Text after the review note is missing" unless paragraphs.include?("Text after the review note — Ω.")
 abort "Missing bibliography entry" unless html.at_css("#ref-rendering-fixture")
 abort "Expected one MathJax loader" unless html.css("#MathJax-script").length == 1
 abort "Numbered math configuration missing" unless html.to_html.match?(/tags:\s*"ams"/)

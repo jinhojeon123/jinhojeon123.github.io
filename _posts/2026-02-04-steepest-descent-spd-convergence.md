@@ -60,14 +60,16 @@ $$
 x_{k+1}=x_k+\alpha_k r_k,
 $$
 
-  Here $r_k$ is the descent direction and $\alpha_k$ is the step size.
+Here $r_k$ is the descent direction and $\alpha_k$ is the step size.
+
 - **Line search**:
 
 $$
 \alpha_k^\star\in\arg\min_{\alpha>0}f(x_k+\alpha p_k).
 $$
 
-  Exact line search computes this minimizer; inexact line search does not require the exact minimizer.
+Exact line search computes this minimizer; inexact line search does not require the exact minimizer.
+
 - **Strictly convex function**: For differentiable $f:\mathbb R^n\to\mathbb R$,
 
 $$
@@ -98,8 +100,8 @@ $$
 
 ```matlab
 code : matlab
-input : A, SPD n x n, b = n x 1 vector  
-output : x = n x 1 vector 
+input : A, SPD n x n, b = n x 1 vector
+output : x = n x 1 vector
 
 
 function x = steep_descent(A,b) % A must be SPD
@@ -113,20 +115,20 @@ function x = steep_descent(A,b) % A must be SPD
     iter_number = 27000;
 
     while i < iter_number  && delta > epsilon * epsilon * delta_0
-                                    % until ||r_k||^2_2 < eps^2 ||r_0||^2_2 
-        q = A*r;                    % next step 
+                                    % until ||r_k||^2_2 < eps^2 ||r_0||^2_2
+        q = A*r;                    % next step
         alpha = delta / (r' * q);   % alpha_k = (r'r)/r'Ar
         x = x + alpha * r;          % x_{k+1} = x_k + alpha_k r_k
         if ( mod(i,50) == 0)
-            r = b - A*x;            % avoiding floating error, redefine 
+            r = b - A*x;            % avoiding floating error, redefine
         else
             r = r - alpha * q;      % r_{k+1} = r_k - alpha_k A r_k
-                                    % from x_{k+1} = x_{k} + alpha_k r_k  
+                                    % from x_{k+1} = x_{k} + alpha_k r_k
         end
         delta = r' * r;             % ||r_k||^2_2
         i=i+1;
-    end 
-end 
+    end
+end
 ```
 
 The original text presents avoiding $O(n^3)$ QR/LU/Gaussian elimination as an advantage of SD. Since the actual error $e_k$ is unknown, the code compares $\|r_k\|_2$ with $\|r_0\|_2$ and calls this relative error.
@@ -196,7 +198,6 @@ $$
 \|e_{k+1}\|=\|I-\alpha A\|\|e_k\|
 \le\max_i|1-\alpha\lambda_i|\|e_k\|
 $$
-
 
 [Correction required]
 
@@ -416,7 +417,7 @@ MATLAB:
 >> n = 1000;
 >> [Q, ~] = qr(randn(n)); % QR
 >> D = sparse(1:n, 1:n, linspace(1, 1800, n)); % to break Guassian-distribution
->> A_bad = Q*D*Q';                             % SPD 
+>> A_bad = Q*D*Q';                             % SPD
 >> [~, i] = steep_descent_eA2(A_bad,[1:1:1000]');
 
 i =
@@ -429,25 +430,25 @@ Validation code:
 
 ```matlab
 
-% This is for validation of its loop counts. 
+% This is for validation of its loop counts.
 
 function x = steep_descent_eA2(A,b) % A must be SPD
     n = length(b);
     x = zeros(n,1);
 
     xstar = A \ b;    % For validation purpose only
-    e = x - xstar; 
-    eA2 = e' * A * e; % ||e_0||^2_A  
-    eA2_0 = eA2; 
+    e = x - xstar;
+    eA2 = e' * A * e; % ||e_0||^2_A
+    eA2_0 = eA2;
 
     i = 0;
     r = b-A*x;
     delta = r' * r;
 
     epsilon = 1e-13;
-    while i < 100000 &&  eA2 > epsilon * epsilon * eA2_0 
-                                  % ||e_{k+1}||^2_A > eps^2 * ||e_0||^2_A 
-        
+    while i < 100000 &&  eA2 > epsilon * epsilon * eA2_0
+                                  % ||e_{k+1}||^2_A > eps^2 * ||e_0||^2_A
+
         q = A*r;
 
         alpha = delta / (r' * q); % a_k = r'r /(r'Ar)
@@ -455,16 +456,16 @@ function x = steep_descent_eA2(A,b) % A must be SPD
         if ( mod(i,50) == 0)      % for reducing floating error
             r = b - A*x;
         else
-            r = r - alpha * q;    % r_{k+1} = r_{k} - alpha_k q(=Ar) 
+            r = r - alpha * q;    % r_{k+1} = r_{k} - alpha_k q(=Ar)
         end
 
         delta = r' * r;
-        e = x - xstar; 
+        e = x - xstar;
         eA2 = e' * A * e;
         i=i+1;
     end
     i
-end 
+end
 
 ```
 
@@ -534,7 +535,7 @@ From (5) and (6), the original text concludes that SD zig-zags while reducing th
 
 ## 6. Reference
 
-- J. Nocedal and S. J. Wright, *Numerical Optimization*, 2nd ed., Springer, 2006.
+- J. Nocedal and S. J. Wright, _Numerical Optimization_, 2nd ed., Springer, 2006.
   https://link.springer.com/book/10.1007/978-0-387-40065-5
 - “Painless Conjugate Gradient,” CMU:
   https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf

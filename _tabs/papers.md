@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Papers
+date: 2026-09-07 02:43:10 +0900
 icon: fas fa-file-lines
 order: 4
 permalink: /papers/

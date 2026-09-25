@@ -21,6 +21,15 @@ class SourceValidator
 
   attr_reader :errors
 
+  # Bytes after the front matter. docs/content-preservation.json hashes these;
+  # tools/record-revision.rb uses the same boundary.
+  def self.body(bytes)
+    match = /\A---\r?\n.*?^---\r?(?:\n|\z)/m.match(bytes)
+    raise ArgumentError, "cannot identify exact front-matter boundary" unless match
+
+    bytes.byteslice(match.end(0)..) || "".b
+  end
+
   def initialize(root)
     @root = File.expand_path(root)
     @errors = []
@@ -77,6 +86,7 @@ class SourceValidator
 
       check_relationships(path, data, project_ids.keys, reference_keys)
       register_url(path, data["permalink"] || default_url(path))
+      check_markdown_body(path, data) if path.end_with?(".md", ".markdown")
     end
     paths("templates/**/*.{md,html}").each do |path|
       data = front_matter(path, register: false)
@@ -238,6 +248,24 @@ class SourceValidator
     end
   end
 
+  # Rendering conventions that kramdown does not report as errors.
+  def check_markdown_body(path, data)
+    body = self.class.body(File.binread(absolute(path))).force_encoding(Encoding::UTF_8)
+    prose = body.gsub(/^[ \t]*(`{3,}|~{3,}).*?^[ \t]*\1[`~]*[ \t]*$/m, "") # fenced code
+    error(path, "use ## for top-level sections; the layout already prints the title as the page's h1") if
+      prose.match?(/^# \S/)
+    prose = prose.gsub(/`+[^`\n]*`+/, "")
+    # Posts load MathJax unless they opt out; other pages only with math: true.
+    math_enabled = path.start_with?("_posts/") ? data["math"] != false : data["math"] == true
+    error(path, "contains TeX but MathJax is off; add math: true to the front matter") if
+      !math_enabled && prose.match?(/\$\$|\$(?![\s$])(?:\\.|[^\\$\n])+?(?<![\s\\])\$(?!\d)/)
+    prose = prose.gsub(/\$\$.*?\$\$/m, "").gsub(/\$[^$\n]+\$/, "")
+    error(path, 'write math as $...$ or $$...$$; kramdown drops the backslashes of \( and \[') if
+      prose.match?(/(?<!\\)\\[(\[]/)
+  rescue ArgumentError => e
+    error(path, e.message)
+  end
+
   def parse_date(value)
     return value.to_date if value.is_a?(Time) || value.is_a?(Date)
     raise ArgumentError unless value.is_a?(String)
@@ -288,11 +316,7 @@ class SourceValidator
   end
 
   def body_bytes(path)
-    bytes = File.binread(absolute(path))
-    match = /\A---\r?\n.*?^---\r?(?:\n|\z)/m.match(bytes)
-    raise ArgumentError, "cannot identify exact front-matter boundary" unless match
-
-    bytes.byteslice(match.end(0)..) || "".b
+    self.class.body(File.binread(absolute(path)))
   end
 
   def manifest_entries(path)
@@ -314,7 +338,10 @@ class SourceValidator
         raw_ok = Digest::SHA256.hexdigest(body) == entry["body_sha256"]
         expected_lf = entry["body_lf_sha256"] || entry["normalized_body_sha256"]
         lf_ok = expected_lf && Digest::SHA256.hexdigest(body.gsub("\r\n", "\n")) == expected_lf
-        error(current, "preserved mathematical body changed (raw and LF-normalized checksums differ)") unless raw_ok || lf_ok
+        unless raw_ok || lf_ok
+          error(current, "preserved mathematical body changed (raw and LF-normalized checksums differ); " \
+                         "if intentional, run: ruby tools/record-revision.rb --note \"reason\" #{current}")
+        end
         snapshot = entry["original_snapshot"]
         if snapshot
           digest = Digest::SHA256.file(absolute(snapshot)).hexdigest

@@ -33,7 +33,7 @@ series_order: 6
 ## 2. Representations of Points in the Cantor Set
 
 ### 2.1 Ternary Expansions
-### 2.2 Digits \(0\) and \(2\)
+### 2.2 Digits $0$ and $2$
 ### 2.3 Binary Path Encoding
 
 ---

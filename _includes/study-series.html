@@ -4,8 +4,7 @@
     {% assign first_post = series_posts | first %}
     <li>
       <a href="{{ series.url | relative_url }}">{{ series.title | escape }}</a>
-      <span class="note-meta">{{ series_posts.size }} posts · {{ series.scope | escape }}</span>
-      {% if first_post %} · <a href="{{ first_post.url | relative_url }}">Read the first post</a>{% endif %}
+      <span class="note-meta">{{ series_posts.size }} posts · {{ series.scope | escape }}{% if first_post %} · <a href="{{ first_post.url | relative_url }}">Read the first post</a>{% endif %}</span>
     </li>
   {% endfor %}
 </ul>

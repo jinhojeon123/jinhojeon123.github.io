@@ -7,14 +7,14 @@ toc: true
 status: outline
 ---
 
-# Current
+## Current
 
 - Folland Seminar: [Existing Seminar 04 — Lp spaces]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %}) → [Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %})
 - Linear Algebra Review: [00 — Scalars, Vectors, Matrices and Maps]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %})
 - Saad: [00 — Prerequisites]({% link _posts/saad/2026-09-11-saad-00-prerequisites.md %})
 - Trefethen NLA in C++: [01 — Matrix-Vector Multiplication]({% link _posts/trefethen/2026-09-15-trefethen-01-matrix-vector-multiplication.md %})
 
-# Study order
+## Study order
 
 - [Folland Seminar — weekly sequence and prerequisites]({% link study/folland/index.md %})
 - [Linear Algebra Review — 00–19]({% link study/linear-algebra/index.md %})
@@ -22,7 +22,7 @@ status: outline
 - [Saad Study — 00–14]({% link study/saad/index.md %})
 - [A/B/C classifications and revision guidance for existing notes]({% link STUDY-REVIEW.md %})
 
-# Dependency
+## Dependency
 
 [Linear Algebra]({% link study/linear-algebra/index.md %})
 → [Trefethen Numerical Linear Algebra]({% link study/trefethen/index.md %})
@@ -40,7 +40,7 @@ status: outline
 ↔ [Numerical PDE / FEM project]({% link _projects/numerical-pde-fem.md %})
 ↔ [Sparse parallel operations]({% link _posts/saad/2026-09-11-saad-13-parallel-and-pde-connection.md %})
 
-# Current next actions
+## Current next actions
 
 - [ ] [Folland Week 05 — Duality of Lp]({% link _posts/folland-seminar/2026-09-11-folland-week-05-duality-of-lp.md %}): check prerequisites and prepare the presentation
 - [ ] [Linear Algebra 00]({% link _posts/linear-algebra-review/2026-09-11-linear-algebra-00-scalars-vectors-matrices-and-maps.md %}): review from this point in order

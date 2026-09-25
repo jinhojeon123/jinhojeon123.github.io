@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+date: 2026-09-07 02:43:10 +0900
 icon: fas fa-diagram-project
 order: 3
 permalink: /projects/

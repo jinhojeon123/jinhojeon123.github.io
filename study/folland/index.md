@@ -7,8 +7,6 @@ toc: true
 status: outline
 ---
 
-# Folland Seminar
-
 ## Current / Reference edition
 
 - Existing: [Seminar 04 — Lp spaces and inequalities]({% link _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md %}) — working note

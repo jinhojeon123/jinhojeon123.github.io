@@ -1,5 +1,6 @@
 ---
 title: Iterative Solvers and Preconditioning
+date: 2026-09-07 02:43:10 +0900
 project_id: krylov-solvers
 status: Study in progress
 order: 2

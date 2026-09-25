@@ -16,6 +16,19 @@ Follow the Markdown authoring guide below for new content, and explain intention
 the preservation baseline in the same change. Never commit build output, local
 dependencies, editor backups, credentials, or private datasets.
 
+### Editing a preserved note
+
+The 14 notes listed in `docs/content-preservation.json` have checksummed bodies,
+so `tools/validate.rb` fails after any edit below their front matter, including
+whitespace. After an intentional edit, record it in the same commit:
+
+```bash
+ruby tools/record-revision.rb --note "Fix the Hölder exponent range" _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md
+```
+
+The tool keeps the previous checksums and their commit in `revision_history` and
+appends the dated note to `revision_note`. Front-matter edits need no record.
+
 ## Markdown authoring and preview
 
 ### Front matter belongs at the top
@@ -57,6 +70,15 @@ For numerical work, start with [the numerical-method template](templates/numeric
   section with an invented result or an experiment that has not been run.
 - Use `$...$` and `$$...$$` for ordinary mathematics supported by both previews.
   Numbered equations and advanced TeX still need browser-side MathJax verification.
+- Posts load MathJax by default. Tab, project, and other pages load it only with
+  `math: true` in their front matter; the validator reports TeX on a page without it.
+- Write plain TeX inside `$...$`, such as `$\|x\|_2$`, `$\{f_n\}$`, and `$|f_n|\le g$`,
+  without Markdown escapes. The site's Markdown processor (`_plugins/notebook-markdown.rb`)
+  passes each single-line `$...$` span to MathJax unchanged. Do not use `\(...\)` or
+  `\[...\]`: kramdown removes those backslashes, and the validator rejects them.
+- A paragraph containing only `[Correction required]` or `[Suggested addition]`,
+  followed by a list, renders as a highlighted review note. Delete the whole block
+  once the note is revised.
 - Edit the Markdown source. Copying rendered HTML or a formatted preview back
   into the editor can turn metadata into tables or escape headings and links.
 
