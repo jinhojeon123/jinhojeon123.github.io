@@ -155,6 +155,10 @@ baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
+# kramdown plus inline-math protection and review callouts; see
+# _plugins/notebook-markdown.rb. The kramdown options below still apply.
+markdown: NotebookKramdown
+
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge

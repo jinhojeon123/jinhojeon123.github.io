@@ -19,6 +19,15 @@
 details { margin-block: 1rem; }
 summary { cursor: pointer; font-weight: 600; padding-block: .5rem; }
 .theorem, .definition, .proposition { border-left: 3px solid var(--link-color); padding: .8rem 1.1rem; margin-block: 1.2rem; }
+/* [Correction required] / [Suggested addition] blocks; see _plugins/notebook-markdown.rb. */
+.review-note { position: relative; margin-block: 1rem 1.5rem; padding: .85rem 1rem .85rem 2.9rem; border-radius: .5rem; color: var(--prompt-text-color); }
+.review-note::before { position: absolute; left: 1rem; top: 1rem; font: var(--fa-font-solid); content: "\f06a"; }
+.review-note--correction { background-color: var(--prompt-warning-bg); }
+.review-note--correction::before { color: var(--prompt-warning-icon-color); }
+.review-note--suggestion { background-color: var(--prompt-info-bg); }
+.review-note--suggestion::before { color: var(--prompt-info-icon-color); transform: rotate(180deg); }
+.content .review-note__label { margin-bottom: .4rem; font-weight: 600; }
+.content .review-note > ul { margin-bottom: 0; padding-left: 1.1rem; }
 .content mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-block: .2rem; }
 .content p:has(mjx-container:not([display="true"])) { overflow-x: auto; }
 .content pre { tab-size: 4; }

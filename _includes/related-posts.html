@@ -4,6 +4,9 @@
   {% if page.status == 'outline' %}
     <p>This is a working outline. Empty sections are a study plan and do not represent completed results.</p>
   {% endif %}
+  {% if page.content contains 'class="review-note ' %}
+    <p>Highlighted review notes mark statements that still need correction or expansion. Read the surrounding argument with them in mind.</p>
+  {% endif %}
   {% if page.series %}
     {% assign series_notes = site.posts | where: 'series', page.series | sort: 'series_order' %}
     <h3>In this series</h3>
