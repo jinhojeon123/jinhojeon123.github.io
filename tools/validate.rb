@@ -21,6 +21,15 @@ class SourceValidator
 
   attr_reader :errors
 
+  # Bytes after the front matter. docs/content-preservation.json hashes these;
+  # tools/record-revision.rb uses the same boundary.
+  def self.body(bytes)
+    match = /\A---\r?\n.*?^---\r?(?:\n|\z)/m.match(bytes)
+    raise ArgumentError, "cannot identify exact front-matter boundary" unless match
+
+    bytes.byteslice(match.end(0)..) || "".b
+  end
+
   def initialize(root)
     @root = File.expand_path(root)
     @errors = []
@@ -288,11 +297,7 @@ class SourceValidator
   end
 
   def body_bytes(path)
-    bytes = File.binread(absolute(path))
-    match = /\A---\r?\n.*?^---\r?(?:\n|\z)/m.match(bytes)
-    raise ArgumentError, "cannot identify exact front-matter boundary" unless match
-
-    bytes.byteslice(match.end(0)..) || "".b
+    self.class.body(File.binread(absolute(path)))
   end
 
   def manifest_entries(path)
@@ -314,7 +319,10 @@ class SourceValidator
         raw_ok = Digest::SHA256.hexdigest(body) == entry["body_sha256"]
         expected_lf = entry["body_lf_sha256"] || entry["normalized_body_sha256"]
         lf_ok = expected_lf && Digest::SHA256.hexdigest(body.gsub("\r\n", "\n")) == expected_lf
-        error(current, "preserved mathematical body changed (raw and LF-normalized checksums differ)") unless raw_ok || lf_ok
+        unless raw_ok || lf_ok
+          error(current, "preserved mathematical body changed (raw and LF-normalized checksums differ); " \
+                         "if intentional, run: ruby tools/record-revision.rb --note \"reason\" #{current}")
+        end
         snapshot = entry["original_snapshot"]
         if snapshot
           digest = Digest::SHA256.file(absolute(snapshot)).hexdigest

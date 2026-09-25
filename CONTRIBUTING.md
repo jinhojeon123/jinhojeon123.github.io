@@ -16,6 +16,19 @@ Follow the Markdown authoring guide below for new content, and explain intention
 the preservation baseline in the same change. Never commit build output, local
 dependencies, editor backups, credentials, or private datasets.
 
+### Editing a preserved note
+
+The 14 notes listed in `docs/content-preservation.json` have checksummed bodies,
+so `tools/validate.rb` fails after any edit below their front matter, including
+whitespace. After an intentional edit, record it in the same commit:
+
+```bash
+ruby tools/record-revision.rb --note "Fix the Hölder exponent range" _posts/seminar/2026-08-14-Lp-space-and-inequalities-04.md
+```
+
+The tool keeps the previous checksums and their commit in `revision_history` and
+appends the dated note to `revision_note`. Front-matter edits need no record.
+
 ## Markdown authoring and preview
 
 ### Front matter belongs at the top

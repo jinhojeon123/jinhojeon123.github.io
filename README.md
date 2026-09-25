@@ -113,7 +113,7 @@ archives/, start-here/  Existing navigation routes
 templates/              Eight reusable authoring templates; excluded from deployment
 docs/                   Committed preservation and legacy URL manifests
 archive/                Preserved historical files; excluded from deployment
-tools/                  Preview, source validation, build and HTML checks
+tools/                  Preview, source validation, revision records, build and HTML checks
 .github/workflows/      One PR validation and Pages deployment workflow
 ```
 
@@ -152,7 +152,8 @@ moved all 79 topics into `_posts/` and retained every `/study/.../` address. See
 [the study roadmap](STUDY-ROADMAP.md) and [section review](STUDY-REVIEW.md).
 Historical URL and body-hash manifests track intentional revisions.
 An intentional future content correction must update its preservation record with
-an explanation in the same change. Local audit notes under `docs/` are ignored;
+an explanation in the same change; `tools/record-revision.rb` does this (see
+[Editing a preserved note](CONTRIBUTING.md#editing-a-preserved-note)). Local audit notes under `docs/` are ignored;
 the two linked JSON manifests are committed and used by CI.
 
 ## Contributions and license
