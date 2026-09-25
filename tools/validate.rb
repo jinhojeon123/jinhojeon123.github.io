@@ -86,6 +86,7 @@ class SourceValidator
 
       check_relationships(path, data, project_ids.keys, reference_keys)
       register_url(path, data["permalink"] || default_url(path))
+      check_markdown_body(path) if path.end_with?(".md", ".markdown")
     end
     paths("templates/**/*.{md,html}").each do |path|
       data = front_matter(path, register: false)
@@ -245,6 +246,19 @@ class SourceValidator
       error(path, "duplicate series_order #{key.last} for #{key.first} in #{@series[key]}") if @series.key?(key)
       @series[key] = path
     end
+  end
+
+  # Rendering conventions that kramdown does not report as errors.
+  def check_markdown_body(path)
+    body = self.class.body(File.binread(absolute(path))).force_encoding(Encoding::UTF_8)
+    prose = body.gsub(/^[ \t]*(`{3,}|~{3,}).*?^[ \t]*\1[`~]*[ \t]*$/m, "") # fenced code
+    error(path, "use ## for top-level sections; the layout already prints the title as the page's h1") if
+      prose.match?(/^# \S/)
+    prose = prose.gsub(/\$\$.*?\$\$/m, "").gsub(/`+[^`\n]*`+/, "").gsub(/\$[^$\n]+\$/, "")
+    error(path, 'write math as $...$ or $$...$$; kramdown drops the backslashes of \( and \[') if
+      prose.match?(/(?<!\\)\\[(\[]/)
+  rescue ArgumentError => e
+    error(path, e.message)
   end
 
   def parse_date(value)

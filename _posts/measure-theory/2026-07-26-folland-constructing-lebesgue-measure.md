@@ -62,7 +62,7 @@ series_order: 4
 
 ## 5. Construction of Lebesgue Measure
 
-### 5.1 The Choice \(F(x)=x\)
+### 5.1 The Choice $F(x)=x$
 ### 5.2 Length on Half-Open Intervals
 ### 5.3 Borel Lebesgue Measure
 ### 5.4 Lebesgue Outer Measure

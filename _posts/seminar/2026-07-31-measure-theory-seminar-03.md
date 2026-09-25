@@ -13,9 +13,9 @@ series: "measure-theory"
 series_order: 7
 ---
 
-# Measurability and Integration
+## Measurability and Integration
 
-## Proposition 2.1
+### Proposition 2.1
 
 For measurable spaces $(X,\mathcal M)$ and $(Y,\mathcal N)$, suppose $\mathcal N=\sigma(\mathcal E)$. A function $f:X\to Y$ is $(\mathcal M,\mathcal N)$-measurable if and only if
 
@@ -30,7 +30,7 @@ $$
 - Suggested addition: Prove that the collection of sets with measurable preimages is a $\sigma$-algebra, and explain the motivation for this criterion.
 - Reason: This technique recurs in later measurability proofs.
 
-## Proposition 2.3
+### Proposition 2.3
 
 For a measurable space $(X,\mathcal M)$ and a function $f:X\to\mathbb R$, the following are equivalent.
 
@@ -46,7 +46,7 @@ For a measurable space $(X,\mathcal M)$ and a function $f:X\to\mathbb R$, the fo
 - Suggested addition: Specify the Borel $\sigma$-algebra on $\mathbb R$ and verify generation by each family.
 - Reason: This prevents incorrectly applying the same criterion to an arbitrary codomain $\sigma$-algebra.
 
-## Proposition 2.13
+### Proposition 2.13
 
 For nonnegative simple functions $\phi,\psi$ on a measure space $(X,\mathcal M,\mu)$ and $E\in\mathcal M$,
 
@@ -76,7 +76,7 @@ $$
 - Suggested addition: Supply the integral definition via the canonical representation, independence of representation, the convention $0\cdot\infty=0$, and the connection to continuity from below of the measure.
 - Reason: The meaning of statements involving $c=0$ or infinite integrals must be fixed.
 
-## Monotone Convergence Theorem
+### Monotone Convergence Theorem
 
 On a measure space $(X,\mathcal M,\mu)$, suppose $\{f_n\}_{n=1}^{\infty}\subset L^+$ satisfies $f_n\le f_{n+1}$ for every $n$. Set
 
@@ -96,11 +96,11 @@ $$
 - Why this matters: It is unclear whether the functions are nonnegative, measurable, and extended-valued. The argument passing from the supremum defining the integral to the limit is missing.
 - Required revision: Specify the domain, codomain, and measurability in $L^+$, and complete the lower-bound proof using simple functions and $0<c<1$. Check the union of the increasing sets and the step $c\uparrow1$.
 
-### Proof of MCT — TODO
+#### Proof of MCT — TODO
 
-### Discussion — TODO
+#### Discussion — TODO
 
-## Questions
+### Questions
 
 - Which measurability checks can be simplified by Proposition 2.1?
 - Why is $c\phi$ introduced in the proof of MCT?

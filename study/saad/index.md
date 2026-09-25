@@ -7,8 +7,6 @@ toc: true
 status: outline
 ---
 
-# Saad Study
-
 Reference edition: Yousef Saad, *Iterative Methods for Sparse Linear Systems*, 2nd ed. (2003).
 
 Source: [Author's public copy](https://www-users.cse.umn.edu/~saad/IterMethBook_2ndEd.pdf) · [Edition and errata](https://www-users.cse.umn.edu/~saad/books.html)

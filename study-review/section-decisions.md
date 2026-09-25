@@ -6,8 +6,6 @@ math: true
 toc: true
 ---
 
-# Section decisions
-
 [Review overview and remaining corrections]({% link STUDY-REVIEW.md %})
 
 A — retain · B — condense · C — remove. Grade A means the material is worth preserving for the study structure, not that its mathematics has been certified. Core claims containing errors retain both the original text and revision guidance. Empty study sections are not filled in for the author.
@@ -34,7 +32,7 @@ A — retain · B — condense · C — remove. Grade A means the material is wo
 | 2.4 Preimages of Generated Sigma-Algebras | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 3. Borel Sigma-Algebras | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 3.1 Borel Sets on a Topological Space | A | Retain the existing topic and subheadings; leave the study content unwritten. |
-| 3.2 Standard Generators of \(\mathcal B(\mathbb R)\) | A | Retain the existing topic and subheadings; leave the study content unwritten. |
+| 3.2 Standard Generators of $\mathcal B(\mathbb R)$ | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 3.3 Countable Borel Generators | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 3.4 How Topology Enters Measure Theory | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 4. Measurable Spaces and Maps | A | Retain the existing topic and subheadings; leave the study content unwritten. |
@@ -190,7 +188,7 @@ A — retain · B — condense · C — remove. Grade A means the material is wo
 | 4.4 Jumps and Point Masses | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 4.5 Continuous and Discrete Examples | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 5. Construction of Lebesgue Measure | A | Retain the existing topic and subheadings; leave the study content unwritten. |
-| 5.1 The Choice \(F(x)=x\) | A | Retain the existing topic and subheadings; leave the study content unwritten. |
+| 5.1 The Choice $F(x)=x$ | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 5.2 Length on Half-Open Intervals | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 5.3 Borel Lebesgue Measure | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 5.4 Lebesgue Outer Measure | A | Retain the existing topic and subheadings; leave the study content unwritten. |
@@ -276,7 +274,7 @@ A — retain · B — condense · C — remove. Grade A means the material is wo
 | 1.3 Closedness and Compactness | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 2. Representations of Points in the Cantor Set | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 2.1 Ternary Expansions | A | Retain the existing topic and subheadings; leave the study content unwritten. |
-| 2.2 Digits \(0\) and \(2\) | A | Retain the existing topic and subheadings; leave the study content unwritten. |
+| 2.2 Digits $0$ and $2$ | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 2.3 Binary Path Encoding | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 3. Cardinality of the Cantor Set | A | Retain the existing topic and subheadings; leave the study content unwritten. |
 | 3.1 Infinite Binary Sequences | A | Retain the existing topic and subheadings; leave the study content unwritten. |

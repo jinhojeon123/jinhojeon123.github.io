@@ -12,7 +12,7 @@ permalink: "/numerical analysis/optimization/2026/02/09/conjugate-gradient.html"
 projects: ["krylov-solvers"]
 ---
 
-### 1. Motivation
+## 1. Motivation
 
 Use information from previous residuals to reduce the condition-number dependence of Steepest Descent. The original text describes this as moving from a linearly decreasing algorithm to a quadratically decreasing algorithm.
 
@@ -43,7 +43,7 @@ Setting $\alpha=r_0$, the original text infers from $\langle r_k,r_{k+1}\rangle=
 - Why this matters: Orthogonality of adjacent vectors says nothing by itself about earlier vectors. A property of SD cannot be used as global orthogonality for CG.
 - Required revision: Use the CG recurrence to prove residual orthogonality separately from $A$-conjugacy of search directions. Connect the affine Krylov space, $A$-norm error minimization, and the residual Galerkin condition, and reassess the scope of the claim that zig-zagging disappears.
 
-### 2. Prerequisite
+## 2. Prerequisite
 
 - TODO: $T$-invariant subspace / cyclic subspace
 - TODO: Krylov subspace
@@ -56,7 +56,7 @@ Setting $\alpha=r_0$, the original text infers from $\langle r_k,r_{k+1}\rangle=
 - Suggested addition: Link SPD matrices, the $A$-inner product, $A$-conjugate directions, and the residual/error relationship as prerequisites.
 - Reason: These connections are needed to reconstruct the positive denominator and minimization property in the code.
 
-### 3. Algorithm & Code
+## 3. Algorithm & Code
 
    ```matlab
 
@@ -96,7 +96,7 @@ end
 - Suggested addition: Distinguish exact-arithmetic orthogonality from loss of orthogonality in finite precision, and check the relative-residual criterion, zero initial residual, and convergence status.
 - Reason: The code should not be interpreted as directly guaranteeing the mathematical finite-termination theorem.
 
-### 4. Correctness
+## 4. Correctness
 
 Original draft: Chevyshev polynomials → decreasing factor is quadratic,
 $O(\frac{\sqrt\kappa-1}{\sqrt\kappa+1})$.
@@ -107,7 +107,7 @@ $O(\frac{\sqrt\kappa-1}{\sqrt\kappa+1})$.
 - Why this matters: The convergence estimate applies only after correctness of the CG recurrence and the Krylov minimization property have been established.
 - Required revision: Add proof headings and TODOs in the order SPD/exact arithmetic, nonzero search directions, $A$-conjugacy, Krylov characterization, minimization, and finite termination. Then write precise statements of the polynomial error bound and Chebyshev estimate.
 
-### 5. Improvements and Limitations
+## 5. Improvements and Limitations
 
 The existing next direction concerns conditioning and ellipsoid geometry: preconditioning that makes the ellipsoid closer to a sphere.
 
@@ -117,7 +117,7 @@ The existing next direction concerns conditioning and ellipsoid geometry: precon
 - Suggested addition: Connect the preconditioner assumptions to the transformed unknown/system and a formulation that preserves SPD structure.
 - Reason: This avoids interpreting an arbitrary matrix change as preserving the original solution and provides a path to PCG.
 
-### 6. Reference
+## 6. Reference
 
 1. Hoffman, K., & Kunze, R. (1971). *Linear Algebra* (2nd ed.). Prentice-Hall.
 2. Nocedal, J., & Wright, S. J. (2006). *Numerical Optimization* (2nd ed.). Springer.

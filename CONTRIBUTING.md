@@ -70,6 +70,13 @@ For numerical work, start with [the numerical-method template](templates/numeric
   section with an invented result or an experiment that has not been run.
 - Use `$...$` and `$$...$$` for ordinary mathematics supported by both previews.
   Numbered equations and advanced TeX still need browser-side MathJax verification.
+- Write plain TeX inside `$...$`, such as `$\|x\|_2$`, `$\{f_n\}$`, and `$|f_n|\le g$`,
+  without Markdown escapes. The site's Markdown processor (`_plugins/notebook-markdown.rb`)
+  passes each single-line `$...$` span to MathJax unchanged. Do not use `\(...\)` or
+  `\[...\]`: kramdown removes those backslashes, and the validator rejects them.
+- A paragraph containing only `[Correction required]` or `[Suggested addition]`,
+  followed by a list, renders as a highlighted review note. Delete the whole block
+  once the note is revised.
 - Edit the Markdown source. Copying rendered HTML or a formatted preview back
   into the editor can turn metadata into tables or escape headings and links.
 

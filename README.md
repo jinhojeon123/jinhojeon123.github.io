@@ -105,7 +105,7 @@ _projects/              Persistent project indexes and evidence/status
 _tabs/                  Five navigation pages (Home is index.html)
 _data/                  Taxonomy, bibliography, contacts, legacy redirect mapping
 _includes/, _layouts/   Small site-specific theme extensions
-_plugins/               Git last-modified dates and taxonomy compatibility routes
+_plugins/               Math-safe Markdown, Git last-modified dates, taxonomy compatibility routes
 assets/                 Profile image and notebook stylesheet
 measure-theory/         Ordered series index
 categories/, tags/      Existing subject indexes
