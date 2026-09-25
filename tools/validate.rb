@@ -86,7 +86,7 @@ class SourceValidator
 
       check_relationships(path, data, project_ids.keys, reference_keys)
       register_url(path, data["permalink"] || default_url(path))
-      check_markdown_body(path) if path.end_with?(".md", ".markdown")
+      check_markdown_body(path, data) if path.end_with?(".md", ".markdown")
     end
     paths("templates/**/*.{md,html}").each do |path|
       data = front_matter(path, register: false)
@@ -249,12 +249,17 @@ class SourceValidator
   end
 
   # Rendering conventions that kramdown does not report as errors.
-  def check_markdown_body(path)
+  def check_markdown_body(path, data)
     body = self.class.body(File.binread(absolute(path))).force_encoding(Encoding::UTF_8)
     prose = body.gsub(/^[ \t]*(`{3,}|~{3,}).*?^[ \t]*\1[`~]*[ \t]*$/m, "") # fenced code
     error(path, "use ## for top-level sections; the layout already prints the title as the page's h1") if
       prose.match?(/^# \S/)
-    prose = prose.gsub(/\$\$.*?\$\$/m, "").gsub(/`+[^`\n]*`+/, "").gsub(/\$[^$\n]+\$/, "")
+    prose = prose.gsub(/`+[^`\n]*`+/, "")
+    # Posts load MathJax unless they opt out; other pages only with math: true.
+    math_enabled = path.start_with?("_posts/") ? data["math"] != false : data["math"] == true
+    error(path, "contains TeX but MathJax is off; add math: true to the front matter") if
+      !math_enabled && prose.match?(/\$\$|\$(?![\s$])(?:\\.|[^\\$\n])+?(?<![\s\\])\$(?!\d)/)
+    prose = prose.gsub(/\$\$.*?\$\$/m, "").gsub(/\$[^$\n]+\$/, "")
     error(path, 'write math as $...$ or $$...$$; kramdown drops the backslashes of \( and \[') if
       prose.match?(/(?<!\\)\\[(\[]/)
   rescue ArgumentError => e

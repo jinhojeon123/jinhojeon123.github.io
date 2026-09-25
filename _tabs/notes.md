@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Notes
+date: 2026-09-07 02:43:10 +0900
 icon: fas fa-book-open
 order: 1
 permalink: /notes/

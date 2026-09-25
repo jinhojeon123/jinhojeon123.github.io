@@ -70,6 +70,8 @@ For numerical work, start with [the numerical-method template](templates/numeric
   section with an invented result or an experiment that has not been run.
 - Use `$...$` and `$$...$$` for ordinary mathematics supported by both previews.
   Numbered equations and advanced TeX still need browser-side MathJax verification.
+- Posts load MathJax by default. Tab, project, and other pages load it only with
+  `math: true` in their front matter; the validator reports TeX on a page without it.
 - Write plain TeX inside `$...$`, such as `$\|x\|_2$`, `$\{f_n\}$`, and `$|f_n|\le g$`,
   without Markdown escapes. The site's Markdown processor (`_plugins/notebook-markdown.rb`)
   passes each single-line `$...$` span to MathJax unchanged. Do not use `\(...\)` or

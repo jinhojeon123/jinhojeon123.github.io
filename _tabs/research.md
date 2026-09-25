@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Research
+date: 2026-09-07 02:43:10 +0900
 icon: fas fa-microscope
 order: 2
 permalink: /research/

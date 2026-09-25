@@ -214,13 +214,12 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-      math: true
+      # MathJax loads only with `math: true`; tools/validate.rb flags TeX without it.
   - scope:
       path: ""
       type: projects
     values:
       layout: project
-      math: true
       toc: true
 
 sass:
