@@ -78,9 +78,9 @@
     {
       "original_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
       "current_path": "_posts/2026-02-04-steepest-descent-spd-convergence.md",
-      "body_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
+      "body_sha256": "73e41ec7bc01e31efa1939f93d904f0e8770ace6aaa4e47d2c514603c87c8c50",
       "original_file_sha256": "34f6b518028a307219be9e4a130d37329ec85a7b6289fa3e21c0dea346334291",
-      "body_lf_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
+      "body_lf_sha256": "73e41ec7bc01e31efa1939f93d904f0e8770ace6aaa4e47d2c514603c87c8c50",
       "revision_history": [
         {
           "date": "2026-09-11",
@@ -93,9 +93,15 @@
           "previous_commit": "fa75c5954e2a9684dca64fdc661aa01a3e48cd16",
           "body_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4",
           "body_lf_sha256": "f9f61b42c227ee63144082bdc00ac9699c6f4fde2d45e8b4203cdc471ce178d4"
+        },
+        {
+          "date": "2026-09-25",
+          "previous_commit": "b2adc4f2406ebb6d88925c612a5bfb530bc75152",
+          "body_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8",
+          "body_lf_sha256": "3850b5b8f2cd6e44c09250f69987d3fd1ca107df81e7b6827fe6b1056eaa88b8"
         }
       ],
-      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note."
+      "revision_note": "2026-09-11: User-requested A/B/C pruning; preserve core proofs, assumptions and code; flag mathematical issues in place without completing new study content. See STUDY-REVIEW.md and study-review/section-decisions.md. MathJax equation tags moved outside aligned blocks; mathematical expressions and numbers unchanged. 2026-09-20: User-requested English translation of Korean prose and review annotations. Mathematical expressions, URLs, metadata, correction status, and executable code preserved; three Korean MATLAB comments translated in the CG note. 2026-09-25: Author's editor cleanup, formatting only: trailing whitespace removed, two list continuation lines unindented, and one emphasis marker changed from * to _. Text, TeX, and code unchanged."
     },
     {
       "original_path": "_posts/2026-02-09-conjugate-gradient.md",
