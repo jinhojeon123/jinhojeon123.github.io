@@ -79,9 +79,11 @@ purpose across subjects, rather than a competing category.
 - The 119 study outlines are published posts: Folland Seminar (44), Linear Algebra
   Review (20), Saad Study (15), and Trefethen NLA in C++ (40). Their dates record creation, not planned
   seminar dates; `series` and `series_order` define the reading sequence.
-- Home and Notes link to each study series. Outlines also appear in the Notes
-  outline lists, Categories, Tags, Archives, and search. Recent notes and the feed
-  show developed notes; change `status` when an outline becomes a working note.
+- Home and Notes link to each study series, including the earlier Measure Theory
+  Notes (`series: measure-theory`). Notes lists each area's outlines grouped by
+  series in `series_order`; outlines also appear in Categories, Tags, Archives, and
+  search. Recent notes and the feed show developed notes; change `status` when an
+  outline becomes a working note.
 - Keep series metadata in `_data/study_series.yml` and ordered topic/prerequisite
   indexes in `study/`. Ordinary pages outside `_posts/` are not posts.
 - Register project indexes under `_projects/` and use their `project_id` in a

@@ -148,7 +148,8 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+# No `paginate`: _layouts/home.html replaces Chirpy's paginated post list, so
+# /page2/ and later pages would only duplicate the home page.
 
 # The base URL of your site
 baseurl: ""

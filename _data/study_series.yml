@@ -1,3 +1,7 @@
+- id: measure-theory
+  title: Measure Theory Notes
+  url: /measure-theory/
+  scope: Folland Chapter 1 and Seminars 03–04 · leads into the Folland Seminar
 - id: folland-seminar
   title: Folland Seminar
   url: /study/folland/

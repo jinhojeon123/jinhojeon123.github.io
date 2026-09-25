@@ -11,6 +11,9 @@
 .note-list { list-style: none; padding-left: 0; }
 .note-list li { padding: .7rem 0; border-bottom: 1px solid var(--main-border-color); }
 .note-meta { display: block; font-size: .88rem; color: var(--text-muted-color); }
+.note-list--compact li { padding: .35rem 0; }
+.outline-group { font-size: 1.05rem; margin: 1.2rem 0 .2rem; }
+.outline-group .note-meta { display: inline; font-weight: 400; }
 .notebook-context { margin-block: 2rem; padding-top: 1rem; border-top: 1px solid var(--main-border-color); }
 .notebook-context h2 { font-size: 1.25rem; }
 .notebook-context h3 { font-size: 1.05rem; }
