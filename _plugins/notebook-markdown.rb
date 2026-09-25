@@ -97,7 +97,7 @@ module Notebook
           else
             scanner.terminate
           end
-          output << line[start...scanner.pos]
+          output << line.byteslice(start...scanner.pos) # StringScanner positions are byte offsets
         elsif (escaped = scanner.scan(/\\./m))
           output << escaped
         elsif (ticks = scanner.scan(/`+/))
@@ -105,7 +105,7 @@ module Notebook
         elsif scanner.scan(/\$\$/)
           state[:display] = true
           output << "$$"
-        elsif scanner.scan(/<!--/)
+        elsif output.strip.empty? && scanner.scan(/<!--/) # kramdown's block-level comments
           state[:comment] = true
           output << "<!--"
         elsif scanner.scan(SPAN)
@@ -145,14 +145,14 @@ module Notebook
       output << html[position..]
     end
 
-    # Index just past the </ul> that closes the list starting at +from+.
+    # Character index just past the </ul> that closes the list starting at +from+.
     def list_end(html, from)
       depth = 0
-      scanner = StringScanner.new(html)
-      scanner.pos = from
-      while scanner.skip_until(%r{<(/?)ul\b[^>]*>})
-        depth += scanner[1].empty? ? 1 : -1
-        return scanner.pos if depth.zero?
+      while (tag = html.match(%r{<(/?)ul\b[^>]*>}, from))
+        depth += tag[1].empty? ? 1 : -1
+        return tag.end(0) if depth.zero?
+
+        from = tag.end(0)
       end
       nil
     end

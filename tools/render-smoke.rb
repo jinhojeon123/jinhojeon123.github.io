@@ -52,7 +52,9 @@ fixture = <<~'MARKDOWN'
 
   [Correction required]
 
-  - Issue: rendering fixture for a review note.
+  - Issue: rendering fixture for a review note — Hölder, §9, $\Omega$.
+
+  Text after the review note — Ω.
 
   ## MATLAB
 
@@ -172,7 +174,10 @@ content_tables = html.css(".content table").reject { |table| table["class"].to_s
 abort "Expected exactly one Markdown table" unless content_tables.length == 1
 abort "Absolute value in a table cell changed" unless content_tables.first.css("td").map(&:text).include?("$|x|$")
 abort "Inline code changed" unless html.css(".content code").map(&:text).include?('$\|a\|$')
-abort "Missing review-note callout" unless html.at_css("aside.review-note--correction .review-note__label")
+review_note = html.at_css("aside.review-note--correction")
+abort "Missing review-note callout" unless review_note&.at_css(".review-note__label")
+abort "Review note must contain only its list" unless review_note.css("li").length == 1 && !review_note.text.include?("Text after")
+abort "Text after the review note is missing" unless paragraphs.include?("Text after the review note — Ω.")
 abort "Missing bibliography entry" unless html.at_css("#ref-rendering-fixture")
 abort "Expected one MathJax loader" unless html.css("#MathJax-script").length == 1
 abort "Numbered math configuration missing" unless html.to_html.match?(/tags:\s*"ams"/)
