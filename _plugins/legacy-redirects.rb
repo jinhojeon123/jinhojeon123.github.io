@@ -12,8 +12,11 @@ module Notebook
         from = entry.fetch('from')
         next if occupied.include?(from)
 
+        target = entry.fetch('to')
+        # Draft-only tags have no public archive until their notes are published.
+        target = '/notes/' unless occupied.include?(target.split('#', 2).first)
         page = Jekyll::PageWithoutAFile.new(site, site.source, from.delete_prefix('/'), 'index.html')
-        page.data = { 'layout' => 'redirect', 'redirect_target' => entry.fetch('to'),
+        page.data = { 'layout' => 'redirect', 'redirect_target' => target,
                       'permalink' => from, 'sitemap' => false }
         site.pages << page
         occupied << from

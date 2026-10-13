@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["functional-analysis", "lp-spaces", "young-inequality", "holder-inequality", "minkowski-inequality", "banach-space", "hilbert-space"]
 description: "Seminar working note on Lp spaces and their inequalities, completeness, and relation to Sobolev spaces; several sections are outlines."
 status: "working-note"
+published: false
 note_type: "seminar"
 math: true
 toc: true

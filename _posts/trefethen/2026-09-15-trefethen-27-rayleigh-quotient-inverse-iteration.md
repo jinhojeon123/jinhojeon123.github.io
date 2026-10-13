@@ -5,6 +5,7 @@ permalink: /study/trefethen/27-rayleigh-quotient-inverse-iteration/
 math: true
 toc: true
 status: outline
+published: false
 date: 2026-09-15 00:00:00 +0900
 categories: [Numerical Methods]
 tags: [numerical-linear-algebra, cpp, trefethen-bau, rayleigh-quotient-inverse]

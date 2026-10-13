@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "sigma-algebra", "borel-sets", "folland"]
 description: "Outline for measurable structures, generated sigma-algebras, and Borel sets."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

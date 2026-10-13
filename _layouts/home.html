@@ -4,7 +4,7 @@ layout: default
 <div class="home-wrap">
   <section class="home-hero">
     <h1>Mathematics &amp; Scientific Computing</h1>
-    <p class="home-subtitle">A working notebook on the mathematical foundations of numerical computation. Current notes cover measure theory, floating-point arithmetic, optimization, and iterative solvers. The next direction is numerical PDEs, preconditioning, and parallel implementation.</p>
+    <p class="home-subtitle">A working notebook on the mathematical foundations of numerical computation. Published notes cover measure-theoretic convergence and floating-point arithmetic. The study plans continue through optimization and iterative solvers toward numerical PDEs, preconditioning, and parallel implementation.</p>
     <p class="research-path">Mathematical foundations → Numerical methods → Solvers → Parallel implementation → Research experiments</p>
     <div class="home-links">
       <a href="{{ '/notes/' | relative_url }}">Explore notes</a>
@@ -24,14 +24,14 @@ layout: default
   </section>
   <section class="home-section" aria-labelledby="study-series">
     <h2 id="study-series">Study series</h2>
-    <p>These posts are organized by prerequisites and reading order. An outline is a study plan whose content is still to be written.</p>
+    <p>Published notes are organized by prerequisites and reading order.</p>
     {% include study-series.html %}
   </section>
   <section class="home-section" aria-labelledby="latest-notes">
     <h2 id="latest-notes">Recent notes</h2>
     {% assign recent_notes = site.posts | where_exp: 'note', 'note.status != "outline"' | where_exp: 'note', 'note.hidden != true' | slice: 0, 6 %}
     {% include note-list.html posts=recent_notes %}
-    <p><a href="{{ '/notes/' | relative_url }}">Browse all notes and outlines →</a></p>
+    <p><a href="{{ '/notes/' | relative_url }}">Browse all published notes →</a></p>
   </section>
   <section class="home-section" aria-labelledby="study-areas">
     <h2 id="study-areas">Study areas</h2>

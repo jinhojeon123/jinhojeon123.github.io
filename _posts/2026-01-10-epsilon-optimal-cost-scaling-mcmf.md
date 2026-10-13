@@ -5,6 +5,7 @@ categories: ["Numerical Methods"]
 tags: ["network-flow", "cost-scaling", "epsilon-optimality", "push-relabel", "optimization", "cpp"]
 description: "Working note on epsilon-optimal cost scaling and push-relabel; the implementation section contains pseudocode."
 status: "working-note"
+published: false
 note_type: "numerical-method"
 math: true
 toc: true

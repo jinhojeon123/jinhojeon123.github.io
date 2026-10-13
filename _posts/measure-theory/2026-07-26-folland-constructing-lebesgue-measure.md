@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "lebesgue-measure", "regularity", "folland"]
 description: "Outline for constructing Lebesgue and Lebesgue-Stieltjes measures."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

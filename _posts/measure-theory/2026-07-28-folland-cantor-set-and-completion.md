@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "cantor-set", "completion", "folland"]
 description: "Outline for the Cantor set, null sets, and the completion of Borel measure."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

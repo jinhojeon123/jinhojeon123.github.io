@@ -5,6 +5,7 @@ categories: ["Solvers"]
 tags: ["steepest-descent", "spd", "conditioning", "matlab", "python"]
 description: "Derivations and MATLAB experiments for steepest descent on symmetric positive definite systems."
 status: "working-note"
+published: false
 note_type: "numerical-method"
 math: true
 toc: true

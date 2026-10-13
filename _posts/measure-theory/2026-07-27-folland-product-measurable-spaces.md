@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "product-measures", "sigma-algebra", "folland"]
 description: "Outline for product sigma-algebras, coordinate projections, and cylinder sets."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

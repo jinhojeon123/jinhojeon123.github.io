@@ -18,7 +18,7 @@ published: false
 For a new file, copy this template to _posts/trefethen/YYYY-MM-DD-trefethen-NN-slug.md.
 Replace the date, title, URL, and series_order. Use a unique integer for series_order.
 Preserve the permalink when replacing an existing note.
-Remove published:false when ready to publish, and update status as the body develops.
+Keep published:false while writing; set status:note and published:true when ready to publish.
 Keep exactly one YAML block between --- delimiters at the beginning of the file. -->
 
 - **Reference:** Trefethen and Bau, *Numerical Linear Algebra*, Lecture NN, “TODO”

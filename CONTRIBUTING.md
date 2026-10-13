@@ -66,6 +66,10 @@ For numerical work, start with [the numerical-method template](templates/numeric
 - Use `- [ ] Task` for unfinished work and `- [x] Task` only after completion.
 - Preserve `status: outline` while the file is a plan. Change it to `working-note`
   when substantial reasoning is present; an empty section is not a completed proof.
+- Keep `published: false` for both `outline` and `working-note`. The source stays
+  in GitHub while Jekyll omits the post from the blog. When the note is ready,
+  set `status: note` and `published: true`; reading-plan links restore automatically.
+  Use `bundle exec jekyll serve --unpublished` to preview drafts locally.
 - Keep statements, assumptions, and proof sketches distinct. Do not fill an empty
   section with an invented result or an experiment that has not been run.
 - Use `$...$` and `$$...$$` for ordinary mathematics supported by both previews.

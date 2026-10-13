@@ -17,7 +17,7 @@ references: []
 
 <!-- Choose Solvers for a linear-system solver. Known project IDs:
 numerical-pde-fem, krylov-solvers, domain-decomposition, parallel-sparse-computing.
-Select only relevant IDs. Replace placeholders before removing published:false. -->
+Select only relevant IDs. Replace placeholders before setting status:note and published:true. -->
 
 ## Problem and motivation
 

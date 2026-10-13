@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "outer-measure", "caratheodory-extension", "folland"]
 description: "Outline for premeasures, outer measures, and measure extension; the premeasure definition is incomplete."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

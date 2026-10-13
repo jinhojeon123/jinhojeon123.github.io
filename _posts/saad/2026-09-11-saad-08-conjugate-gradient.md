@@ -5,6 +5,7 @@ permalink: /study/saad/08-conjugate-gradient/
 math: true
 toc: true
 status: outline
+published: false
 date: 2026-09-11 00:00:00 +0900
 categories: [Solvers]
 tags: [numerical-linear-algebra, iterative-methods, saad]

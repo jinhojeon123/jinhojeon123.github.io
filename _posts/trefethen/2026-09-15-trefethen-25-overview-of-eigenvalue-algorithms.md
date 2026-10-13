@@ -5,6 +5,7 @@ permalink: /study/trefethen/25-overview-of-eigenvalue-algorithms/
 math: true
 toc: true
 status: outline
+published: false
 date: 2026-09-15 00:00:00 +0900
 categories: [Numerical Methods]
 tags: [numerical-linear-algebra, cpp, trefethen-bau, overview-of-eigenvalue]

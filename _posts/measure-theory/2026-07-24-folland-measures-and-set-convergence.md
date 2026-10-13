@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "countable-additivity", "completion", "folland"]
 description: "Outline for measures, set convergence, null sets, and completion."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

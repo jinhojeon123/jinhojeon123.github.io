@@ -36,6 +36,7 @@ class SourceValidator
     @documents = {}
     @date_literals = {}
     @urls = {}
+    @source_urls = {}
     @series = {}
     @counts = Hash.new(0)
   end
@@ -66,6 +67,7 @@ class SourceValidator
     paths("_posts/**/*").each do |path|
       next unless File.file?(absolute(path))
       next if path == "_posts/measure-theory/README.md"
+      next if File.extname(path) == ".cpp" # Ancillary implementation sources, not posts.
 
       filename = File.basename(path)
       match = /\A(\d{4}-\d{2}-\d{2})-.+\.(?:md|markdown)\z/.match(filename)
@@ -82,9 +84,11 @@ class SourceValidator
 
     page_paths.each { |path| front_matter(path, required: path.start_with?("_tabs/")) }
     @documents.each do |path, data|
+      # Draft URLs remain reserved in source even when Jekyll omits their pages.
+      register_url(path, data["permalink"] || default_url(path), registry: @source_urls, label: "source URL")
+      check_relationships(path, data, project_ids.keys, reference_keys)
       next if data["published"] == false
 
-      check_relationships(path, data, project_ids.keys, reference_keys)
       register_url(path, data["permalink"] || default_url(path))
       check_markdown_body(path, data) if path.end_with?(".md", ".markdown")
     end
@@ -235,6 +239,9 @@ class SourceValidator
       error(path, "tags must be a unique array of lowercase kebab-case values")
     end
     error(path, "status must be one of #{STATUSES.join(', ')}") unless STATUSES.include?(data["status"])
+    if %w[outline working-note].include?(data["status"]) && data["published"] != false
+      error(path, "unfinished posts must have published: false")
+    end
     error(path, "note_type must be one of #{NOTE_TYPES.join(', ')}") unless NOTE_TYPES.include?(data["note_type"])
     error(path, "permalink must be an explicit local path") unless string?(data["permalink"])
     if data.key?("series") || data.key?("series_order")
@@ -307,10 +314,10 @@ class SourceValidator
     decoded.sub(%r{/index\.html\z}, "/")
   end
 
-  def register_url(path, url)
+  def register_url(path, url, registry: @urls, label: "decoded URL")
     canonical = canonical_url(url)
-    error(path, "duplicate decoded URL #{canonical.inspect} in #{@urls[canonical]}") if @urls.key?(canonical)
-    @urls[canonical] = path
+    error(path, "duplicate #{label} #{canonical.inspect} in #{registry[canonical]}") if registry.key?(canonical)
+    registry[canonical] = path
   rescue ArgumentError => e
     error(path, "invalid permalink: #{e.message}")
   end
@@ -382,7 +389,7 @@ class SourceValidator
       url = entry.is_a?(Hash) ? entry["url"] || entry["permalink"] : entry
       begin
         canonical = canonical_url(url)
-        error(path, "legacy URL no longer has a source page: #{url}") unless @urls.key?(canonical)
+        error(path, "legacy URL no longer has a source page: #{url}") unless @source_urls.key?(canonical)
         @counts[:legacy_urls] += 1
       rescue ArgumentError => e
         error(path, "#{url.inspect}: #{e.message}")

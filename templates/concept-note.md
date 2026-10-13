@@ -16,7 +16,7 @@ references: []
 ---
 
 <!-- Copy to _posts/YYYY-MM-DD-descriptive-kebab-case.md, replace metadata, and
-remove published:false when ready. Remove sections that do not help this note. -->
+set status:note and published:true when ready. Remove sections that do not help this note. -->
 
 ## Motivation
 

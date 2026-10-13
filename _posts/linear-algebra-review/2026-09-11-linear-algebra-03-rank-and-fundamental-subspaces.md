@@ -5,6 +5,7 @@ permalink: /study/linear-algebra/03-rank-and-fundamental-subspaces/
 math: true
 toc: true
 status: outline
+published: false
 date: 2026-09-11 00:00:00 +0900
 categories: [Mathematics]
 tags: [linear-algebra]

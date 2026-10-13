@@ -33,6 +33,9 @@ jobs:
       - name: Build and check production site
         run: bash tools/test.sh
 
+      - name: Check unpublished posts and reading-plan links
+        run: bundle exec ruby tools/unpublished-links-smoke.rb
+
       - name: Check mathematics, code, references, and preview base URL
         run: |
           bundle exec ruby tools/render-smoke.rb

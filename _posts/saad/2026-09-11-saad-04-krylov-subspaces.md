@@ -5,6 +5,7 @@ permalink: /study/saad/04-krylov-subspaces/
 math: true
 toc: true
 status: outline
+published: false
 date: 2026-09-11 00:00:00 +0900
 categories: [Solvers]
 tags: [numerical-linear-algebra, iterative-methods, saad]

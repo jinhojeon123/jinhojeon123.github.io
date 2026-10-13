@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["linear-programming", "optimization", "bertsimas"]
 description: "Outline for a textbook note on the formulation and basic examples of linear optimization."
 status: "outline"
+published: false
 note_type: "concept"
 math: true
 toc: true

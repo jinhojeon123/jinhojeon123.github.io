@@ -16,7 +16,7 @@ published: false
 ---
 
 <!-- Copy into _posts/YYYY-MM-DD-descriptive-kebab-case.md. Replace all metadata
-placeholders, retain established URLs, and remove published:false when ready.
+placeholders, retain established URLs, and set status:note and published:true when ready.
 Keep YAML at the very beginning. Jekyll displays the title from front matter. -->
 
 - **Main topic:** TODO: one sentence describing the scope.

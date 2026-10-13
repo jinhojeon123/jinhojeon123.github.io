@@ -5,6 +5,7 @@ categories: ["Solvers"]
 tags: ["conjugate-gradient", "krylov-methods", "spd", "matlab"]
 description: "Working note connecting Krylov subspaces to a MATLAB conjugate gradient implementation; some derivations remain incomplete."
 status: "working-note"
+published: false
 note_type: "numerical-method"
 math: true
 toc: true

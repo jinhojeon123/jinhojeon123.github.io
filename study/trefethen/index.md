@@ -58,15 +58,16 @@ repository URL and implementation status after verifying them.
 Use `templates/trefethen-lecture.md` in the repository for a new note.
 Files for Lectures 01–40 already exist, so develop the existing file for each lecture.
 Check the title, date, `series_order`, and `permalink`, and preserve existing URLs.
-Remove `published: false` from a new file when it is ready to publish.
+Keep `published: false` while writing. When the note is ready to publish,
+set `status: note` and `published: true`.
 
 - `status: outline`: a reading or writing plan.
 - `status: working-note`: a note with content and derivations in progress.
 - `status: note`: a note whose assumptions, derivations, examples, and necessary checks have been reviewed.
 
-The `(outline)` label in this blog's series list comes from `status: outline` in the
-**individual post**. Change that post's status after developing its content.
-Changing the status of this index page does not change the status of every lecture.
+Outlines and working notes remain in the repository while the blog lists published
+notes. Reading-plan titles link to a lecture once that **individual post** is
+published. Changing this index page's status does not publish the lectures.
 
 ## Recommended order
 

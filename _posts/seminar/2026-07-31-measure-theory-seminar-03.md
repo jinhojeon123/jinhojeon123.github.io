@@ -5,6 +5,7 @@ categories: ["Mathematics"]
 tags: ["measure-theory", "measurable-functions", "monotone-convergence", "folland"]
 description: "Seminar statements on measurable functions, simple-function integration, and monotone convergence; the proof section remains a placeholder."
 status: "working-note"
+published: false
 note_type: "seminar"
 math: true
 toc: true

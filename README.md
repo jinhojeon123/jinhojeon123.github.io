@@ -74,16 +74,20 @@ purpose across subjects, rather than a competing category.
 - Use an explicit `/posts/descriptive-kebab-case/` permalink for new standalone
   notes. The study series retain their existing `/study/.../` permalinks even
   though their source files now live in `_posts/`.
-- Templates start with `published: false`; replace placeholders before publishing.
-- An existing unfinished post retains its URL with `status: outline`.
-- The 119 study outlines are published posts: Folland Seminar (44), Linear Algebra
-  Review (20), Saad Study (15), and Trefethen NLA in C++ (40). Their dates record creation, not planned
-  seminar dates; `series` and `series_order` define the reading sequence.
+- Templates and unfinished posts use `published: false`. Keep it while the
+  `status` is `outline` or `working-note`; source validation enforces this.
+  When the note is ready, set `status: note` and `published: true`.
+- Unpublished posts stay in GitHub with their body, permalink, and reading order
+  intact, but have no blog page, category/tag/archive entry, search entry, or feed entry.
+  Preview them locally with `bundle exec jekyll serve --unpublished`.
+- The study outlines remain in source: Folland Seminar (44), Linear Algebra
+  Review (20), Saad Study (15), and Trefethen NLA in C++ (40). Their dates record
+  creation, not planned seminar dates; `series` and `series_order` define the reading sequence.
 - Home and Notes link to each study series, including the earlier Measure Theory
-  Notes (`series: measure-theory`). Notes lists each area's outlines grouped by
-  series in `series_order`; outlines also appear in Categories, Tags, Archives, and
-  search. Recent notes and the feed show developed notes; change `status` when an
-  outline becomes a working note.
+  Notes (`series: measure-theory`), when they contain published notes. Series counts
+  and note lists use only published posts. In reading plans and cross-references,
+  links to unpublished posts render as plain text; publishing a note restores
+  its links automatically. The original link markup remains in the GitHub source.
 - Keep series metadata in `_data/study_series.yml` and ordered topic/prerequisite
   indexes in `study/`. Ordinary pages outside `_posts/` are not posts.
 - Register project indexes under `_projects/` and use their `project_id` in a
@@ -94,7 +98,7 @@ purpose across subjects, rather than a competing category.
 ## Directory structure
 
 ```text
-_posts/                 Notes and published study outlines; explicit URLs retained
+_posts/                 Published notes and unpublished drafts; explicit URLs retained
   folland-seminar/       44 seminar posts, Week 05–48, starting at Lp duality
   linear-algebra-review/ 20 prerequisite and bridge posts, units 00–19
   saad/                  15 iterative-method posts, units 00–14
